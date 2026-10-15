@@ -1,51 +1,2953 @@
-import React,{useEffect,useMemo,useState} from 'react';
-import{createRoot}from'react-dom/client';
-import{Activity,ArrowRight,BookOpen,Bookmark,BrainCircuit,BriefcaseBusiness,CalendarDays,Check,CheckCircle2,ChevronDown,Clock3,Code2,Database,ExternalLink,Filter,Flame,GraduationCap,Play,LayoutDashboard,ListChecks,LockKeyhole,Menu,Network,Play,RotateCcw,Search,Settings,ShieldCheck,Sparkles,Target,Trophy,X,Zap,MessageCircle,PartyPopper,Send,CalendarCheck,TimerReset}from'lucide-react';
-import problems from './problems.json';import quizBank from './quiz-bank.json';import './styles.css';
-const topics=[...new Set(problems.map(p=>p.topic))];
-const resources=[
- {group:'DSA sheets & coding practice',items:[['Striver A2Z DSA Sheet','Structured beginner-to-advanced DSA curriculum','https://takeuforward.org/dsa/strivers-a2z-sheet-learn-dsa-a-to-z'],['Striver SDE Sheet','Interview-focused problem set','https://takeuforward.org/dsa/strivers-sde-sheet-top-coding-interview-problems'],['Striver 79 Last Moment Sheet','High-yield revision list','https://takeuforward.org/dsa/strivers-79-last-moment-dsa-sheet-ace-interviews'],['Striver Blind 75','Core interview patterns','https://takeuforward.org/dsa/blind-75-leetcode-problems-detailed-video-solutions'],['LeetCode','Coding problems and contests','https://leetcode.com/problemset/'],['GeeksforGeeks Practice','Coding problems, explanations and quizzes','https://www.geeksforgeeks.org/explore?page=1&sortBy=submissions'],['Codeforces','Competitive programming problems','https://codeforces.com/problemset'],['CodeChef','Practice problems and contests','https://www.codechef.com/practice']]},
- {group:'Free OOP MCQ practice',items:[['IndiaBIX OOP Test 1','Timed multiple-choice practice','https://www.indiabix.com/online-test/computer-science-test/174'],['IndiaBIX OOP Test 2','More C++ OOP and programming MCQs','https://www.indiabix.com/online-test/computer-science-test/175'],['GeeksforGeeks OOP MCQs','Concept-based OOP questions','https://www.geeksforgeeks.org/object-oriented-programming-oops-concept-in-java/']]},
- {group:'Free Operating Systems MCQs',items:[['IndiaBIX OS Concepts Test','Timed OS concepts test','https://www.indiabix.com/online-test/computer-science-test/182'],['GeeksforGeeks OS MCQs','Processes, threads, scheduling and memory','https://www.geeksforgeeks.org/operating-systems/'],['Sanfoundry OS Questions','Topic-wise OS practice','https://www.sanfoundry.com/operating-system-questions-answers/']]},
- {group:'Other core CS subjects',items:[['DBMS practice','SQL, normalization, transactions and indexing','https://www.geeksforgeeks.org/dbms/'],['Computer Networks MCQs','OSI, TCP/IP, HTTP, DNS and routing','https://www.indiabix.com/computer-science/computer-networking/'],['SQLBolt','Interactive SQL lessons','https://sqlbolt.com/'],['OSTEP','Free Operating Systems textbook','https://pages.cs.wisc.edu/~remzi/OSTEP/'],['MDN Web Docs','Web development documentation','https://developer.mozilla.org/']]}
+import React, { useEffect, useMemo, useState } from 'react';
+import { createRoot } from 'react-dom/client';
+import {
+  Activity, ArrowRight, BookOpen, Bookmark, BrainCircuit,
+  BriefcaseBusiness, CalendarDays, Check, CheckCircle2,
+  ChevronDown, Clock3, Code2, Database, ExternalLink, Filter,
+  Flame, GraduationCap, Play, LayoutDashboard, ListChecks,
+  LockKeyhole, Menu, Network, RotateCcw, Search, Settings,
+  ShieldCheck, Sparkles, Target, Trophy, X, Zap,
+  MessageCircle, PartyPopper, Send, CalendarCheck, TimerReset
+} from 'lucide-react';
+
+import problems from './problems.json';
+import quizBank from './quiz-bank.json';
+import './styles.css';
+
+const topics = [...new Set(problems.map(p => p.topic))];
+
+const resources = [
+  {
+    group: 'DSA sheets & coding practice',
+    items: [
+      ['Striver A2Z DSA Sheet', 'Structured beginner-to-advanced DSA curriculum', 'https://takeuforward.org/dsa/strivers-a2z-sheet-learn-dsa-a-to-z'],
+      ['Striver SDE Sheet', 'Interview-focused problem set', 'https://takeuforward.org/dsa/strivers-sde-sheet-top-coding-interview-problems'],
+      ['Striver 79 Last Moment Sheet', 'High-yield revision list', 'https://takeuforward.org/dsa/strivers-79-last-moment-dsa-sheet-ace-interviews'],
+      ['Striver Blind 75', 'Core interview patterns', 'https://takeuforward.org/dsa/blind-75-leetcode-problems-detailed-video-solutions'],
+      ['LeetCode', 'Coding problems and contests', 'https://leetcode.com/problemset/'],
+      ['GeeksforGeeks Practice', 'Coding problems, explanations and quizzes', 'https://www.geeksforgeeks.org/explore?page=1&sortBy=submissions'],
+      ['Codeforces', 'Competitive programming problems', 'https://codeforces.com/problemset'],
+      ['CodeChef', 'Practice problems and contests', 'https://www.codechef.com/practice']
+    ]
+  },
+  {
+    group: 'Free OOP MCQ practice',
+    items: [
+      ['IndiaBIX OOP Test 1', 'Timed multiple-choice practice', 'https://www.indiabix.com/online-test/computer-science-test/174'],
+      ['IndiaBIX OOP Test 2', 'More C++ OOP and programming MCQs', 'https://www.indiabix.com/online-test/computer-science-test/175'],
+      ['GeeksforGeeks OOP MCQs', 'Concept-based OOP questions', 'https://www.geeksforgeeks.org/object-oriented-programming-oops-concept-in-java/']
+    ]
+  },
+  {
+    group: 'Free Operating Systems MCQs',
+    items: [
+      ['IndiaBIX OS Concepts Test', 'Timed OS concepts test', 'https://www.indiabix.com/online-test/computer-science-test/182'],
+      ['GeeksforGeeks OS MCQs', 'Processes, threads, scheduling and memory', 'https://www.geeksforgeeks.org/operating-systems/'],
+      ['Sanfoundry OS Questions', 'Topic-wise OS practice', 'https://www.sanfoundry.com/operating-system-questions-answers/']
+    ]
+  },
+  {
+    group: 'Other core CS subjects',
+    items: [
+      ['DBMS practice', 'SQL, normalization, transactions and indexing', 'https://www.geeksforgeeks.org/dbms/'],
+      ['Computer Networks MCQs', 'OSI, TCP/IP, HTTP, DNS and routing', 'https://www.indiabix.com/computer-science/computer-networking/'],
+      ['SQLBolt', 'Interactive SQL lessons', 'https://sqlbolt.com/'],
+      ['OSTEP', 'Free Operating Systems textbook', 'https://pages.cs.wisc.edu/~remzi/OSTEP/'],
+      ['MDN Web Docs', 'Web development documentation', 'https://developer.mozilla.org/']
+    ]
+  }
 ];
-const tracks=[['Programming Basics','Input/output, loops, functions, arrays and complexity'],['Arrays & Hashing','Array patterns, prefix sums, hashing, subarrays'],['Strings & Two Pointers','String manipulation, windows, palindrome patterns'],['Linked Lists, Stacks & Queues','Pointers, monotonic stacks, queue patterns'],['Trees, BST & Heaps','Traversals, recursion, search trees, priority queues'],['Graphs & Greedy','BFS, DFS, shortest paths, MST, greedy proofs'],['Dynamic Programming','Memoization, tabulation, subsequences and grids'],['Advanced Patterns','Backtracking, tries, bit manipulation and intervals']];
-const platformOptions=[['LeetCode','leetcode'],['GeeksforGeeks','gfg'],['TakeUForward','tuf'],['Codeforces','codeforces'],['CodeChef','codechef']];
-function makeUrl(p,platform){const q=encodeURIComponent(p.title);if(platform==='gfg')return p.gfg||`https://www.geeksforgeeks.org/?s=${q}`;if(platform==='tuf')return `https://takeuforward.org/?s=${q}`;if(platform==='codeforces')return `https://codeforces.com/problemset?tags=${encodeURIComponent(p.topic.toLowerCase().replaceAll(' ','-'))}`;if(platform==='codechef')return `https://www.codechef.com/practice`;return p.url||`https://leetcode.com/problemset/?search=${q}`}
-function App(){
- const [page,setPage]=useState('Dashboard'),[mobile,setMobile]=useState(false),[query,setQuery]=useState(''),[topic,setTopic]=useState('All topics'),[difficulty,setDifficulty]=useState('All levels'),[platform,setPlatform]=useState('leetcode'),[showTopics,setShowTopics]=useState(true);
- const [solved,setSolved]=useState(()=>JSON.parse(localStorage.getItem('pf2-solved')||'[]')),[saved,setSaved]=useState(()=>JSON.parse(localStorage.getItem('pf2-saved')||'[]')),[done,setDone]=useState(()=>JSON.parse(localStorage.getItem('pf2-done')||'[]')),[checks,setChecks]=useState(()=>JSON.parse(localStorage.getItem('pf2-interview')||'[]'));
- const [subject,setSubject]=useState('DSA'),[quizDifficulty,setQuizDifficulty]=useState('Mixed'),[count,setCount]=useState(10),[minutes,setMinutes]=useState(15),[provider,setProvider]=useState('local'),[quizTopics,setQuizTopics]=useState(''),[questions,setQuestions]=useState([]),[answers,setAnswers]=useState({}),[submitted,setSubmitted]=useState(false),[generating,setGenerating]=useState(false),[apiStatus,setApiStatus]=useState(null),[quizError,setQuizError]=useState(''),[startedAt,setStartedAt]=useState(0),[remaining,setRemaining]=useState(0),[showSettings,setShowSettings]=useState(false),[activity,setActivity]=useState(()=>JSON.parse(localStorage.getItem('pf2-activity')||'{}')),[celebration,setCelebration]=useState(null),[testMode,setTestMode]=useState('Practice'),[testHistory,setTestHistory]=useState(()=>JSON.parse(localStorage.getItem('pf2-test-history')||'[]')),[testSlot,setTestSlot]=useState(null),[quizRecordId,setQuizRecordId]=useState(null),[interviewRole,setInterviewRole]=useState('Full-stack developer'),[interviewLevel,setInterviewLevel]=useState('Internship'),[interviewMinutes,setInterviewMinutes]=useState(10),[interviewRemaining,setInterviewRemaining]=useState(0),[interviewProvider,setInterviewProvider]=useState('gemini'),[interviewQuestions,setInterviewQuestions]=useState([]),[interviewIndex,setInterviewIndex]=useState(0),[interviewAnswers,setInterviewAnswers]=useState([]),[interviewDraft,setInterviewDraft]=useState(''),[interviewRunning,setInterviewRunning]=useState(false),[interviewFeedback,setInterviewFeedback]=useState(null),[interviewError,setInterviewError]=useState('');
- useEffect(()=>localStorage.setItem('pf2-solved',JSON.stringify(solved)),[solved]);useEffect(()=>localStorage.setItem('pf2-saved',JSON.stringify(saved)),[saved]);useEffect(()=>localStorage.setItem('pf2-done',JSON.stringify(done)),[done]);useEffect(()=>localStorage.setItem('pf2-interview',JSON.stringify(checks)),[checks]);useEffect(()=>localStorage.setItem('pf2-activity',JSON.stringify(activity)),[activity]);useEffect(()=>localStorage.setItem('pf2-test-history',JSON.stringify(testHistory)),[testHistory]);
- useEffect(()=>{fetch('/api/health').then(r=>r.json()).then(setApiStatus).catch(()=>setApiStatus({configured:false,service:'Local question bank available',ok:false}))},[]);
- useEffect(()=>{if(!questions.length||submitted||!startedAt)return;const t=setInterval(()=>{const left=Math.max(0,Math.ceil((startedAt+minutes*60000-Date.now())/1000));setRemaining(left);if(left===0)finishQuiz()},250);return()=>clearInterval(t)},[questions,submitted,startedAt,minutes,answers,subject,quizTopics,testMode,quizDifficulty,testSlot,quizRecordId]);useEffect(()=>{if(!interviewRunning||interviewRemaining<=0)return;const t=setTimeout(()=>setInterviewRemaining(v=>Math.max(0,v-1)),1000);return()=>clearTimeout(t)},[interviewRunning,interviewRemaining]);useEffect(()=>{if(interviewRunning&&interviewQuestions.length&&interviewRemaining===0){if(interviewDraft.trim()&&interviewQuestions[interviewIndex])setInterviewAnswers(a=>[...a,{question:interviewQuestions[interviewIndex].question,answer:interviewDraft.trim(),type:interviewQuestions[interviewIndex].type||'Technical'}]);setInterviewRunning(false);setInterviewError('Interview timer ended. Your current answer was saved if it was not empty. Submit captured answers for feedback, or restart the session.')}},[interviewRunning,interviewQuestions,interviewRemaining,interviewDraft,interviewIndex]);
- const filtered=useMemo(()=>problems.filter(p=>(topic==='All topics'||p.topic===topic)&&(difficulty==='All levels'||p.difficulty===difficulty)&&p.title.toLowerCase().includes(query.toLowerCase())),[topic,difficulty,query]);
- const progress=Math.round(solved.length/problems.length*100);const doneTotal=tracks.reduce((a,t)=>a+t[1].split(',').length,0);const title=page==='DSA problem set'?'DSA Problem Bank':page;const todayKey=new Date().toLocaleDateString('en-CA');const activityDates=Object.keys(activity).filter(k=>activity[k]>0).sort();const streak=(()=>{let n=0,d=new Date();if(!activity[d.toLocaleDateString('en-CA')])d.setDate(d.getDate()-1);while(activity[d.toLocaleDateString('en-CA')]>0){n++;d.setDate(d.getDate()-1)}return n})();function logActivity(amount=1){const key=new Date().toLocaleDateString('en-CA');setActivity(a=>({...a,[key]:(a[key]||0)+amount}))}function markProblemSolved(id){if(!solved.includes(id)){setSolved(a=>[...a,id]);logActivity(1);setCelebration({title:'Problem conquered!',subtitle:'Another step toward your placement goal.',detail:'You completed one more practice milestone.',emoji:'🌸',nextId:problems.find(p=>p.id>id&&!solved.includes(p.id))?.id});}else setSolved(a=>a.filter(x=>x!==id));}
- function startQuiz(){setTestSlot(null);setTestMode('Practice');setQuestions([]);setAnswers({});setSubmitted(false);setQuizError('');setPage('Quiz Builder')}
- function localQuiz(){let pool=quizBank.filter(q=>(subject==='Mixed Core CS'?['OOP','OS','DBMS','CN'].includes(q.subject):q.subject===subject)&&(quizDifficulty==='Mixed'||q.difficulty===quizDifficulty));if(quizTopics.trim()){const keys=quizTopics.toLowerCase().split(',').map(s=>s.trim()).filter(Boolean);const narrowed=pool.filter(q=>keys.some(k=>(q.topic||q.question).toLowerCase().includes(k)));if(narrowed.length)pool=narrowed}pool=[...pool].sort(()=>Math.random()-.5);if(pool.length<count){pool=[...pool,...quizBank.filter(q=>!pool.some(x=>x.id===q.id)&&(subject==='Mixed Core CS'?['OOP','OS','DBMS','CN'].includes(q.subject):q.subject===subject))].sort(()=>Math.random()-.5)}return pool.slice(0,Math.min(count,pool.length)).map((q,i)=>({...q,id:`local-${Date.now()}-${i}`}))}
- async function generateQuiz(){setGenerating(true);setQuizError('');try{let qs;if(provider==='local'){qs=localQuiz()}else{const res=await fetch('/api/quiz/generate',{method:'POST',headers:{'Content-Type':'application/json'},body:JSON.stringify({count,subject,difficulty:quizDifficulty,topics:quizTopics,provider})});const data=await res.json();if(!res.ok)throw new Error(data.error||'AI generation failed');qs=data.questions}if(!qs?.length)throw new Error('No questions available for these filters. Try Mixed difficulty or clear topic filters.');setQuestions(qs);setAnswers({});setSubmitted(false);setQuizRecordId(null);setStartedAt(Date.now());setRemaining(minutes*60);setPage('Quiz');}catch(e){setQuizError(e.message+' You can switch to the built-in bank or check the backend API key.')}finally{setGenerating(false)}}
- const score=questions.filter((q,i)=>answers[i]===q.answerIndex).length;function finishQuiz(){if(submitted||!questions.length||quizRecordId===startedAt)return;setQuizRecordId(startedAt);setSubmitted(true);setTestHistory(h=>[{id:Date.now(),subject,topic:quizTopics||'Mixed topics',mode:testMode,slot:testSlot?.slot||null,difficulty:quizDifficulty,count:questions.length,score:Math.round(score/questions.length*100),date:new Date().toLocaleDateString('en-CA')},...h]);logActivity(questions.length);if(score/questions.length>=.8)setCelebration({title:'Excellent work!',subtitle:'Your consistency is building real interview skill.',detail:`${score}/${questions.length} correct • ${Math.round(score/questions.length*100)}% score`,emoji:'🎉'});}
- const tasks=[['Solve 2 DSA problems',25],['Revise yesterday’s patterns',15],['Study one Core CS concept',25],['Take a 10-question MCQ quiz',15],['Write down one mistake and its fix',10]];
- const toggle=(arr,set,id)=>set(arr.includes(id)?arr.filter(x=>x!==id):[...arr,id]);
- function Side(){return <aside className={'sidebar '+(mobile?'show':'')}><div className="brand"><div className="brand-mark"><Zap size={21} fill="currentColor"/></div><div><b>prepforge<span>.</span></b><small>PLACEMENT OS</small></div><button className="icon-btn close-nav" onClick={()=>setMobile(false)}><X size={18}/></button></div><div className="profile-mini"><div className="avatar">PG</div><div><b>Piyush Gujor</b><small>CSE • Placement track</small></div><ChevronDown size={15} className="muted"/></div>{[{label:'Workspace',items:[['Dashboard',LayoutDashboard],['DSA Problem Bank',Code2],['Roadmap',BookOpen],['Daily Plan',CalendarDays],['Activity calendar',CalendarCheck]]},{label:'Practice',items:[['Quiz Builder',BrainCircuit],['Test Center',ListChecks],['Revision List',Bookmark]]},{label:'Placement',items:[['Core CS & MCQs',GraduationCap],['AI Mock Interview',MessageCircle],['Interview Prep',BriefcaseBusiness],['Free Resources',Sparkles]]}].map(g=><div className="nav-group" key={g.label}><div className="nav-label">{g.label}</div>{g.items.map(([n,I])=><button key={n} onClick={()=>{if(n==='Quiz Builder')setTestSlot(null);setPage(n==='DSA Problem Bank'?'DSA Problem Bank':n);setMobile(false)}} className={'nav-item '+(title===n?'active':'')}><I size={17}/><span>{n}</span>{n==='DSA Problem Bank'&&<span className="nav-count">{solved.length}</span>}</button>)}</div>)}<div className="sidebar-bottom"><div className="streak-card"><div className="streak-icon"><Flame size={18}/></div><div><b>Build your streak</b><small>One focused session at a time.</small></div></div><div className="sidebar-footer"><span>Free placement workspace</span><span>v2.0</span></div></div></aside>}
- function Header(){return <header className="topbar"><button className="icon-btn menu-btn" onClick={()=>setMobile(true)}><Menu/></button><div className="breadcrumbs"><span>Workspace</span><span className="slash">/</span><b>{title}</b></div><div className="top-actions"><button className="settings-button" onClick={()=>setShowSettings(v=>!v)}><Settings size={15}/> AI setup</button><div className="top-streak"><Flame size={17}/><b>{solved.length}</b><span>solved</span></div><div className="avatar small">PG</div></div></header>}
- function Intro({eyebrow,heading,desc,extra}){return <section className="page-intro"><div><div className="eyebrow">{eyebrow}</div><h1>{heading}</h1><p className="subhead">{desc}</p></div>{extra}</section>}
- function Dashboard(){return <><Intro eyebrow="YOUR PLACEMENT JOURNEY" heading={<>Build skills. <span>Earn offers.</span></>} desc="One workspace for DSA, core CS, timed quizzes and interview preparation." extra={<button className="btn primary" onClick={()=>setPage('Roadmap')}><Play size={15}/> Continue roadmap <ArrowRight size={15}/></button>}/><section className="hero-panel"><div className="hero-copy"><div className="hero-chip"><span className="pulse"/> YOUR PERSONAL WORKSPACE</div><h2>Practice with purpose.<br/><em>Prepare with confidence.</em></h2><p>Build strong fundamentals, solve important patterns, and test yourself under timed conditions.</p><button className="btn light" onClick={()=>setPage('Quiz Builder')}>Build a custom quiz <ArrowRight size={15}/></button></div><div className="hero-graphic"><div className="orbit orbit-one"/><div className="orbit orbit-two"/><div className="hero-center"><Code2 size={38}/></div><div className="float-card float-top"><CheckCircle2 size={16}/> Practice daily</div><div className="float-card float-bottom"><Target size={16}/> Track progress</div></div></section><div className="stats-grid"><Stat icon={<ListChecks/>} label="DSA problems solved" value={`${solved.length} / ${problems.length}`} sub={`${progress}% of 500 curated links`} color="purple"/><Stat icon={<Bookmark/>} label="Saved for revision" value={saved.length} sub="Review weak patterns" color="orange"/><Stat icon={<Target/>} label="Roadmap milestones" value={`${done.length}`} sub="Self-tracked learning" color="green"/><Stat icon={<BrainCircuit/>} label="Question bank" value={quizBank.length} sub="Local MCQs + AI generation" color="blue"/></div><section className="panel overall-progress"><div className="progress-heading"><div><h3>DSA progress</h3><p>{solved.length} of 500 problem entries completed</p></div><b>{progress}%</b></div><div className="progress-track"><span style={{width:`${progress}%`}}/></div><div className="progress-foot"><span>Consistency beats cramming</span><span>{500-solved.length} to go</span></div></section><section className="panel activity-panel"><PanelHead title="Consistency calendar" desc={`Current streak: ${streak} day${streak===1?'':'s'} • ${Object.values(activity).reduce((a,b)=>a+b,0)} practice actions logged`} action="Open calendar" onAction={()=>setPage('Activity calendar')}/><ActivityHeatmap activity={activity}/></section><div className="content-grid"><section className="panel"><PanelHead title="DSA learning tracks" desc="High-yield topics from fundamentals to advanced patterns" action="Open bank" onAction={()=>setPage('DSA Problem Bank')}/><div className="track-list">{tracks.slice(0,5).map((t,i)=><button className="track-row" key={t[0]} onClick={()=>{setPage('DSA Problem Bank');setTopic(topics.find(x=>x.toLowerCase().includes(t[0].split(' ')[0].toLowerCase()))||'All topics')}}><div className={'topic-icon color-'+(i%4)}><Code2 size={18}/></div><div className="track-info"><b>{t[0]}</b><small>{t[1]}</small></div><ArrowRight size={15} className="muted"/></button>)}</div></section><section className="panel"><PanelHead title="Practice session" desc="Choose exactly what you want to test"/><div className="quiz-promo"><div className="quiz-illustration"><BrainCircuit size={32}/></div><h3>Build a custom quiz</h3><p>Choose DSA, OOP, OS, DBMS, networking or aptitude. Set question count, difficulty and time.</p><button className="btn primary full" onClick={()=>setPage('Quiz Builder')}>Configure quiz <ArrowRight size={15}/></button></div><div className="resource-shortcuts"><a href="https://www.indiabix.com/online-test/computer-science-test/174" target="_blank" rel="noreferrer">Free OOP MCQs <ExternalLink size={13}/></a><a href="https://www.indiabix.com/online-test/computer-science-test/182" target="_blank" rel="noreferrer">Free OS MCQs <ExternalLink size={13}/></a></div></section></div><section className="panel"><PanelHead title="Free practice platforms" desc="Choose where you want to solve a coding question"/><div className="platform-grid">{platformOptions.map(([name,id])=><button key={id} className={'platform-card '+(platform===id?'selected':'')} onClick={()=>setPlatform(id)}><span className="platform-logo">{name==='LeetCode'?'LC':name==='GeeksforGeeks'?'GFG':name==='TakeUForward'?'TUF':name==='Codeforces'?'CF':'CC'}</span><b>{name}</b><span>{platform===id?'Selected platform':'Select platform'}</span></button>)}</div></section></>}
- function Stat({icon,label,value,sub,color}){return <div className="stat-card"><div className={'stat-icon '+color}>{icon}</div><div className="stat-label">{label}</div><div className="stat-value">{value}</div><div className="stat-sub">{sub}</div></div>}
- function PanelHead({title,desc,action,onAction}){return <div className="panel-head"><div><h3>{title}</h3>{desc&&<p>{desc}</p>}</div>{action&&<button className="text-btn" onClick={onAction}>{action} <ArrowRight size={14}/></button>}</div>}function ActivityHeatmap({activity:map}){const days=Array.from({length:91},(_,i)=>{const d=new Date();d.setDate(d.getDate()-(90-i));const key=d.toLocaleDateString('en-CA');return{key,day:d.getDay(),count:map[key]||0,date:d}});return <div className="heatmap-wrap"><div className="heatmap-months"><span>12 weeks of practice</span><span>Less <i className="heat-level l0"/><i className="heat-level l1"/><i className="heat-level l2"/><i className="heat-level l3"/> More</span></div><div className="heatmap">{days.map(d=><span key={d.key} title={`${d.key}: ${d.count} practice actions`} className={`heat-cell ${d.count===0?'l0':d.count===1?'l1':d.count<=3?'l2':'l3'}`}/>)}</div></div>}
- function DSA(){return <><Intro eyebrow="500 CURATED HIGH-YIELD PROBLEM LINKS" heading="DSA Problem Bank" desc="Filter by topic and difficulty, choose a platform, and track solved problems. The question title opens a search on the chosen platform when a verified direct link is not available." extra={<div className="mini-progress"><div className="mini-ring"><span>{progress}%</span></div><div><b>{solved.length} solved</b><small>of {problems.length} entries</small></div></div>}/><div className="topic-browser-head"><div><h3>Topic tracks</h3><p>Pick a major topic, then practice its questions by Easy, Medium or Hard level.</p></div><button className="btn secondary" onClick={()=>setShowTopics(v=>!v)}>{showTopics?'Hide topics':'Browse topics'} <ArrowRight size={13}/></button></div>{showTopics&&<div className="topic-overview">{topics.map(t=>{const items=problems.filter(p=>p.topic===t);const completed=items.filter(p=>solved.includes(p.id)).length;return <button className={`topic-overview-card ${topic===t?'selected':''}`} key={t} onClick={()=>{setTopic(t);setDifficulty('All levels');setQuery('')}}><div className="topic-overview-title"><b>{t}</b><span>{completed}/{items.length}</span></div><div className="topic-mini-bar"><span style={{width:`${Math.round(completed/items.length*100)}%`}}/></div><div className="topic-difficulty-counts"><span className="easy">E {items.filter(p=>p.difficulty==='Easy').length}</span><span className="medium">M {items.filter(p=>p.difficulty==='Medium').length}</span><span className="hard">H {items.filter(p=>p.difficulty==='Hard').length}</span></div></button>})}</div>}<div className="platform-picker"><span>Open practice on</span>{platformOptions.map(([n,id])=><button key={id} onClick={()=>setPlatform(id)} className={platform===id?'picked':''}>{n}</button>)}</div><div className="filter-bar"><div className="search-field"><Search size={16}/><input value={query} onChange={e=>setQuery(e.target.value)} placeholder="Search question, topic or pattern..."/></div><div className="select-wrap"><Filter size={14}/><select value={topic} onChange={e=>setTopic(e.target.value)}><option>All topics</option>{topics.map(t=><option key={t}>{t}</option>)}</select></div><div className="select-wrap"><select value={difficulty} onChange={e=>setDifficulty(e.target.value)}>{['All levels','Easy','Medium','Hard'].map(x=><option key={x}>{x}</option>)}</select></div></div><div className="table-meta"><span>{filtered.length} problems shown</span><span><i className="legend-dot solved-dot"/> Solved <i className="legend-dot unsolved-dot"/> To do</span></div><div className="problem-list">{filtered.map((p,i)=><div className={'problem-row '+(solved.includes(p.id)?'is-solved':'')} key={p.id}><button className={'solve-check '+(solved.includes(p.id)?'checked':'')} onClick={()=>markProblemSolved(p.id)} title="Mark solved">{solved.includes(p.id)&&<Check size={14}/>}</button><div className="problem-number">{String(p.id).padStart(3,'0')}</div><div className="problem-main"><b>{p.title}</b><small>{p.topic}</small></div><span className={'difficulty '+p.difficulty.toLowerCase()}>{p.difficulty}</span><a className="lecture-link" title="Find Striver lecture for this topic" href={`https://www.youtube.com/results?search_query=${encodeURIComponent('Striver '+p.topic+' '+p.title)}`} target="_blank" rel="noreferrer"><Play size={16}/><span>Lecture</span></a><button className={'save-btn '+(saved.includes(p.id)?'saved':'')} onClick={()=>toggle(saved,setSaved,p.id)} title="Save for revision"><Bookmark size={16} fill={saved.includes(p.id)?'currentColor':'none'}/></button><a className="open-problem" href={makeUrl(p,platform)} target="_blank" rel="noreferrer">Solve on {platformOptions.find(x=>x[1]===platform)?.[0]} <ExternalLink size={13}/></a></div>)}</div>{!filtered.length&&<div className="panel empty-state"><Search/><b>No matching problems</b><span>Try clearing one of the filters.</span></div>}<p className="disclaimer">The 500-entry set is a curated practice index, not a claim that every title is an exact row from Striver's sheet. Links use direct or search pages; confirm the exact problem on the destination platform. For the original sheet and other sheets, use the official resources page.</p></>}
- function Roadmap(){return <><Intro eyebrow="LEARN IN SEQUENCE" heading="Placement roadmap" desc="All major tracks remain visible. Each track starts with its first milestone; subsequent milestones unlock in order."/><div className="notice"><LockKeyhole size={18}/><div><b>Sequential learning</b><p>Complete a milestone to unlock the next milestone within that track. This version tracks self-reported completion; quiz-gated locks are a future extension.</p></div></div><div className="roadmap-cards">{tracks.map((t,i)=>{const subt=t[1].split(',').map(x=>x.trim());return <section className="panel roadmap-card" key={t[0]}><div className="roadmap-card-head"><div className={'topic-icon color-'+(i%4)}><Code2/></div><div><h3>{t[0]}</h3><p>{subt.length} focus milestones</p></div><span className="track-percent">{subt.filter((s,j)=>done.includes(t[0]+'::'+s)).length}/{subt.length}</span></div><div className="milestone-list">{subt.map((s,j)=>{const id=t[0]+'::'+s,complete=done.includes(id),locked=j>0&&!done.includes(t[0]+'::'+subt[j-1]);return <div className={'milestone '+(locked?'locked':'')} key={id}><button disabled={locked} className={'milestone-check '+(complete?'complete':'')} onClick={()=>toggle(done,setDone,id)}>{complete?<Check size={13}/>:locked?<LockKeyhole size={12}/>:j+1}</button><div className="milestone-text"><b>{s}</b><small>{complete?'Completed':locked?'Complete previous milestone to unlock':'Ready to learn'}</small></div>{!locked&&<button className="tiny-action" onClick={()=>toggle(done,setDone,id)}>{complete?'Undo':'Mark done'}</button>}</div>})}</div></section>})}</div></>}
- function QuizBuilder(){return <><Intro eyebrow="CUSTOM ASSESSMENT BUILDER" heading="Build your quiz" desc="Choose a subject, topic focus, difficulty, question count, timer and question provider."/><div className="builder-layout"><section className="panel builder-panel"><div className="builder-section"><h3>1. Choose subject</h3><div className="subject-options">{['DSA','OOP','OS','DBMS','CN','Mixed Core CS','Aptitude'].map(s=><button key={s} onClick={()=>setSubject(s)} className={subject===s?'active':''}>{s}</button>)}</div></div><div className="builder-section"><h3>2. Difficulty level</h3><div className="difficulty-options">{['Easy','Medium','Hard','Mixed'].map(s=><button key={s} onClick={()=>setQuizDifficulty(s)} className={quizDifficulty===s?'active '+s.toLowerCase():''}>{s}</button>)}</div></div><div className="builder-section"><h3>3. Test format</h3><div className="difficulty-options">{['Practice','Minor test','Major test'].map(s=><button key={s} className={testMode===s?'active':''} onClick={()=>{setTestMode(s);if(s==='Minor test'){setCount(10);setMinutes(15)}if(s==='Major test'){setCount(30);setMinutes(45)}}}>{s}</button>)}</div><small className="field-help">Each topic in Test Center has 5 minor and 5 major test slots. You can still customize any practice quiz.</small></div><div className="builder-section"><h3>4. Question focus <span className="optional">optional</span></h3><input className="wide-input" value={quizTopics} onChange={e=>setQuizTopics(e.target.value)} placeholder="e.g. arrays, recursion, process scheduling, deadlocks"/><small className="field-help">Separate multiple topics with commas. AI generation uses these as focus areas.</small></div><div className="builder-section"><h3>5. Question count</h3><div className="count-options">{[10,20,50,100].map(n=><button key={n} className={count===n?'active':''} onClick={()=>setCount(n)}>{n}</button>)}<label className="custom-count">Custom <input type="number" min="1" max="100" value={count} onChange={e=>setCount(Math.max(1,Math.min(100,Number(e.target.value)||1)))}/></label></div></div><div className="builder-section"><h3>6. Time limit</h3><div className="time-options">{[10,15,30,45,60,90].map(n=><button key={n} className={minutes===n?'active':''} onClick={()=>setMinutes(n)}>{n} min</button>)}</div></div><div className="builder-section"><h3>7. Question provider</h3><div className="provider-options"><button className={provider==='local'?'active':''} onClick={()=>setProvider('local')}><Database size={18}/><b>Built-in bank</b><small>Free • works offline</small></button><button className={provider==='gemini'?'active':''} onClick={()=>setProvider('gemini')}><Sparkles size={18}/><b>Google Gemini</b><small>Generate a fresh quiz</small></button><button className={provider==='openai'?'active':''} onClick={()=>setProvider('openai')}><BrainCircuit size={18}/><b>OpenAI</b><small>Generate a fresh quiz</small></button></div>{provider!=='local'&&<div className="api-note"><ShieldCheck size={16}/><span>AI requires a key in your local backend <code>.env</code>. Keys are never entered into this page or bundled into frontend code.</span></div>}</div>{quizError&&<div className="error-box">{quizError}</div>}<button className="btn primary generate-btn" disabled={generating} onClick={generateQuiz}>{generating?<><RotateCcw className="spin" size={16}/> Generating questions…</>:<><Play size={16} fill="currentColor"/> Generate {count} questions <ArrowRight size={16}/></>}</button><p className="field-help">The built-in bank currently contains {quizBank.length} original MCQs. Offline mode uses available unique questions for the selected subject; AI mode can generate a custom count up to 100, subject to provider quota and API setup.</p></section><aside className="panel quiz-summary"><div className="quiz-illustration"><BrainCircuit size={33}/></div><h3>Your quiz</h3><div className="summary-row"><span>Subject</span><b>{subject}</b></div><div className="summary-row"><span>Difficulty</span><b>{quizDifficulty}</b></div><div className="summary-row"><span>Questions</span><b>{count}</b></div><div className="summary-row"><span>Time limit</span><b>{minutes} minutes</b></div><div className="summary-row"><span>Provider</span><b>{provider==='local'?'Built-in bank':provider==='gemini'?'Gemini':'OpenAI'}</b></div><div className="summary-tip"><Clock3 size={16}/><span>Timer begins when the quiz starts. When time expires, the attempt is submitted automatically.</span></div></aside></div></>}
- function Quiz(){if(!questions.length)return <div className="panel empty-state"><BrainCircuit size={32}/><b>No quiz loaded</b><span>Configure your quiz first.</span><button className="btn primary" onClick={()=>setPage('Quiz Builder')}>Open quiz builder</button></div>;return <><Intro eyebrow="TIMED QUIZ" heading={submitted?'Quiz results':'Focus mode'} desc={submitted?'Review each answer and explanation. Retry with a different configuration when ready.':'Choose your answers. Your attempt submits automatically when the timer ends.'} extra={<div className={'timer '+(remaining<60?'urgent':'')}><Clock3 size={17}/><b>{String(Math.floor(remaining/60)).padStart(2,'0')}:{String(remaining%60).padStart(2,'0')}</b><small>remaining</small></div>}/>{submitted&&<div className="score-banner"><div className="score-circle">{Math.round(score/questions.length*100)}%</div><div><h2>{score>=Math.ceil(questions.length*.8)?'Strong attempt!':score>=Math.ceil(questions.length*.6)?'Good progress — revise missed concepts.':'Keep practicing. Review the explanations and try again.'}</h2><p>{score} correct out of {questions.length} • {questions.length-score} to review</p></div><button className="btn secondary" onClick={()=>setPage('Quiz Builder')}><RotateCcw size={14}/> New quiz</button></div>}<div className="quiz-questions">{questions.map((q,i)=><section className="panel quiz-question" key={q.id||i}><div className="question-label"><span>QUESTION {String(i+1).padStart(2,'0')} / {questions.length}</span><span>{submitted?(answers[i]===q.answerIndex?'Correct':'Review'):answers[i]!==undefined?'Answered':'Not answered'}</span></div><h3>{q.question}</h3><div className="answer-options">{q.options.map((o,j)=><button key={j} disabled={submitted} onClick={()=>setAnswers(a=>({...a,[i]:j}))} className={'answer-option '+(answers[i]===j?'selected ':'')+(submitted&&j===q.answerIndex?' right ':'')+(submitted&&answers[i]===j&&j!==q.answerIndex?' wrong':'')}><span className="option-letter">{String.fromCharCode(65+j)}</span>{o}{submitted&&j===q.answerIndex&&<CheckCircle2 size={16}/>}</button>)}</div>{submitted&&<div className="explanation"><b>Explanation</b><p>{q.explanation}</p><small>{q.subject||subject} • {q.difficulty||quizDifficulty} • {q.source||'Built-in bank'}</small></div>}</section>)}</div>{!submitted&&<div className="quiz-submit"><span>{questions.length-Object.keys(answers).length} unanswered</span><button className="btn primary" onClick={finishQuiz}>Submit quiz <ArrowRight size={15}/></button></div>}</>}
- function ActivityCalendar(){const total=Object.values(activity).reduce((a,b)=>a+b,0);const last30=Array.from({length:30},(_,i)=>{const d=new Date();d.setDate(d.getDate()-(29-i));const key=d.toLocaleDateString('en-CA');return{key,count:activity[key]||0,date:d}});return <><Intro eyebrow="CONSISTENCY & MOMENTUM" heading="Your activity calendar" desc="A GitHub-style contribution graph for problems solved, quizzes taken and practice sessions." extra={<div className="mini-progress"><Flame size={18} color="#ffb46b"/><div><b>{streak}-day streak</b><small>{total} activity actions</small></div></div>}/><section className="panel"><PanelHead title="Last 13 weeks" desc="Every logged practice action adds to the day’s activity."/><ActivityHeatmap activity={activity}/><div className="activity-stats"><div><b>{total}</b><span>Total actions</span></div><div><b>{activityDates.length}</b><span>Active days</span></div><div><b>{streak}</b><span>Current streak</span></div><div><b>{Math.max(0,...Object.values(activity))}</b><span>Best day</span></div></div></section><section className="panel"><PanelHead title="Last 30 days" desc="See which days you practiced."/><div className="calendar-grid">{last30.map(d=><div className={`calendar-day ${d.count?'active':''}`} key={d.key} title={`${d.key}: ${d.count} actions`}><b>{d.date.getDate()}</b><small>{d.date.toLocaleDateString('en-US',{month:'short'})}</small><span>{d.count?`${d.count} actions`:'No activity'}</span></div>)}</div></section><section className="panel"><PanelHead title="Recent test results" desc="Your completed timed assessments."/>{testHistory.length?<div className="test-history">{testHistory.slice(0,12).map(t=><div className="history-row" key={t.id}><div><b>{t.subject} • {t.mode||'Practice'}</b><small>{t.topic} · {t.count} questions · {t.date}</small></div><strong className={t.score>=80?'score-good':t.score>=60?'score-mid':'score-low'}>{t.score}%</strong></div>)}</div>:<div className="empty-inline">Complete a quiz to start building your assessment history.</div>}</section></>}
- function TestCenter(){const areas=[...topics.map(t=>({name:t,subject:'DSA',key:t})),{name:'OOP',subject:'OOP',key:'OOP'},{name:'Operating Systems',subject:'OS',key:'OS'},{name:'DBMS & SQL',subject:'DBMS',key:'DBMS'},{name:'Computer Networks',subject:'CN',key:'CN'},{name:'Quantitative Aptitude',subject:'Aptitude',key:'Aptitude'},{name:'Logical Reasoning',subject:'Aptitude',key:'Logical Reasoning'},{name:'Verbal Ability',subject:'Aptitude',key:'Verbal Ability'},{name:'Number Series',subject:'Aptitude',key:'Number Series'},{name:'Probability',subject:'Aptitude',key:'Probability'},{name:'Time & Work',subject:'Aptitude',key:'Time and Work'},{name:'Time, Speed & Distance',subject:'Aptitude',key:'Time, Speed & Distance'},{name:'Percentages',subject:'Aptitude',key:'Percentages'},{name:'Permutations & Combinations',subject:'Aptitude',key:'Permutations & Combinations'},{name:'Data Interpretation',subject:'Aptitude',key:'Data Interpretation'},{name:'Ages & Mixtures',subject:'Aptitude',key:'Ages'}];const startSlot=(area,mode,n)=>{setTestSlot({topic:area.key,mode,slot:n+1});setSubject(area.subject);setQuizTopics(area.key);setTestMode(mode);setCount(mode==='Major test'?30:10);setMinutes(mode==='Major test'?45:15);setQuizDifficulty('Mixed');setProvider('local');setPage('Quiz Builder');};const historyFor=(area,mode)=>new Set(testHistory.filter(t=>t.topic===area.key&&t.mode===mode&&t.slot).map(t=>t.slot)).size;const slotDone=(area,mode,slot)=>testHistory.some(t=>t.topic===area.key&&t.mode===mode&&t.slot===slot);return <><Intro eyebrow="STRUCTURED ASSESSMENT SYSTEM" heading="Test Center" desc="Each topic has five minor tests and five major tests. Complete them repeatedly to measure improvement; use custom practice for unlimited revision." extra={<div className="mini-progress"><Trophy size={18}/><div><b>{testHistory.length} tests</b><small>completed so far</small></div></div>}/><div className="notice"><Target size={18}/><div><b>Test format</b><p>Minor test: 10 questions / 15 minutes. Major test: 30 questions / 45 minutes. These are defaults you can change in Quiz Builder. Each slot records attempts and scores locally.</p></div></div><div className="test-center-list">{areas.map(area=><section className="panel test-topic" key={area.key}><div className="test-topic-head"><div><h3>{area.name}</h3><p>{area.subject==='DSA'?'Striver-style topic practice':'Core placement / aptitude assessment'}</p></div><span className="topic-test-count">{historyFor(area,'Minor test')+historyFor(area,'Major test')}/10 slots done</span></div><div className="test-types"><div className="test-type"><div className="test-type-icon minor"><Clock3 size={18}/></div><div className="test-type-copy"><b>Minor tests <span>5 slots</span></b><small>10 questions · 15 min default</small><div className="slot-row">{Array.from({length:5},(_,i)=><button key={i} className={slotDone(area,'Minor test',i+1)?'slot-done':''} title={`Start minor test ${i+1}`} onClick={()=>startSlot(area,'Minor test',i)}>{slotDone(area,'Minor test',i+1)?<Check size={12}/>:i+1}</button>)}</div></div><button className="btn secondary" onClick={()=>startSlot(area,'Minor test',0)}>Start <ArrowRight size={13}/></button></div><div className="test-type"><div className="test-type-icon major"><Trophy size={18}/></div><div className="test-type-copy"><b>Major tests <span>5 slots</span></b><small>30 questions · 45 min default</small><div className="slot-row">{Array.from({length:5},(_,i)=><button key={i} className={slotDone(area,'Major test',i+1)?'slot-done':''} title={`Start major test ${i+1}`} onClick={()=>startSlot(area,'Major test',i)}>{slotDone(area,'Major test',i+1)?<Check size={12}/>:i+1}</button>)}</div></div><button className="btn secondary" onClick={()=>startSlot(area,'Major test',0)}>Start <ArrowRight size={13}/></button></div></div></section>)}</div></>}
- function AIMockInterview(){const begin=async()=>{setInterviewError('');setInterviewFeedback(null);setInterviewAnswers([]);setInterviewIndex(0);setInterviewDraft('');setInterviewRunning(true);try{const r=await fetch('/api/interview/generate',{method:'POST',headers:{'Content-Type':'application/json'},body:JSON.stringify({provider:interviewProvider,role:interviewRole,level:interviewLevel,count:Math.max(4,Math.round(interviewMinutes/2)),minutes:interviewMinutes})});const d=await r.json();if(!r.ok)throw Error(d.error||'Could not generate interview');if(!Array.isArray(d.questions)||!d.questions.length)throw Error('No interview questions returned.');setInterviewQuestions(d.questions);setInterviewRemaining(interviewMinutes*60)}catch(e){setInterviewError(e.message+' Configure an AI key in .env, or select the built-in demo interview.');setInterviewRunning(false)}};const beginDemo=()=>{setInterviewRemaining(interviewMinutes*60);setInterviewQuestions([{question:'Explain a project you built, the problem it solves, and one technical trade-off.',type:'Project'},{question:'How would you find the first non-repeating character in a string? Explain the complexity.',type:'DSA'},{question:'What is the difference between a process and a thread?',type:'Core CS'},{question:'Describe a bug you investigated and how you verified the fix.',type:'Behavioral'},{question:'How would you design a REST endpoint for creating a booking?',type:'Backend'}]);setInterviewAnswers([]);setInterviewIndex(0);setInterviewDraft('');setInterviewFeedback(null);setInterviewRunning(true);setInterviewError('')};const next=()=>{if(!interviewDraft.trim())return;const nextAnswers=[...interviewAnswers,{question:interviewQuestions[interviewIndex].question,answer:interviewDraft.trim(),type:interviewQuestions[interviewIndex].type||'Technical'}];setInterviewAnswers(nextAnswers);setInterviewDraft('');if(interviewIndex+1<interviewQuestions.length)setInterviewIndex(i=>i+1);else setInterviewRunning(false)};const evaluate=async()=>{setGenerating(true);setInterviewError('');try{const r=await fetch('/api/interview/evaluate',{method:'POST',headers:{'Content-Type':'application/json'},body:JSON.stringify({provider:interviewProvider,role:interviewRole,level:interviewLevel,answers:interviewAnswers})});const d=await r.json();if(!r.ok)throw Error(d.error||'Evaluation failed');setInterviewFeedback(d);logActivity(interviewAnswers.length);setTestHistory(h=>[{id:Date.now(),subject:'AI Interview',topic:interviewRole,mode:'Interview',difficulty:interviewLevel,count:interviewAnswers.length,score:Number(d.overallScore)||0,date:new Date().toLocaleDateString('en-CA')},...h]);}catch(e){setInterviewError(e.message+' If provider quota is unavailable, use the self-review checklist below.')}finally{setGenerating(false)}};return <><Intro eyebrow="AI-POWERED PRACTICE INTERVIEW" heading="AI Mock Interview" desc="Choose your role and interview duration, answer one question at a time, then get structured feedback from OpenAI or Gemini." extra={<div className="topic-icon big"><MessageCircle/></div>}/>{!interviewQuestions.length&&!interviewFeedback&&<section className="panel interview-setup"><PanelHead title="Interview setup" desc="A realistic practice session—not a hiring decision."/><div className="two-fields"><div><label className="field-label">Target role</label><select className="wide-input" value={interviewRole} onChange={e=>setInterviewRole(e.target.value)}>{['Full-stack developer','Frontend developer','Backend developer','Software engineer intern','DSA / coding round','Core CS technical round'].map(x=><option key={x}>{x}</option>)}</select></div><div><label className="field-label">Experience level</label><select className="wide-input" value={interviewLevel} onChange={e=>setInterviewLevel(e.target.value)}>{['Internship','Fresher','Entry-level','Intermediate'].map(x=><option key={x}>{x}</option>)}</select></div></div><label className="field-label">Duration</label><div className="time-options">{[10,15,20,30].map(n=><button key={n} className={interviewMinutes===n?'active':''} onClick={()=>setInterviewMinutes(n)}>{n} min</button>)}</div><label className="field-label">AI interviewer</label><div className="provider-options"><button className={interviewProvider==='gemini'?'active':''} onClick={()=>setInterviewProvider('gemini')}><Sparkles/><b>Google Gemini</b><small>Fresh role-specific questions</small></button><button className={interviewProvider==='openai'?'active':''} onClick={()=>setInterviewProvider('openai')}><BrainCircuit/><b>OpenAI / ChatGPT</b><small>Fresh role-specific questions</small></button></div>{interviewError&&<div className="error-box">{interviewError}</div>}<div className="interview-actions"><button className="btn primary" onClick={begin}><MessageCircle size={16}/> Generate AI interview <ArrowRight size={14}/></button><button className="btn secondary" onClick={beginDemo}>Try demo without API</button></div><p className="field-help">AI interviews require your own provider API key and may consume paid quota. The demo is available free without a key.</p></section>}{interviewRunning&&interviewQuestions.length>0&&<section className="panel interview-live"><div className="question-label"><span>QUESTION {interviewIndex+1} OF {interviewQuestions.length}</span><span>{interviewQuestions[interviewIndex]?.type||'Interview question'}</span><span className="interview-clock"><Clock3 size={13}/> {String(Math.floor(interviewRemaining/60)).padStart(2,'0')}:{String(interviewRemaining%60).padStart(2,'0')}</span></div><div className="interview-progress"><span style={{width:`${((interviewIndex+1)/interviewQuestions.length)*100}%`}}/></div><h2>{interviewQuestions[interviewIndex]?.question}</h2><p className="subhead">Think aloud if practicing verbally; then capture your answer here.</p><textarea className="interview-answer" rows="7" value={interviewDraft} onChange={e=>setInterviewDraft(e.target.value)} placeholder="Structure your answer: context → reasoning → trade-offs → result..."/><div className="interview-actions"><span className="muted small-text">{interviewDraft.trim().split(/\s+/).filter(Boolean).length} words</span><button className="btn primary" onClick={next} disabled={!interviewDraft.trim()}>{interviewIndex+1===interviewQuestions.length?'Finish answers':'Save answer & next'} <ArrowRight size={14}/></button></div></section>}{!interviewRunning&&interviewQuestions.length>0&&!interviewFeedback&&<section className="panel"><PanelHead title="Answers captured" desc={`${interviewAnswers.length} responses ready for evaluation.`}/><div className="interview-actions"><button className="btn primary" disabled={generating} onClick={evaluate}>{generating?'Evaluating…':'Evaluate with AI'} <Sparkles size={15}/></button><button className="btn secondary" onClick={()=>{setInterviewQuestions([]);setInterviewAnswers([])}}>Restart interview</button></div></section>}{interviewFeedback&&<section className="panel feedback-panel"><div className="feedback-score"><div className="score-circle">{interviewFeedback.overallScore??'—'}</div><div><h2>Interview feedback</h2><p>Use this as coaching feedback, not a definitive hiring score.</p></div></div>{(interviewFeedback.strengths||[]).length>0&&<><h3>Strengths</h3><ul>{interviewFeedback.strengths.map((x,i)=><li key={i}>{x}</li>)}</ul></>}{(interviewFeedback.improvements||[]).length>0&&<><h3>Improve next</h3><ul>{interviewFeedback.improvements.map((x,i)=><li key={i}>{x}</li>)}</ul></>}{(interviewFeedback.answerFeedback||[]).map((x,i)=><div className="answer-feedback" key={i}><b>Q{i+1}: {x.question||''}</b><p>{x.feedback||''}</p><small>Score: {x.score??'—'}/10</small></div>)}<div className="interview-actions"><button className="btn primary" onClick={()=>{setInterviewQuestions([]);setInterviewFeedback(null);setInterviewAnswers([])}}>Start another interview</button></div></section>}</>}
- function Resources(){return <><Intro eyebrow="CURATED FREE LINKS" heading="Free resources & MCQs" desc="Direct links to public learning resources and third-party practice tests. Their terms and availability may change."/>{resources.map(g=><section className="panel resource-group" key={g.group}><PanelHead title={g.group} desc={`${g.items.length} resources`}/><div className="resource-grid">{g.items.map(([n,d,u])=><a className="resource-card" href={u} target="_blank" rel="noreferrer" key={n}><div><b>{n}</b><p>{d}</p></div><ExternalLink size={15}/></a>)}</div></section>)}</>}
- function Core(){return <><Intro eyebrow="PLACEMENT FUNDAMENTALS" heading="Core CS & MCQs" desc="Choose a subject to build a timed MCQ test inside PrepForge, or open free third-party question banks."/><div className="subject-grid">{[['OOP','Object-oriented programming','Classes, inheritance, polymorphism, encapsulation'],['OS','Operating systems','Processes, threads, scheduling, synchronization, memory'],['DBMS','Database management','SQL, normalization, transactions, indexing'],['CN','Computer networks','OSI, TCP/IP, DNS, HTTP, routing']].map(([s,n,d],i)=><section className="panel subject-card" key={s}><div className="subject-head"><div className={'topic-icon color-'+i}><BookOpen/></div><div><h3>{n}</h3><p>{d}</p></div></div><button className="btn secondary full" onClick={()=>{setSubject(s);setQuizDifficulty('Mixed');setCount(20);setMinutes(30);setProvider('local');setPage('Quiz Builder')}}>Build {s} MCQ quiz <ArrowRight size={14}/></button></section>)}</div><Resources/></>}
- function Daily(){const [localTasks,setLocalTasks]=useState(()=>JSON.parse(localStorage.getItem('pf2-tasks')||'{}'));const [plan,setPlan]=useState(()=>JSON.parse(localStorage.getItem('pf2-ai-plan')||'null'));const [planBusy,setPlanBusy]=useState(false);const [planError,setPlanError]=useState('');const dailyItems=plan?.tasks?.length?plan.tasks.map((x,i)=>[typeof x==='string'?x:x.title||`Task ${i+1}`,Number(x.minutes)||20]):tasks;function flip(i){const next={...localTasks,[i]:!localTasks[i]};setLocalTasks(next);localStorage.setItem('pf2-tasks',JSON.stringify(next));if(!localTasks[i])logActivity(1)}async function suggestPlan(){setPlanBusy(true);setPlanError('');try{const r=await fetch('/api/plan/generate',{method:'POST',headers:{'Content-Type':'application/json'},body:JSON.stringify({provider:interviewProvider,solvedCount:solved.length,savedCount:saved.length,streak,minutesAvailable:90,weakTopics:testHistory.filter(t=>t.score<70).slice(0,4).map(t=>t.topic)})});const d=await r.json();if(!r.ok)throw Error(d.error||'AI plan unavailable');setPlan(d);localStorage.setItem('pf2-ai-plan',JSON.stringify(d));setLocalTasks({});localStorage.setItem('pf2-tasks','{}')}catch(e){setPlanError(e.message+' Add a Gemini/OpenAI key in .env, or use the default plan below.')}finally{setPlanBusy(false)}}return <><Intro eyebrow="CONSISTENCY OVER CRAMMING" heading="Daily plan" desc="Use the default routine or generate a plan based on your progress and weak test areas." extra={<button className="btn primary" onClick={suggestPlan} disabled={planBusy}><Sparkles size={15}/>{planBusy?'Building plan…':'AI suggest my tasks'}</button>}/>{planError&&<div className="error-box">{planError}</div>}{plan?.focus&&<section className="panel plan-focus"><div className="eyebrow">AI-RECOMMENDED FOCUS</div><h3>{plan.focus}</h3><p>{plan.reason||'Personalized to your current progress.'}</p></section>}<section className="panel"><PanelHead title="Today's focus list" desc={`${dailyItems.filter((_,i)=>localTasks[i]).length} of ${dailyItems.length} tasks complete`}/><div className="task-list large">{dailyItems.map(([t,m],i)=><label className={'task-row '+(localTasks[i]?'task-done':'')} key={t}><input type="checkbox" checked={!!localTasks[i]} onChange={()=>flip(i)}/><span className="custom-check"><Check size={12}/></span><span>{t}</span><small>{m} min</small></label>)}</div><div className="plan-tip"><Sparkles size={18}/><div><b>Practice actively</b><p>{plan?.tip||'Attempt the problem before reading the editorial. Write the complexity, test edge cases, and revisit mistakes after a day or two.'}</p></div></div><div className="interview-actions"><button className="btn secondary" onClick={()=>{setPlan(null);localStorage.removeItem('pf2-ai-plan');setLocalTasks({});localStorage.setItem('pf2-tasks','{}')}}>Reset to default plan</button><button className="btn primary" onClick={()=>setPage('Test Center')}>Take a topic test <ArrowRight size={14}/></button></div></section></>}
- function Revision(){const list=problems.filter(p=>saved.includes(p.id));return <><Intro eyebrow="REVIEW YOUR WEAK AREAS" heading="Revision list" desc="Bookmark problems in the bank and return to them before a mock interview."/>{list.length?<div className="problem-list">{list.map(p=><div className="problem-row" key={p.id}><button className={'solve-check '+(solved.includes(p.id)?'checked':'')} onClick={()=>toggle(solved,setSolved,p.id)}>{solved.includes(p.id)&&<Check size={14}/>}</button><div className="problem-main"><b>{p.title}</b><small>{p.topic} • {p.difficulty}</small></div><a className="open-problem" href={makeUrl(p,platform)} target="_blank" rel="noreferrer">Solve <ExternalLink size={13}/></a><button className="save-btn saved" onClick={()=>toggle(saved,setSaved,p.id)}><Bookmark size={16} fill="currentColor"/></button></div>)}</div>:<div className="panel empty-state"><Bookmark size={30}/><b>No saved problems yet</b><span>Bookmark questions from the DSA bank to build your revision list.</span><button className="btn secondary" onClick={()=>setPage('DSA Problem Bank')}>Browse problem bank</button></div>}</>}
- function Interview(){const items=['Prepare a 60-second introduction','Explain two projects, trade-offs and challenges','Revise arrays, strings, hashing, trees and graphs','Prepare OOP, DBMS, OS and networking answers','Practice SQL joins, aggregation and subqueries','Prepare behavioral stories using STAR','Defend every skill and project claim on your resume','Complete two timed mock interviews'];return <><Intro eyebrow="FROM PRACTICE TO PERFORMANCE" heading="Interview preparation" desc="A checklist to help you communicate your reasoning and project decisions clearly."/><section className="panel"><PanelHead title="Readiness checklist" desc={`${checks.length} of ${items.length} completed`}/>{items.map((t,i)=><label className={'checklist-row '+(checks.includes(i)?'task-done':'')} key={t}><input type="checkbox" checked={checks.includes(i)} onChange={()=>toggle(checks,setChecks,i)}/><span className="custom-check"><Check size={12}/></span><span>{t}</span></label>)}</section><section className="panel tip-panel"><Sparkles size={20}/><div><h3>How to explain a coding solution</h3><p>Clarify constraints → explain a brute-force baseline → optimize → state time and space complexity → dry-run an example → test edge cases.</p></div></section></>}
- function Content(){switch(page){case'Dashboard':return <Dashboard/>;case'DSA Problem Bank':return <DSA/>;case'Roadmap':return <Roadmap/>;case'Daily Plan':return <Daily/>;case'Activity calendar':return <ActivityCalendar/>;case'Test Center':return <TestCenter/>;case'AI Mock Interview':return <AIMockInterview/>;case'Quiz Builder':return <QuizBuilder/>;case'Quiz':return <Quiz/>;case'Core CS & MCQs':return <Core/>;case'Free Resources':return <Resources/>;case'Revision List':return <Revision/>;case'Interview Prep':return <Interview/>;default:return <Dashboard/>}}
- return <div className="app-shell"><Side/><main className="main-area"><Header/>{showSettings&&<div className="settings-pop"><div className="settings-head"><b>AI provider setup</b><button onClick={()=>setShowSettings(false)}><X size={15}/></button></div><p>{apiStatus?.configured?'An AI API key is configured on the backend.':'No API key detected. Built-in questions work without setup.'}</p><small>Copy <code>.env.example</code> to <code>.env</code>, add a Gemini or OpenAI key, then restart the backend. Never commit .env to GitHub.</small><div className="health-line"><span className={'health-dot '+(apiStatus?.configured?'ok':'')}/>{apiStatus?.configured?'AI backend configured':'Local question bank ready'}</div></div>}<div className="page-content"><Content/><footer className="app-footer"><span>© 2026 PrepForge</span><span>Original practice workspace • not affiliated with TUF</span><button onClick={()=>setPage('Free Resources')}>Free resources <ArrowRight size={13}/></button></footer></div></main>{celebration&&<div className="celebration-overlay" role="dialog" aria-modal="true"><div className="celebration-card"><button className="celebration-close" onClick={()=>setCelebration(null)}><X size={18}/></button><div className="flower-rain">🌸 🌼 ✨ 🌷 🎉 🌺</div><div className="celebration-icon"><PartyPopper size={35}/></div><h2>{celebration.title}</h2><p>{celebration.subtitle}</p><small>{celebration.detail}</small><div className="celebration-sparkles">✦ ✧ ✿ ✧ ✦</div><button className="btn primary" onClick={()=>{const next=celebration?.nextId?problems.find(p=>p.id===celebration.nextId):null;setCelebration(null);if(page==='DSA Problem Bank'&&next){setTopic(next.topic);setDifficulty('All levels');setQuery(next.title)}}}>Continue to next question <ArrowRight size={15}/></button></div></div>}</div>
+
+const tracks = [
+  ['Programming Basics', 'Input/output, loops, functions, arrays and complexity'],
+  ['Arrays & Hashing', 'Array patterns, prefix sums, hashing, subarrays'],
+  ['Strings & Two Pointers', 'String manipulation, windows, palindrome patterns'],
+  ['Linked Lists, Stacks & Queues', 'Pointers, monotonic stacks, queue patterns'],
+  ['Trees, BST & Heaps', 'Traversals, recursion, search trees, priority queues'],
+  ['Graphs & Greedy', 'BFS, DFS, shortest paths, MST, greedy proofs'],
+  ['Dynamic Programming', 'Memoization, tabulation, subsequences and grids'],
+  ['Advanced Patterns', 'Backtracking, tries, bit manipulation and intervals']
+];
+
+const platformOptions = [
+  ['LeetCode', 'leetcode'],
+  ['GeeksforGeeks', 'gfg'],
+  ['TakeUForward', 'tuf'],
+  ['Codeforces', 'codeforces'],
+  ['CodeChef', 'codechef']
+];
+
+function makeUrl(p, platform) {
+  const q = encodeURIComponent(p.title);
+
+  if (platform === 'gfg') {
+    return p.gfg || `https://www.geeksforgeeks.org/?s=${q}`;
+  }
+
+  if (platform === 'tuf') {
+    return `https://takeuforward.org/?s=${q}`;
+  }
+
+  if (platform === 'codeforces') {
+    return `https://codeforces.com/problemset?tags=${encodeURIComponent(
+      p.topic.toLowerCase().replaceAll(' ', '-')
+    )}`;
+  }
+
+  if (platform === 'codechef') {
+    return 'https://www.codechef.com/practice';
+  }
+
+  return p.url || `https://leetcode.com/problemset/?search=${q}`;
 }
-createRoot(document.getElementById('root')).render(<App/>);
+
+function App() {
+  const [page, setPage] = useState('Dashboard');
+  const [mobile, setMobile] = useState(false);
+  const [query, setQuery] = useState('');
+  const [topic, setTopic] = useState('All topics');
+  const [difficulty, setDifficulty] = useState('All levels');
+  const [platform, setPlatform] = useState('leetcode');
+  const [showTopics, setShowTopics] = useState(true);
+
+  const [solved, setSolved] = useState(() =>
+    JSON.parse(localStorage.getItem('pf2-solved') || '[]')
+  );
+  const [saved, setSaved] = useState(() =>
+    JSON.parse(localStorage.getItem('pf2-saved') || '[]')
+  );
+  const [done, setDone] = useState(() =>
+    JSON.parse(localStorage.getItem('pf2-done') || '[]')
+  );
+  const [checks, setChecks] = useState(() =>
+    JSON.parse(localStorage.getItem('pf2-interview') || '[]')
+  );
+
+  const [subject, setSubject] = useState('DSA');
+  const [quizDifficulty, setQuizDifficulty] = useState('Mixed');
+  const [count, setCount] = useState(10);
+  const [minutes, setMinutes] = useState(15);
+  const [provider, setProvider] = useState('local');
+  const [quizTopics, setQuizTopics] = useState('');
+  const [questions, setQuestions] = useState([]);
+  const [answers, setAnswers] = useState({});
+  const [submitted, setSubmitted] = useState(false);
+  const [generating, setGenerating] = useState(false);
+  const [apiStatus, setApiStatus] = useState(null);
+  const [quizError, setQuizError] = useState('');
+  const [startedAt, setStartedAt] = useState(0);
+  const [remaining, setRemaining] = useState(0);
+  const [showSettings, setShowSettings] = useState(false);
+
+  const [activity, setActivity] = useState(() =>
+    JSON.parse(localStorage.getItem('pf2-activity') || '{}')
+  );
+  const [celebration, setCelebration] = useState(null);
+  const [testMode, setTestMode] = useState('Practice');
+  const [testHistory, setTestHistory] = useState(() =>
+    JSON.parse(localStorage.getItem('pf2-test-history') || '[]')
+  );
+  const [testSlot, setTestSlot] = useState(null);
+  const [quizRecordId, setQuizRecordId] = useState(null);
+
+  const [interviewRole, setInterviewRole] = useState('Full-stack developer');
+  const [interviewLevel, setInterviewLevel] = useState('Internship');
+  const [interviewMinutes, setInterviewMinutes] = useState(10);
+  const [interviewRemaining, setInterviewRemaining] = useState(0);
+  const [interviewProvider, setInterviewProvider] = useState('gemini');
+  const [interviewQuestions, setInterviewQuestions] = useState([]);
+  const [interviewIndex, setInterviewIndex] = useState(0);
+  const [interviewAnswers, setInterviewAnswers] = useState([]);
+  const [interviewDraft, setInterviewDraft] = useState('');
+  const [interviewRunning, setInterviewRunning] = useState(false);
+  const [interviewFeedback, setInterviewFeedback] = useState(null);
+  const [interviewError, setInterviewError] = useState('');
+
+  useEffect(() => {
+    localStorage.setItem('pf2-solved', JSON.stringify(solved));
+  }, [solved]);
+
+  useEffect(() => {
+    localStorage.setItem('pf2-saved', JSON.stringify(saved));
+  }, [saved]);
+
+  useEffect(() => {
+    localStorage.setItem('pf2-done', JSON.stringify(done));
+  }, [done]);
+
+  useEffect(() => {
+    localStorage.setItem('pf2-interview', JSON.stringify(checks));
+  }, [checks]);
+
+  useEffect(() => {
+    localStorage.setItem('pf2-activity', JSON.stringify(activity));
+  }, [activity]);
+
+  useEffect(() => {
+    localStorage.setItem('pf2-test-history', JSON.stringify(testHistory));
+  }, [testHistory]);
+
+  useEffect(() => {
+    fetch('/api/health')
+      .then(r => r.json())
+      .then(setApiStatus)
+      .catch(() =>
+        setApiStatus({
+          configured: false,
+          service: 'Local question bank available',
+          ok: false
+        })
+      );
+  }, []);
+
+  useEffect(() => {
+    if (!questions.length || submitted || !startedAt) return;
+
+    const t = setInterval(() => {
+      const left = Math.max(
+        0,
+        Math.ceil((startedAt + minutes * 60000 - Date.now()) / 1000)
+      );
+
+      setRemaining(left);
+
+      if (left === 0) finishQuiz();
+    }, 250);
+
+    return () => clearInterval(t);
+  }, [
+    questions,
+    submitted,
+    startedAt,
+    minutes,
+    answers,
+    subject,
+    quizTopics,
+    testMode,
+    quizDifficulty,
+    testSlot,
+    quizRecordId
+  ]);
+
+  useEffect(() => {
+    if (!interviewRunning || interviewRemaining <= 0) return;
+
+    const t = setTimeout(
+      () => setInterviewRemaining(v => Math.max(0, v - 1)),
+      1000
+    );
+
+    return () => clearTimeout(t);
+  }, [interviewRunning, interviewRemaining]);
+
+  useEffect(() => {
+    if (
+      interviewRunning &&
+      interviewQuestions.length &&
+      interviewRemaining === 0
+    ) {
+      if (
+        interviewDraft.trim() &&
+        interviewQuestions[interviewIndex]
+      ) {
+        setInterviewAnswers(a => [
+          ...a,
+          {
+            question: interviewQuestions[interviewIndex].question,
+            answer: interviewDraft.trim(),
+            type: interviewQuestions[interviewIndex].type || 'Technical'
+          }
+        ]);
+      }
+
+      setInterviewRunning(false);
+      setInterviewError(
+        'Interview timer ended. Your current answer was saved if it was not empty. Submit captured answers for feedback, or restart the session.'
+      );
+    }
+  }, [
+    interviewRunning,
+    interviewQuestions,
+    interviewRemaining,
+    interviewDraft,
+    interviewIndex
+  ]);
+
+  const filtered = useMemo(
+    () =>
+      problems.filter(
+        p =>
+          (topic === 'All topics' || p.topic === topic) &&
+          (difficulty === 'All levels' || p.difficulty === difficulty) &&
+          p.title.toLowerCase().includes(query.toLowerCase())
+      ),
+    [topic, difficulty, query]
+  );
+
+  const progress = Math.round((solved.length / problems.length) * 100);
+  const doneTotal = tracks.reduce(
+    (a, t) => a + t[1].split(',').length,
+    0
+  );
+
+  const title = page === 'DSA problem set' ? 'DSA Problem Bank' : page;
+  const todayKey = new Date().toLocaleDateString('en-CA');
+  const activityDates = Object.keys(activity)
+    .filter(k => activity[k] > 0)
+    .sort();
+
+  const streak = (() => {
+    let n = 0;
+    const d = new Date();
+
+    if (!activity[d.toLocaleDateString('en-CA')]) {
+      d.setDate(d.getDate() - 1);
+    }
+
+    while (activity[d.toLocaleDateString('en-CA')] > 0) {
+      n++;
+      d.setDate(d.getDate() - 1);
+    }
+
+    return n;
+  })();
+
+  function logActivity(amount = 1) {
+    const key = new Date().toLocaleDateString('en-CA');
+
+    setActivity(a => ({
+      ...a,
+      [key]: (a[key] || 0) + amount
+    }));
+  }
+
+  function markProblemSolved(id) {
+    if (!solved.includes(id)) {
+      setSolved(a => [...a, id]);
+      logActivity(1);
+
+      setCelebration({
+        title: 'Problem conquered!',
+        subtitle: 'Another step toward your placement goal.',
+        detail: 'You completed one more practice milestone.',
+        emoji: '🌸',
+        nextId: problems.find(
+          p => p.id > id && !solved.includes(p.id)
+        )?.id
+      });
+    } else {
+      setSolved(a => a.filter(x => x !== id));
+    }
+  }
+
+  function startQuiz() {
+    setTestSlot(null);
+    setTestMode('Practice');
+    setQuestions([]);
+    setAnswers({});
+    setSubmitted(false);
+    setQuizError('');
+    setPage('Quiz Builder');
+  }
+
+  function localQuiz() {
+    let pool = quizBank.filter(
+      q =>
+        (subject === 'Mixed Core CS'
+          ? ['OOP', 'OS', 'DBMS', 'CN'].includes(q.subject)
+          : q.subject === subject) &&
+        (quizDifficulty === 'Mixed' ||
+          q.difficulty === quizDifficulty)
+    );
+
+    if (quizTopics.trim()) {
+      const keys = quizTopics
+        .toLowerCase()
+        .split(',')
+        .map(s => s.trim())
+        .filter(Boolean);
+
+      const narrowed = pool.filter(q =>
+        keys.some(k =>
+          (q.topic || q.question).toLowerCase().includes(k)
+        )
+      );
+
+      if (narrowed.length) pool = narrowed;
+    }
+
+    pool = [...pool].sort(() => Math.random() - 0.5);
+
+    if (pool.length < count) {
+      pool = [
+        ...pool,
+        ...quizBank.filter(
+          q =>
+            !pool.some(x => x.id === q.id) &&
+            (subject === 'Mixed Core CS'
+              ? ['OOP', 'OS', 'DBMS', 'CN'].includes(q.subject)
+              : q.subject === subject)
+        )
+      ].sort(() => Math.random() - 0.5);
+    }
+
+    return pool
+      .slice(0, Math.min(count, pool.length))
+      .map((q, i) => ({
+        ...q,
+        id: `local-${Date.now()}-${i}`
+      }));
+  }
+
+  async function generateQuiz() {
+    setGenerating(true);
+    setQuizError('');
+
+    try {
+      let qs;
+
+      if (provider === 'local') {
+        qs = localQuiz();
+      } else {
+        const res = await fetch('/api/quiz/generate', {
+          method: 'POST',
+          headers: { 'Content-Type': 'application/json' },
+          body: JSON.stringify({
+            count,
+            subject,
+            difficulty: quizDifficulty,
+            topics: quizTopics,
+            provider
+          })
+        });
+
+        const data = await res.json();
+
+        if (!res.ok) {
+          throw new Error(data.error || 'AI generation failed');
+        }
+
+        qs = data.questions;
+      }
+
+      if (!qs?.length) {
+        throw new Error(
+          'No questions available for these filters. Try Mixed difficulty or clear topic filters.'
+        );
+      }
+
+      setQuestions(qs);
+      setAnswers({});
+      setSubmitted(false);
+      setQuizRecordId(null);
+      setStartedAt(Date.now());
+      setRemaining(minutes * 60);
+      setPage('Quiz');
+    } catch (e) {
+      setQuizError(
+        e.message +
+          ' You can switch to the built-in bank or check the backend API key.'
+      );
+    } finally {
+      setGenerating(false);
+    }
+  }
+
+  const score = questions.filter(
+    (q, i) => answers[i] === q.answerIndex
+  ).length;
+
+  function finishQuiz() {
+    if (
+      submitted ||
+      !questions.length ||
+      quizRecordId === startedAt
+    ) {
+      return;
+    }
+
+    setQuizRecordId(startedAt);
+    setSubmitted(true);
+
+    setTestHistory(h => [
+      {
+        id: Date.now(),
+        subject,
+        topic: quizTopics || 'Mixed topics',
+        mode: testMode,
+        slot: testSlot?.slot || null,
+        difficulty: quizDifficulty,
+        count: questions.length,
+        score: Math.round((score / questions.length) * 100),
+        date: new Date().toLocaleDateString('en-CA')
+      },
+      ...h
+    ]);
+
+    logActivity(questions.length);
+
+    if (score / questions.length >= 0.8) {
+      setCelebration({
+        title: 'Excellent work!',
+        subtitle: 'Your consistency is building real interview skill.',
+        detail: `${score}/${questions.length} correct • ${Math.round(
+          (score / questions.length) * 100
+        )}% score`,
+        emoji: '🎉'
+      });
+    }
+  }
+
+  const tasks = [
+    ['Solve 2 DSA problems', 25],
+    ['Revise yesterday’s patterns', 15],
+    ['Study one Core CS concept', 25],
+    ['Take a 10-question MCQ quiz', 15],
+    ['Write down one mistake and its fix', 10]
+  ];
+
+  const toggle = (arr, set, id) =>
+    set(arr.includes(id) ? arr.filter(x => x !== id) : [...arr, id]);
+
+  function Side() {
+    return (
+      <aside className={'sidebar ' + (mobile ? 'show' : '')}>
+        <div className="brand">
+          <div className="brand-mark">
+            <Zap size={21} fill="currentColor" />
+          </div>
+
+          <div>
+            <b>prepforge<span>.</span></b>
+            <small>PLACEMENT OS</small>
+          </div>
+
+          <button
+            className="icon-btn close-nav"
+            onClick={() => setMobile(false)}
+          >
+            <X size={18} />
+          </button>
+        </div>
+
+        <div className="profile-mini">
+          <div className="avatar">PG</div>
+          <div>
+            <b>Piyush Gujor</b>
+            <small>CSE • Placement track</small>
+          </div>
+          <ChevronDown size={15} className="muted" />
+        </div>
+
+        {[
+          {
+            label: 'Workspace',
+            items: [
+              ['Dashboard', LayoutDashboard],
+              ['DSA Problem Bank', Code2],
+              ['Roadmap', BookOpen],
+              ['Daily Plan', CalendarDays],
+              ['Activity calendar', CalendarCheck]
+            ]
+          },
+          {
+            label: 'Practice',
+            items: [
+              ['Quiz Builder', BrainCircuit],
+              ['Test Center', ListChecks],
+              ['Revision List', Bookmark]
+            ]
+          },
+          {
+            label: 'Placement',
+            items: [
+              ['Core CS & MCQs', GraduationCap],
+              ['AI Mock Interview', MessageCircle],
+              ['Interview Prep', BriefcaseBusiness],
+              ['Free Resources', Sparkles]
+            ]
+          }
+        ].map(g => (
+          <div className="nav-group" key={g.label}>
+            <div className="nav-label">{g.label}</div>
+
+            {g.items.map(([n, I]) => (
+              <button
+                key={n}
+                onClick={() => {
+                  if (n === 'Quiz Builder') setTestSlot(null);
+
+                  setPage(
+                    n === 'DSA Problem Bank'
+                      ? 'DSA Problem Bank'
+                      : n
+                  );
+
+                  setMobile(false);
+                }}
+                className={
+                  'nav-item ' + (title === n ? 'active' : '')
+                }
+              >
+                <I size={17} />
+                <span>{n}</span>
+
+                {n === 'DSA Problem Bank' && (
+                  <span className="nav-count">{solved.length}</span>
+                )}
+              </button>
+            ))}
+          </div>
+        ))}
+
+        <div className="sidebar-bottom">
+          <div className="streak-card">
+            <div className="streak-icon">
+              <Flame size={18} />
+            </div>
+            <div>
+              <b>Build your streak</b>
+              <small>One focused session at a time.</small>
+            </div>
+          </div>
+
+          <div className="sidebar-footer">
+            <span>Free placement workspace</span>
+            <span>v2.0</span>
+          </div>
+        </div>
+      </aside>
+    );
+  }
+
+  function Header() {
+    return (
+      <header className="topbar">
+        <button
+          className="icon-btn menu-btn"
+          onClick={() => setMobile(true)}
+        >
+          <Menu />
+        </button>
+
+        <div className="breadcrumbs">
+          <span>Workspace</span>
+          <span className="slash">/</span>
+          <b>{title}</b>
+        </div>
+
+        <div className="top-actions">
+          <button
+            className="settings-button"
+            onClick={() => setShowSettings(v => !v)}
+          >
+            <Settings size={15} /> AI setup
+          </button>
+
+          <div className="top-streak">
+            <Flame size={17} />
+            <b>{solved.length}</b>
+            <span>solved</span>
+          </div>
+
+          <div className="avatar small">PG</div>
+        </div>
+      </header>
+    );
+  }
+
+  function Intro({ eyebrow, heading, desc, extra }) {
+    return (
+      <section className="page-intro">
+        <div>
+          <div className="eyebrow">{eyebrow}</div>
+          <h1>{heading}</h1>
+          <p className="subhead">{desc}</p>
+        </div>
+        {extra}
+      </section>
+    );
+  }
+
+  function Dashboard() {
+    return (
+      <>
+        <Intro
+          eyebrow="YOUR PLACEMENT JOURNEY"
+          heading={
+            <>
+              Build skills. <span>Earn offers.</span>
+            </>
+          }
+          desc="One workspace for DSA, core CS, timed quizzes and interview preparation."
+          extra={
+            <button
+              className="btn primary"
+              onClick={() => setPage('Roadmap')}
+            >
+              <Play size={15} /> Continue roadmap <ArrowRight size={15} />
+            </button>
+          }
+        />
+
+        <section className="hero-panel">
+          <div className="hero-copy">
+            <div className="hero-chip">
+              <span className="pulse" /> YOUR PERSONAL WORKSPACE
+            </div>
+
+            <h2>
+              Practice with purpose.
+              <br />
+              <em>Prepare with confidence.</em>
+            </h2>
+
+            <p>
+              Build strong fundamentals, solve important patterns,
+              and test yourself under timed conditions.
+            </p>
+
+            <button
+              className="btn light"
+              onClick={() => setPage('Quiz Builder')}
+            >
+              Build a custom quiz <ArrowRight size={15} />
+            </button>
+          </div>
+
+          <div className="hero-graphic">
+            <div className="orbit orbit-one" />
+            <div className="orbit orbit-two" />
+            <div className="hero-center">
+              <Code2 size={38} />
+            </div>
+            <div className="float-card float-top">
+              <CheckCircle2 size={16} /> Practice daily
+            </div>
+            <div className="float-card float-bottom">
+              <Target size={16} /> Track progress
+            </div>
+          </div>
+        </section>
+
+        <div className="stats-grid">
+          <Stat
+            icon={<ListChecks />}
+            label="DSA problems solved"
+            value={`${solved.length} / ${problems.length}`}
+            sub={`${progress}% of 500 curated links`}
+            color="purple"
+          />
+          <Stat
+            icon={<Bookmark />}
+            label="Saved for revision"
+            value={saved.length}
+            sub="Review weak patterns"
+            color="orange"
+          />
+          <Stat
+            icon={<Target />}
+            label="Roadmap milestones"
+            value={`${done.length}`}
+            sub="Self-tracked learning"
+            color="green"
+          />
+          <Stat
+            icon={<BrainCircuit />}
+            label="Question bank"
+            value={quizBank.length}
+            sub="Local MCQs + AI generation"
+            color="blue"
+          />
+        </div>
+
+        <section className="panel overall-progress">
+          <div className="progress-heading">
+            <div>
+              <h3>DSA progress</h3>
+              <p>
+                {solved.length} of 500 problem entries completed
+              </p>
+            </div>
+            <b>{progress}%</b>
+          </div>
+
+          <div className="progress-track">
+            <span style={{ width: `${progress}%` }} />
+          </div>
+
+          <div className="progress-foot">
+            <span>Consistency beats cramming</span>
+            <span>{500 - solved.length} to go</span>
+          </div>
+        </section>
+
+        <section className="panel activity-panel">
+          <PanelHead
+            title="Consistency calendar"
+            desc={`Current streak: ${streak} day${
+              streak === 1 ? '' : 's'
+            } • ${Object.values(activity).reduce(
+              (a, b) => a + b,
+              0
+            )} practice actions logged`}
+            action="Open calendar"
+            onAction={() => setPage('Activity calendar')}
+          />
+          <ActivityHeatmap activity={activity} />
+        </section>
+
+        <div className="content-grid">
+          <section className="panel">
+            <PanelHead
+              title="DSA learning tracks"
+              desc="High-yield topics from fundamentals to advanced patterns"
+              action="Open bank"
+              onAction={() => setPage('DSA Problem Bank')}
+            />
+
+            <div className="track-list">
+              {tracks.slice(0, 5).map((t, i) => (
+                <button
+                  className="track-row"
+                  key={t[0]}
+                  onClick={() => {
+                    setPage('DSA Problem Bank');
+                    setTopic(
+                      topics.find(x =>
+                        x.toLowerCase().includes(
+                          t[0].split(' ')[0].toLowerCase()
+                        )
+                      ) || 'All topics'
+                    );
+                  }}
+                >
+                  <div className={`topic-icon color-${i % 4}`}>
+                    <Code2 size={18} />
+                  </div>
+                  <div className="track-info">
+                    <b>{t[0]}</b>
+                    <small>{t[1]}</small>
+                  </div>
+                  <ArrowRight size={15} className="muted" />
+                </button>
+              ))}
+            </div>
+          </section>
+
+          <section className="panel">
+            <PanelHead
+              title="Practice session"
+              desc="Choose exactly what you want to test"
+            />
+
+            <div className="quiz-promo">
+              <div className="quiz-illustration">
+                <BrainCircuit size={32} />
+              </div>
+              <h3>Build a custom quiz</h3>
+              <p>
+                Choose DSA, OOP, OS, DBMS, networking or aptitude.
+                Set question count, difficulty and time.
+              </p>
+              <button
+                className="btn primary full"
+                onClick={() => setPage('Quiz Builder')}
+              >
+                Configure quiz <ArrowRight size={15} />
+              </button>
+            </div>
+
+            <div className="resource-shortcuts">
+              <a
+                href="https://www.indiabix.com/online-test/computer-science-test/174"
+                target="_blank"
+                rel="noreferrer"
+              >
+                Free OOP MCQs <ExternalLink size={13} />
+              </a>
+              <a
+                href="https://www.indiabix.com/online-test/computer-science-test/182"
+                target="_blank"
+                rel="noreferrer"
+              >
+                Free OS MCQs <ExternalLink size={13} />
+              </a>
+            </div>
+          </section>
+        </div>
+
+        <section className="panel">
+          <PanelHead
+            title="Free practice platforms"
+            desc="Choose where you want to solve a coding question"
+          />
+
+          <div className="platform-grid">
+            {platformOptions.map(([name, id]) => (
+              <button
+                key={id}
+                className={
+                  'platform-card ' +
+                  (platform === id ? 'selected' : '')
+                }
+                onClick={() => setPlatform(id)}
+              >
+                <span className="platform-logo">
+                  {name === 'LeetCode'
+                    ? 'LC'
+                    : name === 'GeeksforGeeks'
+                    ? 'GFG'
+                    : name === 'TakeUForward'
+                    ? 'TUF'
+                    : name === 'Codeforces'
+                    ? 'CF'
+                    : 'CC'}
+                </span>
+                <b>{name}</b>
+                <span>
+                  {platform === id
+                    ? 'Selected platform'
+                    : 'Select platform'}
+                </span>
+              </button>
+            ))}
+          </div>
+        </section>
+      </>
+    );
+  }
+
+  function Stat({ icon, label, value, sub, color }) {
+    return (
+      <div className="stat-card">
+        <div className={'stat-icon ' + color}>{icon}</div>
+        <div className="stat-label">{label}</div>
+        <div className="stat-value">{value}</div>
+        <div className="stat-sub">{sub}</div>
+      </div>
+    );
+  }
+
+  function PanelHead({ title, desc, action, onAction }) {
+    return (
+      <div className="panel-head">
+        <div>
+          <h3>{title}</h3>
+          {desc && <p>{desc}</p>}
+        </div>
+        {action && (
+          <button className="text-btn" onClick={onAction}>
+            {action} <ArrowRight size={14} />
+          </button>
+        )}
+      </div>
+    );
+  }
+
+  function ActivityHeatmap({ activity: map }) {
+    const days = Array.from({ length: 91 }, (_, i) => {
+      const d = new Date();
+      d.setDate(d.getDate() - (90 - i));
+      const key = d.toLocaleDateString('en-CA');
+
+      return {
+        key,
+        day: d.getDay(),
+        count: map[key] || 0,
+        date: d
+      };
+    });
+
+    return (
+      <div className="heatmap-wrap">
+        <div className="heatmap-months">
+          <span>12 weeks of practice</span>
+          <span>
+            Less <i className="heat-level l0" />
+            <i className="heat-level l1" />
+            <i className="heat-level l2" />
+            <i className="heat-level l3" /> More
+          </span>
+        </div>
+
+        <div className="heatmap">
+          {days.map(d => (
+            <span
+              key={d.key}
+              title={`${d.key}: ${d.count} practice actions`}
+              className={`heat-cell ${
+                d.count === 0
+                  ? 'l0'
+                  : d.count === 1
+                  ? 'l1'
+                  : d.count <= 3
+                  ? 'l2'
+                  : 'l3'
+              }`}
+            />
+          ))}
+        </div>
+      </div>
+    );
+  }
+
+  function DSA() {
+    return (
+      <>
+        <Intro
+          eyebrow="500 CURATED HIGH-YIELD PROBLEM LINKS"
+          heading="DSA Problem Bank"
+          desc="Filter by topic and difficulty, choose a platform, and track solved problems. The question title opens a search on the chosen platform when a verified direct link is not available."
+          extra={
+            <div className="mini-progress">
+              <div className="mini-ring">
+                <span>{progress}%</span>
+              </div>
+              <div>
+                <b>{solved.length} solved</b>
+                <small>of {problems.length} entries</small>
+              </div>
+            </div>
+          }
+        />
+
+        <div className="topic-browser-head">
+          <div>
+            <h3>Topic tracks</h3>
+            <p>
+              Pick a major topic, then practice its questions by Easy,
+              Medium or Hard level.
+            </p>
+          </div>
+          <button
+            className="btn secondary"
+            onClick={() => setShowTopics(v => !v)}
+          >
+            {showTopics ? 'Hide topics' : 'Browse topics'}{' '}
+            <ArrowRight size={13} />
+          </button>
+        </div>
+
+        {showTopics && (
+          <div className="topic-overview">
+            {topics.map(t => {
+              const items = problems.filter(p => p.topic === t);
+              const completed = items.filter(p =>
+                solved.includes(p.id)
+              ).length;
+
+              return (
+                <button
+                  className={
+                    'topic-overview-card ' +
+                    (topic === t ? 'selected' : '')
+                  }
+                  key={t}
+                  onClick={() => {
+                    setTopic(t);
+                    setDifficulty('All levels');
+                    setQuery('');
+                  }}
+                >
+                  <div className="topic-overview-title">
+                    <b>{t}</b>
+                    <span>
+                      {completed}/{items.length}
+                    </span>
+                  </div>
+
+                  <div className="topic-mini-bar">
+                    <span
+                      style={{
+                        width: `${
+                          Math.round(
+                            (completed / items.length) * 100
+                          )
+                        }%`
+                      }}
+                    />
+                  </div>
+
+                  <div className="topic-difficulty-counts">
+                    <span className="easy">
+                      E {items.filter(p => p.difficulty === 'Easy').length}
+                    </span>
+                    <span className="medium">
+                      M {items.filter(p => p.difficulty === 'Medium').length}
+                    </span>
+                    <span className="hard">
+                      H {items.filter(p => p.difficulty === 'Hard').length}
+                    </span>
+                  </div>
+                </button>
+              );
+            })}
+          </div>
+        )}
+
+        <div className="platform-picker">
+          <span>Open practice on</span>
+          {platformOptions.map(([n, id]) => (
+            <button
+              key={id}
+              onClick={() => setPlatform(id)}
+              className={platform === id ? 'picked' : ''}
+            >
+              {n}
+            </button>
+          ))}
+        </div>
+
+        <div className="filter-bar">
+          <div className="search-field">
+            <Search size={16} />
+            <input
+              value={query}
+              onChange={e => setQuery(e.target.value)}
+              placeholder="Search question, topic or pattern..."
+            />
+          </div>
+
+          <div className="select-wrap">
+            <Filter size={14} />
+            <select
+              value={topic}
+              onChange={e => setTopic(e.target.value)}
+            >
+              <option>All topics</option>
+              {topics.map(t => (
+                <option key={t}>{t}</option>
+              ))}
+            </select>
+          </div>
+
+          <div className="select-wrap">
+            <select
+              value={difficulty}
+              onChange={e => setDifficulty(e.target.value)}
+            >
+              {['All levels', 'Easy', 'Medium', 'Hard'].map(x => (
+                <option key={x}>{x}</option>
+              ))}
+            </select>
+          </div>
+        </div>
+
+        <div className="table-meta">
+          <span>{filtered.length} problems shown</span>
+          <span>
+            <i className="legend-dot solved-dot" /> Solved{' '}
+            <i className="legend-dot unsolved-dot" /> To do
+          </span>
+        </div>
+
+        <div className="problem-list">
+          {filtered.map(p => (
+            <div
+              className={
+                'problem-row ' +
+                (solved.includes(p.id) ? 'is-solved' : '')
+              }
+              key={p.id}
+            >
+              <button
+                className={
+                  'solve-check ' +
+                  (solved.includes(p.id) ? 'checked' : '')
+                }
+                onClick={() => markProblemSolved(p.id)}
+                title="Mark solved"
+              >
+                {solved.includes(p.id) && <Check size={14} />}
+              </button>
+
+              <div className="problem-number">
+                {String(p.id).padStart(3, '0')}
+              </div>
+
+              <div className="problem-main">
+                <b>{p.title}</b>
+                <small>{p.topic}</small>
+              </div>
+
+              <span
+                className={'difficulty ' + p.difficulty.toLowerCase()}
+              >
+                {p.difficulty}
+              </span>
+
+              <a
+                className="lecture-link"
+                title="Find Striver lecture for this topic"
+                href={`https://www.youtube.com/results?search_query=${encodeURIComponent(
+                  'Striver ' + p.topic + ' ' + p.title
+                )}`}
+                target="_blank"
+                rel="noreferrer"
+              >
+                <Play size={16} />
+                <span>Lecture</span>
+              </a>
+
+              <button
+                className={
+                  'save-btn ' +
+                  (saved.includes(p.id) ? 'saved' : '')
+                }
+                onClick={() => toggle(saved, setSaved, p.id)}
+                title="Save for revision"
+              >
+                <Bookmark
+                  size={16}
+                  fill={
+                    saved.includes(p.id) ? 'currentColor' : 'none'
+                  }
+                />
+              </button>
+
+              <a
+                className="open-problem"
+                href={makeUrl(p, platform)}
+                target="_blank"
+                rel="noreferrer"
+              >
+                Solve on {platformOptions.find(x => x[1] === platform)?.[0]}{' '}
+                <ExternalLink size={13} />
+              </a>
+            </div>
+          ))}
+        </div>
+
+        {!filtered.length && (
+          <div className="panel empty-state">
+            <Search />
+            <b>No matching problems</b>
+            <span>Try clearing one of the filters.</span>
+          </div>
+        )}
+
+        <p className="disclaimer">
+          The 500-entry set is a curated practice index, not a claim that
+          every title is an exact row from Striver's sheet. Links use
+          direct or search pages; confirm the exact problem on the
+          destination platform. For the original sheet and other sheets,
+          use the official resources page.
+        </p>
+      </>
+    );
+  }
+
+  function Roadmap() {
+    return (
+      <>
+        <Intro
+          eyebrow="LEARN IN SEQUENCE"
+          heading="Placement roadmap"
+          desc="All major tracks remain visible. Each track starts with its first milestone; subsequent milestones unlock in order."
+        />
+
+        <div className="notice">
+          <LockKeyhole size={18} />
+          <div>
+            <b>Sequential learning</b>
+            <p>
+              Complete a milestone to unlock the next milestone within
+              that track. This version tracks self-reported completion;
+              quiz-gated locks are a future extension.
+            </p>
+          </div>
+        </div>
+
+        <div className="roadmap-cards">
+          {tracks.map((t, i) => {
+            const subt = t[1].split(',').map(x => x.trim());
+
+            return (
+              <section className="panel roadmap-card" key={t[0]}>
+                <div className="roadmap-card-head">
+                  <div className={`topic-icon color-${i % 4}`}>
+                    <Code2 />
+                  </div>
+                  <div>
+                    <h3>{t[0]}</h3>
+                    <p>{subt.length} focus milestones</p>
+                  </div>
+                  <span className="track-percent">
+                    {
+                      subt.filter(s =>
+                        done.includes(t[0] + '::' + s)
+                      ).length
+                    }
+                    /{subt.length}
+                  </span>
+                </div>
+
+                <div className="milestone-list">
+                  {subt.map((s, j) => {
+                    const id = t[0] + '::' + s;
+                    const complete = done.includes(id);
+                    const locked =
+                      j > 0 &&
+                      !done.includes(t[0] + '::' + subt[j - 1]);
+
+                    return (
+                      <div
+                        className={
+                          'milestone ' + (locked ? 'locked' : '')
+                        }
+                        key={id}
+                      >
+                        <button
+                          disabled={locked}
+                          className={
+                            'milestone-check ' +
+                            (complete ? 'complete' : '')
+                          }
+                          onClick={() => toggle(done, setDone, id)}
+                        >
+                          {complete ? (
+                            <Check size={13} />
+                          ) : locked ? (
+                            <LockKeyhole size={12} />
+                          ) : (
+                            j + 1
+                          )}
+                        </button>
+
+                        <div className="milestone-text">
+                          <b>{s}</b>
+                          <small>
+                            {complete
+                              ? 'Completed'
+                              : locked
+                              ? 'Complete previous milestone to unlock'
+                              : 'Ready to learn'}
+                          </small>
+                        </div>
+
+                        {!locked && (
+                          <button
+                            className="tiny-action"
+                            onClick={() => toggle(done, setDone, id)}
+                          >
+                            {complete ? 'Undo' : 'Mark done'}
+                          </button>
+                        )}
+                      </div>
+                    );
+                  })}
+                </div>
+              </section>
+            );
+          })}
+        </div>
+      </>
+    );
+  }
+
+  function QuizBuilder() {
+    return (
+      <>
+        <Intro
+          eyebrow="CUSTOM ASSESSMENT BUILDER"
+          heading="Build your quiz"
+          desc="Choose a subject, topic focus, difficulty, question count, timer and question provider."
+        />
+
+        <div className="builder-layout">
+          <section className="panel builder-panel">
+            <div className="builder-section">
+              <h3>1. Choose subject</h3>
+              <div className="subject-options">
+                {[
+                  'DSA',
+                  'OOP',
+                  'OS',
+                  'DBMS',
+                  'CN',
+                  'Mixed Core CS',
+                  'Aptitude'
+                ].map(s => (
+                  <button
+                    key={s}
+                    onClick={() => setSubject(s)}
+                    className={subject === s ? 'active' : ''}
+                  >
+                    {s}
+                  </button>
+                ))}
+              </div>
+            </div>
+
+            <div className="builder-section">
+              <h3>2. Difficulty level</h3>
+              <div className="difficulty-options">
+                {['Easy', 'Medium', 'Hard', 'Mixed'].map(s => (
+                  <button
+                    key={s}
+                    onClick={() => setQuizDifficulty(s)}
+                    className={
+                      quizDifficulty === s
+                        ? 'active ' + s.toLowerCase()
+                        : ''
+                    }
+                  >
+                    {s}
+                  </button>
+                ))}
+              </div>
+            </div>
+
+            <div className="builder-section">
+              <h3>3. Test format</h3>
+              <div className="difficulty-options">
+                {['Practice', 'Minor test', 'Major test'].map(s => (
+                  <button
+                    key={s}
+                    className={testMode === s ? 'active' : ''}
+                    onClick={() => {
+                      setTestMode(s);
+
+                      if (s === 'Minor test') {
+                        setCount(10);
+                        setMinutes(15);
+                      }
+
+                      if (s === 'Major test') {
+                        setCount(30);
+                        setMinutes(45);
+                      }
+                    }}
+                  >
+                    {s}
+                  </button>
+                ))}
+              </div>
+              <small className="field-help">
+                Each topic in Test Center has 5 minor and 5 major test
+                slots. You can still customize any practice quiz.
+              </small>
+            </div>
+
+            <div className="builder-section">
+              <h3>
+                4. Question focus <span className="optional">optional</span>
+              </h3>
+              <input
+                className="wide-input"
+                value={quizTopics}
+                onChange={e => setQuizTopics(e.target.value)}
+                placeholder="e.g. arrays, recursion, process scheduling, deadlocks"
+              />
+              <small className="field-help">
+                Separate multiple topics with commas. AI generation uses
+                these as focus areas.
+              </small>
+            </div>
+
+            <div className="builder-section">
+              <h3>5. Question count</h3>
+              <div className="count-options">
+                {[10, 20, 50, 100].map(n => (
+                  <button
+                    key={n}
+                    className={count === n ? 'active' : ''}
+                    onClick={() => setCount(n)}
+                  >
+                    {n}
+                  </button>
+                ))}
+
+                <label className="custom-count">
+                  Custom{' '}
+                  <input
+                    type="number"
+                    min="1"
+                    max="100"
+                    value={count}
+                    onChange={e =>
+                      setCount(
+                        Math.max(
+                          1,
+                          Math.min(100, Number(e.target.value) || 1)
+                        )
+                      )
+                    }
+                  />
+                </label>
+              </div>
+            </div>
+
+            <div className="builder-section">
+              <h3>6. Time limit</h3>
+              <div className="time-options">
+                {[10, 15, 30, 45, 60, 90].map(n => (
+                  <button
+                    key={n}
+                    className={minutes === n ? 'active' : ''}
+                    onClick={() => setMinutes(n)}
+                  >
+                    {n} min
+                  </button>
+                ))}
+              </div>
+            </div>
+
+            <div className="builder-section">
+              <h3>7. Question provider</h3>
+              <div className="provider-options">
+                <button
+                  className={provider === 'local' ? 'active' : ''}
+                  onClick={() => setProvider('local')}
+                >
+                  <Database size={18} />
+                  <b>Built-in bank</b>
+                  <small>Free • works offline</small>
+                </button>
+
+                <button
+                  className={provider === 'gemini' ? 'active' : ''}
+                  onClick={() => setProvider('gemini')}
+                >
+                  <Sparkles size={18} />
+                  <b>Google Gemini</b>
+                  <small>Generate a fresh quiz</small>
+                </button>
+
+                <button
+                  className={provider === 'openai' ? 'active' : ''}
+                  onClick={() => setProvider('openai')}
+                >
+                  <BrainCircuit size={18} />
+                  <b>OpenAI</b>
+                  <small>Generate a fresh quiz</small>
+                </button>
+              </div>
+
+              {provider !== 'local' && (
+                <div className="api-note">
+                  <ShieldCheck size={16} />
+                  <span>
+                    AI requires a key in your local backend{' '}
+                    <code>.env</code>. Keys are never entered into this
+                    page or bundled into frontend code.
+                  </span>
+                </div>
+              )}
+            </div>
+
+            {quizError && <div className="error-box">{quizError}</div>}
+
+            <button
+              className="btn primary generate-btn"
+              disabled={generating}
+              onClick={generateQuiz}
+            >
+              {generating ? (
+                <>
+                  <RotateCcw className="spin" size={16} />
+                  Generating questions…
+                </>
+              ) : (
+                <>
+                  <Play size={16} fill="currentColor" />
+                  Generate {count} questions <ArrowRight size={16} />
+                </>
+              )}
+            </button>
+
+            <p className="field-help">
+              The built-in bank currently contains {quizBank.length}
+              {' '}original MCQs. Offline mode uses available unique
+              questions for the selected subject; AI mode can generate a
+              custom count up to 100, subject to provider quota and API setup.
+            </p>
+          </section>
+
+          <aside className="panel quiz-summary">
+            <div className="quiz-illustration">
+              <BrainCircuit size={33} />
+            </div>
+            <h3>Your quiz</h3>
+
+            <div className="summary-row">
+              <span>Subject</span>
+              <b>{subject}</b>
+            </div>
+            <div className="summary-row">
+              <span>Difficulty</span>
+              <b>{quizDifficulty}</b>
+            </div>
+            <div className="summary-row">
+              <span>Questions</span>
+              <b>{count}</b>
+            </div>
+            <div className="summary-row">
+              <span>Time limit</span>
+              <b>{minutes} minutes</b>
+            </div>
+            <div className="summary-row">
+              <span>Provider</span>
+              <b>
+                {provider === 'local'
+                  ? 'Built-in bank'
+                  : provider === 'gemini'
+                  ? 'Gemini'
+                  : 'OpenAI'}
+              </b>
+            </div>
+
+            <div className="summary-tip">
+              <Clock3 size={16} />
+              <span>
+                Timer begins when the quiz starts. When time expires,
+                the attempt is submitted automatically.
+              </span>
+            </div>
+          </aside>
+        </div>
+      </>
+    );
+  }
+
+  function Quiz() {
+    if (!questions.length) {
+      return (
+        <div className="panel empty-state">
+          <BrainCircuit size={32} />
+          <b>No quiz loaded</b>
+          <span>Configure your quiz first.</span>
+          <button
+            className="btn primary"
+            onClick={() => setPage('Quiz Builder')}
+          >
+            Open quiz builder
+          </button>
+        </div>
+      );
+    }
+
+    return (
+      <>
+        <Intro
+          eyebrow="TIMED QUIZ"
+          heading={submitted ? 'Quiz results' : 'Focus mode'}
+          desc={
+            submitted
+              ? 'Review each answer and explanation. Retry with a different configuration when ready.'
+              : 'Choose your answers. Your attempt submits automatically when the timer ends.'
+          }
+          extra={
+            <div className={'timer ' + (remaining < 60 ? 'urgent' : '')}>
+              <Clock3 size={17} />
+              <b>
+                {String(Math.floor(remaining / 60)).padStart(2, '0')}:
+                {String(remaining % 60).padStart(2, '0')}
+              </b>
+              <small>remaining</small>
+            </div>
+          }
+        />
+
+        {submitted && (
+          <div className="score-banner">
+            <div className="score-circle">
+              {Math.round((score / questions.length) * 100)}%
+            </div>
+            <div>
+              <h2>
+                {score >= Math.ceil(questions.length * 0.8)
+                  ? 'Strong attempt!'
+                  : score >= Math.ceil(questions.length * 0.6)
+                  ? 'Good progress — revise missed concepts.'
+                  : 'Keep practicing. Review the explanations and try again.'}
+              </h2>
+              <p>
+                {score} correct out of {questions.length} •{' '}
+                {questions.length - score} to review
+              </p>
+            </div>
+            <button
+              className="btn secondary"
+              onClick={() => setPage('Quiz Builder')}
+            >
+              <RotateCcw size={14} /> New quiz
+            </button>
+          </div>
+        )}
+
+        <div className="quiz-questions">
+          {questions.map((q, i) => (
+            <section className="panel quiz-question" key={q.id || i}>
+              <div className="question-label">
+                <span>
+                  QUESTION {String(i + 1).padStart(2, '0')} /{' '}
+                  {questions.length}
+                </span>
+                <span>
+                  {submitted
+                    ? answers[i] === q.answerIndex
+                      ? 'Correct'
+                      : 'Review'
+                    : answers[i] !== undefined
+                    ? 'Answered'
+                    : 'Not answered'}
+                </span>
+              </div>
+
+              <h3>{q.question}</h3>
+
+              <div className="answer-options">
+                {q.options.map((o, j) => (
+                  <button
+                    key={j}
+                    disabled={submitted}
+                    onClick={() =>
+                      setAnswers(a => ({ ...a, [i]: j }))
+                    }
+                    className={
+                      'answer-option ' +
+                      (answers[i] === j ? 'selected ' : '') +
+                      (submitted && j === q.answerIndex ? ' right ' : '') +
+                      (submitted &&
+                      answers[i] === j &&
+                      j !== q.answerIndex
+                        ? ' wrong'
+                        : '')
+                    }
+                  >
+                    <span className="option-letter">
+                      {String.fromCharCode(65 + j)}
+                    </span>
+                    {o}
+                    {submitted && j === q.answerIndex && (
+                      <CheckCircle2 size={16} />
+                    )}
+                  </button>
+                ))}
+              </div>
+
+              {submitted && (
+                <div className="explanation">
+                  <b>Explanation</b>
+                  <p>{q.explanation}</p>
+                  <small>
+                    {q.subject || subject} • {q.difficulty || quizDifficulty}
+                    {' '}• {q.source || 'Built-in bank'}
+                  </small>
+                </div>
+              )}
+            </section>
+          ))}
+        </div>
+
+        {!submitted && (
+          <div className="quiz-submit">
+            <span>
+              {questions.length - Object.keys(answers).length} unanswered
+            </span>
+            <button className="btn primary" onClick={finishQuiz}>
+              Submit quiz <ArrowRight size={15} />
+            </button>
+          </div>
+        )}
+      </>
+    );
+  }
+
+  function ActivityCalendar() {
+    const total = Object.values(activity).reduce((a, b) => a + b, 0);
+
+    const last30 = Array.from({ length: 30 }, (_, i) => {
+      const d = new Date();
+      d.setDate(d.getDate() - (29 - i));
+      const key = d.toLocaleDateString('en-CA');
+
+      return {
+        key,
+        count: activity[key] || 0,
+        date: d
+      };
+    });
+
+    return (
+      <>
+        <Intro
+          eyebrow="CONSISTENCY & MOMENTUM"
+          heading="Your activity calendar"
+          desc="A GitHub-style contribution graph for problems solved, quizzes taken and practice sessions."
+          extra={
+            <div className="mini-progress">
+              <Flame size={18} color="#ffb46b" />
+              <div>
+                <b>{streak}-day streak</b>
+                <small>{total} activity actions</small>
+              </div>
+            </div>
+          }
+        />
+
+        <section className="panel">
+          <PanelHead
+            title="Last 13 weeks"
+            desc="Every logged practice action adds to the day’s activity."
+          />
+          <ActivityHeatmap activity={activity} />
+
+          <div className="activity-stats">
+            <div><b>{total}</b><span>Total actions</span></div>
+            <div><b>{activityDates.length}</b><span>Active days</span></div>
+            <div><b>{streak}</b><span>Current streak</span></div>
+            <div>
+              <b>{Math.max(0, ...Object.values(activity))}</b>
+              <span>Best day</span>
+            </div>
+          </div>
+        </section>
+
+        <section className="panel">
+          <PanelHead
+            title="Last 30 days"
+            desc="See which days you practiced."
+          />
+
+          <div className="calendar-grid">
+            {last30.map(d => (
+              <div
+                className={`calendar-day ${d.count ? 'active' : ''}`}
+                key={d.key}
+                title={`${d.key}: ${d.count} actions`}
+              >
+                <b>{d.date.getDate()}</b>
+                <small>
+                  {d.date.toLocaleDateString('en-US', { month: 'short' })}
+                </small>
+                <span>
+                  {d.count ? `${d.count} actions` : 'No activity'}
+                </span>
+              </div>
+            ))}
+          </div>
+        </section>
+
+        <section className="panel">
+          <PanelHead
+            title="Recent test results"
+            desc="Your completed timed assessments."
+          />
+
+          {testHistory.length ? (
+            <div className="test-history">
+              {testHistory.slice(0, 12).map(t => (
+                <div className="history-row" key={t.id}>
+                  <div>
+                    <b>{t.subject} • {t.mode || 'Practice'}</b>
+                    <small>
+                      {t.topic} · {t.count} questions · {t.date}
+                    </small>
+                  </div>
+                  <strong
+                    className={
+                      t.score >= 80
+                        ? 'score-good'
+                        : t.score >= 60
+                        ? 'score-mid'
+                        : 'score-low'
+                    }
+                  >
+                    {t.score}%
+                  </strong>
+                </div>
+              ))}
+            </div>
+          ) : (
+            <div className="empty-inline">
+              Complete a quiz to start building your assessment history.
+            </div>
+          )}
+        </section>
+      </>
+    );
+  }
+
+  function TestCenter() {
+    const areas = [
+      ...topics.map(t => ({ name: t, subject: 'DSA', key: t })),
+      { name: 'OOP', subject: 'OOP', key: 'OOP' },
+      { name: 'Operating Systems', subject: 'OS', key: 'OS' },
+      { name: 'DBMS & SQL', subject: 'DBMS', key: 'DBMS' },
+      { name: 'Computer Networks', subject: 'CN', key: 'CN' },
+      { name: 'Quantitative Aptitude', subject: 'Aptitude', key: 'Aptitude' },
+      { name: 'Logical Reasoning', subject: 'Aptitude', key: 'Logical Reasoning' },
+      { name: 'Verbal Ability', subject: 'Aptitude', key: 'Verbal Ability' },
+      { name: 'Number Series', subject: 'Aptitude', key: 'Number Series' },
+      { name: 'Probability', subject: 'Aptitude', key: 'Probability' },
+      { name: 'Time & Work', subject: 'Aptitude', key: 'Time and Work' },
+      { name: 'Time, Speed & Distance', subject: 'Aptitude', key: 'Time, Speed & Distance' },
+      { name: 'Percentages', subject: 'Aptitude', key: 'Percentages' },
+      { name: 'Permutations & Combinations', subject: 'Aptitude', key: 'Permutations & Combinations' },
+      { name: 'Data Interpretation', subject: 'Aptitude', key: 'Data Interpretation' },
+      { name: 'Ages & Mixtures', subject: 'Aptitude', key: 'Ages' }
+    ];
+
+    const startSlot = (area, mode, n) => {
+      setTestSlot({ topic: area.key, mode, slot: n + 1 });
+      setSubject(area.subject);
+      setQuizTopics(area.key);
+      setTestMode(mode);
+      setCount(mode === 'Major test' ? 30 : 10);
+      setMinutes(mode === 'Major test' ? 45 : 15);
+      setQuizDifficulty('Mixed');
+      setProvider('local');
+      setPage('Quiz Builder');
+    };
+
+    const historyFor = (area, mode) =>
+      new Set(
+        testHistory
+          .filter(t => t.topic === area.key && t.mode === mode && t.slot)
+          .map(t => t.slot)
+      ).size;
+
+    const slotDone = (area, mode, slot) =>
+      testHistory.some(
+        t =>
+          t.topic === area.key &&
+          t.mode === mode &&
+          t.slot === slot
+      );
+
+    return (
+      <>
+        <Intro
+          eyebrow="STRUCTURED ASSESSMENT SYSTEM"
+          heading="Test Center"
+          desc="Each topic has five minor tests and five major tests. Complete them repeatedly to measure improvement; use custom practice for unlimited revision."
+          extra={
+            <div className="mini-progress">
+              <Trophy size={18} />
+              <div>
+                <b>{testHistory.length} tests</b>
+                <small>completed so far</small>
+              </div>
+            </div>
+          }
+        />
+
+        <div className="notice">
+          <Target size={18} />
+          <div>
+            <b>Test format</b>
+            <p>
+              Minor test: 10 questions / 15 minutes. Major test: 30
+              questions / 45 minutes. These are defaults you can change
+              in Quiz Builder. Each slot records attempts and scores locally.
+            </p>
+          </div>
+        </div>
+
+        <div className="test-center-list">
+          {areas.map(area => (
+            <section className="panel test-topic" key={area.key}>
+              <div className="test-topic-head">
+                <div>
+                  <h3>{area.name}</h3>
+                  <p>
+                    {area.subject === 'DSA'
+                      ? 'Striver-style topic practice'
+                      : 'Core placement / aptitude assessment'}
+                  </p>
+                </div>
+                <span className="topic-test-count">
+                  {historyFor(area, 'Minor test') +
+                    historyFor(area, 'Major test')}
+                  /10 slots done
+                </span>
+              </div>
+
+              <div className="test-types">
+                <div className="test-type">
+                  <div className="test-type-icon minor">
+                    <Clock3 size={18} />
+                  </div>
+                  <div className="test-type-copy">
+                    <b>Minor tests <span>5 slots</span></b>
+                    <small>10 questions · 15 min default</small>
+                    <div className="slot-row">
+                      {Array.from({ length: 5 }, (_, i) => (
+                        <button
+                          key={i}
+                          className={
+                            slotDone(area, 'Minor test', i + 1)
+                              ? 'slot-done'
+                              : ''
+                          }
+                          title={`Start minor test ${i + 1}`}
+                          onClick={() => startSlot(area, 'Minor test', i)}
+                        >
+                          {slotDone(area, 'Minor test', i + 1)
+                            ? <Check size={12} />
+                            : i + 1}
+                        </button>
+                      ))}
+                    </div>
+                  </div>
+                  <button
+                    className="btn secondary"
+                    onClick={() => startSlot(area, 'Minor test', 0)}
+                  >
+                    Start <ArrowRight size={13} />
+                  </button>
+                </div>
+
+                <div className="test-type">
+                  <div className="test-type-icon major">
+                    <Trophy size={18} />
+                  </div>
+                  <div className="test-type-copy">
+                    <b>Major tests <span>5 slots</span></b>
+                    <small>30 questions · 45 min default</small>
+                    <div className="slot-row">
+                      {Array.from({ length: 5 }, (_, i) => (
+                        <button
+                          key={i}
+                          className={
+                            slotDone(area, 'Major test', i + 1)
+                              ? 'slot-done'
+                              : ''
+                          }
+                          title={`Start major test ${i + 1}`}
+                          onClick={() => startSlot(area, 'Major test', i)}
+                        >
+                          {slotDone(area, 'Major test', i + 1)
+                            ? <Check size={12} />
+                            : i + 1}
+                        </button>
+                      ))}
+                    </div>
+                  </div>
+                  <button
+                    className="btn secondary"
+                    onClick={() => startSlot(area, 'Major test', 0)}
+                  >
+                    Start <ArrowRight size={13} />
+                  </button>
+                </div>
+              </div>
+            </section>
+          ))}
+        </div>
+      </>
+    );
+  }
+
+  function AIMockInterview() {
+    const begin = async () => {
+      setInterviewError('');
+      setInterviewFeedback(null);
+      setInterviewAnswers([]);
+      setInterviewIndex(0);
+      setInterviewDraft('');
+      setInterviewRunning(true);
+
+      try {
+        const r = await fetch('/api/interview/generate', {
+          method: 'POST',
+          headers: { 'Content-Type': 'application/json' },
+          body: JSON.stringify({
+            provider: interviewProvider,
+            role: interviewRole,
+            level: interviewLevel,
+            count: Math.max(4, Math.round(interviewMinutes / 2)),
+            minutes: interviewMinutes
+          })
+        });
+
+        const d = await r.json();
+
+        if (!r.ok) {
+          throw Error(d.error || 'Could not generate interview');
+        }
+
+        if (!Array.isArray(d.questions) || !d.questions.length) {
+          throw Error('No interview questions returned.');
+        }
+
+        setInterviewQuestions(d.questions);
+        setInterviewRemaining(interviewMinutes * 60);
+      } catch (e) {
+        setInterviewError(
+          e.message +
+            ' Configure an AI key in .env, or select the built-in demo interview.'
+        );
+        setInterviewRunning(false);
+      }
+    };
+
+    const beginDemo = () => {
+      setInterviewRemaining(interviewMinutes * 60);
+      setInterviewQuestions([
+        {
+          question: 'Explain a project you built, the problem it solves, and one technical trade-off.',
+          type: 'Project'
+        },
+        {
+          question: 'How would you find the first non-repeating character in a string? Explain the complexity.',
+          type: 'DSA'
+        },
+        {
+          question: 'What is the difference between a process and a thread?',
+          type: 'Core CS'
+        },
+        {
+          question: 'Describe a bug you investigated and how you verified the fix.',
+          type: 'Behavioral'
+        },
+        {
+          question: 'How would you design a REST endpoint for creating a booking?',
+          type: 'Backend'
+        }
+      ]);
+
+      setInterviewAnswers([]);
+      setInterviewIndex(0);
+      setInterviewDraft('');
+      setInterviewFeedback(null);
+      setInterviewRunning(true);
+      setInterviewError('');
+    };
+
+    const next = () => {
+      if (!interviewDraft.trim()) return;
+
+      const nextAnswers = [
+        ...interviewAnswers,
+        {
+          question: interviewQuestions[interviewIndex].question,
+          answer: interviewDraft.trim(),
+          type: interviewQuestions[interviewIndex].type || 'Technical'
+        }
+      ];
+
+      setInterviewAnswers(nextAnswers);
+      setInterviewDraft('');
+
+      if (interviewIndex + 1 < interviewQuestions.length) {
+        setInterviewIndex(i => i + 1);
+      } else {
+        setInterviewRunning(false);
+      }
+    };
+
+    const evaluate = async () => {
+      setGenerating(true);
+      setInterviewError('');
+
+      try {
+        const r = await fetch('/api/interview/evaluate', {
+          method: 'POST',
+          headers: { 'Content-Type': 'application/json' },
+          body: JSON.stringify({
+            provider: interviewProvider,
+            role: interviewRole,
+            level: interviewLevel,
+            answers: interviewAnswers
+          })
+        });
+
+        const d = await r.json();
+
+        if (!r.ok) {
+          throw Error(d.error || 'Evaluation failed');
+        }
+
+        setInterviewFeedback(d);
+        logActivity(interviewAnswers.length);
+
+        setTestHistory(h => [
+          {
+            id: Date.now(),
+            subject: 'AI Interview',
+            topic: interviewRole,
+            mode: 'Interview',
+            difficulty: interviewLevel,
+            count: interviewAnswers.length,
+            score: Number(d.overallScore) || 0,
+            date: new Date().toLocaleDateString('en-CA')
+          },
+          ...h
+        ]);
+      } catch (e) {
+        setInterviewError(
+          e.message +
+            ' If provider quota is unavailable, use the self-review checklist below.'
+        );
+      } finally {
+        setGenerating(false);
+      }
+    };
+
+    return (
+      <>
+        <Intro
+          eyebrow="AI-POWERED PRACTICE INTERVIEW"
+          heading="AI Mock Interview"
+          desc="Choose your role and interview duration, answer one question at a time, then get structured feedback from OpenAI or Gemini."
+          extra={
+            <div className="topic-icon big">
+              <MessageCircle />
+            </div>
+          }
+        />
+
+        {!interviewQuestions.length && !interviewFeedback && (
+          <section className="panel interview-setup">
+            <PanelHead
+              title="Interview setup"
+              desc="A realistic practice session—not a hiring decision."
+            />
+
+            <div className="two-fields">
+              <div>
+                <label className="field-label">Target role</label>
+                <select
+                  className="wide-input"
+                  value={interviewRole}
+                  onChange={e => setInterviewRole(e.target.value)}
+                >
+                  {[
+                    'Full-stack developer',
+                    'Frontend developer',
+                    'Backend developer',
+                    'Software engineer intern',
+                    'DSA / coding round',
+                    'Core CS technical round'
+                  ].map(x => <option key={x}>{x}</option>)}
+                </select>
+              </div>
+
+              <div>
+                <label className="field-label">Experience level</label>
+                <select
+                  className="wide-input"
+                  value={interviewLevel}
+                  onChange={e => setInterviewLevel(e.target.value)}
+                >
+                  {[
+                    'Internship',
+                    'Fresher',
+                    'Entry-level',
+                    'Intermediate'
+                  ].map(x => <option key={x}>{x}</option>)}
+                </select>
+              </div>
+            </div>
+
+            <label className="field-label">Duration</label>
+            <div className="time-options">
+              {[10, 15, 20, 30].map(n => (
+                <button
+                  key={n}
+                  className={interviewMinutes === n ? 'active' : ''}
+                  onClick={() => setInterviewMinutes(n)}
+                >
+                  {n} min
+                </button>
+              ))}
+            </div>
+
+            <label className="field-label">AI interviewer</label>
+            <div className="provider-options">
+              <button
+                className={
+                  interviewProvider === 'gemini' ? 'active' : ''
+                }
+                onClick={() => setInterviewProvider('gemini')}
+              >
+                <Sparkles />
+                <b>Google Gemini</b>
+                <small>Fresh role-specific questions</small>
+              </button>
+
+              <button
+                className={
+                  interviewProvider === 'openai' ? 'active' : ''
+                }
+                onClick={() => setInterviewProvider('openai')}
+              >
+                <BrainCircuit />
+                <b>OpenAI / ChatGPT</b>
+                <small>Fresh role-specific questions</small>
+              </button>
+            </div>
+
+            {interviewError && (
+              <div className="error-box">{interviewError}</div>
+            )}
+
+            <div className="interview-actions">
+              <button className="btn primary" onClick={begin}>
+                <MessageCircle size={16} /> Generate AI interview{' '}
+                <ArrowRight size={14} />
+              </button>
+              <button className="btn secondary" onClick={beginDemo}>
+                Try demo without API
+              </button>
+            </div>
+
+            <p className="field-help">
+              AI interviews require your own provider API key and may
+              consume paid quota. The demo is available free without a key.
+            </p>
+          </section>
+        )}
+
+        {interviewRunning && interviewQuestions.length > 0 && (
+          <section className="panel interview-live">
+            <div className="question-label">
+              <span>
+                QUESTION {interviewIndex + 1} OF {interviewQuestions.length}
+              </span>
+              <span>
+                {interviewQuestions[interviewIndex]?.type || 'Interview question'}
+              </span>
+              <span className="interview-clock">
+                <Clock3 size={13} />{' '}
+                {String(Math.floor(interviewRemaining / 60)).padStart(2, '0')}:
+                {String(interviewRemaining % 60).padStart(2, '0')}
+              </span>
+            </div>
+
+            <div className="interview-progress">
+              <span
+                style={{
+                  width: `${
+                    ((interviewIndex + 1) / interviewQuestions.length) * 100
+                  }%`
+                }}
+              />
+            </div>
+
+            <h2>{interviewQuestions[interviewIndex]?.question}</h2>
+            <p className="subhead">
+              Think aloud if practicing verbally; then capture your answer here.
+            </p>
+
+            <textarea
+              className="interview-answer"
+              rows="7"
+              value={interviewDraft}
+              onChange={e => setInterviewDraft(e.target.value)}
+              placeholder="Structure your answer: context → reasoning → trade-offs → result..."
+            />
+
+            <div className="interview-actions">
+              <span className="muted small-text">
+                {interviewDraft.trim().split(/\s+/).filter(Boolean).length} words
+              </span>
+              <button
+                className="btn primary"
+                onClick={next}
+                disabled={!interviewDraft.trim()}
+              >
+                {interviewIndex + 1 === interviewQuestions.length
+                  ? 'Finish answers'
+                  : 'Save answer & next'}{' '}
+                <ArrowRight size={14} />
+              </button>
+            </div>
+          </section>
+        )}
+
+        {!interviewRunning &&
+          interviewQuestions.length > 0 &&
+          !interviewFeedback && (
+            <section className="panel">
+              <PanelHead
+                title="Answers captured"
+                desc={`${interviewAnswers.length} responses ready for evaluation.`}
+              />
+              <div className="interview-actions">
+                <button
+                  className="btn primary"
+                  disabled={generating}
+                  onClick={evaluate}
+                >
+                  {generating ? 'Evaluating…' : 'Evaluate with AI'}{' '}
+                  <Sparkles size={15} />
+                </button>
+                <button
+                  className="btn secondary"
+                  onClick={() => {
+                    setInterviewQuestions([]);
+                    setInterviewAnswers([]);
+                  }}
+                >
+                  Restart interview
+                </button>
+              </div>
+            </section>
+          )}
+
+        {interviewFeedback && (
+          <section className="panel feedback-panel">
+            <div className="feedback-score">
+              <div className="score-circle">
+                {interviewFeedback.overallScore ?? '—'}
+              </div>
+              <div>
+                <h2>Interview feedback</h2>
+                <p>
+                  Use this as coaching feedback, not a definitive hiring score.
+                </p>
+              </div>
+            </div>
+
+            {(interviewFeedback.strengths || []).length > 0 && (
+              <>
+                <h3>Strengths</h3>
+                <ul>
+                  {interviewFeedback.strengths.map((x, i) => (
+                    <li key={i}>{x}</li>
+                  ))}
+                </ul>
+              </>
+            )}
+
+            {(interviewFeedback.improvements || []).length > 0 && (
+              <>
+                <h3>Improve next</h3>
+                <ul>
+                  {interviewFeedback.improvements.map((x, i) => (
+                    <li key={i}>{x}</li>
+                  ))}
+                </ul>
+              </>
+            )}
+
+            {(interviewFeedback.answerFeedback || []).map((x, i) => (
+              <div className="answer-feedback" key={i}>
+                <b>Q{i + 1}: {x.question || ''}</b>
+                <p>{x.feedback || ''}</p>
+                <small>Score: {x.score ?? '—'}/10</small>
+              </div>
+            ))}
+
+            <div className="interview-actions">
+              <button
+                className="btn primary"
+                onClick={() => {
+                  setInterviewQuestions([]);
+                  setInterviewFeedback(null);
+                  setInterviewAnswers([]);
+                }}
+              >
+                Start another interview
+              </button>
+            </div>
+          </section>
+        )}
+      </>
+    );
+  }
+
+  function Resources() {
+    return (
+      <>
+        <Intro
+          eyebrow="CURATED FREE LINKS"
+          heading="Free resources & MCQs"
+          desc="Direct links to public learning resources and third-party practice tests. Their terms and availability may change."
+        />
+
+        {resources.map(g => (
+          <section className="panel resource-group" key={g.group}>
+            <PanelHead
+              title={g.group}
+              desc={`${g.items.length} resources`}
+            />
+
+            <div className="resource-grid">
+              {g.items.map(([n, d, u]) => (
+                <a
+                  className="resource-card"
+                  href={u}
+                  target="_blank"
+                  rel="noreferrer"
+                  key={n}
+                >
+                  <div>
+                    <b>{n}</b>
+                    <p>{d}</p>
+                  </div>
+                  <ExternalLink size={15} />
+                </a>
+              ))}
+            </div>
+          </section>
+        ))}
+      </>
+    );
+  }
+
+  function Core() {
+    return (
+      <>
+        <Intro
+          eyebrow="PLACEMENT FUNDAMENTALS"
+          heading="Core CS & MCQs"
+          desc="Choose a subject to build a timed MCQ test inside PrepForge, or open free third-party question banks."
+        />
+
+        <div className="subject-grid">
+          {[
+            ['OOP', 'Object-oriented programming', 'Classes, inheritance, polymorphism, encapsulation'],
+            ['OS', 'Operating systems', 'Processes, threads, scheduling, synchronization, memory'],
+            ['DBMS', 'Database management', 'SQL, normalization, transactions, indexing'],
+            ['CN', 'Computer networks', 'OSI, TCP/IP, DNS, HTTP, routing']
+          ].map(([s, n, d], i) => (
+            <section className="panel subject-card" key={s}>
+              <div className="subject-head">
+                <div className={`topic-icon color-${i}`}>
+                  <BookOpen />
+                </div>
+                <div>
+                  <h3>{n}</h3>
+                  <p>{d}</p>
+                </div>
+              </div>
+
+              <button
+                className="btn secondary full"
+                onClick={() => {
+                  setSubject(s);
+                  setQuizDifficulty('Mixed');
+                  setCount(20);
+                  setMinutes(30);
+                  setProvider('local');
+                  setPage('Quiz Builder');
+                }}
+              >
+                Build {s} MCQ quiz <ArrowRight size={14} />
+              </button>
+            </section>
+          ))}
+        </div>
+
+        <Resources />
+      </>
+    );
+  }
+
+  function Daily() {
+    const [localTasks, setLocalTasks] = useState(() =>
+      JSON.parse(localStorage.getItem('pf2-tasks') || '{}')
+    );
+    const [plan, setPlan] = useState(() =>
+      JSON.parse(localStorage.getItem('pf2-ai-plan') || 'null')
+    );
+    const [planBusy, setPlanBusy] = useState(false);
+    const [planError, setPlanError] = useState('');
+
+    const dailyItems = plan?.tasks?.length
+      ? plan.tasks.map((x, i) => [
+          typeof x === 'string' ? x : x.title || `Task ${i + 1}`,
+          Number(x.minutes) || 20
+        ])
+      : tasks;
+
+    function flip(i) {
+      const next = { ...localTasks, [i]: !localTasks[i] };
+
+      setLocalTasks(next);
+      localStorage.setItem('pf2-tasks', JSON.stringify(next));
+
+      if (!localTasks[i]) logActivity(1);
+    }
+
+    async function suggestPlan() {
+      setPlanBusy(true);
+      setPlanError('');
+
+      try {
+        const r = await fetch('/api/plan/generate', {
+          method: 'POST',
+          headers: { 'Content-Type': 'application/json' },
+          body: JSON.stringify({
+            provider: interviewProvider,
+            solvedCount: solved.length,
+            savedCount: saved.length,
+            streak,
+            minutesAvailable: 90,
+            weakTopics: testHistory
+              .filter(t => t.score < 70)
+              .slice(0, 4)
+              .map(t => t.topic)
+          })
+        });
+
+        const d = await r.json();
+
+        if (!r.ok) throw Error(d.error || 'AI plan unavailable');
+
+        setPlan(d);
+        localStorage.setItem('pf2-ai-plan', JSON.stringify(d));
+        setLocalTasks({});
+        localStorage.setItem('pf2-tasks', '{}');
+      } catch (e) {
+        setPlanError(
+          e.message +
+            ' Add a Gemini/OpenAI key in .env, or use the default plan below.'
+        );
+      } finally {
+        setPlanBusy(false);
+      }
+    }
+
+    return (
+      <>
+        <Intro
+          eyebrow="CONSISTENCY OVER CRAMMING"
+          heading="Daily plan"
+          desc="Use the default routine or generate a plan based on your progress and weak test areas."
+          extra={
+            <button
+              className="btn primary"
+              onClick={suggestPlan}
+              disabled={planBusy}
+            >
+              <Sparkles size={15} />
+              {planBusy ? 'Building plan…' : 'AI suggest my tasks'}
+            </button>
+          }
+        />
+
+        {planError && <div className="error-box">{planError}</div>}
+
+        {plan?.focus && (
+          <section className="panel plan-focus">
+            <div className="eyebrow">AI-RECOMMENDED FOCUS</div>
+            <h3>{plan.focus}</h3>
+            <p>{plan.reason || 'Personalized to your current progress.'}</p>
+          </section>
+        )}
+
+        <section className="panel">
+          <PanelHead
+            title="Today's focus list"
+            desc={`${
+              dailyItems.filter((_, i) => localTasks[i]).length
+            } of ${dailyItems.length} tasks complete`}
+          />
+
+          <div className="task-list large">
+            {dailyItems.map(([t, m], i) => (
+              <label
+                className={'task-row ' + (localTasks[i] ? 'task-done' : '')}
+                key={t}
+              >
+                <input
+                  type="checkbox"
+                  checked={!!localTasks[i]}
+                  onChange={() => flip(i)}
+                />
+                <span className="custom-check"><Check size={12} /></span>
+                <span>{t}</span>
+                <small>{m} min</small>
+              </label>
+            ))}
+          </div>
+
+          <div className="plan-tip">
+            <Sparkles size={18} />
+            <div>
+              <b>Practice actively</b>
+              <p>
+                {plan?.tip ||
+                  'Attempt the problem before reading the editorial. Write the complexity, test edge cases, and revisit mistakes after a day or two.'}
+              </p>
+            </div>
+          </div>
+
+          <div className="interview-actions">
+            <button
+              className="btn secondary"
+              onClick={() => {
+                setPlan(null);
+                localStorage.removeItem('pf2-ai-plan');
+                setLocalTasks({});
+                localStorage.setItem('pf2-tasks', '{}');
+              }}
+            >
+              Reset to default plan
+            </button>
+
+            <button
+              className="btn primary"
+              onClick={() => setPage('Test Center')}
+            >
+              Take a topic test <ArrowRight size={14} />
+            </button>
+          </div>
+        </section>
+      </>
+    );
+  }
+
+  function Revision() {
+    const list = problems.filter(p => saved.includes(p.id));
+
+    return (
+      <>
+        <Intro
+          eyebrow="REVIEW YOUR WEAK AREAS"
+          heading="Revision list"
+          desc="Bookmark problems in the bank and return to them before a mock interview."
+        />
+
+        {list.length ? (
+          <div className="problem-list">
+            {list.map(p => (
+              <div className="problem-row" key={p.id}>
+                <button
+                  className={
+                    'solve-check ' +
+                    (solved.includes(p.id) ? 'checked' : '')
+                  }
+                  onClick={() => toggle(solved, setSolved, p.id)}
+                >
+                  {solved.includes(p.id) && <Check size={14} />}
+                </button>
+
+                <div className="problem-main">
+                  <b>{p.title}</b>
+                  <small>{p.topic} • {p.difficulty}</small>
+                </div>
+
+                <a
+                  className="open-problem"
+                  href={makeUrl(p, platform)}
+                  target="_blank"
+                  rel="noreferrer"
+                >
+                  Solve <ExternalLink size={13} />
+                </a>
+
+                <button
+                  className="save-btn saved"
+                  onClick={() => toggle(saved, setSaved, p.id)}
+                >
+                  <Bookmark size={16} fill="currentColor" />
+                </button>
+              </div>
+            ))}
+          </div>
+        ) : (
+          <div className="panel empty-state">
+            <Bookmark size={30} />
+            <b>No saved problems yet</b>
+            <span>
+              Bookmark questions from the DSA bank to build your revision list.
+            </span>
+            <button
+              className="btn secondary"
+              onClick={() => setPage('DSA Problem Bank')}
+            >
+              Browse problem bank
+            </button>
+          </div>
+        )}
+      </>
+    );
+  }
+
+  function Interview() {
+    const items = [
+      'Prepare a 60-second introduction',
+      'Explain two projects, trade-offs and challenges',
+      'Revise arrays, strings, hashing, trees and graphs',
+      'Prepare OOP, DBMS, OS and networking answers',
+      'Practice SQL joins, aggregation and subqueries',
+      'Prepare behavioral stories using STAR',
+      'Defend every skill and project claim on your resume',
+      'Complete two timed mock interviews'
+    ];
+
+    return (
+      <>
+        <Intro
+          eyebrow="FROM PRACTICE TO PERFORMANCE"
+          heading="Interview preparation"
+          desc="A checklist to help you communicate your reasoning and project decisions clearly."
+        />
+
+        <section className="panel">
+          <PanelHead
+            title="Readiness checklist"
+            desc={`${checks.length} of ${items.length} completed`}
+          />
+
+          {items.map((t, i) => (
+            <label
+              className={
+                'checklist-row ' + (checks.includes(i) ? 'task-done' : '')
+              }
+              key={t}
+            >
+              <input
+                type="checkbox"
+                checked={checks.includes(i)}
+                onChange={() => toggle(checks, setChecks, i)}
+              />
+              <span className="custom-check"><Check size={12} /></span>
+              <span>{t}</span>
+            </label>
+          ))}
+        </section>
+
+        <section className="panel tip-panel">
+          <Sparkles size={20} />
+          <div>
+            <h3>How to explain a coding solution</h3>
+            <p>
+              Clarify constraints → explain a brute-force baseline →
+              optimize → state time and space complexity → dry-run an
+              example → test edge cases.
+            </p>
+          </div>
+        </section>
+      </>
+    );
+  }
+
+  function Content() {
+    switch (page) {
+      case 'Dashboard':
+        return <Dashboard />;
+      case 'DSA Problem Bank':
+        return <DSA />;
+      case 'Roadmap':
+        return <Roadmap />;
+      case 'Daily Plan':
+        return <Daily />;
+      case 'Activity calendar':
+        return <ActivityCalendar />;
+      case 'Test Center':
+        return <TestCenter />;
+      case 'AI Mock Interview':
+        return <AIMockInterview />;
+      case 'Quiz Builder':
+        return <QuizBuilder />;
+      case 'Quiz':
+        return <Quiz />;
+      case 'Core CS & MCQs':
+        return <Core />;
+      case 'Free Resources':
+        return <Resources />;
+      case 'Revision List':
+        return <Revision />;
+      case 'Interview Prep':
+        return <Interview />;
+      default:
+        return <Dashboard />;
+    }
+  }
+
+  return (
+    <div className="app-shell">
+      <Side />
+
+      <main className="main-area">
+        <Header />
+
+        {showSettings && (
+          <div className="settings-pop">
+            <div className="settings-head">
+              <b>AI provider setup</b>
+              <button onClick={() => setShowSettings(false)}>
+                <X size={15} />
+              </button>
+            </div>
+
+            <p>
+              {apiStatus?.configured
+                ? 'An AI API key is configured on the backend.'
+                : 'No API key detected. Built-in questions work without setup.'}
+            </p>
+
+            <small>
+              Copy <code>.env.example</code> to <code>.env</code>, add a
+              Gemini or OpenAI key, then restart the backend. Never commit
+              .env to GitHub.
+            </small>
+
+            <div className="health-line">
+              <span
+                className={'health-dot ' + (apiStatus?.configured ? 'ok' : '')}
+              />
+              {apiStatus?.configured
+                ? 'AI backend configured'
+                : 'Local question bank ready'}
+            </div>
+          </div>
+        )}
+
+        <div className="page-content">
+          <Content />
+
+          <footer className="app-footer">
+            <span>© 2026 PrepForge</span>
+            <span>Original practice workspace • not affiliated with TUF</span>
+            <button onClick={() => setPage('Free Resources')}>
+              Free resources <ArrowRight size={13} />
+            </button>
+          </footer>
+        </div>
+      </main>
+
+      {celebration && (
+        <div className="celebration-overlay" role="dialog" aria-modal="true">
+          <div className="celebration-card">
+            <button
+              className="celebration-close"
+              onClick={() => setCelebration(null)}
+            >
+              <X size={18} />
+            </button>
+
+            <div className="flower-rain">🌸 🌼 ✨ 🌷 🎉 🌺</div>
+            <div className="celebration-icon">
+              <PartyPopper size={35} />
+            </div>
+            <h2>{celebration.title}</h2>
+            <p>{celebration.subtitle}</p>
+            <small>{celebration.detail}</small>
+            <div className="celebration-sparkles">✦ ✧ ✿ ✧ ✦</div>
+
+            <button
+              className="btn primary"
+              onClick={() => {
+                const next = celebration?.nextId
+                  ? problems.find(p => p.id === celebration.nextId)
+                  : null;
+
+                setCelebration(null);
+
+                if (page === 'DSA Problem Bank' && next) {
+                  setTopic(next.topic);
+                  setDifficulty('All levels');
+                  setQuery(next.title);
+                }
+              }}
+            >
+              Continue to next question <ArrowRight size={15} />
+            </button>
+          </div>
+        </div>
+      )}
+    </div>
+  );
+}
+
+createRoot(document.getElementById('root')).render(<App />);
