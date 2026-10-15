@@ -1,0 +1,2886 @@
+[
+  {
+    "id": 1,
+    "question": "What is the average lookup time in a well-distributed hash table?",
+    "options": [
+      "O(1)",
+      "O(log n)",
+      "O(n)",
+      "O(n log n)"
+    ],
+    "answerIndex": 0,
+    "explanation": "Hash table lookup is average O(1), although collisions can worsen the worst case.",
+    "subject": "DSA",
+    "difficulty": "Medium"
+  },
+  {
+    "id": 2,
+    "question": "Which data structure follows LIFO?",
+    "options": [
+      "Queue",
+      "Stack",
+      "Heap",
+      "Graph"
+    ],
+    "answerIndex": 1,
+    "explanation": "A stack removes the most recently inserted item first.",
+    "subject": "DSA",
+    "difficulty": "Easy"
+  },
+  {
+    "id": 3,
+    "question": "Binary search on a sorted array takes what time?",
+    "options": [
+      "O(1)",
+      "O(log n)",
+      "O(n)",
+      "O(n²)"
+    ],
+    "answerIndex": 1,
+    "explanation": "Each step halves the remaining search interval.",
+    "subject": "DSA",
+    "difficulty": "Easy"
+  },
+  {
+    "id": 4,
+    "question": "Which traversal of a BST visits keys in sorted order?",
+    "options": [
+      "Preorder",
+      "Postorder",
+      "Inorder",
+      "Level order"
+    ],
+    "answerIndex": 2,
+    "explanation": "Inorder visits left subtree, node, then right subtree.",
+    "subject": "DSA",
+    "difficulty": "Easy"
+  },
+  {
+    "id": 5,
+    "question": "BFS is usually implemented using which structure?",
+    "options": [
+      "Stack",
+      "Queue",
+      "Trie",
+      "Disjoint set"
+    ],
+    "answerIndex": 1,
+    "explanation": "A queue processes nodes in discovery order, level by level.",
+    "subject": "DSA",
+    "difficulty": "Easy"
+  },
+  {
+    "id": 6,
+    "question": "Which technique reuses results of overlapping subproblems?",
+    "options": [
+      "Greedy only",
+      "Dynamic programming",
+      "Bubble sort",
+      "Linear search"
+    ],
+    "answerIndex": 1,
+    "explanation": "DP stores subproblem results to avoid recomputation.",
+    "subject": "DSA",
+    "difficulty": "Medium"
+  },
+  {
+    "id": 7,
+    "question": "What is merge sort's worst-case time complexity?",
+    "options": [
+      "O(log n)",
+      "O(n)",
+      "O(n log n)",
+      "O(n²)"
+    ],
+    "answerIndex": 2,
+    "explanation": "There are O(log n) levels and O(n) merging work per level.",
+    "subject": "DSA",
+    "difficulty": "Medium"
+  },
+  {
+    "id": 8,
+    "question": "Which algorithm finds shortest paths in an unweighted graph?",
+    "options": [
+      "BFS",
+      "DFS",
+      "Kruskal",
+      "Quick sort"
+    ],
+    "answerIndex": 0,
+    "explanation": "BFS finds shortest paths by edge count in unweighted graphs.",
+    "subject": "DSA",
+    "difficulty": "Medium"
+  },
+  {
+    "id": 9,
+    "question": "What does a base case do in recursion?",
+    "options": [
+      "Sorts input",
+      "Stops recursive expansion",
+      "Allocates a heap",
+      "Guarantees O(1)"
+    ],
+    "answerIndex": 1,
+    "explanation": "A base case terminates recursion for a smallest subproblem.",
+    "subject": "DSA",
+    "difficulty": "Easy"
+  },
+  {
+    "id": 10,
+    "question": "Which structure is useful for repeatedly retrieving the maximum or minimum?",
+    "options": [
+      "Queue only",
+      "Heap / priority queue",
+      "Linked list only",
+      "Trie"
+    ],
+    "answerIndex": 1,
+    "explanation": "A heap supports efficient access to its extremum.",
+    "subject": "DSA",
+    "difficulty": "Medium"
+  },
+  {
+    "id": 11,
+    "question": "Which OOP principle bundles data with methods and controls access?",
+    "options": [
+      "Encapsulation",
+      "Inheritance",
+      "Compilation",
+      "Recursion"
+    ],
+    "answerIndex": 0,
+    "explanation": "Encapsulation combines state and behavior behind a controlled interface.",
+    "subject": "OOP",
+    "difficulty": "Easy"
+  },
+  {
+    "id": 12,
+    "question": "Method overloading is typically resolved at what stage in Java?",
+    "options": [
+      "Compile time",
+      "Runtime only",
+      "Database time",
+      "Network time"
+    ],
+    "answerIndex": 0,
+    "explanation": "Overloaded method selection uses compile-time types and signatures.",
+    "subject": "OOP",
+    "difficulty": "Medium"
+  },
+  {
+    "id": 13,
+    "question": "Method overriding enables which behavior?",
+    "options": [
+      "Runtime polymorphism",
+      "SQL normalization",
+      "Memory paging",
+      "Static linking only"
+    ],
+    "answerIndex": 0,
+    "explanation": "An overridden instance method is dynamically dispatched based on runtime type.",
+    "subject": "OOP",
+    "difficulty": "Easy"
+  },
+  {
+    "id": 14,
+    "question": "Which Java keyword prevents a class from being subclassed?",
+    "options": [
+      "static",
+      "final",
+      "volatile",
+      "native"
+    ],
+    "answerIndex": 1,
+    "explanation": "A final class cannot be extended.",
+    "subject": "OOP",
+    "difficulty": "Easy"
+  },
+  {
+    "id": 15,
+    "question": "What is the main purpose of an interface?",
+    "options": [
+      "Store object state only",
+      "Define a contract of behavior",
+      "Allocate memory manually",
+      "Replace all classes"
+    ],
+    "answerIndex": 1,
+    "explanation": "An interface defines a contract that implementing classes agree to fulfill.",
+    "subject": "OOP",
+    "difficulty": "Medium"
+  },
+  {
+    "id": 16,
+    "question": "Which principle hides internal implementation details behind a simpler model?",
+    "options": [
+      "Abstraction",
+      "Inheritance",
+      "Overloading",
+      "Serialization"
+    ],
+    "answerIndex": 0,
+    "explanation": "Abstraction exposes essential operations while hiding unnecessary implementation detail.",
+    "subject": "OOP",
+    "difficulty": "Easy"
+  },
+  {
+    "id": 17,
+    "question": "Which relationship is commonly described as an 'is-a' relationship?",
+    "options": [
+      "Composition",
+      "Inheritance",
+      "Dependency injection",
+      "Aggregation only"
+    ],
+    "answerIndex": 1,
+    "explanation": "Inheritance models a subtype relationship, often described as is-a.",
+    "subject": "OOP",
+    "difficulty": "Easy"
+  },
+  {
+    "id": 18,
+    "question": "What does a constructor do?",
+    "options": [
+      "Destroys an object",
+      "Initializes a new object",
+      "Overrides every method",
+      "Creates a thread"
+    ],
+    "answerIndex": 1,
+    "explanation": "A constructor initializes an instance when it is created.",
+    "subject": "OOP",
+    "difficulty": "Easy"
+  },
+  {
+    "id": 19,
+    "question": "What is the purpose of a private field with public getters/setters?",
+    "options": [
+      "Enforce controlled access",
+      "Guarantee encryption",
+      "Avoid all bugs",
+      "Make it global"
+    ],
+    "answerIndex": 0,
+    "explanation": "Accessors can validate or constrain access to an object's state.",
+    "subject": "OOP",
+    "difficulty": "Medium"
+  },
+  {
+    "id": 20,
+    "question": "Which is NOT a pillar of classic OOP?",
+    "options": [
+      "Encapsulation",
+      "Abstraction",
+      "Polymorphism",
+      "Defragmentation"
+    ],
+    "answerIndex": 3,
+    "explanation": "Defragmentation is not an OOP principle.",
+    "subject": "OOP",
+    "difficulty": "Easy"
+  },
+  {
+    "id": 21,
+    "question": "Which OS component selects the next ready process for the CPU?",
+    "options": [
+      "Scheduler",
+      "Linker",
+      "Parser",
+      "DNS resolver"
+    ],
+    "answerIndex": 0,
+    "explanation": "The CPU scheduler selects a runnable process/thread according to policy.",
+    "subject": "OS",
+    "difficulty": "Easy"
+  },
+  {
+    "id": 22,
+    "question": "A process is best described as:",
+    "options": [
+      "A program in execution",
+      "A database index",
+      "A network packet",
+      "A source file only"
+    ],
+    "answerIndex": 0,
+    "explanation": "A process is an executing program with its own resources and address space.",
+    "subject": "OS",
+    "difficulty": "Easy"
+  },
+  {
+    "id": 23,
+    "question": "Which condition is necessary for deadlock?",
+    "options": [
+      "Circular wait",
+      "Cache hit",
+      "Compilation",
+      "DNS lookup"
+    ],
+    "answerIndex": 0,
+    "explanation": "Circular wait is one of the four Coffman conditions for deadlock.",
+    "subject": "OS",
+    "difficulty": "Medium"
+  },
+  {
+    "id": 24,
+    "question": "Virtual memory primarily provides:",
+    "options": [
+      "An abstraction of a large address space",
+      "Faster CPU clock",
+      "Guaranteed no page faults",
+      "More physical RAM"
+    ],
+    "answerIndex": 0,
+    "explanation": "Virtual memory maps virtual addresses to physical memory and supports isolation/oversubscription.",
+    "subject": "OS",
+    "difficulty": "Medium"
+  },
+  {
+    "id": 25,
+    "question": "A context switch changes:",
+    "options": [
+      "The running execution context",
+      "The source code",
+      "The SQL schema",
+      "The IP address permanently"
+    ],
+    "answerIndex": 0,
+    "explanation": "The OS saves and restores CPU execution state when switching tasks.",
+    "subject": "OS",
+    "difficulty": "Easy"
+  },
+  {
+    "id": 26,
+    "question": "Which scheduling algorithm can cause starvation for low-priority jobs?",
+    "options": [
+      "Priority scheduling",
+      "Round robin always",
+      "FCFS always",
+      "FIFO disk cache"
+    ],
+    "answerIndex": 0,
+    "explanation": "Strict priority scheduling can indefinitely delay low-priority tasks.",
+    "subject": "OS",
+    "difficulty": "Medium"
+  },
+  {
+    "id": 27,
+    "question": "A semaphore is primarily used for:",
+    "options": [
+      "Synchronization",
+      "Compression",
+      "Sorting",
+      "DNS resolution"
+    ],
+    "answerIndex": 0,
+    "explanation": "Semaphores coordinate access to shared resources and signal events.",
+    "subject": "OS",
+    "difficulty": "Medium"
+  },
+  {
+    "id": 28,
+    "question": "Thrashing is associated with:",
+    "options": [
+      "Excessive paging",
+      "Too many SQL joins",
+      "TCP handshake",
+      "Compiler optimization"
+    ],
+    "answerIndex": 0,
+    "explanation": "Thrashing occurs when page faults dominate useful CPU work.",
+    "subject": "OS",
+    "difficulty": "Medium"
+  },
+  {
+    "id": 29,
+    "question": "Which memory allocation strategy divides memory into fixed-size frames/pages?",
+    "options": [
+      "Paging",
+      "Tokenization",
+      "Indexing",
+      "Spooling only"
+    ],
+    "answerIndex": 0,
+    "explanation": "Paging divides physical memory into frames and virtual memory into pages.",
+    "subject": "OS",
+    "difficulty": "Medium"
+  },
+  {
+    "id": 30,
+    "question": "A thread in the same process usually shares:",
+    "options": [
+      "Address space and process resources",
+      "Its own separate process address space",
+      "All CPU registers permanently",
+      "Only source code"
+    ],
+    "answerIndex": 0,
+    "explanation": "Threads share process memory/resources but have their own stacks and execution state.",
+    "subject": "OS",
+    "difficulty": "Medium"
+  },
+  {
+    "id": 31,
+    "question": "Which SQL clause filters rows before grouping?",
+    "options": [
+      "HAVING",
+      "WHERE",
+      "ORDER BY",
+      "UNION"
+    ],
+    "answerIndex": 1,
+    "explanation": "WHERE filters individual rows before GROUP BY aggregation.",
+    "subject": "DBMS",
+    "difficulty": "Easy"
+  },
+  {
+    "id": 32,
+    "question": "Which SQL clause filters aggregated groups?",
+    "options": [
+      "WHERE",
+      "HAVING",
+      "FROM",
+      "LIMIT"
+    ],
+    "answerIndex": 1,
+    "explanation": "HAVING filters groups after aggregation.",
+    "subject": "DBMS",
+    "difficulty": "Easy"
+  },
+  {
+    "id": 33,
+    "question": "A primary key must be:",
+    "options": [
+      "Unique and non-null",
+      "Always a string",
+      "Allowed to repeat",
+      "A foreign key by definition"
+    ],
+    "answerIndex": 0,
+    "explanation": "A primary key uniquely identifies each row and cannot be NULL.",
+    "subject": "DBMS",
+    "difficulty": "Easy"
+  },
+  {
+    "id": 34,
+    "question": "What does ACID's atomicity mean?",
+    "options": [
+      "All transaction operations succeed or none do",
+      "Queries always run in O(1)",
+      "Data is always compressed",
+      "Every query is distributed"
+    ],
+    "answerIndex": 0,
+    "explanation": "Atomicity treats a transaction as an all-or-nothing unit.",
+    "subject": "DBMS",
+    "difficulty": "Medium"
+  },
+  {
+    "id": 35,
+    "question": "A foreign key enforces:",
+    "options": [
+      "Referential integrity",
+      "CPU scheduling",
+      "Data encryption by default",
+      "Sorting order"
+    ],
+    "answerIndex": 0,
+    "explanation": "Foreign keys constrain references to valid rows in another or the same table.",
+    "subject": "DBMS",
+    "difficulty": "Easy"
+  },
+  {
+    "id": 36,
+    "question": "Which normal form removes partial dependency on part of a composite candidate key?",
+    "options": [
+      "1NF",
+      "2NF",
+      "3NF",
+      "5NF"
+    ],
+    "answerIndex": 1,
+    "explanation": "Second Normal Form removes partial dependencies on a candidate key.",
+    "subject": "DBMS",
+    "difficulty": "Medium"
+  },
+  {
+    "id": 37,
+    "question": "An index usually improves:",
+    "options": [
+      "Read/query lookup speed",
+      "Every write operation unconditionally",
+      "Network bandwidth",
+      "Transaction correctness by itself"
+    ],
+    "answerIndex": 0,
+    "explanation": "Indexes can accelerate reads but consume space and add write overhead.",
+    "subject": "DBMS",
+    "difficulty": "Medium"
+  },
+  {
+    "id": 38,
+    "question": "What is a database transaction?",
+    "options": [
+      "A logical unit of work",
+      "A CSS selector",
+      "A TCP segment",
+      "A compiler warning"
+    ],
+    "answerIndex": 0,
+    "explanation": "A transaction groups operations that should satisfy transactional guarantees.",
+    "subject": "DBMS",
+    "difficulty": "Easy"
+  },
+  {
+    "id": 39,
+    "question": "Which join returns matching rows from both tables only?",
+    "options": [
+      "INNER JOIN",
+      "LEFT JOIN",
+      "CROSS JOIN",
+      "FULL OUTER JOIN"
+    ],
+    "answerIndex": 0,
+    "explanation": "INNER JOIN returns rows whose join condition matches in both inputs.",
+    "subject": "DBMS",
+    "difficulty": "Easy"
+  },
+  {
+    "id": 40,
+    "question": "What is a deadlock in transaction processing?",
+    "options": [
+      "Transactions wait on each other in a cycle",
+      "A query returns zero rows",
+      "An index is created",
+      "A table is normalized"
+    ],
+    "answerIndex": 0,
+    "explanation": "A cycle of lock dependencies can prevent involved transactions from progressing.",
+    "subject": "DBMS",
+    "difficulty": "Medium"
+  },
+  {
+    "id": 41,
+    "question": "TCP is generally:",
+    "options": [
+      "Connection-oriented and reliable",
+      "Connectionless with no ordering guarantees",
+      "A database language",
+      "An encryption algorithm"
+    ],
+    "answerIndex": 0,
+    "explanation": "TCP provides ordered, reliable byte-stream delivery over a connection.",
+    "subject": "CN",
+    "difficulty": "Easy"
+  },
+  {
+    "id": 42,
+    "question": "Which protocol resolves a domain name to an IP address?",
+    "options": [
+      "DNS",
+      "DHCP only",
+      "SMTP",
+      "ARP only"
+    ],
+    "answerIndex": 0,
+    "explanation": "DNS resolves names to records such as IP addresses.",
+    "subject": "CN",
+    "difficulty": "Easy"
+  },
+  {
+    "id": 43,
+    "question": "Which HTTP method is generally used to retrieve a resource?",
+    "options": [
+      "GET",
+      "POST",
+      "PATCH",
+      "DELETE"
+    ],
+    "answerIndex": 0,
+    "explanation": "GET requests a representation and should not change server state.",
+    "subject": "CN",
+    "difficulty": "Easy"
+  },
+  {
+    "id": 44,
+    "question": "TLS primarily provides:",
+    "options": [
+      "Transport security and peer authentication options",
+      "CPU scheduling",
+      "SQL joins",
+      "IP address assignment"
+    ],
+    "answerIndex": 0,
+    "explanation": "TLS provides confidentiality, integrity, and authentication when properly configured.",
+    "subject": "CN",
+    "difficulty": "Medium"
+  },
+  {
+    "id": 45,
+    "question": "What is the main role of a router?",
+    "options": [
+      "Forward packets between networks",
+      "Compile Java",
+      "Manage database transactions",
+      "Render CSS"
+    ],
+    "answerIndex": 0,
+    "explanation": "Routers forward packets based on network-layer addressing/routing tables.",
+    "subject": "CN",
+    "difficulty": "Easy"
+  },
+  {
+    "id": 46,
+    "question": "Which layer of the OSI model is responsible for end-to-end transport?",
+    "options": [
+      "Network",
+      "Transport",
+      "Data Link",
+      "Physical"
+    ],
+    "answerIndex": 1,
+    "explanation": "The transport layer provides end-to-end process communication.",
+    "subject": "CN",
+    "difficulty": "Easy"
+  },
+  {
+    "id": 47,
+    "question": "What does DHCP typically provide to a client?",
+    "options": [
+      "Network configuration such as IP address",
+      "TLS certificates only",
+      "Database indexes",
+      "HTML templates"
+    ],
+    "answerIndex": 0,
+    "explanation": "DHCP can lease an IP address and provide gateway/DNS settings.",
+    "subject": "CN",
+    "difficulty": "Easy"
+  },
+  {
+    "id": 48,
+    "question": "What is a subnet mask used for?",
+    "options": [
+      "Identify network and host portions of an IP address",
+      "Encrypt packets",
+      "Choose SQL indexes",
+      "Create threads"
+    ],
+    "answerIndex": 0,
+    "explanation": "The mask indicates which address bits identify the network prefix.",
+    "subject": "CN",
+    "difficulty": "Medium"
+  },
+  {
+    "id": 49,
+    "question": "Which protocol is commonly used to send email between mail servers?",
+    "options": [
+      "SMTP",
+      "IMAP only",
+      "DNS",
+      "SSH"
+    ],
+    "answerIndex": 0,
+    "explanation": "SMTP is used for mail submission/relay; IMAP is used to access mailboxes.",
+    "subject": "CN",
+    "difficulty": "Easy"
+  },
+  {
+    "id": 50,
+    "question": "What does the TCP three-way handshake establish?",
+    "options": [
+      "A TCP connection",
+      "A DNS zone",
+      "An HTTP cache",
+      "A database lock"
+    ],
+    "answerIndex": 0,
+    "explanation": "SYN, SYN-ACK, and ACK establish TCP connection state.",
+    "subject": "CN",
+    "difficulty": "Medium"
+  },
+  {
+    "id": 51,
+    "question": "What is the auxiliary space of iterative binary search?",
+    "options": [
+      "O(1)",
+      "O(n)",
+      "O(log n)",
+      "O(n log n)"
+    ],
+    "answerIndex": 0,
+    "explanation": "The iterative implementation uses a constant number of variables.",
+    "subject": "DSA",
+    "difficulty": "Medium"
+  },
+  {
+    "id": 52,
+    "question": "Which traversal explores a tree by levels?",
+    "options": [
+      "Level-order",
+      "Inorder",
+      "Postorder",
+      "Reverse preorder"
+    ],
+    "answerIndex": 0,
+    "explanation": "Level-order traversal visits nodes breadth-first.",
+    "subject": "DSA",
+    "difficulty": "Easy"
+  },
+  {
+    "id": 53,
+    "question": "What is the average time complexity of quicksort?",
+    "options": [
+      "O(n log n)",
+      "O(n²)",
+      "O(log n)",
+      "O(1)"
+    ],
+    "answerIndex": 0,
+    "explanation": "Balanced partitions yield O(n log n) expected work.",
+    "subject": "DSA",
+    "difficulty": "Medium"
+  },
+  {
+    "id": 54,
+    "question": "Can a Java class implement multiple interfaces?",
+    "options": [
+      "Yes",
+      "No",
+      "Only if abstract",
+      "Only if final"
+    ],
+    "answerIndex": 0,
+    "explanation": "Java permits a class to implement multiple interfaces.",
+    "subject": "OOP",
+    "difficulty": "Easy"
+  },
+  {
+    "id": 55,
+    "question": "Which keyword refers to the current Java object?",
+    "options": [
+      "this",
+      "super only",
+      "self",
+      "current"
+    ],
+    "answerIndex": 0,
+    "explanation": "this refers to the current instance.",
+    "subject": "OOP",
+    "difficulty": "Easy"
+  },
+  {
+    "id": 56,
+    "question": "What is polymorphism?",
+    "options": [
+      "One interface with multiple implementations/forms",
+      "A database backup",
+      "A memory page",
+      "A sorting technique"
+    ],
+    "answerIndex": 0,
+    "explanation": "Polymorphism allows the same interface or call to behave differently for different types.",
+    "subject": "OOP",
+    "difficulty": "Medium"
+  },
+  {
+    "id": 57,
+    "question": "Which state means a process is waiting for an event or I/O?",
+    "options": [
+      "Blocked/Waiting",
+      "Running",
+      "Terminated",
+      "New only"
+    ],
+    "answerIndex": 0,
+    "explanation": "A blocked process cannot proceed until its event or I/O completes.",
+    "subject": "OS",
+    "difficulty": "Easy"
+  },
+  {
+    "id": 58,
+    "question": "What is a race condition?",
+    "options": [
+      "Outcome depends on timing/interleaving of concurrent operations",
+      "A CPU benchmark",
+      "A page replacement policy",
+      "A file format"
+    ],
+    "answerIndex": 0,
+    "explanation": "Unsynchronized access to shared state can make results timing-dependent.",
+    "subject": "OS",
+    "difficulty": "Medium"
+  },
+  {
+    "id": 59,
+    "question": "Which page replacement algorithm evicts the page that has not been used for the longest time in the past?",
+    "options": [
+      "LRU",
+      "FIFO always",
+      "Round robin",
+      "FCFS"
+    ],
+    "answerIndex": 0,
+    "explanation": "LRU approximates locality by evicting the least recently used page.",
+    "subject": "OS",
+    "difficulty": "Medium"
+  },
+  {
+    "id": 60,
+    "question": "What does COMMIT do?",
+    "options": [
+      "Makes a transaction's changes permanent",
+      "Undoes a transaction",
+      "Deletes a table definition",
+      "Creates a view"
+    ],
+    "answerIndex": 0,
+    "explanation": "COMMIT successfully ends a transaction and persists its changes.",
+    "subject": "DBMS",
+    "difficulty": "Easy"
+  },
+  {
+    "id": 61,
+    "question": "What does ROLLBACK do?",
+    "options": [
+      "Undo uncommitted transaction changes",
+      "Create an index",
+      "Group rows",
+      "Rename a database"
+    ],
+    "answerIndex": 0,
+    "explanation": "ROLLBACK reverses changes in the current uncommitted transaction.",
+    "subject": "DBMS",
+    "difficulty": "Easy"
+  },
+  {
+    "id": 62,
+    "question": "Which command is DDL?",
+    "options": [
+      "CREATE TABLE",
+      "SELECT",
+      "UPDATE",
+      "INSERT"
+    ],
+    "answerIndex": 0,
+    "explanation": "CREATE defines database schema objects.",
+    "subject": "DBMS",
+    "difficulty": "Easy"
+  },
+  {
+    "id": 63,
+    "question": "Which transport protocol does not establish a connection before sending datagrams?",
+    "options": [
+      "UDP",
+      "TCP",
+      "TLS",
+      "HTTP"
+    ],
+    "answerIndex": 0,
+    "explanation": "UDP sends datagrams without a TCP-style connection handshake.",
+    "subject": "CN",
+    "difficulty": "Easy"
+  },
+  {
+    "id": 64,
+    "question": "What does ARP resolve on a local IPv4 network?",
+    "options": [
+      "IPv4 address to MAC address",
+      "Domain to URL",
+      "Port to process name",
+      "Hostname to TLS key"
+    ],
+    "answerIndex": 0,
+    "explanation": "ARP discovers the link-layer address associated with an IPv4 address on a LAN.",
+    "subject": "CN",
+    "difficulty": "Medium"
+  },
+  {
+    "id": 65,
+    "question": "Which data structure is most appropriate for checking balanced brackets?",
+    "options": [
+      "Stack",
+      "Queue",
+      "Heap",
+      "Graph"
+    ],
+    "answerIndex": 0,
+    "explanation": "A stack matches the most recent opening bracket to the next closing bracket.",
+    "subject": "DSA",
+    "difficulty": "Easy"
+  },
+  {
+    "id": 66,
+    "question": "Which technique is commonly used to detect a cycle in a linked list in O(1) extra space?",
+    "options": [
+      "Floyd slow/fast pointers",
+      "Merge sort",
+      "Binary search",
+      "Prefix sums"
+    ],
+    "answerIndex": 0,
+    "explanation": "Floyd's tortoise-and-hare method uses two pointers at different speeds.",
+    "subject": "DSA",
+    "difficulty": "Medium"
+  },
+  {
+    "id": 67,
+    "question": "What is the auxiliary space of iterative binary search?",
+    "options": [
+      "O(1)",
+      "O(n)",
+      "O(log n)",
+      "O(n log n)"
+    ],
+    "answerIndex": 0,
+    "explanation": "The iterative implementation uses a constant number of variables.",
+    "subject": "DSA",
+    "difficulty": "Medium"
+  },
+  {
+    "id": 68,
+    "question": "Which traversal explores a tree by levels?",
+    "options": [
+      "Level-order",
+      "Inorder",
+      "Postorder",
+      "Reverse preorder"
+    ],
+    "answerIndex": 0,
+    "explanation": "Level-order traversal visits nodes breadth-first.",
+    "subject": "DSA",
+    "difficulty": "Easy"
+  },
+  {
+    "id": 69,
+    "question": "What is the average time complexity of quicksort?",
+    "options": [
+      "O(n log n)",
+      "O(n²)",
+      "O(log n)",
+      "O(1)"
+    ],
+    "answerIndex": 0,
+    "explanation": "Balanced partitions yield O(n log n) expected work.",
+    "subject": "DSA",
+    "difficulty": "Medium"
+  },
+  {
+    "id": 70,
+    "question": "Can a Java class implement multiple interfaces?",
+    "options": [
+      "Yes",
+      "No",
+      "Only if abstract",
+      "Only if final"
+    ],
+    "answerIndex": 0,
+    "explanation": "Java permits a class to implement multiple interfaces.",
+    "subject": "OOP",
+    "difficulty": "Easy"
+  },
+  {
+    "id": 71,
+    "question": "Which keyword refers to the current Java object?",
+    "options": [
+      "this",
+      "super only",
+      "self",
+      "current"
+    ],
+    "answerIndex": 0,
+    "explanation": "this refers to the current instance.",
+    "subject": "OOP",
+    "difficulty": "Easy"
+  },
+  {
+    "id": 72,
+    "question": "What is polymorphism?",
+    "options": [
+      "One interface with multiple implementations/forms",
+      "A database backup",
+      "A memory page",
+      "A sorting technique"
+    ],
+    "answerIndex": 0,
+    "explanation": "Polymorphism allows the same interface or call to behave differently for different types.",
+    "subject": "OOP",
+    "difficulty": "Medium"
+  },
+  {
+    "id": 73,
+    "question": "Which state means a process is waiting for an event or I/O?",
+    "options": [
+      "Blocked/Waiting",
+      "Running",
+      "Terminated",
+      "New only"
+    ],
+    "answerIndex": 0,
+    "explanation": "A blocked process cannot proceed until its event or I/O completes.",
+    "subject": "OS",
+    "difficulty": "Easy"
+  },
+  {
+    "id": 74,
+    "question": "What is a race condition?",
+    "options": [
+      "Outcome depends on timing/interleaving of concurrent operations",
+      "A CPU benchmark",
+      "A page replacement policy",
+      "A file format"
+    ],
+    "answerIndex": 0,
+    "explanation": "Unsynchronized access to shared state can make results timing-dependent.",
+    "subject": "OS",
+    "difficulty": "Medium"
+  },
+  {
+    "id": 75,
+    "question": "Which page replacement algorithm evicts the page that has not been used for the longest time in the past?",
+    "options": [
+      "LRU",
+      "FIFO always",
+      "Round robin",
+      "FCFS"
+    ],
+    "answerIndex": 0,
+    "explanation": "LRU approximates locality by evicting the least recently used page.",
+    "subject": "OS",
+    "difficulty": "Medium"
+  },
+  {
+    "id": 76,
+    "question": "What does COMMIT do?",
+    "options": [
+      "Makes a transaction's changes permanent",
+      "Undoes a transaction",
+      "Deletes a table definition",
+      "Creates a view"
+    ],
+    "answerIndex": 0,
+    "explanation": "COMMIT successfully ends a transaction and persists its changes.",
+    "subject": "DBMS",
+    "difficulty": "Easy"
+  },
+  {
+    "id": 77,
+    "question": "What does ROLLBACK do?",
+    "options": [
+      "Undo uncommitted transaction changes",
+      "Create an index",
+      "Group rows",
+      "Rename a database"
+    ],
+    "answerIndex": 0,
+    "explanation": "ROLLBACK reverses changes in the current uncommitted transaction.",
+    "subject": "DBMS",
+    "difficulty": "Easy"
+  },
+  {
+    "id": 78,
+    "question": "Which command is DDL?",
+    "options": [
+      "CREATE TABLE",
+      "SELECT",
+      "UPDATE",
+      "INSERT"
+    ],
+    "answerIndex": 0,
+    "explanation": "CREATE defines database schema objects.",
+    "subject": "DBMS",
+    "difficulty": "Easy"
+  },
+  {
+    "id": 79,
+    "question": "Which transport protocol does not establish a connection before sending datagrams?",
+    "options": [
+      "UDP",
+      "TCP",
+      "TLS",
+      "HTTP"
+    ],
+    "answerIndex": 0,
+    "explanation": "UDP sends datagrams without a TCP-style connection handshake.",
+    "subject": "CN",
+    "difficulty": "Easy"
+  },
+  {
+    "id": 80,
+    "question": "What does ARP resolve on a local IPv4 network?",
+    "options": [
+      "IPv4 address to MAC address",
+      "Domain to URL",
+      "Port to process name",
+      "Hostname to TLS key"
+    ],
+    "answerIndex": 0,
+    "explanation": "ARP discovers the link-layer address associated with an IPv4 address on a LAN.",
+    "subject": "CN",
+    "difficulty": "Medium"
+  },
+  {
+    "id": 81,
+    "question": "Which data structure is most appropriate for checking balanced brackets?",
+    "options": [
+      "Stack",
+      "Queue",
+      "Heap",
+      "Graph"
+    ],
+    "answerIndex": 0,
+    "explanation": "A stack matches the most recent opening bracket to the next closing bracket.",
+    "subject": "DSA",
+    "difficulty": "Easy"
+  },
+  {
+    "id": 82,
+    "question": "Which technique is commonly used to detect a cycle in a linked list in O(1) extra space?",
+    "options": [
+      "Floyd slow/fast pointers",
+      "Merge sort",
+      "Binary search",
+      "Prefix sums"
+    ],
+    "answerIndex": 0,
+    "explanation": "Floyd's tortoise-and-hare method uses two pointers at different speeds.",
+    "subject": "DSA",
+    "difficulty": "Medium"
+  },
+  {
+    "id": 83,
+    "question": "What is the auxiliary space of iterative binary search?",
+    "options": [
+      "O(1)",
+      "O(n)",
+      "O(log n)",
+      "O(n log n)"
+    ],
+    "answerIndex": 0,
+    "explanation": "The iterative implementation uses a constant number of variables.",
+    "subject": "DSA",
+    "difficulty": "Medium"
+  },
+  {
+    "id": 84,
+    "question": "Which traversal explores a tree by levels?",
+    "options": [
+      "Level-order",
+      "Inorder",
+      "Postorder",
+      "Reverse preorder"
+    ],
+    "answerIndex": 0,
+    "explanation": "Level-order traversal visits nodes breadth-first.",
+    "subject": "DSA",
+    "difficulty": "Easy"
+  },
+  {
+    "id": 85,
+    "question": "What is the average time complexity of quicksort?",
+    "options": [
+      "O(n log n)",
+      "O(n²)",
+      "O(log n)",
+      "O(1)"
+    ],
+    "answerIndex": 0,
+    "explanation": "Balanced partitions yield O(n log n) expected work.",
+    "subject": "DSA",
+    "difficulty": "Medium"
+  },
+  {
+    "id": 86,
+    "question": "Can a Java class implement multiple interfaces?",
+    "options": [
+      "Yes",
+      "No",
+      "Only if abstract",
+      "Only if final"
+    ],
+    "answerIndex": 0,
+    "explanation": "Java permits a class to implement multiple interfaces.",
+    "subject": "OOP",
+    "difficulty": "Easy"
+  },
+  {
+    "id": 87,
+    "question": "Which keyword refers to the current Java object?",
+    "options": [
+      "this",
+      "super only",
+      "self",
+      "current"
+    ],
+    "answerIndex": 0,
+    "explanation": "this refers to the current instance.",
+    "subject": "OOP",
+    "difficulty": "Easy"
+  },
+  {
+    "id": 88,
+    "question": "What is polymorphism?",
+    "options": [
+      "One interface with multiple implementations/forms",
+      "A database backup",
+      "A memory page",
+      "A sorting technique"
+    ],
+    "answerIndex": 0,
+    "explanation": "Polymorphism allows the same interface or call to behave differently for different types.",
+    "subject": "OOP",
+    "difficulty": "Medium"
+  },
+  {
+    "id": 89,
+    "question": "Which state means a process is waiting for an event or I/O?",
+    "options": [
+      "Blocked/Waiting",
+      "Running",
+      "Terminated",
+      "New only"
+    ],
+    "answerIndex": 0,
+    "explanation": "A blocked process cannot proceed until its event or I/O completes.",
+    "subject": "OS",
+    "difficulty": "Easy"
+  },
+  {
+    "id": 90,
+    "question": "What is a race condition?",
+    "options": [
+      "Outcome depends on timing/interleaving of concurrent operations",
+      "A CPU benchmark",
+      "A page replacement policy",
+      "A file format"
+    ],
+    "answerIndex": 0,
+    "explanation": "Unsynchronized access to shared state can make results timing-dependent.",
+    "subject": "OS",
+    "difficulty": "Medium"
+  },
+  {
+    "id": 91,
+    "question": "Which page replacement algorithm evicts the page that has not been used for the longest time in the past?",
+    "options": [
+      "LRU",
+      "FIFO always",
+      "Round robin",
+      "FCFS"
+    ],
+    "answerIndex": 0,
+    "explanation": "LRU approximates locality by evicting the least recently used page.",
+    "subject": "OS",
+    "difficulty": "Medium"
+  },
+  {
+    "id": 92,
+    "question": "What does COMMIT do?",
+    "options": [
+      "Makes a transaction's changes permanent",
+      "Undoes a transaction",
+      "Deletes a table definition",
+      "Creates a view"
+    ],
+    "answerIndex": 0,
+    "explanation": "COMMIT successfully ends a transaction and persists its changes.",
+    "subject": "DBMS",
+    "difficulty": "Easy"
+  },
+  {
+    "id": 93,
+    "question": "What does ROLLBACK do?",
+    "options": [
+      "Undo uncommitted transaction changes",
+      "Create an index",
+      "Group rows",
+      "Rename a database"
+    ],
+    "answerIndex": 0,
+    "explanation": "ROLLBACK reverses changes in the current uncommitted transaction.",
+    "subject": "DBMS",
+    "difficulty": "Easy"
+  },
+  {
+    "id": 94,
+    "question": "Which command is DDL?",
+    "options": [
+      "CREATE TABLE",
+      "SELECT",
+      "UPDATE",
+      "INSERT"
+    ],
+    "answerIndex": 0,
+    "explanation": "CREATE defines database schema objects.",
+    "subject": "DBMS",
+    "difficulty": "Easy"
+  },
+  {
+    "id": 95,
+    "question": "Which transport protocol does not establish a connection before sending datagrams?",
+    "options": [
+      "UDP",
+      "TCP",
+      "TLS",
+      "HTTP"
+    ],
+    "answerIndex": 0,
+    "explanation": "UDP sends datagrams without a TCP-style connection handshake.",
+    "subject": "CN",
+    "difficulty": "Easy"
+  },
+  {
+    "id": 96,
+    "question": "What does ARP resolve on a local IPv4 network?",
+    "options": [
+      "IPv4 address to MAC address",
+      "Domain to URL",
+      "Port to process name",
+      "Hostname to TLS key"
+    ],
+    "answerIndex": 0,
+    "explanation": "ARP discovers the link-layer address associated with an IPv4 address on a LAN.",
+    "subject": "CN",
+    "difficulty": "Medium"
+  },
+  {
+    "id": 97,
+    "question": "Which data structure is most appropriate for checking balanced brackets?",
+    "options": [
+      "Stack",
+      "Queue",
+      "Heap",
+      "Graph"
+    ],
+    "answerIndex": 0,
+    "explanation": "A stack matches the most recent opening bracket to the next closing bracket.",
+    "subject": "DSA",
+    "difficulty": "Easy"
+  },
+  {
+    "id": 98,
+    "question": "Which technique is commonly used to detect a cycle in a linked list in O(1) extra space?",
+    "options": [
+      "Floyd slow/fast pointers",
+      "Merge sort",
+      "Binary search",
+      "Prefix sums"
+    ],
+    "answerIndex": 0,
+    "explanation": "Floyd's tortoise-and-hare method uses two pointers at different speeds.",
+    "subject": "DSA",
+    "difficulty": "Medium"
+  },
+  {
+    "id": 99,
+    "question": "What is the auxiliary space of iterative binary search?",
+    "options": [
+      "O(1)",
+      "O(n)",
+      "O(log n)",
+      "O(n log n)"
+    ],
+    "answerIndex": 0,
+    "explanation": "The iterative implementation uses a constant number of variables.",
+    "subject": "DSA",
+    "difficulty": "Medium"
+  },
+  {
+    "id": 100,
+    "question": "Which traversal explores a tree by levels?",
+    "options": [
+      "Level-order",
+      "Inorder",
+      "Postorder",
+      "Reverse preorder"
+    ],
+    "answerIndex": 0,
+    "explanation": "Level-order traversal visits nodes breadth-first.",
+    "subject": "DSA",
+    "difficulty": "Easy"
+  },
+  {
+    "id": 101,
+    "question": "What is the average time complexity of quicksort?",
+    "options": [
+      "O(n log n)",
+      "O(n²)",
+      "O(log n)",
+      "O(1)"
+    ],
+    "answerIndex": 0,
+    "explanation": "Balanced partitions yield O(n log n) expected work.",
+    "subject": "DSA",
+    "difficulty": "Medium"
+  },
+  {
+    "id": 102,
+    "question": "Can a Java class implement multiple interfaces?",
+    "options": [
+      "Yes",
+      "No",
+      "Only if abstract",
+      "Only if final"
+    ],
+    "answerIndex": 0,
+    "explanation": "Java permits a class to implement multiple interfaces.",
+    "subject": "OOP",
+    "difficulty": "Easy"
+  },
+  {
+    "id": 103,
+    "question": "Which keyword refers to the current Java object?",
+    "options": [
+      "this",
+      "super only",
+      "self",
+      "current"
+    ],
+    "answerIndex": 0,
+    "explanation": "this refers to the current instance.",
+    "subject": "OOP",
+    "difficulty": "Easy"
+  },
+  {
+    "id": 104,
+    "question": "What is polymorphism?",
+    "options": [
+      "One interface with multiple implementations/forms",
+      "A database backup",
+      "A memory page",
+      "A sorting technique"
+    ],
+    "answerIndex": 0,
+    "explanation": "Polymorphism allows the same interface or call to behave differently for different types.",
+    "subject": "OOP",
+    "difficulty": "Medium"
+  },
+  {
+    "id": 105,
+    "question": "Which state means a process is waiting for an event or I/O?",
+    "options": [
+      "Blocked/Waiting",
+      "Running",
+      "Terminated",
+      "New only"
+    ],
+    "answerIndex": 0,
+    "explanation": "A blocked process cannot proceed until its event or I/O completes.",
+    "subject": "OS",
+    "difficulty": "Easy"
+  },
+  {
+    "id": 106,
+    "question": "What is a race condition?",
+    "options": [
+      "Outcome depends on timing/interleaving of concurrent operations",
+      "A CPU benchmark",
+      "A page replacement policy",
+      "A file format"
+    ],
+    "answerIndex": 0,
+    "explanation": "Unsynchronized access to shared state can make results timing-dependent.",
+    "subject": "OS",
+    "difficulty": "Medium"
+  },
+  {
+    "id": 107,
+    "question": "Which page replacement algorithm evicts the page that has not been used for the longest time in the past?",
+    "options": [
+      "LRU",
+      "FIFO always",
+      "Round robin",
+      "FCFS"
+    ],
+    "answerIndex": 0,
+    "explanation": "LRU approximates locality by evicting the least recently used page.",
+    "subject": "OS",
+    "difficulty": "Medium"
+  },
+  {
+    "id": 108,
+    "question": "What does COMMIT do?",
+    "options": [
+      "Makes a transaction's changes permanent",
+      "Undoes a transaction",
+      "Deletes a table definition",
+      "Creates a view"
+    ],
+    "answerIndex": 0,
+    "explanation": "COMMIT successfully ends a transaction and persists its changes.",
+    "subject": "DBMS",
+    "difficulty": "Easy"
+  },
+  {
+    "id": 109,
+    "question": "What does ROLLBACK do?",
+    "options": [
+      "Undo uncommitted transaction changes",
+      "Create an index",
+      "Group rows",
+      "Rename a database"
+    ],
+    "answerIndex": 0,
+    "explanation": "ROLLBACK reverses changes in the current uncommitted transaction.",
+    "subject": "DBMS",
+    "difficulty": "Easy"
+  },
+  {
+    "id": 110,
+    "question": "Which command is DDL?",
+    "options": [
+      "CREATE TABLE",
+      "SELECT",
+      "UPDATE",
+      "INSERT"
+    ],
+    "answerIndex": 0,
+    "explanation": "CREATE defines database schema objects.",
+    "subject": "DBMS",
+    "difficulty": "Easy"
+  },
+  {
+    "id": 111,
+    "question": "Which transport protocol does not establish a connection before sending datagrams?",
+    "options": [
+      "UDP",
+      "TCP",
+      "TLS",
+      "HTTP"
+    ],
+    "answerIndex": 0,
+    "explanation": "UDP sends datagrams without a TCP-style connection handshake.",
+    "subject": "CN",
+    "difficulty": "Easy"
+  },
+  {
+    "id": 112,
+    "question": "What does ARP resolve on a local IPv4 network?",
+    "options": [
+      "IPv4 address to MAC address",
+      "Domain to URL",
+      "Port to process name",
+      "Hostname to TLS key"
+    ],
+    "answerIndex": 0,
+    "explanation": "ARP discovers the link-layer address associated with an IPv4 address on a LAN.",
+    "subject": "CN",
+    "difficulty": "Medium"
+  },
+  {
+    "id": 113,
+    "question": "Which data structure is most appropriate for checking balanced brackets?",
+    "options": [
+      "Stack",
+      "Queue",
+      "Heap",
+      "Graph"
+    ],
+    "answerIndex": 0,
+    "explanation": "A stack matches the most recent opening bracket to the next closing bracket.",
+    "subject": "DSA",
+    "difficulty": "Easy"
+  },
+  {
+    "id": 114,
+    "question": "Which technique is commonly used to detect a cycle in a linked list in O(1) extra space?",
+    "options": [
+      "Floyd slow/fast pointers",
+      "Merge sort",
+      "Binary search",
+      "Prefix sums"
+    ],
+    "answerIndex": 0,
+    "explanation": "Floyd's tortoise-and-hare method uses two pointers at different speeds.",
+    "subject": "DSA",
+    "difficulty": "Medium"
+  },
+  {
+    "id": 115,
+    "question": "What is the auxiliary space of iterative binary search?",
+    "options": [
+      "O(1)",
+      "O(n)",
+      "O(log n)",
+      "O(n log n)"
+    ],
+    "answerIndex": 0,
+    "explanation": "The iterative implementation uses a constant number of variables.",
+    "subject": "DSA",
+    "difficulty": "Medium"
+  },
+  {
+    "id": 116,
+    "question": "Which traversal explores a tree by levels?",
+    "options": [
+      "Level-order",
+      "Inorder",
+      "Postorder",
+      "Reverse preorder"
+    ],
+    "answerIndex": 0,
+    "explanation": "Level-order traversal visits nodes breadth-first.",
+    "subject": "DSA",
+    "difficulty": "Easy"
+  },
+  {
+    "id": 117,
+    "question": "What is the average time complexity of quicksort?",
+    "options": [
+      "O(n log n)",
+      "O(n²)",
+      "O(log n)",
+      "O(1)"
+    ],
+    "answerIndex": 0,
+    "explanation": "Balanced partitions yield O(n log n) expected work.",
+    "subject": "DSA",
+    "difficulty": "Medium"
+  },
+  {
+    "id": 118,
+    "question": "Can a Java class implement multiple interfaces?",
+    "options": [
+      "Yes",
+      "No",
+      "Only if abstract",
+      "Only if final"
+    ],
+    "answerIndex": 0,
+    "explanation": "Java permits a class to implement multiple interfaces.",
+    "subject": "OOP",
+    "difficulty": "Easy"
+  },
+  {
+    "id": 119,
+    "question": "Which keyword refers to the current Java object?",
+    "options": [
+      "this",
+      "super only",
+      "self",
+      "current"
+    ],
+    "answerIndex": 0,
+    "explanation": "this refers to the current instance.",
+    "subject": "OOP",
+    "difficulty": "Easy"
+  },
+  {
+    "id": 120,
+    "question": "What is polymorphism?",
+    "options": [
+      "One interface with multiple implementations/forms",
+      "A database backup",
+      "A memory page",
+      "A sorting technique"
+    ],
+    "answerIndex": 0,
+    "explanation": "Polymorphism allows the same interface or call to behave differently for different types.",
+    "subject": "OOP",
+    "difficulty": "Medium"
+  },
+  {
+    "id": 121,
+    "question": "Which state means a process is waiting for an event or I/O?",
+    "options": [
+      "Blocked/Waiting",
+      "Running",
+      "Terminated",
+      "New only"
+    ],
+    "answerIndex": 0,
+    "explanation": "A blocked process cannot proceed until its event or I/O completes.",
+    "subject": "OS",
+    "difficulty": "Easy"
+  },
+  {
+    "id": 122,
+    "question": "What is a race condition?",
+    "options": [
+      "Outcome depends on timing/interleaving of concurrent operations",
+      "A CPU benchmark",
+      "A page replacement policy",
+      "A file format"
+    ],
+    "answerIndex": 0,
+    "explanation": "Unsynchronized access to shared state can make results timing-dependent.",
+    "subject": "OS",
+    "difficulty": "Medium"
+  },
+  {
+    "id": 123,
+    "question": "Which page replacement algorithm evicts the page that has not been used for the longest time in the past?",
+    "options": [
+      "LRU",
+      "FIFO always",
+      "Round robin",
+      "FCFS"
+    ],
+    "answerIndex": 0,
+    "explanation": "LRU approximates locality by evicting the least recently used page.",
+    "subject": "OS",
+    "difficulty": "Medium"
+  },
+  {
+    "id": 124,
+    "question": "What does COMMIT do?",
+    "options": [
+      "Makes a transaction's changes permanent",
+      "Undoes a transaction",
+      "Deletes a table definition",
+      "Creates a view"
+    ],
+    "answerIndex": 0,
+    "explanation": "COMMIT successfully ends a transaction and persists its changes.",
+    "subject": "DBMS",
+    "difficulty": "Easy"
+  },
+  {
+    "id": 125,
+    "question": "What does ROLLBACK do?",
+    "options": [
+      "Undo uncommitted transaction changes",
+      "Create an index",
+      "Group rows",
+      "Rename a database"
+    ],
+    "answerIndex": 0,
+    "explanation": "ROLLBACK reverses changes in the current uncommitted transaction.",
+    "subject": "DBMS",
+    "difficulty": "Easy"
+  },
+  {
+    "id": 126,
+    "question": "Which command is DDL?",
+    "options": [
+      "CREATE TABLE",
+      "SELECT",
+      "UPDATE",
+      "INSERT"
+    ],
+    "answerIndex": 0,
+    "explanation": "CREATE defines database schema objects.",
+    "subject": "DBMS",
+    "difficulty": "Easy"
+  },
+  {
+    "id": 127,
+    "question": "Which transport protocol does not establish a connection before sending datagrams?",
+    "options": [
+      "UDP",
+      "TCP",
+      "TLS",
+      "HTTP"
+    ],
+    "answerIndex": 0,
+    "explanation": "UDP sends datagrams without a TCP-style connection handshake.",
+    "subject": "CN",
+    "difficulty": "Easy"
+  },
+  {
+    "id": 128,
+    "question": "What does ARP resolve on a local IPv4 network?",
+    "options": [
+      "IPv4 address to MAC address",
+      "Domain to URL",
+      "Port to process name",
+      "Hostname to TLS key"
+    ],
+    "answerIndex": 0,
+    "explanation": "ARP discovers the link-layer address associated with an IPv4 address on a LAN.",
+    "subject": "CN",
+    "difficulty": "Medium"
+  },
+  {
+    "id": 129,
+    "question": "Which data structure is most appropriate for checking balanced brackets?",
+    "options": [
+      "Stack",
+      "Queue",
+      "Heap",
+      "Graph"
+    ],
+    "answerIndex": 0,
+    "explanation": "A stack matches the most recent opening bracket to the next closing bracket.",
+    "subject": "DSA",
+    "difficulty": "Easy"
+  },
+  {
+    "id": 130,
+    "question": "Which technique is commonly used to detect a cycle in a linked list in O(1) extra space?",
+    "options": [
+      "Floyd slow/fast pointers",
+      "Merge sort",
+      "Binary search",
+      "Prefix sums"
+    ],
+    "answerIndex": 0,
+    "explanation": "Floyd's tortoise-and-hare method uses two pointers at different speeds.",
+    "subject": "DSA",
+    "difficulty": "Medium"
+  },
+  {
+    "id": 131,
+    "question": "What is the auxiliary space of iterative binary search?",
+    "options": [
+      "O(1)",
+      "O(n)",
+      "O(log n)",
+      "O(n log n)"
+    ],
+    "answerIndex": 0,
+    "explanation": "The iterative implementation uses a constant number of variables.",
+    "subject": "DSA",
+    "difficulty": "Medium"
+  },
+  {
+    "id": 132,
+    "question": "Which traversal explores a tree by levels?",
+    "options": [
+      "Level-order",
+      "Inorder",
+      "Postorder",
+      "Reverse preorder"
+    ],
+    "answerIndex": 0,
+    "explanation": "Level-order traversal visits nodes breadth-first.",
+    "subject": "DSA",
+    "difficulty": "Easy"
+  },
+  {
+    "id": 133,
+    "question": "What is the average time complexity of quicksort?",
+    "options": [
+      "O(n log n)",
+      "O(n²)",
+      "O(log n)",
+      "O(1)"
+    ],
+    "answerIndex": 0,
+    "explanation": "Balanced partitions yield O(n log n) expected work.",
+    "subject": "DSA",
+    "difficulty": "Medium"
+  },
+  {
+    "id": 134,
+    "question": "Can a Java class implement multiple interfaces?",
+    "options": [
+      "Yes",
+      "No",
+      "Only if abstract",
+      "Only if final"
+    ],
+    "answerIndex": 0,
+    "explanation": "Java permits a class to implement multiple interfaces.",
+    "subject": "OOP",
+    "difficulty": "Easy"
+  },
+  {
+    "id": 135,
+    "question": "Which keyword refers to the current Java object?",
+    "options": [
+      "this",
+      "super only",
+      "self",
+      "current"
+    ],
+    "answerIndex": 0,
+    "explanation": "this refers to the current instance.",
+    "subject": "OOP",
+    "difficulty": "Easy"
+  },
+  {
+    "id": 136,
+    "question": "What is polymorphism?",
+    "options": [
+      "One interface with multiple implementations/forms",
+      "A database backup",
+      "A memory page",
+      "A sorting technique"
+    ],
+    "answerIndex": 0,
+    "explanation": "Polymorphism allows the same interface or call to behave differently for different types.",
+    "subject": "OOP",
+    "difficulty": "Medium"
+  },
+  {
+    "id": 137,
+    "question": "Which state means a process is waiting for an event or I/O?",
+    "options": [
+      "Blocked/Waiting",
+      "Running",
+      "Terminated",
+      "New only"
+    ],
+    "answerIndex": 0,
+    "explanation": "A blocked process cannot proceed until its event or I/O completes.",
+    "subject": "OS",
+    "difficulty": "Easy"
+  },
+  {
+    "id": 138,
+    "question": "What is a race condition?",
+    "options": [
+      "Outcome depends on timing/interleaving of concurrent operations",
+      "A CPU benchmark",
+      "A page replacement policy",
+      "A file format"
+    ],
+    "answerIndex": 0,
+    "explanation": "Unsynchronized access to shared state can make results timing-dependent.",
+    "subject": "OS",
+    "difficulty": "Medium"
+  },
+  {
+    "id": 139,
+    "question": "Which page replacement algorithm evicts the page that has not been used for the longest time in the past?",
+    "options": [
+      "LRU",
+      "FIFO always",
+      "Round robin",
+      "FCFS"
+    ],
+    "answerIndex": 0,
+    "explanation": "LRU approximates locality by evicting the least recently used page.",
+    "subject": "OS",
+    "difficulty": "Medium"
+  },
+  {
+    "id": 140,
+    "question": "What does COMMIT do?",
+    "options": [
+      "Makes a transaction's changes permanent",
+      "Undoes a transaction",
+      "Deletes a table definition",
+      "Creates a view"
+    ],
+    "answerIndex": 0,
+    "explanation": "COMMIT successfully ends a transaction and persists its changes.",
+    "subject": "DBMS",
+    "difficulty": "Easy"
+  },
+  {
+    "id": 141,
+    "question": "What does ROLLBACK do?",
+    "options": [
+      "Undo uncommitted transaction changes",
+      "Create an index",
+      "Group rows",
+      "Rename a database"
+    ],
+    "answerIndex": 0,
+    "explanation": "ROLLBACK reverses changes in the current uncommitted transaction.",
+    "subject": "DBMS",
+    "difficulty": "Easy"
+  },
+  {
+    "id": 142,
+    "question": "Which command is DDL?",
+    "options": [
+      "CREATE TABLE",
+      "SELECT",
+      "UPDATE",
+      "INSERT"
+    ],
+    "answerIndex": 0,
+    "explanation": "CREATE defines database schema objects.",
+    "subject": "DBMS",
+    "difficulty": "Easy"
+  },
+  {
+    "id": 143,
+    "question": "Which transport protocol does not establish a connection before sending datagrams?",
+    "options": [
+      "UDP",
+      "TCP",
+      "TLS",
+      "HTTP"
+    ],
+    "answerIndex": 0,
+    "explanation": "UDP sends datagrams without a TCP-style connection handshake.",
+    "subject": "CN",
+    "difficulty": "Easy"
+  },
+  {
+    "id": 144,
+    "question": "What does ARP resolve on a local IPv4 network?",
+    "options": [
+      "IPv4 address to MAC address",
+      "Domain to URL",
+      "Port to process name",
+      "Hostname to TLS key"
+    ],
+    "answerIndex": 0,
+    "explanation": "ARP discovers the link-layer address associated with an IPv4 address on a LAN.",
+    "subject": "CN",
+    "difficulty": "Medium"
+  },
+  {
+    "id": 145,
+    "question": "Which data structure is most appropriate for checking balanced brackets?",
+    "options": [
+      "Stack",
+      "Queue",
+      "Heap",
+      "Graph"
+    ],
+    "answerIndex": 0,
+    "explanation": "A stack matches the most recent opening bracket to the next closing bracket.",
+    "subject": "DSA",
+    "difficulty": "Easy"
+  },
+  {
+    "id": 146,
+    "question": "Which technique is commonly used to detect a cycle in a linked list in O(1) extra space?",
+    "options": [
+      "Floyd slow/fast pointers",
+      "Merge sort",
+      "Binary search",
+      "Prefix sums"
+    ],
+    "answerIndex": 0,
+    "explanation": "Floyd's tortoise-and-hare method uses two pointers at different speeds.",
+    "subject": "DSA",
+    "difficulty": "Medium"
+  },
+  {
+    "id": 147,
+    "question": "What is the auxiliary space of iterative binary search?",
+    "options": [
+      "O(1)",
+      "O(n)",
+      "O(log n)",
+      "O(n log n)"
+    ],
+    "answerIndex": 0,
+    "explanation": "The iterative implementation uses a constant number of variables.",
+    "subject": "DSA",
+    "difficulty": "Medium"
+  },
+  {
+    "id": 148,
+    "question": "Which traversal explores a tree by levels?",
+    "options": [
+      "Level-order",
+      "Inorder",
+      "Postorder",
+      "Reverse preorder"
+    ],
+    "answerIndex": 0,
+    "explanation": "Level-order traversal visits nodes breadth-first.",
+    "subject": "DSA",
+    "difficulty": "Easy"
+  },
+  {
+    "id": 149,
+    "question": "What is the average time complexity of quicksort?",
+    "options": [
+      "O(n log n)",
+      "O(n²)",
+      "O(log n)",
+      "O(1)"
+    ],
+    "answerIndex": 0,
+    "explanation": "Balanced partitions yield O(n log n) expected work.",
+    "subject": "DSA",
+    "difficulty": "Medium"
+  },
+  {
+    "id": 150,
+    "question": "Can a Java class implement multiple interfaces?",
+    "options": [
+      "Yes",
+      "No",
+      "Only if abstract",
+      "Only if final"
+    ],
+    "answerIndex": 0,
+    "explanation": "Java permits a class to implement multiple interfaces.",
+    "subject": "OOP",
+    "difficulty": "Easy"
+  },
+  {
+    "id": 151,
+    "question": "A product costs ₹800 and is sold at a 15% profit. What is the selling price?",
+    "options": [
+      "₹880",
+      "₹900",
+      "₹920",
+      "₹940"
+    ],
+    "answerIndex": 2,
+    "explanation": "Selling price = 800 × 1.15 = ₹920.",
+    "subject": "Aptitude",
+    "topic": "Quantitative Aptitude",
+    "difficulty": "Easy",
+    "source": "PrepForge original practice"
+  },
+  {
+    "id": 152,
+    "question": "A number is increased by 20% and then reduced by 20%. What is the net change?",
+    "options": [
+      "No change",
+      "4% decrease",
+      "4% increase",
+      "2% decrease"
+    ],
+    "answerIndex": 1,
+    "explanation": "100 × 1.2 × 0.8 = 96, so the net change is a 4% decrease.",
+    "subject": "Aptitude",
+    "topic": "Quantitative Aptitude",
+    "difficulty": "Medium",
+    "source": "PrepForge original practice"
+  },
+  {
+    "id": 153,
+    "question": "The ratio of two numbers is 3:5 and their sum is 64. What is the smaller number?",
+    "options": [
+      "18",
+      "24",
+      "32",
+      "40"
+    ],
+    "answerIndex": 1,
+    "explanation": "Eight total parts equal 64; one part is 8, so the smaller number is 24.",
+    "subject": "Aptitude",
+    "topic": "Quantitative Aptitude",
+    "difficulty": "Easy",
+    "source": "PrepForge original practice"
+  },
+  {
+    "id": 154,
+    "question": "The average of five numbers is 18. If four sum to 68, what is the fifth?",
+    "options": [
+      "18",
+      "20",
+      "22",
+      "24"
+    ],
+    "answerIndex": 2,
+    "explanation": "Total sum is 5 × 18 = 90; 90 − 68 = 22.",
+    "subject": "Aptitude",
+    "topic": "Quantitative Aptitude",
+    "difficulty": "Easy",
+    "source": "PrepForge original practice"
+  },
+  {
+    "id": 155,
+    "question": "A can finish a job in 12 days and B in 18 days. Working together, they finish in:",
+    "options": [
+      "6 days",
+      "7.2 days",
+      "8 days",
+      "9 days"
+    ],
+    "answerIndex": 1,
+    "explanation": "Combined rate = 1/12 + 1/18 = 5/36; time = 36/5 = 7.2 days.",
+    "subject": "Aptitude",
+    "topic": "Quantitative Aptitude",
+    "difficulty": "Medium",
+    "source": "PrepForge original practice"
+  },
+  {
+    "id": 156,
+    "question": "A train travels at 72 km/h. How far does it travel in 25 seconds?",
+    "options": [
+      "250 m",
+      "400 m",
+      "500 m",
+      "720 m"
+    ],
+    "answerIndex": 2,
+    "explanation": "72 km/h = 20 m/s; distance = 20 × 25 = 500 m.",
+    "subject": "Aptitude",
+    "topic": "Quantitative Aptitude",
+    "difficulty": "Medium",
+    "source": "PrepForge original practice"
+  },
+  {
+    "id": 157,
+    "question": "What is the simple interest on ₹5,000 at 8% per year for 2 years?",
+    "options": [
+      "₹400",
+      "₹600",
+      "₹800",
+      "₹1,000"
+    ],
+    "answerIndex": 2,
+    "explanation": "SI = PRT/100 = 5000 × 8 × 2 / 100 = ₹800.",
+    "subject": "Aptitude",
+    "topic": "Quantitative Aptitude",
+    "difficulty": "Easy",
+    "source": "PrepForge original practice"
+  },
+  {
+    "id": 158,
+    "question": "A bag has 3 red and 5 blue balls. Probability of drawing a red ball is:",
+    "options": [
+      "3/5",
+      "5/8",
+      "3/8",
+      "1/2"
+    ],
+    "answerIndex": 2,
+    "explanation": "There are 3 favorable outcomes among 8 equally likely balls.",
+    "subject": "Aptitude",
+    "topic": "Quantitative Aptitude",
+    "difficulty": "Easy",
+    "source": "PrepForge original practice"
+  },
+  {
+    "id": 159,
+    "question": "If x:y = 4:7 and y = 35, then x =:",
+    "options": [
+      "15",
+      "20",
+      "25",
+      "28"
+    ],
+    "answerIndex": 1,
+    "explanation": "One ratio part is 35/7 = 5; x = 4 × 5 = 20.",
+    "subject": "Aptitude",
+    "topic": "Quantitative Aptitude",
+    "difficulty": "Easy",
+    "source": "PrepForge original practice"
+  },
+  {
+    "id": 160,
+    "question": "The marked price is ₹1,500 and discount is 12%. What is the selling price?",
+    "options": [
+      "₹1,280",
+      "₹1,300",
+      "₹1,320",
+      "₹1,350"
+    ],
+    "answerIndex": 2,
+    "explanation": "Discount = ₹180, so selling price = ₹1,320.",
+    "subject": "Aptitude",
+    "topic": "Quantitative Aptitude",
+    "difficulty": "Easy",
+    "source": "PrepForge original practice"
+  },
+  {
+    "id": 161,
+    "question": "Find the next number: 2, 6, 12, 20, 30, __",
+    "options": [
+      "36",
+      "40",
+      "42",
+      "44"
+    ],
+    "answerIndex": 2,
+    "explanation": "Terms are n(n+1): 1×2, 2×3, …, 6×7 = 42.",
+    "subject": "Aptitude",
+    "topic": "Number Series",
+    "difficulty": "Medium",
+    "source": "PrepForge original practice"
+  },
+  {
+    "id": 162,
+    "question": "Find the next term: 3, 9, 27, 81, __",
+    "options": [
+      "162",
+      "189",
+      "243",
+      "324"
+    ],
+    "answerIndex": 2,
+    "explanation": "Each term is multiplied by 3.",
+    "subject": "Aptitude",
+    "topic": "Number Series",
+    "difficulty": "Easy",
+    "source": "PrepForge original practice"
+  },
+  {
+    "id": 163,
+    "question": "Find the missing term: 1, 4, 9, 16, __, 36",
+    "options": [
+      "20",
+      "24",
+      "25",
+      "30"
+    ],
+    "answerIndex": 2,
+    "explanation": "These are consecutive squares: 1², 2², 3², 4², 5², 6².",
+    "subject": "Aptitude",
+    "topic": "Number Series",
+    "difficulty": "Easy",
+    "source": "PrepForge original practice"
+  },
+  {
+    "id": 164,
+    "question": "Find the next number: 5, 8, 14, 23, 35, __",
+    "options": [
+      "45",
+      "48",
+      "50",
+      "52"
+    ],
+    "answerIndex": 2,
+    "explanation": "Differences are 3, 6, 9, 12; next difference is 15, giving 50.",
+    "subject": "Aptitude",
+    "topic": "Number Series",
+    "difficulty": "Medium",
+    "source": "PrepForge original practice"
+  },
+  {
+    "id": 165,
+    "question": "Find the next term: 64, 32, 16, 8, __",
+    "options": [
+      "2",
+      "4",
+      "6",
+      "12"
+    ],
+    "answerIndex": 1,
+    "explanation": "Each term is half the previous term.",
+    "subject": "Aptitude",
+    "topic": "Number Series",
+    "difficulty": "Easy",
+    "source": "PrepForge original practice"
+  },
+  {
+    "id": 166,
+    "question": "All coders are learners. Some learners are designers. Which conclusion must be true?",
+    "options": [
+      "All designers are coders",
+      "Some coders are designers",
+      "All coders are learners",
+      "No learners are coders"
+    ],
+    "answerIndex": 2,
+    "explanation": "The first statement directly guarantees that all coders are learners.",
+    "subject": "Aptitude",
+    "topic": "Logical Reasoning",
+    "difficulty": "Medium",
+    "source": "PrepForge original practice"
+  },
+  {
+    "id": 167,
+    "question": "If A is taller than B and B is taller than C, who is shortest?",
+    "options": [
+      "A",
+      "B",
+      "C",
+      "Cannot determine"
+    ],
+    "answerIndex": 2,
+    "explanation": "The ordering is A > B > C, so C is shortest.",
+    "subject": "Aptitude",
+    "topic": "Logical Reasoning",
+    "difficulty": "Easy",
+    "source": "PrepForge original practice"
+  },
+  {
+    "id": 168,
+    "question": "A person faces north, turns right, then right, then left. Which direction now?",
+    "options": [
+      "North",
+      "South",
+      "East",
+      "West"
+    ],
+    "answerIndex": 2,
+    "explanation": "North → East → South → East.",
+    "subject": "Aptitude",
+    "topic": "Logical Reasoning",
+    "difficulty": "Easy",
+    "source": "PrepForge original practice"
+  },
+  {
+    "id": 169,
+    "question": "In a code, CAT is written DBU (each letter moves forward by one). DOG is written:",
+    "options": [
+      "EPH",
+      "CNG",
+      "EOG",
+      "FPH"
+    ],
+    "answerIndex": 0,
+    "explanation": "D→E, O→P, G→H.",
+    "subject": "Aptitude",
+    "topic": "Logical Reasoning",
+    "difficulty": "Easy",
+    "source": "PrepForge original practice"
+  },
+  {
+    "id": 170,
+    "question": "Find the odd one out: 8, 27, 64, 100, 125",
+    "options": [
+      "8",
+      "27",
+      "100",
+      "125"
+    ],
+    "answerIndex": 2,
+    "explanation": "8, 27, 64 and 125 are cubes; 100 is not.",
+    "subject": "Aptitude",
+    "topic": "Logical Reasoning",
+    "difficulty": "Medium",
+    "source": "PrepForge original practice"
+  },
+  {
+    "id": 171,
+    "question": "If yesterday was Monday, what day is the day after tomorrow?",
+    "options": [
+      "Wednesday",
+      "Thursday",
+      "Friday",
+      "Saturday"
+    ],
+    "answerIndex": 1,
+    "explanation": "Yesterday Monday means today Tuesday; tomorrow Wednesday; day after tomorrow Thursday.",
+    "subject": "Aptitude",
+    "topic": "Logical Reasoning",
+    "difficulty": "Easy",
+    "source": "PrepForge original practice"
+  },
+  {
+    "id": 172,
+    "question": "A is the brother of B. B is the sister of C. What is A to C?",
+    "options": [
+      "Brother",
+      "Sister",
+      "Father",
+      "Cannot determine"
+    ],
+    "answerIndex": 0,
+    "explanation": "A is male and shares the sibling relationship with C, so A is C’s brother.",
+    "subject": "Aptitude",
+    "topic": "Logical Reasoning",
+    "difficulty": "Medium",
+    "source": "PrepForge original practice"
+  },
+  {
+    "id": 173,
+    "question": "Choose the grammatically correct sentence.",
+    "options": [
+      "She have completed the task.",
+      "She has completed the task.",
+      "She having completed the task.",
+      "She complete the task yesterday."
+    ],
+    "answerIndex": 1,
+    "explanation": "The singular subject “she” takes “has” in the present perfect.",
+    "subject": "Aptitude",
+    "topic": "Verbal Ability",
+    "difficulty": "Easy",
+    "source": "PrepForge original practice"
+  },
+  {
+    "id": 174,
+    "question": "Choose the closest synonym for “concise”.",
+    "options": [
+      "Brief",
+      "Confusing",
+      "Lengthy",
+      "Uncertain"
+    ],
+    "answerIndex": 0,
+    "explanation": "Concise means brief while retaining the essential meaning.",
+    "subject": "Aptitude",
+    "topic": "Verbal Ability",
+    "difficulty": "Easy",
+    "source": "PrepForge original practice"
+  },
+  {
+    "id": 175,
+    "question": "Choose the antonym of “scarce”.",
+    "options": [
+      "Rare",
+      "Limited",
+      "Abundant",
+      "Insufficient"
+    ],
+    "answerIndex": 2,
+    "explanation": "Abundant means plentiful, the opposite of scarce.",
+    "subject": "Aptitude",
+    "topic": "Verbal Ability",
+    "difficulty": "Easy",
+    "source": "PrepForge original practice"
+  },
+  {
+    "id": 176,
+    "question": "Fill in the blank: Neither of the answers ___ correct.",
+    "options": [
+      "are",
+      "were",
+      "is",
+      "have been"
+    ],
+    "answerIndex": 2,
+    "explanation": "“Neither” is treated as singular in this construction, so “is” is standard.",
+    "subject": "Aptitude",
+    "topic": "Verbal Ability",
+    "difficulty": "Medium",
+    "source": "PrepForge original practice"
+  },
+  {
+    "id": 177,
+    "question": "Choose the correctly punctuated sentence.",
+    "options": [
+      "Lets eat, grandma.",
+      "Let’s eat, Grandma.",
+      "Lets eat Grandma.",
+      "Let’s eat Grandma"
+    ],
+    "answerIndex": 1,
+    "explanation": "The apostrophe forms “Let’s” and the comma directly addresses Grandma.",
+    "subject": "Aptitude",
+    "topic": "Verbal Ability",
+    "difficulty": "Easy",
+    "source": "PrepForge original practice"
+  },
+  {
+    "id": 178,
+    "question": "A fair die is rolled once. Probability of getting a number greater than 4 is:",
+    "options": [
+      "1/6",
+      "1/3",
+      "1/2",
+      "2/3"
+    ],
+    "answerIndex": 1,
+    "explanation": "Favorable results are 5 and 6, so probability is 2/6 = 1/3.",
+    "subject": "Aptitude",
+    "topic": "Probability",
+    "difficulty": "Easy",
+    "source": "PrepForge original practice"
+  },
+  {
+    "id": 179,
+    "question": "Two fair coins are tossed. Probability of exactly one head is:",
+    "options": [
+      "1/4",
+      "1/2",
+      "3/4",
+      "1"
+    ],
+    "answerIndex": 1,
+    "explanation": "Outcomes HT and TH are 2 of 4 equally likely outcomes.",
+    "subject": "Aptitude",
+    "topic": "Probability",
+    "difficulty": "Medium",
+    "source": "PrepForge original practice"
+  },
+  {
+    "id": 180,
+    "question": "If 8 workers complete a job in 15 days, how many worker-days are required?",
+    "options": [
+      "23",
+      "60",
+      "120",
+      "150"
+    ],
+    "answerIndex": 2,
+    "explanation": "Total work = 8 × 15 = 120 worker-days.",
+    "subject": "Aptitude",
+    "topic": "Time and Work",
+    "difficulty": "Easy",
+    "source": "PrepForge original practice"
+  },
+  {
+    "id": 181,
+    "question": "A pipe fills a tank in 6 hours and a drain empties it in 12 hours. If both are open, the tank fills in:",
+    "options": [
+      "4 hours",
+      "6 hours",
+      "12 hours",
+      "18 hours"
+    ],
+    "answerIndex": 2,
+    "explanation": "Net rate = 1/6 − 1/12 = 1/12 tank per hour.",
+    "subject": "Aptitude",
+    "topic": "Time and Work",
+    "difficulty": "Medium",
+    "source": "PrepForge original practice"
+  },
+  {
+    "id": 182,
+    "question": "A car covers 150 km in 3 hours. Its average speed is:",
+    "options": [
+      "30 km/h",
+      "45 km/h",
+      "50 km/h",
+      "60 km/h"
+    ],
+    "answerIndex": 2,
+    "explanation": "Average speed = distance/time = 150/3 = 50 km/h.",
+    "subject": "Aptitude",
+    "topic": "Time, Speed & Distance",
+    "difficulty": "Easy",
+    "source": "PrepForge original practice"
+  },
+  {
+    "id": 183,
+    "question": "What is 35% of 240?",
+    "options": [
+      "72",
+      "78",
+      "84",
+      "96"
+    ],
+    "answerIndex": 2,
+    "explanation": "0.35 × 240 = 84.",
+    "subject": "Aptitude",
+    "topic": "Percentages",
+    "difficulty": "Easy",
+    "source": "PrepForge original practice"
+  },
+  {
+    "id": 184,
+    "question": "How many ways can 3 distinct books be arranged on a shelf?",
+    "options": [
+      "3",
+      "6",
+      "9",
+      "27"
+    ],
+    "answerIndex": 1,
+    "explanation": "There are 3! = 6 arrangements.",
+    "subject": "Aptitude",
+    "topic": "Permutations & Combinations",
+    "difficulty": "Easy",
+    "source": "PrepForge original practice"
+  },
+  {
+    "id": 185,
+    "question": "How many ways can 2 people be selected from 5 people?",
+    "options": [
+      "5",
+      "10",
+      "20",
+      "25"
+    ],
+    "answerIndex": 1,
+    "explanation": "The number is C(5,2) = 5×4/(2×1) = 10.",
+    "subject": "Aptitude",
+    "topic": "Permutations & Combinations",
+    "difficulty": "Medium",
+    "source": "PrepForge original practice"
+  },
+  {
+    "id": 186,
+    "question": "Sales rise from 200 units to 260 units. What is the percentage increase?",
+    "options": [
+      "20%",
+      "25%",
+      "30%",
+      "60%"
+    ],
+    "answerIndex": 2,
+    "explanation": "Increase is 60; 60/200 × 100 = 30%.",
+    "subject": "Aptitude",
+    "topic": "Data Interpretation",
+    "difficulty": "Easy",
+    "source": "PrepForge original practice"
+  },
+  {
+    "id": 187,
+    "question": "A pie chart sector is 90° out of 360°. What fraction of the total does it represent?",
+    "options": [
+      "1/2",
+      "1/3",
+      "1/4",
+      "1/5"
+    ],
+    "answerIndex": 2,
+    "explanation": "90/360 = 1/4.",
+    "subject": "Aptitude",
+    "topic": "Data Interpretation",
+    "difficulty": "Easy",
+    "source": "PrepForge original practice"
+  },
+  {
+    "id": 188,
+    "question": "A father is three times as old as his son. Their ages total 48. How old is the son?",
+    "options": [
+      "10",
+      "12",
+      "14",
+      "16"
+    ],
+    "answerIndex": 1,
+    "explanation": "Let son be x; father 3x; 4x=48 so x=12.",
+    "subject": "Aptitude",
+    "topic": "Ages",
+    "difficulty": "Medium",
+    "source": "PrepForge original practice"
+  },
+  {
+    "id": 189,
+    "question": "A 20 L mixture contains 25% juice. How many litres of juice are present?",
+    "options": [
+      "4 L",
+      "5 L",
+      "6 L",
+      "8 L"
+    ],
+    "answerIndex": 1,
+    "explanation": "25% of 20 L = 5 L.",
+    "subject": "Aptitude",
+    "topic": "Mixtures",
+    "difficulty": "Easy",
+    "source": "PrepForge original practice"
+  },
+  {
+    "id": 190,
+    "question": "Complete the analogy: Book : Reading :: Fork : __",
+    "options": [
+      "Writing",
+      "Eating",
+      "Drawing",
+      "Running"
+    ],
+    "answerIndex": 1,
+    "explanation": "A book is used for reading; a fork is used for eating.",
+    "subject": "Aptitude",
+    "topic": "Logical Reasoning",
+    "difficulty": "Easy",
+    "source": "PrepForge original practice"
+  },
+  {
+    "id": 191,
+    "question": "If every laptop is a device and no device is a plant, which statement follows?",
+    "options": [
+      "Some laptops are plants",
+      "No laptop is a plant",
+      "All plants are laptops",
+      "Cannot infer anything"
+    ],
+    "answerIndex": 1,
+    "explanation": "Laptops are devices and devices are not plants, so laptops are not plants.",
+    "subject": "Aptitude",
+    "topic": "Logical Reasoning",
+    "difficulty": "Medium",
+    "source": "PrepForge original practice"
+  },
+  {
+    "id": 192,
+    "question": "The LCM of 12 and 18 is:",
+    "options": [
+      "6",
+      "24",
+      "36",
+      "72"
+    ],
+    "answerIndex": 2,
+    "explanation": "Multiples first overlap at 36.",
+    "subject": "Aptitude",
+    "topic": "Quantitative Aptitude",
+    "difficulty": "Easy",
+    "source": "PrepForge original practice"
+  },
+  {
+    "id": 193,
+    "question": "The HCF of 48 and 60 is:",
+    "options": [
+      "6",
+      "8",
+      "12",
+      "24"
+    ],
+    "answerIndex": 2,
+    "explanation": "The greatest common divisor of 48 and 60 is 12.",
+    "subject": "Aptitude",
+    "topic": "Quantitative Aptitude",
+    "difficulty": "Easy",
+    "source": "PrepForge original practice"
+  },
+  {
+    "id": 194,
+    "question": "If 40% of a number is 72, the number is:",
+    "options": [
+      "160",
+      "170",
+      "180",
+      "200"
+    ],
+    "answerIndex": 2,
+    "explanation": "Number = 72/0.4 = 180.",
+    "subject": "Aptitude",
+    "topic": "Quantitative Aptitude",
+    "difficulty": "Medium",
+    "source": "PrepForge original practice"
+  },
+  {
+    "id": 195,
+    "question": "A bag contains 4 green and 6 yellow balls. Probability of not drawing yellow is:",
+    "options": [
+      "2/5",
+      "3/5",
+      "1/2",
+      "4/6"
+    ],
+    "answerIndex": 0,
+    "explanation": "Not yellow means green: 4/10 = 2/5.",
+    "subject": "Aptitude",
+    "topic": "Probability",
+    "difficulty": "Easy",
+    "source": "PrepForge original practice"
+  },
+  {
+    "id": 196,
+    "question": "Choose the correct preposition: She is interested ___ machine learning.",
+    "options": [
+      "on",
+      "at",
+      "in",
+      "for"
+    ],
+    "answerIndex": 2,
+    "explanation": "The standard phrase is “interested in”.",
+    "subject": "Aptitude",
+    "topic": "Verbal Ability",
+    "difficulty": "Easy",
+    "source": "PrepForge original practice"
+  },
+  {
+    "id": 197,
+    "question": "Choose the correct form: By next week, we ___ the project.",
+    "options": [
+      "finish",
+      "finished",
+      "will have finished",
+      "are finish"
+    ],
+    "answerIndex": 2,
+    "explanation": "Future perfect describes an action completed before a future time.",
+    "subject": "Aptitude",
+    "topic": "Verbal Ability",
+    "difficulty": "Medium",
+    "source": "PrepForge original practice"
+  },
+  {
+    "id": 198,
+    "question": "Find the next term: 1, 1, 2, 3, 5, 8, __",
+    "options": [
+      "11",
+      "12",
+      "13",
+      "15"
+    ],
+    "answerIndex": 2,
+    "explanation": "Each term after the first two is the sum of the previous two.",
+    "subject": "Aptitude",
+    "topic": "Number Series",
+    "difficulty": "Easy",
+    "source": "PrepForge original practice"
+  },
+  {
+    "id": 199,
+    "question": "If 1 January is a Monday, what day is 8 January?",
+    "options": [
+      "Sunday",
+      "Monday",
+      "Tuesday",
+      "Wednesday"
+    ],
+    "answerIndex": 1,
+    "explanation": "Seven days later is the same weekday.",
+    "subject": "Aptitude",
+    "topic": "Logical Reasoning",
+    "difficulty": "Easy",
+    "source": "PrepForge original practice"
+  }
+]

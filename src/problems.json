@@ -1,0 +1,4502 @@
+[
+  {
+    "id": 1,
+    "title": "Print a pattern of stars",
+    "topic": "Programming Basics",
+    "difficulty": "Easy",
+    "url": "https://leetcode.com/problemset/?search=Print%20a%20pattern%20of%20stars",
+    "gfg": "https://www.geeksforgeeks.org/?s=Print%20a%20pattern%20of%20stars",
+    "source": "Curated high-yield practice"
+  },
+  {
+    "id": 2,
+    "title": "Print a number pyramid",
+    "topic": "Programming Basics",
+    "difficulty": "Medium",
+    "url": "https://leetcode.com/problemset/?search=Print%20a%20number%20pyramid",
+    "gfg": "https://www.geeksforgeeks.org/?s=Print%20a%20number%20pyramid",
+    "source": "Curated high-yield practice"
+  },
+  {
+    "id": 3,
+    "title": "Count digits in an integer",
+    "topic": "Programming Basics",
+    "difficulty": "Easy",
+    "url": "https://leetcode.com/problemset/?search=Count%20digits%20in%20an%20integer",
+    "gfg": "https://www.geeksforgeeks.org/?s=Count%20digits%20in%20an%20integer",
+    "source": "Curated high-yield practice"
+  },
+  {
+    "id": 4,
+    "title": "Reverse an integer",
+    "topic": "Programming Basics",
+    "difficulty": "Medium",
+    "url": "https://leetcode.com/problemset/?search=Reverse%20an%20integer",
+    "gfg": "https://www.geeksforgeeks.org/?s=Reverse%20an%20integer",
+    "source": "Curated high-yield practice"
+  },
+  {
+    "id": 5,
+    "title": "Check integer palindrome",
+    "topic": "Programming Basics",
+    "difficulty": "Easy",
+    "url": "https://leetcode.com/problemset/?search=Check%20integer%20palindrome",
+    "gfg": "https://www.geeksforgeeks.org/?s=Check%20integer%20palindrome",
+    "source": "Curated high-yield practice"
+  },
+  {
+    "id": 6,
+    "title": "Check Armstrong number",
+    "topic": "Programming Basics",
+    "difficulty": "Easy",
+    "url": "https://leetcode.com/problemset/?search=Check%20Armstrong%20number",
+    "gfg": "https://www.geeksforgeeks.org/?s=Check%20Armstrong%20number",
+    "source": "Curated high-yield practice"
+  },
+  {
+    "id": 7,
+    "title": "Find GCD of two numbers",
+    "topic": "Programming Basics",
+    "difficulty": "Hard",
+    "url": "https://leetcode.com/problemset/?search=Find%20GCD%20of%20two%20numbers",
+    "gfg": "https://www.geeksforgeeks.org/?s=Find%20GCD%20of%20two%20numbers",
+    "source": "Curated high-yield practice"
+  },
+  {
+    "id": 8,
+    "title": "Find LCM of two numbers",
+    "topic": "Programming Basics",
+    "difficulty": "Medium",
+    "url": "https://leetcode.com/problemset/?search=Find%20LCM%20of%20two%20numbers",
+    "gfg": "https://www.geeksforgeeks.org/?s=Find%20LCM%20of%20two%20numbers",
+    "source": "Curated high-yield practice"
+  },
+  {
+    "id": 9,
+    "title": "Check whether a number is prime",
+    "topic": "Programming Basics",
+    "difficulty": "Medium",
+    "url": "https://leetcode.com/problemset/?search=Check%20whether%20a%20number%20is%20prime",
+    "gfg": "https://www.geeksforgeeks.org/?s=Check%20whether%20a%20number%20is%20prime",
+    "source": "Curated high-yield practice"
+  },
+  {
+    "id": 10,
+    "title": "Print all divisors",
+    "topic": "Programming Basics",
+    "difficulty": "Easy",
+    "url": "https://leetcode.com/problemset/?search=Print%20all%20divisors",
+    "gfg": "https://www.geeksforgeeks.org/?s=Print%20all%20divisors",
+    "source": "Curated high-yield practice"
+  },
+  {
+    "id": 11,
+    "title": "Count primes in a range",
+    "topic": "Programming Basics",
+    "difficulty": "Easy",
+    "url": "https://leetcode.com/problemset/?search=Count%20primes%20in%20a%20range",
+    "gfg": "https://www.geeksforgeeks.org/?s=Count%20primes%20in%20a%20range",
+    "source": "Curated high-yield practice"
+  },
+  {
+    "id": 12,
+    "title": "Compute factorial iteratively",
+    "topic": "Programming Basics",
+    "difficulty": "Medium",
+    "url": "https://leetcode.com/problemset/?search=Compute%20factorial%20iteratively",
+    "gfg": "https://www.geeksforgeeks.org/?s=Compute%20factorial%20iteratively",
+    "source": "Curated high-yield practice"
+  },
+  {
+    "id": 13,
+    "title": "Compute Fibonacci iteratively",
+    "topic": "Programming Basics",
+    "difficulty": "Medium",
+    "url": "https://leetcode.com/problemset/?search=Compute%20Fibonacci%20iteratively",
+    "gfg": "https://www.geeksforgeeks.org/?s=Compute%20Fibonacci%20iteratively",
+    "source": "Curated high-yield practice"
+  },
+  {
+    "id": 14,
+    "title": "Convert decimal to binary",
+    "topic": "Programming Basics",
+    "difficulty": "Hard",
+    "url": "https://leetcode.com/problemset/?search=Convert%20decimal%20to%20binary",
+    "gfg": "https://www.geeksforgeeks.org/?s=Convert%20decimal%20to%20binary",
+    "source": "Curated high-yield practice"
+  },
+  {
+    "id": 15,
+    "title": "Convert binary to decimal",
+    "topic": "Programming Basics",
+    "difficulty": "Easy",
+    "url": "https://leetcode.com/problemset/?search=Convert%20binary%20to%20decimal",
+    "gfg": "https://www.geeksforgeeks.org/?s=Convert%20binary%20to%20decimal",
+    "source": "Curated high-yield practice"
+  },
+  {
+    "id": 16,
+    "title": "Find power using exponentiation",
+    "topic": "Programming Basics",
+    "difficulty": "Easy",
+    "url": "https://leetcode.com/problemset/?search=Find%20power%20using%20exponentiation",
+    "gfg": "https://www.geeksforgeeks.org/?s=Find%20power%20using%20exponentiation",
+    "source": "Curated high-yield practice"
+  },
+  {
+    "id": 17,
+    "title": "Swap two numbers without a temporary variable",
+    "topic": "Programming Basics",
+    "difficulty": "Medium",
+    "url": "https://leetcode.com/problemset/?search=Swap%20two%20numbers%20without%20a%20temporary%20variable",
+    "gfg": "https://www.geeksforgeeks.org/?s=Swap%20two%20numbers%20without%20a%20temporary%20variable",
+    "source": "Curated high-yield practice"
+  },
+  {
+    "id": 18,
+    "title": "Find sum of digits",
+    "topic": "Programming Basics",
+    "difficulty": "Medium",
+    "url": "https://leetcode.com/problemset/?search=Find%20sum%20of%20digits",
+    "gfg": "https://www.geeksforgeeks.org/?s=Find%20sum%20of%20digits",
+    "source": "Curated high-yield practice"
+  },
+  {
+    "id": 19,
+    "title": "Find digital root",
+    "topic": "Programming Basics",
+    "difficulty": "Medium",
+    "url": "https://leetcode.com/problemset/?search=Find%20digital%20root",
+    "gfg": "https://www.geeksforgeeks.org/?s=Find%20digital%20root",
+    "source": "Curated high-yield practice"
+  },
+  {
+    "id": 20,
+    "title": "Generate Pascal triangle rows",
+    "topic": "Programming Basics",
+    "difficulty": "Easy",
+    "url": "https://leetcode.com/problemset/?search=Generate%20Pascal%20triangle%20rows",
+    "gfg": "https://www.geeksforgeeks.org/?s=Generate%20Pascal%20triangle%20rows",
+    "source": "Curated high-yield practice"
+  },
+  {
+    "id": 21,
+    "title": "Recursive factorial",
+    "topic": "Complexity and Recursion",
+    "difficulty": "Easy",
+    "url": "https://leetcode.com/problemset/?search=Recursive%20factorial",
+    "gfg": "https://www.geeksforgeeks.org/?s=Recursive%20factorial",
+    "source": "Curated high-yield practice"
+  },
+  {
+    "id": 22,
+    "title": "Recursive Fibonacci",
+    "topic": "Complexity and Recursion",
+    "difficulty": "Medium",
+    "url": "https://leetcode.com/problemset/?search=Recursive%20Fibonacci",
+    "gfg": "https://www.geeksforgeeks.org/?s=Recursive%20Fibonacci",
+    "source": "Curated high-yield practice"
+  },
+  {
+    "id": 23,
+    "title": "Sum of first N numbers",
+    "topic": "Complexity and Recursion",
+    "difficulty": "Medium",
+    "url": "https://leetcode.com/problemset/?search=Sum%20of%20first%20N%20numbers",
+    "gfg": "https://www.geeksforgeeks.org/?s=Sum%20of%20first%20N%20numbers",
+    "source": "Curated high-yield practice"
+  },
+  {
+    "id": 24,
+    "title": "Reverse an array recursively",
+    "topic": "Complexity and Recursion",
+    "difficulty": "Medium",
+    "url": "https://leetcode.com/problemset/?search=Reverse%20an%20array%20recursively",
+    "gfg": "https://www.geeksforgeeks.org/?s=Reverse%20an%20array%20recursively",
+    "source": "Curated high-yield practice"
+  },
+  {
+    "id": 25,
+    "title": "Check a string palindrome recursively",
+    "topic": "Complexity and Recursion",
+    "difficulty": "Easy",
+    "url": "https://leetcode.com/problemset/?search=Check%20a%20string%20palindrome%20recursively",
+    "gfg": "https://www.geeksforgeeks.org/?s=Check%20a%20string%20palindrome%20recursively",
+    "source": "Curated high-yield practice"
+  },
+  {
+    "id": 26,
+    "title": "Generate all subsequences",
+    "topic": "Complexity and Recursion",
+    "difficulty": "Easy",
+    "url": "https://leetcode.com/problemset/?search=Generate%20all%20subsequences",
+    "gfg": "https://www.geeksforgeeks.org/?s=Generate%20all%20subsequences",
+    "source": "Curated high-yield practice"
+  },
+  {
+    "id": 27,
+    "title": "Generate all subsets",
+    "topic": "Complexity and Recursion",
+    "difficulty": "Medium",
+    "url": "https://leetcode.com/problemset/?search=Generate%20all%20subsets",
+    "gfg": "https://www.geeksforgeeks.org/?s=Generate%20all%20subsets",
+    "source": "Curated high-yield practice"
+  },
+  {
+    "id": 28,
+    "title": "Generate all permutations",
+    "topic": "Complexity and Recursion",
+    "difficulty": "Hard",
+    "url": "https://leetcode.com/problemset/?search=Generate%20all%20permutations",
+    "gfg": "https://www.geeksforgeeks.org/?s=Generate%20all%20permutations",
+    "source": "Curated high-yield practice"
+  },
+  {
+    "id": 29,
+    "title": "Power(x, n)",
+    "topic": "Complexity and Recursion",
+    "difficulty": "Medium",
+    "url": "https://leetcode.com/problemset/?search=Power%28x%2C%20n%29",
+    "gfg": "https://www.geeksforgeeks.org/?s=Power%28x%2C%20n%29",
+    "source": "Curated high-yield practice"
+  },
+  {
+    "id": 30,
+    "title": "Tower of Hanoi",
+    "topic": "Complexity and Recursion",
+    "difficulty": "Easy",
+    "url": "https://leetcode.com/problemset/?search=Tower%20of%20Hanoi",
+    "gfg": "https://www.geeksforgeeks.org/?s=Tower%20of%20Hanoi",
+    "source": "Curated high-yield practice"
+  },
+  {
+    "id": 31,
+    "title": "Count ways to climb stairs",
+    "topic": "Complexity and Recursion",
+    "difficulty": "Easy",
+    "url": "https://leetcode.com/problemset/?search=Count%20ways%20to%20climb%20stairs",
+    "gfg": "https://www.geeksforgeeks.org/?s=Count%20ways%20to%20climb%20stairs",
+    "source": "Curated high-yield practice"
+  },
+  {
+    "id": 32,
+    "title": "Josephus problem",
+    "topic": "Complexity and Recursion",
+    "difficulty": "Medium",
+    "url": "https://leetcode.com/problemset/?search=Josephus%20problem",
+    "gfg": "https://www.geeksforgeeks.org/?s=Josephus%20problem",
+    "source": "Curated high-yield practice"
+  },
+  {
+    "id": 33,
+    "title": "Recursive binary search",
+    "topic": "Complexity and Recursion",
+    "difficulty": "Medium",
+    "url": "https://leetcode.com/problemset/?search=Recursive%20binary%20search",
+    "gfg": "https://www.geeksforgeeks.org/?s=Recursive%20binary%20search",
+    "source": "Curated high-yield practice"
+  },
+  {
+    "id": 34,
+    "title": "Print all subsequences with sum K",
+    "topic": "Complexity and Recursion",
+    "difficulty": "Medium",
+    "url": "https://leetcode.com/problemset/?search=Print%20all%20subsequences%20with%20sum%20K",
+    "gfg": "https://www.geeksforgeeks.org/?s=Print%20all%20subsequences%20with%20sum%20K",
+    "source": "Curated high-yield practice"
+  },
+  {
+    "id": 35,
+    "title": "Count subsequences with sum K",
+    "topic": "Complexity and Recursion",
+    "difficulty": "Easy",
+    "url": "https://leetcode.com/problemset/?search=Count%20subsequences%20with%20sum%20K",
+    "gfg": "https://www.geeksforgeeks.org/?s=Count%20subsequences%20with%20sum%20K",
+    "source": "Curated high-yield practice"
+  },
+  {
+    "id": 36,
+    "title": "Subset sum existence",
+    "topic": "Complexity and Recursion",
+    "difficulty": "Easy",
+    "url": "https://leetcode.com/problemset/?search=Subset%20sum%20existence",
+    "gfg": "https://www.geeksforgeeks.org/?s=Subset%20sum%20existence",
+    "source": "Curated high-yield practice"
+  },
+  {
+    "id": 37,
+    "title": "Combination Sum",
+    "topic": "Complexity and Recursion",
+    "difficulty": "Medium",
+    "url": "https://leetcode.com/problemset/?search=Combination%20Sum",
+    "gfg": "https://www.geeksforgeeks.org/?s=Combination%20Sum",
+    "source": "Curated high-yield practice"
+  },
+  {
+    "id": 38,
+    "title": "Combination Sum II",
+    "topic": "Complexity and Recursion",
+    "difficulty": "Medium",
+    "url": "https://leetcode.com/problemset/?search=Combination%20Sum%20II",
+    "gfg": "https://www.geeksforgeeks.org/?s=Combination%20Sum%20II",
+    "source": "Curated high-yield practice"
+  },
+  {
+    "id": 39,
+    "title": "Palindrome partitioning",
+    "topic": "Complexity and Recursion",
+    "difficulty": "Medium",
+    "url": "https://leetcode.com/problemset/?search=Palindrome%20partitioning",
+    "gfg": "https://www.geeksforgeeks.org/?s=Palindrome%20partitioning",
+    "source": "Curated high-yield practice"
+  },
+  {
+    "id": 40,
+    "title": "Word Search backtracking",
+    "topic": "Complexity and Recursion",
+    "difficulty": "Easy",
+    "url": "https://leetcode.com/problemset/?search=Word%20Search%20backtracking",
+    "gfg": "https://www.geeksforgeeks.org/?s=Word%20Search%20backtracking",
+    "source": "Curated high-yield practice"
+  },
+  {
+    "id": 41,
+    "title": "Selection sort",
+    "topic": "Sorting",
+    "difficulty": "Easy",
+    "url": "https://leetcode.com/problemset/?search=Selection%20sort",
+    "gfg": "https://www.geeksforgeeks.org/?s=Selection%20sort",
+    "source": "Curated high-yield practice"
+  },
+  {
+    "id": 42,
+    "title": "Bubble sort",
+    "topic": "Sorting",
+    "difficulty": "Hard",
+    "url": "https://leetcode.com/problemset/?search=Bubble%20sort",
+    "gfg": "https://www.geeksforgeeks.org/?s=Bubble%20sort",
+    "source": "Curated high-yield practice"
+  },
+  {
+    "id": 43,
+    "title": "Insertion sort",
+    "topic": "Sorting",
+    "difficulty": "Medium",
+    "url": "https://leetcode.com/problemset/?search=Insertion%20sort",
+    "gfg": "https://www.geeksforgeeks.org/?s=Insertion%20sort",
+    "source": "Curated high-yield practice"
+  },
+  {
+    "id": 44,
+    "title": "Merge sort",
+    "topic": "Sorting",
+    "difficulty": "Medium",
+    "url": "https://leetcode.com/problemset/?search=Merge%20sort",
+    "gfg": "https://www.geeksforgeeks.org/?s=Merge%20sort",
+    "source": "Curated high-yield practice"
+  },
+  {
+    "id": 45,
+    "title": "Quick sort",
+    "topic": "Sorting",
+    "difficulty": "Easy",
+    "url": "https://leetcode.com/problemset/?search=Quick%20sort",
+    "gfg": "https://www.geeksforgeeks.org/?s=Quick%20sort",
+    "source": "Curated high-yield practice"
+  },
+  {
+    "id": 46,
+    "title": "Count sort",
+    "topic": "Sorting",
+    "difficulty": "Easy",
+    "url": "https://leetcode.com/problemset/?search=Count%20sort",
+    "gfg": "https://www.geeksforgeeks.org/?s=Count%20sort",
+    "source": "Curated high-yield practice"
+  },
+  {
+    "id": 47,
+    "title": "Sort an array of 0s 1s and 2s",
+    "topic": "Sorting",
+    "difficulty": "Medium",
+    "url": "https://leetcode.com/problemset/?search=Sort%20an%20array%20of%200s%201s%20and%202s",
+    "gfg": "https://www.geeksforgeeks.org/?s=Sort%20an%20array%20of%200s%201s%20and%202s",
+    "source": "Curated high-yield practice"
+  },
+  {
+    "id": 48,
+    "title": "Sort characters by frequency",
+    "topic": "Sorting",
+    "difficulty": "Medium",
+    "url": "https://leetcode.com/problemset/?search=Sort%20characters%20by%20frequency",
+    "gfg": "https://www.geeksforgeeks.org/?s=Sort%20characters%20by%20frequency",
+    "source": "Curated high-yield practice"
+  },
+  {
+    "id": 49,
+    "title": "Sort array by parity",
+    "topic": "Sorting",
+    "difficulty": "Hard",
+    "url": "https://leetcode.com/problemset/?search=Sort%20array%20by%20parity",
+    "gfg": "https://www.geeksforgeeks.org/?s=Sort%20array%20by%20parity",
+    "source": "Curated high-yield practice"
+  },
+  {
+    "id": 50,
+    "title": "Sort an array by absolute value",
+    "topic": "Sorting",
+    "difficulty": "Easy",
+    "url": "https://leetcode.com/problemset/?search=Sort%20an%20array%20by%20absolute%20value",
+    "gfg": "https://www.geeksforgeeks.org/?s=Sort%20an%20array%20by%20absolute%20value",
+    "source": "Curated high-yield practice"
+  },
+  {
+    "id": 51,
+    "title": "Merge two sorted arrays in-place",
+    "topic": "Sorting",
+    "difficulty": "Easy",
+    "url": "https://leetcode.com/problemset/?search=Merge%20two%20sorted%20arrays%20in-place",
+    "gfg": "https://www.geeksforgeeks.org/?s=Merge%20two%20sorted%20arrays%20in-place",
+    "source": "Curated high-yield practice"
+  },
+  {
+    "id": 52,
+    "title": "Find inversion count",
+    "topic": "Sorting",
+    "difficulty": "Medium",
+    "url": "https://leetcode.com/problemset/?search=Find%20inversion%20count",
+    "gfg": "https://www.geeksforgeeks.org/?s=Find%20inversion%20count",
+    "source": "Curated high-yield practice"
+  },
+  {
+    "id": 53,
+    "title": "Reverse pairs",
+    "topic": "Sorting",
+    "difficulty": "Medium",
+    "url": "https://leetcode.com/problemset/?search=Reverse%20pairs",
+    "gfg": "https://www.geeksforgeeks.org/?s=Reverse%20pairs",
+    "source": "Curated high-yield practice"
+  },
+  {
+    "id": 54,
+    "title": "Count smaller numbers after self",
+    "topic": "Sorting",
+    "difficulty": "Medium",
+    "url": "https://leetcode.com/problemset/?search=Count%20smaller%20numbers%20after%20self",
+    "gfg": "https://www.geeksforgeeks.org/?s=Count%20smaller%20numbers%20after%20self",
+    "source": "Curated high-yield practice"
+  },
+  {
+    "id": 55,
+    "title": "Sort nearly sorted array",
+    "topic": "Sorting",
+    "difficulty": "Easy",
+    "url": "https://leetcode.com/problemset/?search=Sort%20nearly%20sorted%20array",
+    "gfg": "https://www.geeksforgeeks.org/?s=Sort%20nearly%20sorted%20array",
+    "source": "Curated high-yield practice"
+  },
+  {
+    "id": 56,
+    "title": "Largest number formed from array",
+    "topic": "Sorting",
+    "difficulty": "Easy",
+    "url": "https://leetcode.com/problemset/?search=Largest%20number%20formed%20from%20array",
+    "gfg": "https://www.geeksforgeeks.org/?s=Largest%20number%20formed%20from%20array",
+    "source": "Curated high-yield practice"
+  },
+  {
+    "id": 57,
+    "title": "Relative sort array",
+    "topic": "Sorting",
+    "difficulty": "Medium",
+    "url": "https://leetcode.com/problemset/?search=Relative%20sort%20array",
+    "gfg": "https://www.geeksforgeeks.org/?s=Relative%20sort%20array",
+    "source": "Curated high-yield practice"
+  },
+  {
+    "id": 58,
+    "title": "Wiggle sort",
+    "topic": "Sorting",
+    "difficulty": "Medium",
+    "url": "https://leetcode.com/problemset/?search=Wiggle%20sort",
+    "gfg": "https://www.geeksforgeeks.org/?s=Wiggle%20sort",
+    "source": "Curated high-yield practice"
+  },
+  {
+    "id": 59,
+    "title": "Sort linked list",
+    "topic": "Sorting",
+    "difficulty": "Medium",
+    "url": "https://leetcode.com/problemset/?search=Sort%20linked%20list",
+    "gfg": "https://www.geeksforgeeks.org/?s=Sort%20linked%20list",
+    "source": "Curated high-yield practice"
+  },
+  {
+    "id": 60,
+    "title": "Kth smallest element using sorting",
+    "topic": "Sorting",
+    "difficulty": "Easy",
+    "url": "https://leetcode.com/problemset/?search=Kth%20smallest%20element%20using%20sorting",
+    "gfg": "https://www.geeksforgeeks.org/?s=Kth%20smallest%20element%20using%20sorting",
+    "source": "Curated high-yield practice"
+  },
+  {
+    "id": 61,
+    "title": "Largest element in array",
+    "topic": "Arrays",
+    "difficulty": "Easy",
+    "url": "https://leetcode.com/problemset/?search=Largest%20element%20in%20array",
+    "gfg": "https://www.geeksforgeeks.org/?s=Largest%20element%20in%20array",
+    "source": "Curated high-yield practice"
+  },
+  {
+    "id": 62,
+    "title": "Second largest element",
+    "topic": "Arrays",
+    "difficulty": "Easy",
+    "url": "https://leetcode.com/problemset/?search=Second%20largest%20element",
+    "gfg": "https://www.geeksforgeeks.org/?s=Second%20largest%20element",
+    "source": "Curated high-yield practice"
+  },
+  {
+    "id": 63,
+    "title": "Check if array is sorted",
+    "topic": "Arrays",
+    "difficulty": "Easy",
+    "url": "https://leetcode.com/problemset/?search=Check%20if%20array%20is%20sorted",
+    "gfg": "https://www.geeksforgeeks.org/?s=Check%20if%20array%20is%20sorted",
+    "source": "Curated high-yield practice"
+  },
+  {
+    "id": 64,
+    "title": "Remove duplicates from sorted array",
+    "topic": "Arrays",
+    "difficulty": "Easy",
+    "url": "https://leetcode.com/problemset/?search=Remove%20duplicates%20from%20sorted%20array",
+    "gfg": "https://www.geeksforgeeks.org/?s=Remove%20duplicates%20from%20sorted%20array",
+    "source": "Curated high-yield practice"
+  },
+  {
+    "id": 65,
+    "title": "Left rotate array by one",
+    "topic": "Arrays",
+    "difficulty": "Easy",
+    "url": "https://leetcode.com/problemset/?search=Left%20rotate%20array%20by%20one",
+    "gfg": "https://www.geeksforgeeks.org/?s=Left%20rotate%20array%20by%20one",
+    "source": "Curated high-yield practice"
+  },
+  {
+    "id": 66,
+    "title": "Left rotate array by K",
+    "topic": "Arrays",
+    "difficulty": "Easy",
+    "url": "https://leetcode.com/problemset/?search=Left%20rotate%20array%20by%20K",
+    "gfg": "https://www.geeksforgeeks.org/?s=Left%20rotate%20array%20by%20K",
+    "source": "Curated high-yield practice"
+  },
+  {
+    "id": 67,
+    "title": "Move zeroes to end",
+    "topic": "Arrays",
+    "difficulty": "Easy",
+    "url": "https://leetcode.com/problemset/?search=Move%20zeroes%20to%20end",
+    "gfg": "https://www.geeksforgeeks.org/?s=Move%20zeroes%20to%20end",
+    "source": "Curated high-yield practice"
+  },
+  {
+    "id": 68,
+    "title": "Linear search",
+    "topic": "Arrays",
+    "difficulty": "Easy",
+    "url": "https://leetcode.com/problemset/?search=Linear%20search",
+    "gfg": "https://www.geeksforgeeks.org/?s=Linear%20search",
+    "source": "Curated high-yield practice"
+  },
+  {
+    "id": 69,
+    "title": "Union of two sorted arrays",
+    "topic": "Arrays",
+    "difficulty": "Medium",
+    "url": "https://leetcode.com/problemset/?search=Union%20of%20two%20sorted%20arrays",
+    "gfg": "https://www.geeksforgeeks.org/?s=Union%20of%20two%20sorted%20arrays",
+    "source": "Curated high-yield practice"
+  },
+  {
+    "id": 70,
+    "title": "Missing number",
+    "topic": "Arrays",
+    "difficulty": "Easy",
+    "url": "https://leetcode.com/problemset/?search=Missing%20number",
+    "gfg": "https://www.geeksforgeeks.org/?s=Missing%20number",
+    "source": "Curated high-yield practice"
+  },
+  {
+    "id": 71,
+    "title": "Maximum consecutive ones",
+    "topic": "Arrays",
+    "difficulty": "Easy",
+    "url": "https://leetcode.com/problemset/?search=Maximum%20consecutive%20ones",
+    "gfg": "https://www.geeksforgeeks.org/?s=Maximum%20consecutive%20ones",
+    "source": "Curated high-yield practice"
+  },
+  {
+    "id": 72,
+    "title": "Single number",
+    "topic": "Arrays",
+    "difficulty": "Medium",
+    "url": "https://leetcode.com/problemset/?search=Single%20number",
+    "gfg": "https://www.geeksforgeeks.org/?s=Single%20number",
+    "source": "Curated high-yield practice"
+  },
+  {
+    "id": 73,
+    "title": "Longest subarray with sum K",
+    "topic": "Arrays",
+    "difficulty": "Medium",
+    "url": "https://leetcode.com/problemset/?search=Longest%20subarray%20with%20sum%20K",
+    "gfg": "https://www.geeksforgeeks.org/?s=Longest%20subarray%20with%20sum%20K",
+    "source": "Curated high-yield practice"
+  },
+  {
+    "id": 74,
+    "title": "Two Sum",
+    "topic": "Arrays",
+    "difficulty": "Easy",
+    "url": "https://leetcode.com/problemset/?search=Two%20Sum",
+    "gfg": "https://www.geeksforgeeks.org/?s=Two%20Sum",
+    "source": "Curated high-yield practice"
+  },
+  {
+    "id": 75,
+    "title": "Sort Colors",
+    "topic": "Arrays",
+    "difficulty": "Easy",
+    "url": "https://leetcode.com/problemset/?search=Sort%20Colors",
+    "gfg": "https://www.geeksforgeeks.org/?s=Sort%20Colors",
+    "source": "Curated high-yield practice"
+  },
+  {
+    "id": 76,
+    "title": "Majority Element",
+    "topic": "Arrays",
+    "difficulty": "Easy",
+    "url": "https://leetcode.com/problemset/?search=Majority%20Element",
+    "gfg": "https://www.geeksforgeeks.org/?s=Majority%20Element",
+    "source": "Curated high-yield practice"
+  },
+  {
+    "id": 77,
+    "title": "Maximum Subarray Sum",
+    "topic": "Arrays",
+    "difficulty": "Hard",
+    "url": "https://leetcode.com/problemset/?search=Maximum%20Subarray%20Sum",
+    "gfg": "https://www.geeksforgeeks.org/?s=Maximum%20Subarray%20Sum",
+    "source": "Curated high-yield practice"
+  },
+  {
+    "id": 78,
+    "title": "Best Time to Buy and Sell Stock",
+    "topic": "Arrays",
+    "difficulty": "Medium",
+    "url": "https://leetcode.com/problemset/?search=Best%20Time%20to%20Buy%20and%20Sell%20Stock",
+    "gfg": "https://www.geeksforgeeks.org/?s=Best%20Time%20to%20Buy%20and%20Sell%20Stock",
+    "source": "Curated high-yield practice"
+  },
+  {
+    "id": 79,
+    "title": "Rearrange Array by Sign",
+    "topic": "Arrays",
+    "difficulty": "Medium",
+    "url": "https://leetcode.com/problemset/?search=Rearrange%20Array%20by%20Sign",
+    "gfg": "https://www.geeksforgeeks.org/?s=Rearrange%20Array%20by%20Sign",
+    "source": "Curated high-yield practice"
+  },
+  {
+    "id": 80,
+    "title": "Next Permutation",
+    "topic": "Arrays",
+    "difficulty": "Easy",
+    "url": "https://leetcode.com/problemset/?search=Next%20Permutation",
+    "gfg": "https://www.geeksforgeeks.org/?s=Next%20Permutation",
+    "source": "Curated high-yield practice"
+  },
+  {
+    "id": 81,
+    "title": "Leaders in an array",
+    "topic": "Advanced Arrays",
+    "difficulty": "Easy",
+    "url": "https://leetcode.com/problemset/?search=Leaders%20in%20an%20array",
+    "gfg": "https://www.geeksforgeeks.org/?s=Leaders%20in%20an%20array",
+    "source": "Curated high-yield practice"
+  },
+  {
+    "id": 82,
+    "title": "Longest consecutive sequence",
+    "topic": "Advanced Arrays",
+    "difficulty": "Medium",
+    "url": "https://leetcode.com/problemset/?search=Longest%20consecutive%20sequence",
+    "gfg": "https://www.geeksforgeeks.org/?s=Longest%20consecutive%20sequence",
+    "source": "Curated high-yield practice"
+  },
+  {
+    "id": 83,
+    "title": "Set Matrix Zeroes",
+    "topic": "Advanced Arrays",
+    "difficulty": "Medium",
+    "url": "https://leetcode.com/problemset/?search=Set%20Matrix%20Zeroes",
+    "gfg": "https://www.geeksforgeeks.org/?s=Set%20Matrix%20Zeroes",
+    "source": "Curated high-yield practice"
+  },
+  {
+    "id": 84,
+    "title": "Rotate Image",
+    "topic": "Advanced Arrays",
+    "difficulty": "Hard",
+    "url": "https://leetcode.com/problemset/?search=Rotate%20Image",
+    "gfg": "https://www.geeksforgeeks.org/?s=Rotate%20Image",
+    "source": "Curated high-yield practice"
+  },
+  {
+    "id": 85,
+    "title": "Spiral Matrix",
+    "topic": "Advanced Arrays",
+    "difficulty": "Easy",
+    "url": "https://leetcode.com/problemset/?search=Spiral%20Matrix",
+    "gfg": "https://www.geeksforgeeks.org/?s=Spiral%20Matrix",
+    "source": "Curated high-yield practice"
+  },
+  {
+    "id": 86,
+    "title": "Count subarrays with sum K",
+    "topic": "Advanced Arrays",
+    "difficulty": "Easy",
+    "url": "https://leetcode.com/problemset/?search=Count%20subarrays%20with%20sum%20K",
+    "gfg": "https://www.geeksforgeeks.org/?s=Count%20subarrays%20with%20sum%20K",
+    "source": "Curated high-yield practice"
+  },
+  {
+    "id": 87,
+    "title": "Product of Array Except Self",
+    "topic": "Advanced Arrays",
+    "difficulty": "Medium",
+    "url": "https://leetcode.com/problemset/?search=Product%20of%20Array%20Except%20Self",
+    "gfg": "https://www.geeksforgeeks.org/?s=Product%20of%20Array%20Except%20Self",
+    "source": "Curated high-yield practice"
+  },
+  {
+    "id": 88,
+    "title": "Find duplicate number",
+    "topic": "Advanced Arrays",
+    "difficulty": "Medium",
+    "url": "https://leetcode.com/problemset/?search=Find%20duplicate%20number",
+    "gfg": "https://www.geeksforgeeks.org/?s=Find%20duplicate%20number",
+    "source": "Curated high-yield practice"
+  },
+  {
+    "id": 89,
+    "title": "Find missing and repeating numbers",
+    "topic": "Advanced Arrays",
+    "difficulty": "Medium",
+    "url": "https://leetcode.com/problemset/?search=Find%20missing%20and%20repeating%20numbers",
+    "gfg": "https://www.geeksforgeeks.org/?s=Find%20missing%20and%20repeating%20numbers",
+    "source": "Curated high-yield practice"
+  },
+  {
+    "id": 90,
+    "title": "Merge overlapping intervals",
+    "topic": "Advanced Arrays",
+    "difficulty": "Easy",
+    "url": "https://leetcode.com/problemset/?search=Merge%20overlapping%20intervals",
+    "gfg": "https://www.geeksforgeeks.org/?s=Merge%20overlapping%20intervals",
+    "source": "Curated high-yield practice"
+  },
+  {
+    "id": 91,
+    "title": "Insert interval",
+    "topic": "Advanced Arrays",
+    "difficulty": "Easy",
+    "url": "https://leetcode.com/problemset/?search=Insert%20interval",
+    "gfg": "https://www.geeksforgeeks.org/?s=Insert%20interval",
+    "source": "Curated high-yield practice"
+  },
+  {
+    "id": 92,
+    "title": "Non-overlapping intervals",
+    "topic": "Advanced Arrays",
+    "difficulty": "Medium",
+    "url": "https://leetcode.com/problemset/?search=Non-overlapping%20intervals",
+    "gfg": "https://www.geeksforgeeks.org/?s=Non-overlapping%20intervals",
+    "source": "Curated high-yield practice"
+  },
+  {
+    "id": 93,
+    "title": "Maximum product subarray",
+    "topic": "Advanced Arrays",
+    "difficulty": "Medium",
+    "url": "https://leetcode.com/problemset/?search=Maximum%20product%20subarray",
+    "gfg": "https://www.geeksforgeeks.org/?s=Maximum%20product%20subarray",
+    "source": "Curated high-yield practice"
+  },
+  {
+    "id": 94,
+    "title": "Trapping Rain Water",
+    "topic": "Advanced Arrays",
+    "difficulty": "Medium",
+    "url": "https://leetcode.com/problemset/?search=Trapping%20Rain%20Water",
+    "gfg": "https://www.geeksforgeeks.org/?s=Trapping%20Rain%20Water",
+    "source": "Curated high-yield practice"
+  },
+  {
+    "id": 95,
+    "title": "3Sum",
+    "topic": "Advanced Arrays",
+    "difficulty": "Easy",
+    "url": "https://leetcode.com/problemset/?search=3Sum",
+    "gfg": "https://www.geeksforgeeks.org/?s=3Sum",
+    "source": "Curated high-yield practice"
+  },
+  {
+    "id": 96,
+    "title": "4Sum",
+    "topic": "Advanced Arrays",
+    "difficulty": "Easy",
+    "url": "https://leetcode.com/problemset/?search=4Sum",
+    "gfg": "https://www.geeksforgeeks.org/?s=4Sum",
+    "source": "Curated high-yield practice"
+  },
+  {
+    "id": 97,
+    "title": "Container With Most Water",
+    "topic": "Advanced Arrays",
+    "difficulty": "Medium",
+    "url": "https://leetcode.com/problemset/?search=Container%20With%20Most%20Water",
+    "gfg": "https://www.geeksforgeeks.org/?s=Container%20With%20Most%20Water",
+    "source": "Curated high-yield practice"
+  },
+  {
+    "id": 98,
+    "title": "Subarray XOR equals K",
+    "topic": "Advanced Arrays",
+    "difficulty": "Hard",
+    "url": "https://leetcode.com/problemset/?search=Subarray%20XOR%20equals%20K",
+    "gfg": "https://www.geeksforgeeks.org/?s=Subarray%20XOR%20equals%20K",
+    "source": "Curated high-yield practice"
+  },
+  {
+    "id": 99,
+    "title": "Maximum circular subarray sum",
+    "topic": "Advanced Arrays",
+    "difficulty": "Medium",
+    "url": "https://leetcode.com/problemset/?search=Maximum%20circular%20subarray%20sum",
+    "gfg": "https://www.geeksforgeeks.org/?s=Maximum%20circular%20subarray%20sum",
+    "source": "Curated high-yield practice"
+  },
+  {
+    "id": 100,
+    "title": "First missing positive",
+    "topic": "Advanced Arrays",
+    "difficulty": "Easy",
+    "url": "https://leetcode.com/problemset/?search=First%20missing%20positive",
+    "gfg": "https://www.geeksforgeeks.org/?s=First%20missing%20positive",
+    "source": "Curated high-yield practice"
+  },
+  {
+    "id": 101,
+    "title": "Two Sum using hash map",
+    "topic": "Hashing",
+    "difficulty": "Easy",
+    "url": "https://leetcode.com/problemset/?search=Two%20Sum%20using%20hash%20map",
+    "gfg": "https://www.geeksforgeeks.org/?s=Two%20Sum%20using%20hash%20map",
+    "source": "Curated high-yield practice"
+  },
+  {
+    "id": 102,
+    "title": "Valid Anagram",
+    "topic": "Hashing",
+    "difficulty": "Easy",
+    "url": "https://leetcode.com/problemset/?search=Valid%20Anagram",
+    "gfg": "https://www.geeksforgeeks.org/?s=Valid%20Anagram",
+    "source": "Curated high-yield practice"
+  },
+  {
+    "id": 103,
+    "title": "Group Anagrams",
+    "topic": "Hashing",
+    "difficulty": "Medium",
+    "url": "https://leetcode.com/problemset/?search=Group%20Anagrams",
+    "gfg": "https://www.geeksforgeeks.org/?s=Group%20Anagrams",
+    "source": "Curated high-yield practice"
+  },
+  {
+    "id": 104,
+    "title": "Top K Frequent Elements",
+    "topic": "Hashing",
+    "difficulty": "Medium",
+    "url": "https://leetcode.com/problemset/?search=Top%20K%20Frequent%20Elements",
+    "gfg": "https://www.geeksforgeeks.org/?s=Top%20K%20Frequent%20Elements",
+    "source": "Curated high-yield practice"
+  },
+  {
+    "id": 105,
+    "title": "Longest Consecutive Sequence",
+    "topic": "Hashing",
+    "difficulty": "Easy",
+    "url": "https://leetcode.com/problemset/?search=Longest%20Consecutive%20Sequence",
+    "gfg": "https://www.geeksforgeeks.org/?s=Longest%20Consecutive%20Sequence",
+    "source": "Curated high-yield practice"
+  },
+  {
+    "id": 106,
+    "title": "Subarray Sum Equals K",
+    "topic": "Hashing",
+    "difficulty": "Easy",
+    "url": "https://leetcode.com/problemset/?search=Subarray%20Sum%20Equals%20K",
+    "gfg": "https://www.geeksforgeeks.org/?s=Subarray%20Sum%20Equals%20K",
+    "source": "Curated high-yield practice"
+  },
+  {
+    "id": 107,
+    "title": "Isomorphic Strings",
+    "topic": "Hashing",
+    "difficulty": "Medium",
+    "url": "https://leetcode.com/problemset/?search=Isomorphic%20Strings",
+    "gfg": "https://www.geeksforgeeks.org/?s=Isomorphic%20Strings",
+    "source": "Curated high-yield practice"
+  },
+  {
+    "id": 108,
+    "title": "Word Pattern",
+    "topic": "Hashing",
+    "difficulty": "Medium",
+    "url": "https://leetcode.com/problemset/?search=Word%20Pattern",
+    "gfg": "https://www.geeksforgeeks.org/?s=Word%20Pattern",
+    "source": "Curated high-yield practice"
+  },
+  {
+    "id": 109,
+    "title": "Ransom Note",
+    "topic": "Hashing",
+    "difficulty": "Medium",
+    "url": "https://leetcode.com/problemset/?search=Ransom%20Note",
+    "gfg": "https://www.geeksforgeeks.org/?s=Ransom%20Note",
+    "source": "Curated high-yield practice"
+  },
+  {
+    "id": 110,
+    "title": "First Unique Character",
+    "topic": "Hashing",
+    "difficulty": "Easy",
+    "url": "https://leetcode.com/problemset/?search=First%20Unique%20Character",
+    "gfg": "https://www.geeksforgeeks.org/?s=First%20Unique%20Character",
+    "source": "Curated high-yield practice"
+  },
+  {
+    "id": 111,
+    "title": "Intersection of Two Arrays",
+    "topic": "Hashing",
+    "difficulty": "Easy",
+    "url": "https://leetcode.com/problemset/?search=Intersection%20of%20Two%20Arrays",
+    "gfg": "https://www.geeksforgeeks.org/?s=Intersection%20of%20Two%20Arrays",
+    "source": "Curated high-yield practice"
+  },
+  {
+    "id": 112,
+    "title": "Happy Number",
+    "topic": "Hashing",
+    "difficulty": "Hard",
+    "url": "https://leetcode.com/problemset/?search=Happy%20Number",
+    "gfg": "https://www.geeksforgeeks.org/?s=Happy%20Number",
+    "source": "Curated high-yield practice"
+  },
+  {
+    "id": 113,
+    "title": "Four Sum II",
+    "topic": "Hashing",
+    "difficulty": "Medium",
+    "url": "https://leetcode.com/problemset/?search=Four%20Sum%20II",
+    "gfg": "https://www.geeksforgeeks.org/?s=Four%20Sum%20II",
+    "source": "Curated high-yield practice"
+  },
+  {
+    "id": 114,
+    "title": "Count distinct elements in every window",
+    "topic": "Hashing",
+    "difficulty": "Medium",
+    "url": "https://leetcode.com/problemset/?search=Count%20distinct%20elements%20in%20every%20window",
+    "gfg": "https://www.geeksforgeeks.org/?s=Count%20distinct%20elements%20in%20every%20window",
+    "source": "Curated high-yield practice"
+  },
+  {
+    "id": 115,
+    "title": "Longest zero-sum subarray",
+    "topic": "Hashing",
+    "difficulty": "Easy",
+    "url": "https://leetcode.com/problemset/?search=Longest%20zero-sum%20subarray",
+    "gfg": "https://www.geeksforgeeks.org/?s=Longest%20zero-sum%20subarray",
+    "source": "Curated high-yield practice"
+  },
+  {
+    "id": 116,
+    "title": "Count pairs with given sum",
+    "topic": "Hashing",
+    "difficulty": "Easy",
+    "url": "https://leetcode.com/problemset/?search=Count%20pairs%20with%20given%20sum",
+    "gfg": "https://www.geeksforgeeks.org/?s=Count%20pairs%20with%20given%20sum",
+    "source": "Curated high-yield practice"
+  },
+  {
+    "id": 117,
+    "title": "Find common elements in three sorted arrays",
+    "topic": "Hashing",
+    "difficulty": "Medium",
+    "url": "https://leetcode.com/problemset/?search=Find%20common%20elements%20in%20three%20sorted%20arrays",
+    "gfg": "https://www.geeksforgeeks.org/?s=Find%20common%20elements%20in%20three%20sorted%20arrays",
+    "source": "Curated high-yield practice"
+  },
+  {
+    "id": 118,
+    "title": "Frequency sort",
+    "topic": "Hashing",
+    "difficulty": "Medium",
+    "url": "https://leetcode.com/problemset/?search=Frequency%20sort",
+    "gfg": "https://www.geeksforgeeks.org/?s=Frequency%20sort",
+    "source": "Curated high-yield practice"
+  },
+  {
+    "id": 119,
+    "title": "Check duplicate within K distance",
+    "topic": "Hashing",
+    "difficulty": "Hard",
+    "url": "https://leetcode.com/problemset/?search=Check%20duplicate%20within%20K%20distance",
+    "gfg": "https://www.geeksforgeeks.org/?s=Check%20duplicate%20within%20K%20distance",
+    "source": "Curated high-yield practice"
+  },
+  {
+    "id": 120,
+    "title": "Longest palindrome by character counts",
+    "topic": "Hashing",
+    "difficulty": "Easy",
+    "url": "https://leetcode.com/problemset/?search=Longest%20palindrome%20by%20character%20counts",
+    "gfg": "https://www.geeksforgeeks.org/?s=Longest%20palindrome%20by%20character%20counts",
+    "source": "Curated high-yield practice"
+  },
+  {
+    "id": 121,
+    "title": "Reverse a string",
+    "topic": "Strings",
+    "difficulty": "Easy",
+    "url": "https://leetcode.com/problemset/?search=Reverse%20a%20string",
+    "gfg": "https://www.geeksforgeeks.org/?s=Reverse%20a%20string",
+    "source": "Curated high-yield practice"
+  },
+  {
+    "id": 122,
+    "title": "Valid Palindrome",
+    "topic": "Strings",
+    "difficulty": "Easy",
+    "url": "https://leetcode.com/problemset/?search=Valid%20Palindrome",
+    "gfg": "https://www.geeksforgeeks.org/?s=Valid%20Palindrome",
+    "source": "Curated high-yield practice"
+  },
+  {
+    "id": 123,
+    "title": "Valid Anagram",
+    "topic": "Strings",
+    "difficulty": "Easy",
+    "url": "https://leetcode.com/problemset/?search=Valid%20Anagram",
+    "gfg": "https://www.geeksforgeeks.org/?s=Valid%20Anagram",
+    "source": "Curated high-yield practice"
+  },
+  {
+    "id": 124,
+    "title": "Longest Common Prefix",
+    "topic": "Strings",
+    "difficulty": "Medium",
+    "url": "https://leetcode.com/problemset/?search=Longest%20Common%20Prefix",
+    "gfg": "https://www.geeksforgeeks.org/?s=Longest%20Common%20Prefix",
+    "source": "Curated high-yield practice"
+  },
+  {
+    "id": 125,
+    "title": "Reverse Words in a String",
+    "topic": "Strings",
+    "difficulty": "Easy",
+    "url": "https://leetcode.com/problemset/?search=Reverse%20Words%20in%20a%20String",
+    "gfg": "https://www.geeksforgeeks.org/?s=Reverse%20Words%20in%20a%20String",
+    "source": "Curated high-yield practice"
+  },
+  {
+    "id": 126,
+    "title": "Longest Substring Without Repeating Characters",
+    "topic": "Strings",
+    "difficulty": "Easy",
+    "url": "https://leetcode.com/problemset/?search=Longest%20Substring%20Without%20Repeating%20Characters",
+    "gfg": "https://www.geeksforgeeks.org/?s=Longest%20Substring%20Without%20Repeating%20Characters",
+    "source": "Curated high-yield practice"
+  },
+  {
+    "id": 127,
+    "title": "Find first occurrence in a string",
+    "topic": "Strings",
+    "difficulty": "Medium",
+    "url": "https://leetcode.com/problemset/?search=Find%20first%20occurrence%20in%20a%20string",
+    "gfg": "https://www.geeksforgeeks.org/?s=Find%20first%20occurrence%20in%20a%20string",
+    "source": "Curated high-yield practice"
+  },
+  {
+    "id": 128,
+    "title": "String to integer atoi",
+    "topic": "Strings",
+    "difficulty": "Medium",
+    "url": "https://leetcode.com/problemset/?search=String%20to%20integer%20atoi",
+    "gfg": "https://www.geeksforgeeks.org/?s=String%20to%20integer%20atoi",
+    "source": "Curated high-yield practice"
+  },
+  {
+    "id": 129,
+    "title": "Longest palindromic substring",
+    "topic": "Strings",
+    "difficulty": "Medium",
+    "url": "https://leetcode.com/problemset/?search=Longest%20palindromic%20substring",
+    "gfg": "https://www.geeksforgeeks.org/?s=Longest%20palindromic%20substring",
+    "source": "Curated high-yield practice"
+  },
+  {
+    "id": 130,
+    "title": "Count palindromic substrings",
+    "topic": "Strings",
+    "difficulty": "Easy",
+    "url": "https://leetcode.com/problemset/?search=Count%20palindromic%20substrings",
+    "gfg": "https://www.geeksforgeeks.org/?s=Count%20palindromic%20substrings",
+    "source": "Curated high-yield practice"
+  },
+  {
+    "id": 131,
+    "title": "Longest repeating character replacement",
+    "topic": "Strings",
+    "difficulty": "Easy",
+    "url": "https://leetcode.com/problemset/?search=Longest%20repeating%20character%20replacement",
+    "gfg": "https://www.geeksforgeeks.org/?s=Longest%20repeating%20character%20replacement",
+    "source": "Curated high-yield practice"
+  },
+  {
+    "id": 132,
+    "title": "Minimum window substring",
+    "topic": "Strings",
+    "difficulty": "Medium",
+    "url": "https://leetcode.com/problemset/?search=Minimum%20window%20substring",
+    "gfg": "https://www.geeksforgeeks.org/?s=Minimum%20window%20substring",
+    "source": "Curated high-yield practice"
+  },
+  {
+    "id": 133,
+    "title": "Compare version numbers",
+    "topic": "Strings",
+    "difficulty": "Hard",
+    "url": "https://leetcode.com/problemset/?search=Compare%20version%20numbers",
+    "gfg": "https://www.geeksforgeeks.org/?s=Compare%20version%20numbers",
+    "source": "Curated high-yield practice"
+  },
+  {
+    "id": 134,
+    "title": "Roman to Integer",
+    "topic": "Strings",
+    "difficulty": "Medium",
+    "url": "https://leetcode.com/problemset/?search=Roman%20to%20Integer",
+    "gfg": "https://www.geeksforgeeks.org/?s=Roman%20to%20Integer",
+    "source": "Curated high-yield practice"
+  },
+  {
+    "id": 135,
+    "title": "Integer to Roman",
+    "topic": "Strings",
+    "difficulty": "Easy",
+    "url": "https://leetcode.com/problemset/?search=Integer%20to%20Roman",
+    "gfg": "https://www.geeksforgeeks.org/?s=Integer%20to%20Roman",
+    "source": "Curated high-yield practice"
+  },
+  {
+    "id": 136,
+    "title": "Zigzag conversion",
+    "topic": "Strings",
+    "difficulty": "Easy",
+    "url": "https://leetcode.com/problemset/?search=Zigzag%20conversion",
+    "gfg": "https://www.geeksforgeeks.org/?s=Zigzag%20conversion",
+    "source": "Curated high-yield practice"
+  },
+  {
+    "id": 137,
+    "title": "Multiply strings",
+    "topic": "Strings",
+    "difficulty": "Medium",
+    "url": "https://leetcode.com/problemset/?search=Multiply%20strings",
+    "gfg": "https://www.geeksforgeeks.org/?s=Multiply%20strings",
+    "source": "Curated high-yield practice"
+  },
+  {
+    "id": 138,
+    "title": "Add binary strings",
+    "topic": "Strings",
+    "difficulty": "Medium",
+    "url": "https://leetcode.com/problemset/?search=Add%20binary%20strings",
+    "gfg": "https://www.geeksforgeeks.org/?s=Add%20binary%20strings",
+    "source": "Curated high-yield practice"
+  },
+  {
+    "id": 139,
+    "title": "Decode string",
+    "topic": "Strings",
+    "difficulty": "Medium",
+    "url": "https://leetcode.com/problemset/?search=Decode%20string",
+    "gfg": "https://www.geeksforgeeks.org/?s=Decode%20string",
+    "source": "Curated high-yield practice"
+  },
+  {
+    "id": 140,
+    "title": "String compression",
+    "topic": "Strings",
+    "difficulty": "Easy",
+    "url": "https://leetcode.com/problemset/?search=String%20compression",
+    "gfg": "https://www.geeksforgeeks.org/?s=String%20compression",
+    "source": "Curated high-yield practice"
+  },
+  {
+    "id": 141,
+    "title": "Binary Search",
+    "topic": "Binary Search",
+    "difficulty": "Easy",
+    "url": "https://leetcode.com/problemset/?search=Binary%20Search",
+    "gfg": "https://www.geeksforgeeks.org/?s=Binary%20Search",
+    "source": "Curated high-yield practice"
+  },
+  {
+    "id": 142,
+    "title": "Search Insert Position",
+    "topic": "Binary Search",
+    "difficulty": "Easy",
+    "url": "https://leetcode.com/problemset/?search=Search%20Insert%20Position",
+    "gfg": "https://www.geeksforgeeks.org/?s=Search%20Insert%20Position",
+    "source": "Curated high-yield practice"
+  },
+  {
+    "id": 143,
+    "title": "First and Last Position",
+    "topic": "Binary Search",
+    "difficulty": "Medium",
+    "url": "https://leetcode.com/problemset/?search=First%20and%20Last%20Position",
+    "gfg": "https://www.geeksforgeeks.org/?s=First%20and%20Last%20Position",
+    "source": "Curated high-yield practice"
+  },
+  {
+    "id": 144,
+    "title": "Search in Rotated Sorted Array",
+    "topic": "Binary Search",
+    "difficulty": "Medium",
+    "url": "https://leetcode.com/problemset/?search=Search%20in%20Rotated%20Sorted%20Array",
+    "gfg": "https://www.geeksforgeeks.org/?s=Search%20in%20Rotated%20Sorted%20Array",
+    "source": "Curated high-yield practice"
+  },
+  {
+    "id": 145,
+    "title": "Find minimum in rotated sorted array",
+    "topic": "Binary Search",
+    "difficulty": "Easy",
+    "url": "https://leetcode.com/problemset/?search=Find%20minimum%20in%20rotated%20sorted%20array",
+    "gfg": "https://www.geeksforgeeks.org/?s=Find%20minimum%20in%20rotated%20sorted%20array",
+    "source": "Curated high-yield practice"
+  },
+  {
+    "id": 146,
+    "title": "Find Peak Element",
+    "topic": "Binary Search",
+    "difficulty": "Easy",
+    "url": "https://leetcode.com/problemset/?search=Find%20Peak%20Element",
+    "gfg": "https://www.geeksforgeeks.org/?s=Find%20Peak%20Element",
+    "source": "Curated high-yield practice"
+  },
+  {
+    "id": 147,
+    "title": "Square Root of X",
+    "topic": "Binary Search",
+    "difficulty": "Hard",
+    "url": "https://leetcode.com/problemset/?search=Square%20Root%20of%20X",
+    "gfg": "https://www.geeksforgeeks.org/?s=Square%20Root%20of%20X",
+    "source": "Curated high-yield practice"
+  },
+  {
+    "id": 148,
+    "title": "Find single element in sorted array",
+    "topic": "Binary Search",
+    "difficulty": "Medium",
+    "url": "https://leetcode.com/problemset/?search=Find%20single%20element%20in%20sorted%20array",
+    "gfg": "https://www.geeksforgeeks.org/?s=Find%20single%20element%20in%20sorted%20array",
+    "source": "Curated high-yield practice"
+  },
+  {
+    "id": 149,
+    "title": "Median of two sorted arrays",
+    "topic": "Binary Search",
+    "difficulty": "Medium",
+    "url": "https://leetcode.com/problemset/?search=Median%20of%20two%20sorted%20arrays",
+    "gfg": "https://www.geeksforgeeks.org/?s=Median%20of%20two%20sorted%20arrays",
+    "source": "Curated high-yield practice"
+  },
+  {
+    "id": 150,
+    "title": "Koko Eating Bananas",
+    "topic": "Binary Search",
+    "difficulty": "Easy",
+    "url": "https://leetcode.com/problemset/?search=Koko%20Eating%20Bananas",
+    "gfg": "https://www.geeksforgeeks.org/?s=Koko%20Eating%20Bananas",
+    "source": "Curated high-yield practice"
+  },
+  {
+    "id": 151,
+    "title": "Capacity to Ship Packages",
+    "topic": "Binary Search",
+    "difficulty": "Easy",
+    "url": "https://leetcode.com/problemset/?search=Capacity%20to%20Ship%20Packages",
+    "gfg": "https://www.geeksforgeeks.org/?s=Capacity%20to%20Ship%20Packages",
+    "source": "Curated high-yield practice"
+  },
+  {
+    "id": 152,
+    "title": "Aggressive Cows",
+    "topic": "Binary Search",
+    "difficulty": "Medium",
+    "url": "https://leetcode.com/problemset/?search=Aggressive%20Cows",
+    "gfg": "https://www.geeksforgeeks.org/?s=Aggressive%20Cows",
+    "source": "Curated high-yield practice"
+  },
+  {
+    "id": 153,
+    "title": "Allocate Books",
+    "topic": "Binary Search",
+    "difficulty": "Medium",
+    "url": "https://leetcode.com/problemset/?search=Allocate%20Books",
+    "gfg": "https://www.geeksforgeeks.org/?s=Allocate%20Books",
+    "source": "Curated high-yield practice"
+  },
+  {
+    "id": 154,
+    "title": "Split Array Largest Sum",
+    "topic": "Binary Search",
+    "difficulty": "Hard",
+    "url": "https://leetcode.com/problemset/?search=Split%20Array%20Largest%20Sum",
+    "gfg": "https://www.geeksforgeeks.org/?s=Split%20Array%20Largest%20Sum",
+    "source": "Curated high-yield practice"
+  },
+  {
+    "id": 155,
+    "title": "Nth root of an integer",
+    "topic": "Binary Search",
+    "difficulty": "Easy",
+    "url": "https://leetcode.com/problemset/?search=Nth%20root%20of%20an%20integer",
+    "gfg": "https://www.geeksforgeeks.org/?s=Nth%20root%20of%20an%20integer",
+    "source": "Curated high-yield practice"
+  },
+  {
+    "id": 156,
+    "title": "Search a 2D matrix",
+    "topic": "Binary Search",
+    "difficulty": "Easy",
+    "url": "https://leetcode.com/problemset/?search=Search%20a%202D%20matrix",
+    "gfg": "https://www.geeksforgeeks.org/?s=Search%20a%202D%20matrix",
+    "source": "Curated high-yield practice"
+  },
+  {
+    "id": 157,
+    "title": "Search in row-wise and column-wise sorted matrix",
+    "topic": "Binary Search",
+    "difficulty": "Medium",
+    "url": "https://leetcode.com/problemset/?search=Search%20in%20row-wise%20and%20column-wise%20sorted%20matrix",
+    "gfg": "https://www.geeksforgeeks.org/?s=Search%20in%20row-wise%20and%20column-wise%20sorted%20matrix",
+    "source": "Curated high-yield practice"
+  },
+  {
+    "id": 158,
+    "title": "Find median in row-wise sorted matrix",
+    "topic": "Binary Search",
+    "difficulty": "Medium",
+    "url": "https://leetcode.com/problemset/?search=Find%20median%20in%20row-wise%20sorted%20matrix",
+    "gfg": "https://www.geeksforgeeks.org/?s=Find%20median%20in%20row-wise%20sorted%20matrix",
+    "source": "Curated high-yield practice"
+  },
+  {
+    "id": 159,
+    "title": "Minimum days to make bouquets",
+    "topic": "Binary Search",
+    "difficulty": "Medium",
+    "url": "https://leetcode.com/problemset/?search=Minimum%20days%20to%20make%20bouquets",
+    "gfg": "https://www.geeksforgeeks.org/?s=Minimum%20days%20to%20make%20bouquets",
+    "source": "Curated high-yield practice"
+  },
+  {
+    "id": 160,
+    "title": "Smallest divisor given a threshold",
+    "topic": "Binary Search",
+    "difficulty": "Easy",
+    "url": "https://leetcode.com/problemset/?search=Smallest%20divisor%20given%20a%20threshold",
+    "gfg": "https://www.geeksforgeeks.org/?s=Smallest%20divisor%20given%20a%20threshold",
+    "source": "Curated high-yield practice"
+  },
+  {
+    "id": 161,
+    "title": "Pair with target sum in sorted array",
+    "topic": "Two Pointers and Sliding Window",
+    "difficulty": "Easy",
+    "url": "https://leetcode.com/problemset/?search=Pair%20with%20target%20sum%20in%20sorted%20array",
+    "gfg": "https://www.geeksforgeeks.org/?s=Pair%20with%20target%20sum%20in%20sorted%20array",
+    "source": "Curated high-yield practice"
+  },
+  {
+    "id": 162,
+    "title": "Remove duplicates in-place",
+    "topic": "Two Pointers and Sliding Window",
+    "difficulty": "Medium",
+    "url": "https://leetcode.com/problemset/?search=Remove%20duplicates%20in-place",
+    "gfg": "https://www.geeksforgeeks.org/?s=Remove%20duplicates%20in-place",
+    "source": "Curated high-yield practice"
+  },
+  {
+    "id": 163,
+    "title": "Move zeroes using two pointers",
+    "topic": "Two Pointers and Sliding Window",
+    "difficulty": "Medium",
+    "url": "https://leetcode.com/problemset/?search=Move%20zeroes%20using%20two%20pointers",
+    "gfg": "https://www.geeksforgeeks.org/?s=Move%20zeroes%20using%20two%20pointers",
+    "source": "Curated high-yield practice"
+  },
+  {
+    "id": 164,
+    "title": "Container With Most Water",
+    "topic": "Two Pointers and Sliding Window",
+    "difficulty": "Medium",
+    "url": "https://leetcode.com/problemset/?search=Container%20With%20Most%20Water",
+    "gfg": "https://www.geeksforgeeks.org/?s=Container%20With%20Most%20Water",
+    "source": "Curated high-yield practice"
+  },
+  {
+    "id": 165,
+    "title": "3Sum with two pointers",
+    "topic": "Two Pointers and Sliding Window",
+    "difficulty": "Easy",
+    "url": "https://leetcode.com/problemset/?search=3Sum%20with%20two%20pointers",
+    "gfg": "https://www.geeksforgeeks.org/?s=3Sum%20with%20two%20pointers",
+    "source": "Curated high-yield practice"
+  },
+  {
+    "id": 166,
+    "title": "Trapping Rain Water two-pointer solution",
+    "topic": "Two Pointers and Sliding Window",
+    "difficulty": "Easy",
+    "url": "https://leetcode.com/problemset/?search=Trapping%20Rain%20Water%20two-pointer%20solution",
+    "gfg": "https://www.geeksforgeeks.org/?s=Trapping%20Rain%20Water%20two-pointer%20solution",
+    "source": "Curated high-yield practice"
+  },
+  {
+    "id": 167,
+    "title": "Longest substring without repeats",
+    "topic": "Two Pointers and Sliding Window",
+    "difficulty": "Medium",
+    "url": "https://leetcode.com/problemset/?search=Longest%20substring%20without%20repeats",
+    "gfg": "https://www.geeksforgeeks.org/?s=Longest%20substring%20without%20repeats",
+    "source": "Curated high-yield practice"
+  },
+  {
+    "id": 168,
+    "title": "Maximum sum subarray of size K",
+    "topic": "Two Pointers and Sliding Window",
+    "difficulty": "Hard",
+    "url": "https://leetcode.com/problemset/?search=Maximum%20sum%20subarray%20of%20size%20K",
+    "gfg": "https://www.geeksforgeeks.org/?s=Maximum%20sum%20subarray%20of%20size%20K",
+    "source": "Curated high-yield practice"
+  },
+  {
+    "id": 169,
+    "title": "Minimum size subarray sum",
+    "topic": "Two Pointers and Sliding Window",
+    "difficulty": "Medium",
+    "url": "https://leetcode.com/problemset/?search=Minimum%20size%20subarray%20sum",
+    "gfg": "https://www.geeksforgeeks.org/?s=Minimum%20size%20subarray%20sum",
+    "source": "Curated high-yield practice"
+  },
+  {
+    "id": 170,
+    "title": "Longest repeating character replacement",
+    "topic": "Two Pointers and Sliding Window",
+    "difficulty": "Easy",
+    "url": "https://leetcode.com/problemset/?search=Longest%20repeating%20character%20replacement",
+    "gfg": "https://www.geeksforgeeks.org/?s=Longest%20repeating%20character%20replacement",
+    "source": "Curated high-yield practice"
+  },
+  {
+    "id": 171,
+    "title": "Permutation in string",
+    "topic": "Two Pointers and Sliding Window",
+    "difficulty": "Easy",
+    "url": "https://leetcode.com/problemset/?search=Permutation%20in%20string",
+    "gfg": "https://www.geeksforgeeks.org/?s=Permutation%20in%20string",
+    "source": "Curated high-yield practice"
+  },
+  {
+    "id": 172,
+    "title": "Find all anagrams in a string",
+    "topic": "Two Pointers and Sliding Window",
+    "difficulty": "Medium",
+    "url": "https://leetcode.com/problemset/?search=Find%20all%20anagrams%20in%20a%20string",
+    "gfg": "https://www.geeksforgeeks.org/?s=Find%20all%20anagrams%20in%20a%20string",
+    "source": "Curated high-yield practice"
+  },
+  {
+    "id": 173,
+    "title": "Fruit Into Baskets",
+    "topic": "Two Pointers and Sliding Window",
+    "difficulty": "Medium",
+    "url": "https://leetcode.com/problemset/?search=Fruit%20Into%20Baskets",
+    "gfg": "https://www.geeksforgeeks.org/?s=Fruit%20Into%20Baskets",
+    "source": "Curated high-yield practice"
+  },
+  {
+    "id": 174,
+    "title": "Longest subarray with at most K distinct",
+    "topic": "Two Pointers and Sliding Window",
+    "difficulty": "Medium",
+    "url": "https://leetcode.com/problemset/?search=Longest%20subarray%20with%20at%20most%20K%20distinct",
+    "gfg": "https://www.geeksforgeeks.org/?s=Longest%20subarray%20with%20at%20most%20K%20distinct",
+    "source": "Curated high-yield practice"
+  },
+  {
+    "id": 175,
+    "title": "Max consecutive ones III",
+    "topic": "Two Pointers and Sliding Window",
+    "difficulty": "Easy",
+    "url": "https://leetcode.com/problemset/?search=Max%20consecutive%20ones%20III",
+    "gfg": "https://www.geeksforgeeks.org/?s=Max%20consecutive%20ones%20III",
+    "source": "Curated high-yield practice"
+  },
+  {
+    "id": 176,
+    "title": "Sliding window maximum",
+    "topic": "Two Pointers and Sliding Window",
+    "difficulty": "Easy",
+    "url": "https://leetcode.com/problemset/?search=Sliding%20window%20maximum",
+    "gfg": "https://www.geeksforgeeks.org/?s=Sliding%20window%20maximum",
+    "source": "Curated high-yield practice"
+  },
+  {
+    "id": 177,
+    "title": "Minimum window substring",
+    "topic": "Two Pointers and Sliding Window",
+    "difficulty": "Medium",
+    "url": "https://leetcode.com/problemset/?search=Minimum%20window%20substring",
+    "gfg": "https://www.geeksforgeeks.org/?s=Minimum%20window%20substring",
+    "source": "Curated high-yield practice"
+  },
+  {
+    "id": 178,
+    "title": "Count subarrays with exactly K distinct",
+    "topic": "Two Pointers and Sliding Window",
+    "difficulty": "Medium",
+    "url": "https://leetcode.com/problemset/?search=Count%20subarrays%20with%20exactly%20K%20distinct",
+    "gfg": "https://www.geeksforgeeks.org/?s=Count%20subarrays%20with%20exactly%20K%20distinct",
+    "source": "Curated high-yield practice"
+  },
+  {
+    "id": 179,
+    "title": "Subarrays with product less than K",
+    "topic": "Two Pointers and Sliding Window",
+    "difficulty": "Medium",
+    "url": "https://leetcode.com/problemset/?search=Subarrays%20with%20product%20less%20than%20K",
+    "gfg": "https://www.geeksforgeeks.org/?s=Subarrays%20with%20product%20less%20than%20K",
+    "source": "Curated high-yield practice"
+  },
+  {
+    "id": 180,
+    "title": "Longest ones after deleting one element",
+    "topic": "Two Pointers and Sliding Window",
+    "difficulty": "Easy",
+    "url": "https://leetcode.com/problemset/?search=Longest%20ones%20after%20deleting%20one%20element",
+    "gfg": "https://www.geeksforgeeks.org/?s=Longest%20ones%20after%20deleting%20one%20element",
+    "source": "Curated high-yield practice"
+  },
+  {
+    "id": 181,
+    "title": "Reverse linked list",
+    "topic": "Linked Lists",
+    "difficulty": "Easy",
+    "url": "https://leetcode.com/problemset/?search=Reverse%20linked%20list",
+    "gfg": "https://www.geeksforgeeks.org/?s=Reverse%20linked%20list",
+    "source": "Curated high-yield practice"
+  },
+  {
+    "id": 182,
+    "title": "Middle of linked list",
+    "topic": "Linked Lists",
+    "difficulty": "Easy",
+    "url": "https://leetcode.com/problemset/?search=Middle%20of%20linked%20list",
+    "gfg": "https://www.geeksforgeeks.org/?s=Middle%20of%20linked%20list",
+    "source": "Curated high-yield practice"
+  },
+  {
+    "id": 183,
+    "title": "Detect cycle in linked list",
+    "topic": "Linked Lists",
+    "difficulty": "Easy",
+    "url": "https://leetcode.com/problemset/?search=Detect%20cycle%20in%20linked%20list",
+    "gfg": "https://www.geeksforgeeks.org/?s=Detect%20cycle%20in%20linked%20list",
+    "source": "Curated high-yield practice"
+  },
+  {
+    "id": 184,
+    "title": "Find start of cycle",
+    "topic": "Linked Lists",
+    "difficulty": "Medium",
+    "url": "https://leetcode.com/problemset/?search=Find%20start%20of%20cycle",
+    "gfg": "https://www.geeksforgeeks.org/?s=Find%20start%20of%20cycle",
+    "source": "Curated high-yield practice"
+  },
+  {
+    "id": 185,
+    "title": "Merge two sorted lists",
+    "topic": "Linked Lists",
+    "difficulty": "Easy",
+    "url": "https://leetcode.com/problemset/?search=Merge%20two%20sorted%20lists",
+    "gfg": "https://www.geeksforgeeks.org/?s=Merge%20two%20sorted%20lists",
+    "source": "Curated high-yield practice"
+  },
+  {
+    "id": 186,
+    "title": "Remove Nth node from end",
+    "topic": "Linked Lists",
+    "difficulty": "Easy",
+    "url": "https://leetcode.com/problemset/?search=Remove%20Nth%20node%20from%20end",
+    "gfg": "https://www.geeksforgeeks.org/?s=Remove%20Nth%20node%20from%20end",
+    "source": "Curated high-yield practice"
+  },
+  {
+    "id": 187,
+    "title": "Add two numbers",
+    "topic": "Linked Lists",
+    "difficulty": "Medium",
+    "url": "https://leetcode.com/problemset/?search=Add%20two%20numbers",
+    "gfg": "https://www.geeksforgeeks.org/?s=Add%20two%20numbers",
+    "source": "Curated high-yield practice"
+  },
+  {
+    "id": 188,
+    "title": "Remove duplicates from sorted list",
+    "topic": "Linked Lists",
+    "difficulty": "Medium",
+    "url": "https://leetcode.com/problemset/?search=Remove%20duplicates%20from%20sorted%20list",
+    "gfg": "https://www.geeksforgeeks.org/?s=Remove%20duplicates%20from%20sorted%20list",
+    "source": "Curated high-yield practice"
+  },
+  {
+    "id": 189,
+    "title": "Delete node in a linked list",
+    "topic": "Linked Lists",
+    "difficulty": "Hard",
+    "url": "https://leetcode.com/problemset/?search=Delete%20node%20in%20a%20linked%20list",
+    "gfg": "https://www.geeksforgeeks.org/?s=Delete%20node%20in%20a%20linked%20list",
+    "source": "Curated high-yield practice"
+  },
+  {
+    "id": 190,
+    "title": "Intersection of two linked lists",
+    "topic": "Linked Lists",
+    "difficulty": "Easy",
+    "url": "https://leetcode.com/problemset/?search=Intersection%20of%20two%20linked%20lists",
+    "gfg": "https://www.geeksforgeeks.org/?s=Intersection%20of%20two%20linked%20lists",
+    "source": "Curated high-yield practice"
+  },
+  {
+    "id": 191,
+    "title": "Palindrome linked list",
+    "topic": "Linked Lists",
+    "difficulty": "Easy",
+    "url": "https://leetcode.com/problemset/?search=Palindrome%20linked%20list",
+    "gfg": "https://www.geeksforgeeks.org/?s=Palindrome%20linked%20list",
+    "source": "Curated high-yield practice"
+  },
+  {
+    "id": 192,
+    "title": "Reverse nodes in K-group",
+    "topic": "Linked Lists",
+    "difficulty": "Medium",
+    "url": "https://leetcode.com/problemset/?search=Reverse%20nodes%20in%20K-group",
+    "gfg": "https://www.geeksforgeeks.org/?s=Reverse%20nodes%20in%20K-group",
+    "source": "Curated high-yield practice"
+  },
+  {
+    "id": 193,
+    "title": "Rotate list",
+    "topic": "Linked Lists",
+    "difficulty": "Medium",
+    "url": "https://leetcode.com/problemset/?search=Rotate%20list",
+    "gfg": "https://www.geeksforgeeks.org/?s=Rotate%20list",
+    "source": "Curated high-yield practice"
+  },
+  {
+    "id": 194,
+    "title": "Partition list",
+    "topic": "Linked Lists",
+    "difficulty": "Medium",
+    "url": "https://leetcode.com/problemset/?search=Partition%20list",
+    "gfg": "https://www.geeksforgeeks.org/?s=Partition%20list",
+    "source": "Curated high-yield practice"
+  },
+  {
+    "id": 195,
+    "title": "Sort linked list",
+    "topic": "Linked Lists",
+    "difficulty": "Easy",
+    "url": "https://leetcode.com/problemset/?search=Sort%20linked%20list",
+    "gfg": "https://www.geeksforgeeks.org/?s=Sort%20linked%20list",
+    "source": "Curated high-yield practice"
+  },
+  {
+    "id": 196,
+    "title": "Flatten a multilevel doubly linked list",
+    "topic": "Linked Lists",
+    "difficulty": "Easy",
+    "url": "https://leetcode.com/problemset/?search=Flatten%20a%20multilevel%20doubly%20linked%20list",
+    "gfg": "https://www.geeksforgeeks.org/?s=Flatten%20a%20multilevel%20doubly%20linked%20list",
+    "source": "Curated high-yield practice"
+  },
+  {
+    "id": 197,
+    "title": "Copy list with random pointer",
+    "topic": "Linked Lists",
+    "difficulty": "Medium",
+    "url": "https://leetcode.com/problemset/?search=Copy%20list%20with%20random%20pointer",
+    "gfg": "https://www.geeksforgeeks.org/?s=Copy%20list%20with%20random%20pointer",
+    "source": "Curated high-yield practice"
+  },
+  {
+    "id": 198,
+    "title": "Design linked list",
+    "topic": "Linked Lists",
+    "difficulty": "Medium",
+    "url": "https://leetcode.com/problemset/?search=Design%20linked%20list",
+    "gfg": "https://www.geeksforgeeks.org/?s=Design%20linked%20list",
+    "source": "Curated high-yield practice"
+  },
+  {
+    "id": 199,
+    "title": "Swap nodes in pairs",
+    "topic": "Linked Lists",
+    "difficulty": "Medium",
+    "url": "https://leetcode.com/problemset/?search=Swap%20nodes%20in%20pairs",
+    "gfg": "https://www.geeksforgeeks.org/?s=Swap%20nodes%20in%20pairs",
+    "source": "Curated high-yield practice"
+  },
+  {
+    "id": 200,
+    "title": "Reorder list",
+    "topic": "Linked Lists",
+    "difficulty": "Easy",
+    "url": "https://leetcode.com/problemset/?search=Reorder%20list",
+    "gfg": "https://www.geeksforgeeks.org/?s=Reorder%20list",
+    "source": "Curated high-yield practice"
+  },
+  {
+    "id": 201,
+    "title": "Valid Parentheses",
+    "topic": "Stacks and Queues",
+    "difficulty": "Easy",
+    "url": "https://leetcode.com/problemset/?search=Valid%20Parentheses",
+    "gfg": "https://www.geeksforgeeks.org/?s=Valid%20Parentheses",
+    "source": "Curated high-yield practice"
+  },
+  {
+    "id": 202,
+    "title": "Min Stack",
+    "topic": "Stacks and Queues",
+    "difficulty": "Medium",
+    "url": "https://leetcode.com/problemset/?search=Min%20Stack",
+    "gfg": "https://www.geeksforgeeks.org/?s=Min%20Stack",
+    "source": "Curated high-yield practice"
+  },
+  {
+    "id": 203,
+    "title": "Implement Queue using Stacks",
+    "topic": "Stacks and Queues",
+    "difficulty": "Hard",
+    "url": "https://leetcode.com/problemset/?search=Implement%20Queue%20using%20Stacks",
+    "gfg": "https://www.geeksforgeeks.org/?s=Implement%20Queue%20using%20Stacks",
+    "source": "Curated high-yield practice"
+  },
+  {
+    "id": 204,
+    "title": "Implement Stack using Queues",
+    "topic": "Stacks and Queues",
+    "difficulty": "Medium",
+    "url": "https://leetcode.com/problemset/?search=Implement%20Stack%20using%20Queues",
+    "gfg": "https://www.geeksforgeeks.org/?s=Implement%20Stack%20using%20Queues",
+    "source": "Curated high-yield practice"
+  },
+  {
+    "id": 205,
+    "title": "Next Greater Element I",
+    "topic": "Stacks and Queues",
+    "difficulty": "Easy",
+    "url": "https://leetcode.com/problemset/?search=Next%20Greater%20Element%20I",
+    "gfg": "https://www.geeksforgeeks.org/?s=Next%20Greater%20Element%20I",
+    "source": "Curated high-yield practice"
+  },
+  {
+    "id": 206,
+    "title": "Next Greater Element II",
+    "topic": "Stacks and Queues",
+    "difficulty": "Easy",
+    "url": "https://leetcode.com/problemset/?search=Next%20Greater%20Element%20II",
+    "gfg": "https://www.geeksforgeeks.org/?s=Next%20Greater%20Element%20II",
+    "source": "Curated high-yield practice"
+  },
+  {
+    "id": 207,
+    "title": "Daily Temperatures",
+    "topic": "Stacks and Queues",
+    "difficulty": "Medium",
+    "url": "https://leetcode.com/problemset/?search=Daily%20Temperatures",
+    "gfg": "https://www.geeksforgeeks.org/?s=Daily%20Temperatures",
+    "source": "Curated high-yield practice"
+  },
+  {
+    "id": 208,
+    "title": "Largest Rectangle in Histogram",
+    "topic": "Stacks and Queues",
+    "difficulty": "Medium",
+    "url": "https://leetcode.com/problemset/?search=Largest%20Rectangle%20in%20Histogram",
+    "gfg": "https://www.geeksforgeeks.org/?s=Largest%20Rectangle%20in%20Histogram",
+    "source": "Curated high-yield practice"
+  },
+  {
+    "id": 209,
+    "title": "Maximal Rectangle",
+    "topic": "Stacks and Queues",
+    "difficulty": "Medium",
+    "url": "https://leetcode.com/problemset/?search=Maximal%20Rectangle",
+    "gfg": "https://www.geeksforgeeks.org/?s=Maximal%20Rectangle",
+    "source": "Curated high-yield practice"
+  },
+  {
+    "id": 210,
+    "title": "Evaluate Reverse Polish Notation",
+    "topic": "Stacks and Queues",
+    "difficulty": "Easy",
+    "url": "https://leetcode.com/problemset/?search=Evaluate%20Reverse%20Polish%20Notation",
+    "gfg": "https://www.geeksforgeeks.org/?s=Evaluate%20Reverse%20Polish%20Notation",
+    "source": "Curated high-yield practice"
+  },
+  {
+    "id": 211,
+    "title": "Basic Calculator",
+    "topic": "Stacks and Queues",
+    "difficulty": "Easy",
+    "url": "https://leetcode.com/problemset/?search=Basic%20Calculator",
+    "gfg": "https://www.geeksforgeeks.org/?s=Basic%20Calculator",
+    "source": "Curated high-yield practice"
+  },
+  {
+    "id": 212,
+    "title": "Sliding Window Maximum",
+    "topic": "Stacks and Queues",
+    "difficulty": "Medium",
+    "url": "https://leetcode.com/problemset/?search=Sliding%20Window%20Maximum",
+    "gfg": "https://www.geeksforgeeks.org/?s=Sliding%20Window%20Maximum",
+    "source": "Curated high-yield practice"
+  },
+  {
+    "id": 213,
+    "title": "Asteroid Collision",
+    "topic": "Stacks and Queues",
+    "difficulty": "Medium",
+    "url": "https://leetcode.com/problemset/?search=Asteroid%20Collision",
+    "gfg": "https://www.geeksforgeeks.org/?s=Asteroid%20Collision",
+    "source": "Curated high-yield practice"
+  },
+  {
+    "id": 214,
+    "title": "Online Stock Span",
+    "topic": "Stacks and Queues",
+    "difficulty": "Medium",
+    "url": "https://leetcode.com/problemset/?search=Online%20Stock%20Span",
+    "gfg": "https://www.geeksforgeeks.org/?s=Online%20Stock%20Span",
+    "source": "Curated high-yield practice"
+  },
+  {
+    "id": 215,
+    "title": "Remove K Digits",
+    "topic": "Stacks and Queues",
+    "difficulty": "Easy",
+    "url": "https://leetcode.com/problemset/?search=Remove%20K%20Digits",
+    "gfg": "https://www.geeksforgeeks.org/?s=Remove%20K%20Digits",
+    "source": "Curated high-yield practice"
+  },
+  {
+    "id": 216,
+    "title": "Simplify Path",
+    "topic": "Stacks and Queues",
+    "difficulty": "Easy",
+    "url": "https://leetcode.com/problemset/?search=Simplify%20Path",
+    "gfg": "https://www.geeksforgeeks.org/?s=Simplify%20Path",
+    "source": "Curated high-yield practice"
+  },
+  {
+    "id": 217,
+    "title": "Sum of Subarray Minimums",
+    "topic": "Stacks and Queues",
+    "difficulty": "Hard",
+    "url": "https://leetcode.com/problemset/?search=Sum%20of%20Subarray%20Minimums",
+    "gfg": "https://www.geeksforgeeks.org/?s=Sum%20of%20Subarray%20Minimums",
+    "source": "Curated high-yield practice"
+  },
+  {
+    "id": 218,
+    "title": "Trapping Rain Water using stack",
+    "topic": "Stacks and Queues",
+    "difficulty": "Medium",
+    "url": "https://leetcode.com/problemset/?search=Trapping%20Rain%20Water%20using%20stack",
+    "gfg": "https://www.geeksforgeeks.org/?s=Trapping%20Rain%20Water%20using%20stack",
+    "source": "Curated high-yield practice"
+  },
+  {
+    "id": 219,
+    "title": "LFU Cache",
+    "topic": "Stacks and Queues",
+    "difficulty": "Medium",
+    "url": "https://leetcode.com/problemset/?search=LFU%20Cache",
+    "gfg": "https://www.geeksforgeeks.org/?s=LFU%20Cache",
+    "source": "Curated high-yield practice"
+  },
+  {
+    "id": 220,
+    "title": "LRU Cache",
+    "topic": "Stacks and Queues",
+    "difficulty": "Easy",
+    "url": "https://leetcode.com/problemset/?search=LRU%20Cache",
+    "gfg": "https://www.geeksforgeeks.org/?s=LRU%20Cache",
+    "source": "Curated high-yield practice"
+  },
+  {
+    "id": 221,
+    "title": "Binary Tree Inorder Traversal",
+    "topic": "Binary Trees",
+    "difficulty": "Easy",
+    "url": "https://leetcode.com/problemset/?search=Binary%20Tree%20Inorder%20Traversal",
+    "gfg": "https://www.geeksforgeeks.org/?s=Binary%20Tree%20Inorder%20Traversal",
+    "source": "Curated high-yield practice"
+  },
+  {
+    "id": 222,
+    "title": "Preorder Traversal",
+    "topic": "Binary Trees",
+    "difficulty": "Medium",
+    "url": "https://leetcode.com/problemset/?search=Preorder%20Traversal",
+    "gfg": "https://www.geeksforgeeks.org/?s=Preorder%20Traversal",
+    "source": "Curated high-yield practice"
+  },
+  {
+    "id": 223,
+    "title": "Postorder Traversal",
+    "topic": "Binary Trees",
+    "difficulty": "Medium",
+    "url": "https://leetcode.com/problemset/?search=Postorder%20Traversal",
+    "gfg": "https://www.geeksforgeeks.org/?s=Postorder%20Traversal",
+    "source": "Curated high-yield practice"
+  },
+  {
+    "id": 224,
+    "title": "Level Order Traversal",
+    "topic": "Binary Trees",
+    "difficulty": "Hard",
+    "url": "https://leetcode.com/problemset/?search=Level%20Order%20Traversal",
+    "gfg": "https://www.geeksforgeeks.org/?s=Level%20Order%20Traversal",
+    "source": "Curated high-yield practice"
+  },
+  {
+    "id": 225,
+    "title": "Zigzag Level Order Traversal",
+    "topic": "Binary Trees",
+    "difficulty": "Easy",
+    "url": "https://leetcode.com/problemset/?search=Zigzag%20Level%20Order%20Traversal",
+    "gfg": "https://www.geeksforgeeks.org/?s=Zigzag%20Level%20Order%20Traversal",
+    "source": "Curated high-yield practice"
+  },
+  {
+    "id": 226,
+    "title": "Maximum Depth of Binary Tree",
+    "topic": "Binary Trees",
+    "difficulty": "Easy",
+    "url": "https://leetcode.com/problemset/?search=Maximum%20Depth%20of%20Binary%20Tree",
+    "gfg": "https://www.geeksforgeeks.org/?s=Maximum%20Depth%20of%20Binary%20Tree",
+    "source": "Curated high-yield practice"
+  },
+  {
+    "id": 227,
+    "title": "Diameter of Binary Tree",
+    "topic": "Binary Trees",
+    "difficulty": "Medium",
+    "url": "https://leetcode.com/problemset/?search=Diameter%20of%20Binary%20Tree",
+    "gfg": "https://www.geeksforgeeks.org/?s=Diameter%20of%20Binary%20Tree",
+    "source": "Curated high-yield practice"
+  },
+  {
+    "id": 228,
+    "title": "Balanced Binary Tree",
+    "topic": "Binary Trees",
+    "difficulty": "Medium",
+    "url": "https://leetcode.com/problemset/?search=Balanced%20Binary%20Tree",
+    "gfg": "https://www.geeksforgeeks.org/?s=Balanced%20Binary%20Tree",
+    "source": "Curated high-yield practice"
+  },
+  {
+    "id": 229,
+    "title": "Same Tree",
+    "topic": "Binary Trees",
+    "difficulty": "Medium",
+    "url": "https://leetcode.com/problemset/?search=Same%20Tree",
+    "gfg": "https://www.geeksforgeeks.org/?s=Same%20Tree",
+    "source": "Curated high-yield practice"
+  },
+  {
+    "id": 230,
+    "title": "Symmetric Tree",
+    "topic": "Binary Trees",
+    "difficulty": "Easy",
+    "url": "https://leetcode.com/problemset/?search=Symmetric%20Tree",
+    "gfg": "https://www.geeksforgeeks.org/?s=Symmetric%20Tree",
+    "source": "Curated high-yield practice"
+  },
+  {
+    "id": 231,
+    "title": "Invert Binary Tree",
+    "topic": "Binary Trees",
+    "difficulty": "Easy",
+    "url": "https://leetcode.com/problemset/?search=Invert%20Binary%20Tree",
+    "gfg": "https://www.geeksforgeeks.org/?s=Invert%20Binary%20Tree",
+    "source": "Curated high-yield practice"
+  },
+  {
+    "id": 232,
+    "title": "Path Sum",
+    "topic": "Binary Trees",
+    "difficulty": "Medium",
+    "url": "https://leetcode.com/problemset/?search=Path%20Sum",
+    "gfg": "https://www.geeksforgeeks.org/?s=Path%20Sum",
+    "source": "Curated high-yield practice"
+  },
+  {
+    "id": 233,
+    "title": "Maximum Path Sum",
+    "topic": "Binary Trees",
+    "difficulty": "Medium",
+    "url": "https://leetcode.com/problemset/?search=Maximum%20Path%20Sum",
+    "gfg": "https://www.geeksforgeeks.org/?s=Maximum%20Path%20Sum",
+    "source": "Curated high-yield practice"
+  },
+  {
+    "id": 234,
+    "title": "Lowest Common Ancestor of Binary Tree",
+    "topic": "Binary Trees",
+    "difficulty": "Medium",
+    "url": "https://leetcode.com/problemset/?search=Lowest%20Common%20Ancestor%20of%20Binary%20Tree",
+    "gfg": "https://www.geeksforgeeks.org/?s=Lowest%20Common%20Ancestor%20of%20Binary%20Tree",
+    "source": "Curated high-yield practice"
+  },
+  {
+    "id": 235,
+    "title": "Boundary Traversal",
+    "topic": "Binary Trees",
+    "difficulty": "Easy",
+    "url": "https://leetcode.com/problemset/?search=Boundary%20Traversal",
+    "gfg": "https://www.geeksforgeeks.org/?s=Boundary%20Traversal",
+    "source": "Curated high-yield practice"
+  },
+  {
+    "id": 236,
+    "title": "Vertical Order Traversal",
+    "topic": "Binary Trees",
+    "difficulty": "Easy",
+    "url": "https://leetcode.com/problemset/?search=Vertical%20Order%20Traversal",
+    "gfg": "https://www.geeksforgeeks.org/?s=Vertical%20Order%20Traversal",
+    "source": "Curated high-yield practice"
+  },
+  {
+    "id": 237,
+    "title": "Top View of Binary Tree",
+    "topic": "Binary Trees",
+    "difficulty": "Medium",
+    "url": "https://leetcode.com/problemset/?search=Top%20View%20of%20Binary%20Tree",
+    "gfg": "https://www.geeksforgeeks.org/?s=Top%20View%20of%20Binary%20Tree",
+    "source": "Curated high-yield practice"
+  },
+  {
+    "id": 238,
+    "title": "Bottom View of Binary Tree",
+    "topic": "Binary Trees",
+    "difficulty": "Hard",
+    "url": "https://leetcode.com/problemset/?search=Bottom%20View%20of%20Binary%20Tree",
+    "gfg": "https://www.geeksforgeeks.org/?s=Bottom%20View%20of%20Binary%20Tree",
+    "source": "Curated high-yield practice"
+  },
+  {
+    "id": 239,
+    "title": "Right Side View",
+    "topic": "Binary Trees",
+    "difficulty": "Medium",
+    "url": "https://leetcode.com/problemset/?search=Right%20Side%20View",
+    "gfg": "https://www.geeksforgeeks.org/?s=Right%20Side%20View",
+    "source": "Curated high-yield practice"
+  },
+  {
+    "id": 240,
+    "title": "Serialize and Deserialize Binary Tree",
+    "topic": "Binary Trees",
+    "difficulty": "Easy",
+    "url": "https://leetcode.com/problemset/?search=Serialize%20and%20Deserialize%20Binary%20Tree",
+    "gfg": "https://www.geeksforgeeks.org/?s=Serialize%20and%20Deserialize%20Binary%20Tree",
+    "source": "Curated high-yield practice"
+  },
+  {
+    "id": 241,
+    "title": "Search in a BST",
+    "topic": "Binary Search Trees",
+    "difficulty": "Easy",
+    "url": "https://leetcode.com/problemset/?search=Search%20in%20a%20BST",
+    "gfg": "https://www.geeksforgeeks.org/?s=Search%20in%20a%20BST",
+    "source": "Curated high-yield practice"
+  },
+  {
+    "id": 242,
+    "title": "Insert into a BST",
+    "topic": "Binary Search Trees",
+    "difficulty": "Medium",
+    "url": "https://leetcode.com/problemset/?search=Insert%20into%20a%20BST",
+    "gfg": "https://www.geeksforgeeks.org/?s=Insert%20into%20a%20BST",
+    "source": "Curated high-yield practice"
+  },
+  {
+    "id": 243,
+    "title": "Delete Node in a BST",
+    "topic": "Binary Search Trees",
+    "difficulty": "Medium",
+    "url": "https://leetcode.com/problemset/?search=Delete%20Node%20in%20a%20BST",
+    "gfg": "https://www.geeksforgeeks.org/?s=Delete%20Node%20in%20a%20BST",
+    "source": "Curated high-yield practice"
+  },
+  {
+    "id": 244,
+    "title": "Validate Binary Search Tree",
+    "topic": "Binary Search Trees",
+    "difficulty": "Medium",
+    "url": "https://leetcode.com/problemset/?search=Validate%20Binary%20Search%20Tree",
+    "gfg": "https://www.geeksforgeeks.org/?s=Validate%20Binary%20Search%20Tree",
+    "source": "Curated high-yield practice"
+  },
+  {
+    "id": 245,
+    "title": "Kth Smallest Element in BST",
+    "topic": "Binary Search Trees",
+    "difficulty": "Easy",
+    "url": "https://leetcode.com/problemset/?search=Kth%20Smallest%20Element%20in%20BST",
+    "gfg": "https://www.geeksforgeeks.org/?s=Kth%20Smallest%20Element%20in%20BST",
+    "source": "Curated high-yield practice"
+  },
+  {
+    "id": 246,
+    "title": "Lowest Common Ancestor of BST",
+    "topic": "Binary Search Trees",
+    "difficulty": "Easy",
+    "url": "https://leetcode.com/problemset/?search=Lowest%20Common%20Ancestor%20of%20BST",
+    "gfg": "https://www.geeksforgeeks.org/?s=Lowest%20Common%20Ancestor%20of%20BST",
+    "source": "Curated high-yield practice"
+  },
+  {
+    "id": 247,
+    "title": "BST Iterator",
+    "topic": "Binary Search Trees",
+    "difficulty": "Medium",
+    "url": "https://leetcode.com/problemset/?search=BST%20Iterator",
+    "gfg": "https://www.geeksforgeeks.org/?s=BST%20Iterator",
+    "source": "Curated high-yield practice"
+  },
+  {
+    "id": 248,
+    "title": "Recover Binary Search Tree",
+    "topic": "Binary Search Trees",
+    "difficulty": "Medium",
+    "url": "https://leetcode.com/problemset/?search=Recover%20Binary%20Search%20Tree",
+    "gfg": "https://www.geeksforgeeks.org/?s=Recover%20Binary%20Search%20Tree",
+    "source": "Curated high-yield practice"
+  },
+  {
+    "id": 249,
+    "title": "Convert Sorted Array to BST",
+    "topic": "Binary Search Trees",
+    "difficulty": "Medium",
+    "url": "https://leetcode.com/problemset/?search=Convert%20Sorted%20Array%20to%20BST",
+    "gfg": "https://www.geeksforgeeks.org/?s=Convert%20Sorted%20Array%20to%20BST",
+    "source": "Curated high-yield practice"
+  },
+  {
+    "id": 250,
+    "title": "Two Sum IV BST",
+    "topic": "Binary Search Trees",
+    "difficulty": "Easy",
+    "url": "https://leetcode.com/problemset/?search=Two%20Sum%20IV%20BST",
+    "gfg": "https://www.geeksforgeeks.org/?s=Two%20Sum%20IV%20BST",
+    "source": "Curated high-yield practice"
+  },
+  {
+    "id": 251,
+    "title": "Construct BST from Preorder",
+    "topic": "Binary Search Trees",
+    "difficulty": "Easy",
+    "url": "https://leetcode.com/problemset/?search=Construct%20BST%20from%20Preorder",
+    "gfg": "https://www.geeksforgeeks.org/?s=Construct%20BST%20from%20Preorder",
+    "source": "Curated high-yield practice"
+  },
+  {
+    "id": 252,
+    "title": "Inorder Successor in BST",
+    "topic": "Binary Search Trees",
+    "difficulty": "Hard",
+    "url": "https://leetcode.com/problemset/?search=Inorder%20Successor%20in%20BST",
+    "gfg": "https://www.geeksforgeeks.org/?s=Inorder%20Successor%20in%20BST",
+    "source": "Curated high-yield practice"
+  },
+  {
+    "id": 253,
+    "title": "Floor and Ceil in BST",
+    "topic": "Binary Search Trees",
+    "difficulty": "Medium",
+    "url": "https://leetcode.com/problemset/?search=Floor%20and%20Ceil%20in%20BST",
+    "gfg": "https://www.geeksforgeeks.org/?s=Floor%20and%20Ceil%20in%20BST",
+    "source": "Curated high-yield practice"
+  },
+  {
+    "id": 254,
+    "title": "Predecessor and Successor in BST",
+    "topic": "Binary Search Trees",
+    "difficulty": "Medium",
+    "url": "https://leetcode.com/problemset/?search=Predecessor%20and%20Successor%20in%20BST",
+    "gfg": "https://www.geeksforgeeks.org/?s=Predecessor%20and%20Successor%20in%20BST",
+    "source": "Curated high-yield practice"
+  },
+  {
+    "id": 255,
+    "title": "Largest BST Subtree",
+    "topic": "Binary Search Trees",
+    "difficulty": "Easy",
+    "url": "https://leetcode.com/problemset/?search=Largest%20BST%20Subtree",
+    "gfg": "https://www.geeksforgeeks.org/?s=Largest%20BST%20Subtree",
+    "source": "Curated high-yield practice"
+  },
+  {
+    "id": 256,
+    "title": "Balance a BST",
+    "topic": "Binary Search Trees",
+    "difficulty": "Easy",
+    "url": "https://leetcode.com/problemset/?search=Balance%20a%20BST",
+    "gfg": "https://www.geeksforgeeks.org/?s=Balance%20a%20BST",
+    "source": "Curated high-yield practice"
+  },
+  {
+    "id": 257,
+    "title": "Minimum Absolute Difference in BST",
+    "topic": "Binary Search Trees",
+    "difficulty": "Medium",
+    "url": "https://leetcode.com/problemset/?search=Minimum%20Absolute%20Difference%20in%20BST",
+    "gfg": "https://www.geeksforgeeks.org/?s=Minimum%20Absolute%20Difference%20in%20BST",
+    "source": "Curated high-yield practice"
+  },
+  {
+    "id": 258,
+    "title": "Range Sum of BST",
+    "topic": "Binary Search Trees",
+    "difficulty": "Medium",
+    "url": "https://leetcode.com/problemset/?search=Range%20Sum%20of%20BST",
+    "gfg": "https://www.geeksforgeeks.org/?s=Range%20Sum%20of%20BST",
+    "source": "Curated high-yield practice"
+  },
+  {
+    "id": 259,
+    "title": "Trim a BST",
+    "topic": "Binary Search Trees",
+    "difficulty": "Hard",
+    "url": "https://leetcode.com/problemset/?search=Trim%20a%20BST",
+    "gfg": "https://www.geeksforgeeks.org/?s=Trim%20a%20BST",
+    "source": "Curated high-yield practice"
+  },
+  {
+    "id": 260,
+    "title": "Find Mode in BST",
+    "topic": "Binary Search Trees",
+    "difficulty": "Easy",
+    "url": "https://leetcode.com/problemset/?search=Find%20Mode%20in%20BST",
+    "gfg": "https://www.geeksforgeeks.org/?s=Find%20Mode%20in%20BST",
+    "source": "Curated high-yield practice"
+  },
+  {
+    "id": 261,
+    "title": "Kth Largest Element in an Array",
+    "topic": "Heaps and Priority Queues",
+    "difficulty": "Easy",
+    "url": "https://leetcode.com/problemset/?search=Kth%20Largest%20Element%20in%20an%20Array",
+    "gfg": "https://www.geeksforgeeks.org/?s=Kth%20Largest%20Element%20in%20an%20Array",
+    "source": "Curated high-yield practice"
+  },
+  {
+    "id": 262,
+    "title": "Top K Frequent Elements",
+    "topic": "Heaps and Priority Queues",
+    "difficulty": "Medium",
+    "url": "https://leetcode.com/problemset/?search=Top%20K%20Frequent%20Elements",
+    "gfg": "https://www.geeksforgeeks.org/?s=Top%20K%20Frequent%20Elements",
+    "source": "Curated high-yield practice"
+  },
+  {
+    "id": 263,
+    "title": "Find Median from Data Stream",
+    "topic": "Heaps and Priority Queues",
+    "difficulty": "Medium",
+    "url": "https://leetcode.com/problemset/?search=Find%20Median%20from%20Data%20Stream",
+    "gfg": "https://www.geeksforgeeks.org/?s=Find%20Median%20from%20Data%20Stream",
+    "source": "Curated high-yield practice"
+  },
+  {
+    "id": 264,
+    "title": "Merge K Sorted Lists",
+    "topic": "Heaps and Priority Queues",
+    "difficulty": "Medium",
+    "url": "https://leetcode.com/problemset/?search=Merge%20K%20Sorted%20Lists",
+    "gfg": "https://www.geeksforgeeks.org/?s=Merge%20K%20Sorted%20Lists",
+    "source": "Curated high-yield practice"
+  },
+  {
+    "id": 265,
+    "title": "K Closest Points to Origin",
+    "topic": "Heaps and Priority Queues",
+    "difficulty": "Easy",
+    "url": "https://leetcode.com/problemset/?search=K%20Closest%20Points%20to%20Origin",
+    "gfg": "https://www.geeksforgeeks.org/?s=K%20Closest%20Points%20to%20Origin",
+    "source": "Curated high-yield practice"
+  },
+  {
+    "id": 266,
+    "title": "Task Scheduler",
+    "topic": "Heaps and Priority Queues",
+    "difficulty": "Easy",
+    "url": "https://leetcode.com/problemset/?search=Task%20Scheduler",
+    "gfg": "https://www.geeksforgeeks.org/?s=Task%20Scheduler",
+    "source": "Curated high-yield practice"
+  },
+  {
+    "id": 267,
+    "title": "Reorganize String",
+    "topic": "Heaps and Priority Queues",
+    "difficulty": "Medium",
+    "url": "https://leetcode.com/problemset/?search=Reorganize%20String",
+    "gfg": "https://www.geeksforgeeks.org/?s=Reorganize%20String",
+    "source": "Curated high-yield practice"
+  },
+  {
+    "id": 268,
+    "title": "Meeting Rooms II",
+    "topic": "Heaps and Priority Queues",
+    "difficulty": "Medium",
+    "url": "https://leetcode.com/problemset/?search=Meeting%20Rooms%20II",
+    "gfg": "https://www.geeksforgeeks.org/?s=Meeting%20Rooms%20II",
+    "source": "Curated high-yield practice"
+  },
+  {
+    "id": 269,
+    "title": "Find K Pairs with Smallest Sums",
+    "topic": "Heaps and Priority Queues",
+    "difficulty": "Medium",
+    "url": "https://leetcode.com/problemset/?search=Find%20K%20Pairs%20with%20Smallest%20Sums",
+    "gfg": "https://www.geeksforgeeks.org/?s=Find%20K%20Pairs%20with%20Smallest%20Sums",
+    "source": "Curated high-yield practice"
+  },
+  {
+    "id": 270,
+    "title": "IPO maximize capital",
+    "topic": "Heaps and Priority Queues",
+    "difficulty": "Easy",
+    "url": "https://leetcode.com/problemset/?search=IPO%20maximize%20capital",
+    "gfg": "https://www.geeksforgeeks.org/?s=IPO%20maximize%20capital",
+    "source": "Curated high-yield practice"
+  },
+  {
+    "id": 271,
+    "title": "Smallest Range Covering K Lists",
+    "topic": "Heaps and Priority Queues",
+    "difficulty": "Easy",
+    "url": "https://leetcode.com/problemset/?search=Smallest%20Range%20Covering%20K%20Lists",
+    "gfg": "https://www.geeksforgeeks.org/?s=Smallest%20Range%20Covering%20K%20Lists",
+    "source": "Curated high-yield practice"
+  },
+  {
+    "id": 272,
+    "title": "Last Stone Weight",
+    "topic": "Heaps and Priority Queues",
+    "difficulty": "Medium",
+    "url": "https://leetcode.com/problemset/?search=Last%20Stone%20Weight",
+    "gfg": "https://www.geeksforgeeks.org/?s=Last%20Stone%20Weight",
+    "source": "Curated high-yield practice"
+  },
+  {
+    "id": 273,
+    "title": "Connect Ropes with Minimum Cost",
+    "topic": "Heaps and Priority Queues",
+    "difficulty": "Hard",
+    "url": "https://leetcode.com/problemset/?search=Connect%20Ropes%20with%20Minimum%20Cost",
+    "gfg": "https://www.geeksforgeeks.org/?s=Connect%20Ropes%20with%20Minimum%20Cost",
+    "source": "Curated high-yield practice"
+  },
+  {
+    "id": 274,
+    "title": "Sort Characters by Frequency using heap",
+    "topic": "Heaps and Priority Queues",
+    "difficulty": "Medium",
+    "url": "https://leetcode.com/problemset/?search=Sort%20Characters%20by%20Frequency%20using%20heap",
+    "gfg": "https://www.geeksforgeeks.org/?s=Sort%20Characters%20by%20Frequency%20using%20heap",
+    "source": "Curated high-yield practice"
+  },
+  {
+    "id": 275,
+    "title": "Kth Largest Stream",
+    "topic": "Heaps and Priority Queues",
+    "difficulty": "Easy",
+    "url": "https://leetcode.com/problemset/?search=Kth%20Largest%20Stream",
+    "gfg": "https://www.geeksforgeeks.org/?s=Kth%20Largest%20Stream",
+    "source": "Curated high-yield practice"
+  },
+  {
+    "id": 276,
+    "title": "Sliding Window Median",
+    "topic": "Heaps and Priority Queues",
+    "difficulty": "Easy",
+    "url": "https://leetcode.com/problemset/?search=Sliding%20Window%20Median",
+    "gfg": "https://www.geeksforgeeks.org/?s=Sliding%20Window%20Median",
+    "source": "Curated high-yield practice"
+  },
+  {
+    "id": 277,
+    "title": "Maximum Sum Combinations",
+    "topic": "Heaps and Priority Queues",
+    "difficulty": "Medium",
+    "url": "https://leetcode.com/problemset/?search=Maximum%20Sum%20Combinations",
+    "gfg": "https://www.geeksforgeeks.org/?s=Maximum%20Sum%20Combinations",
+    "source": "Curated high-yield practice"
+  },
+  {
+    "id": 278,
+    "title": "Replace Elements by Rank",
+    "topic": "Heaps and Priority Queues",
+    "difficulty": "Medium",
+    "url": "https://leetcode.com/problemset/?search=Replace%20Elements%20by%20Rank",
+    "gfg": "https://www.geeksforgeeks.org/?s=Replace%20Elements%20by%20Rank",
+    "source": "Curated high-yield practice"
+  },
+  {
+    "id": 279,
+    "title": "Frequency Sort using heap",
+    "topic": "Heaps and Priority Queues",
+    "difficulty": "Medium",
+    "url": "https://leetcode.com/problemset/?search=Frequency%20Sort%20using%20heap",
+    "gfg": "https://www.geeksforgeeks.org/?s=Frequency%20Sort%20using%20heap",
+    "source": "Curated high-yield practice"
+  },
+  {
+    "id": 280,
+    "title": "Design Twitter feed",
+    "topic": "Heaps and Priority Queues",
+    "difficulty": "Easy",
+    "url": "https://leetcode.com/problemset/?search=Design%20Twitter%20feed",
+    "gfg": "https://www.geeksforgeeks.org/?s=Design%20Twitter%20feed",
+    "source": "Curated high-yield practice"
+  },
+  {
+    "id": 281,
+    "title": "Assign Cookies",
+    "topic": "Greedy Algorithms",
+    "difficulty": "Easy",
+    "url": "https://leetcode.com/problemset/?search=Assign%20Cookies",
+    "gfg": "https://www.geeksforgeeks.org/?s=Assign%20Cookies",
+    "source": "Curated high-yield practice"
+  },
+  {
+    "id": 282,
+    "title": "Jump Game",
+    "topic": "Greedy Algorithms",
+    "difficulty": "Medium",
+    "url": "https://leetcode.com/problemset/?search=Jump%20Game",
+    "gfg": "https://www.geeksforgeeks.org/?s=Jump%20Game",
+    "source": "Curated high-yield practice"
+  },
+  {
+    "id": 283,
+    "title": "Jump Game II",
+    "topic": "Greedy Algorithms",
+    "difficulty": "Medium",
+    "url": "https://leetcode.com/problemset/?search=Jump%20Game%20II",
+    "gfg": "https://www.geeksforgeeks.org/?s=Jump%20Game%20II",
+    "source": "Curated high-yield practice"
+  },
+  {
+    "id": 284,
+    "title": "Gas Station",
+    "topic": "Greedy Algorithms",
+    "difficulty": "Medium",
+    "url": "https://leetcode.com/problemset/?search=Gas%20Station",
+    "gfg": "https://www.geeksforgeeks.org/?s=Gas%20Station",
+    "source": "Curated high-yield practice"
+  },
+  {
+    "id": 285,
+    "title": "Candy",
+    "topic": "Greedy Algorithms",
+    "difficulty": "Easy",
+    "url": "https://leetcode.com/problemset/?search=Candy",
+    "gfg": "https://www.geeksforgeeks.org/?s=Candy",
+    "source": "Curated high-yield practice"
+  },
+  {
+    "id": 286,
+    "title": "Non-overlapping Intervals",
+    "topic": "Greedy Algorithms",
+    "difficulty": "Easy",
+    "url": "https://leetcode.com/problemset/?search=Non-overlapping%20Intervals",
+    "gfg": "https://www.geeksforgeeks.org/?s=Non-overlapping%20Intervals",
+    "source": "Curated high-yield practice"
+  },
+  {
+    "id": 287,
+    "title": "Minimum Number of Arrows to Burst Balloons",
+    "topic": "Greedy Algorithms",
+    "difficulty": "Hard",
+    "url": "https://leetcode.com/problemset/?search=Minimum%20Number%20of%20Arrows%20to%20Burst%20Balloons",
+    "gfg": "https://www.geeksforgeeks.org/?s=Minimum%20Number%20of%20Arrows%20to%20Burst%20Balloons",
+    "source": "Curated high-yield practice"
+  },
+  {
+    "id": 288,
+    "title": "Partition Labels",
+    "topic": "Greedy Algorithms",
+    "difficulty": "Medium",
+    "url": "https://leetcode.com/problemset/?search=Partition%20Labels",
+    "gfg": "https://www.geeksforgeeks.org/?s=Partition%20Labels",
+    "source": "Curated high-yield practice"
+  },
+  {
+    "id": 289,
+    "title": "Queue Reconstruction by Height",
+    "topic": "Greedy Algorithms",
+    "difficulty": "Medium",
+    "url": "https://leetcode.com/problemset/?search=Queue%20Reconstruction%20by%20Height",
+    "gfg": "https://www.geeksforgeeks.org/?s=Queue%20Reconstruction%20by%20Height",
+    "source": "Curated high-yield practice"
+  },
+  {
+    "id": 290,
+    "title": "Lemonade Change",
+    "topic": "Greedy Algorithms",
+    "difficulty": "Easy",
+    "url": "https://leetcode.com/problemset/?search=Lemonade%20Change",
+    "gfg": "https://www.geeksforgeeks.org/?s=Lemonade%20Change",
+    "source": "Curated high-yield practice"
+  },
+  {
+    "id": 291,
+    "title": "Valid Parenthesis String",
+    "topic": "Greedy Algorithms",
+    "difficulty": "Easy",
+    "url": "https://leetcode.com/problemset/?search=Valid%20Parenthesis%20String",
+    "gfg": "https://www.geeksforgeeks.org/?s=Valid%20Parenthesis%20String",
+    "source": "Curated high-yield practice"
+  },
+  {
+    "id": 292,
+    "title": "Job Sequencing with Deadlines",
+    "topic": "Greedy Algorithms",
+    "difficulty": "Medium",
+    "url": "https://leetcode.com/problemset/?search=Job%20Sequencing%20with%20Deadlines",
+    "gfg": "https://www.geeksforgeeks.org/?s=Job%20Sequencing%20with%20Deadlines",
+    "source": "Curated high-yield practice"
+  },
+  {
+    "id": 293,
+    "title": "Fractional Knapsack",
+    "topic": "Greedy Algorithms",
+    "difficulty": "Medium",
+    "url": "https://leetcode.com/problemset/?search=Fractional%20Knapsack",
+    "gfg": "https://www.geeksforgeeks.org/?s=Fractional%20Knapsack",
+    "source": "Curated high-yield practice"
+  },
+  {
+    "id": 294,
+    "title": "N Meetings in One Room",
+    "topic": "Greedy Algorithms",
+    "difficulty": "Hard",
+    "url": "https://leetcode.com/problemset/?search=N%20Meetings%20in%20One%20Room",
+    "gfg": "https://www.geeksforgeeks.org/?s=N%20Meetings%20in%20One%20Room",
+    "source": "Curated high-yield practice"
+  },
+  {
+    "id": 295,
+    "title": "Minimum Platforms",
+    "topic": "Greedy Algorithms",
+    "difficulty": "Easy",
+    "url": "https://leetcode.com/problemset/?search=Minimum%20Platforms",
+    "gfg": "https://www.geeksforgeeks.org/?s=Minimum%20Platforms",
+    "source": "Curated high-yield practice"
+  },
+  {
+    "id": 296,
+    "title": "Activity Selection",
+    "topic": "Greedy Algorithms",
+    "difficulty": "Easy",
+    "url": "https://leetcode.com/problemset/?search=Activity%20Selection",
+    "gfg": "https://www.geeksforgeeks.org/?s=Activity%20Selection",
+    "source": "Curated high-yield practice"
+  },
+  {
+    "id": 297,
+    "title": "Shortest Job First scheduling",
+    "topic": "Greedy Algorithms",
+    "difficulty": "Medium",
+    "url": "https://leetcode.com/problemset/?search=Shortest%20Job%20First%20scheduling",
+    "gfg": "https://www.geeksforgeeks.org/?s=Shortest%20Job%20First%20scheduling",
+    "source": "Curated high-yield practice"
+  },
+  {
+    "id": 298,
+    "title": "Hand of Straights",
+    "topic": "Greedy Algorithms",
+    "difficulty": "Medium",
+    "url": "https://leetcode.com/problemset/?search=Hand%20of%20Straights",
+    "gfg": "https://www.geeksforgeeks.org/?s=Hand%20of%20Straights",
+    "source": "Curated high-yield practice"
+  },
+  {
+    "id": 299,
+    "title": "Boats to Save People",
+    "topic": "Greedy Algorithms",
+    "difficulty": "Medium",
+    "url": "https://leetcode.com/problemset/?search=Boats%20to%20Save%20People",
+    "gfg": "https://www.geeksforgeeks.org/?s=Boats%20to%20Save%20People",
+    "source": "Curated high-yield practice"
+  },
+  {
+    "id": 300,
+    "title": "Maximum Units on a Truck",
+    "topic": "Greedy Algorithms",
+    "difficulty": "Easy",
+    "url": "https://leetcode.com/problemset/?search=Maximum%20Units%20on%20a%20Truck",
+    "gfg": "https://www.geeksforgeeks.org/?s=Maximum%20Units%20on%20a%20Truck",
+    "source": "Curated high-yield practice"
+  },
+  {
+    "id": 301,
+    "title": "Subsets",
+    "topic": "Backtracking",
+    "difficulty": "Easy",
+    "url": "https://leetcode.com/problemset/?search=Subsets",
+    "gfg": "https://www.geeksforgeeks.org/?s=Subsets",
+    "source": "Curated high-yield practice"
+  },
+  {
+    "id": 302,
+    "title": "Subsets II",
+    "topic": "Backtracking",
+    "difficulty": "Medium",
+    "url": "https://leetcode.com/problemset/?search=Subsets%20II",
+    "gfg": "https://www.geeksforgeeks.org/?s=Subsets%20II",
+    "source": "Curated high-yield practice"
+  },
+  {
+    "id": 303,
+    "title": "Permutations",
+    "topic": "Backtracking",
+    "difficulty": "Medium",
+    "url": "https://leetcode.com/problemset/?search=Permutations",
+    "gfg": "https://www.geeksforgeeks.org/?s=Permutations",
+    "source": "Curated high-yield practice"
+  },
+  {
+    "id": 304,
+    "title": "Permutations II",
+    "topic": "Backtracking",
+    "difficulty": "Medium",
+    "url": "https://leetcode.com/problemset/?search=Permutations%20II",
+    "gfg": "https://www.geeksforgeeks.org/?s=Permutations%20II",
+    "source": "Curated high-yield practice"
+  },
+  {
+    "id": 305,
+    "title": "Combination Sum",
+    "topic": "Backtracking",
+    "difficulty": "Easy",
+    "url": "https://leetcode.com/problemset/?search=Combination%20Sum",
+    "gfg": "https://www.geeksforgeeks.org/?s=Combination%20Sum",
+    "source": "Curated high-yield practice"
+  },
+  {
+    "id": 306,
+    "title": "Combination Sum II",
+    "topic": "Backtracking",
+    "difficulty": "Easy",
+    "url": "https://leetcode.com/problemset/?search=Combination%20Sum%20II",
+    "gfg": "https://www.geeksforgeeks.org/?s=Combination%20Sum%20II",
+    "source": "Curated high-yield practice"
+  },
+  {
+    "id": 307,
+    "title": "Combination Sum III",
+    "topic": "Backtracking",
+    "difficulty": "Medium",
+    "url": "https://leetcode.com/problemset/?search=Combination%20Sum%20III",
+    "gfg": "https://www.geeksforgeeks.org/?s=Combination%20Sum%20III",
+    "source": "Curated high-yield practice"
+  },
+  {
+    "id": 308,
+    "title": "Palindrome Partitioning",
+    "topic": "Backtracking",
+    "difficulty": "Hard",
+    "url": "https://leetcode.com/problemset/?search=Palindrome%20Partitioning",
+    "gfg": "https://www.geeksforgeeks.org/?s=Palindrome%20Partitioning",
+    "source": "Curated high-yield practice"
+  },
+  {
+    "id": 309,
+    "title": "N-Queens",
+    "topic": "Backtracking",
+    "difficulty": "Medium",
+    "url": "https://leetcode.com/problemset/?search=N-Queens",
+    "gfg": "https://www.geeksforgeeks.org/?s=N-Queens",
+    "source": "Curated high-yield practice"
+  },
+  {
+    "id": 310,
+    "title": "Sudoku Solver",
+    "topic": "Backtracking",
+    "difficulty": "Easy",
+    "url": "https://leetcode.com/problemset/?search=Sudoku%20Solver",
+    "gfg": "https://www.geeksforgeeks.org/?s=Sudoku%20Solver",
+    "source": "Curated high-yield practice"
+  },
+  {
+    "id": 311,
+    "title": "Word Search",
+    "topic": "Backtracking",
+    "difficulty": "Easy",
+    "url": "https://leetcode.com/problemset/?search=Word%20Search",
+    "gfg": "https://www.geeksforgeeks.org/?s=Word%20Search",
+    "source": "Curated high-yield practice"
+  },
+  {
+    "id": 312,
+    "title": "Letter Combinations of a Phone Number",
+    "topic": "Backtracking",
+    "difficulty": "Medium",
+    "url": "https://leetcode.com/problemset/?search=Letter%20Combinations%20of%20a%20Phone%20Number",
+    "gfg": "https://www.geeksforgeeks.org/?s=Letter%20Combinations%20of%20a%20Phone%20Number",
+    "source": "Curated high-yield practice"
+  },
+  {
+    "id": 313,
+    "title": "Generate Parentheses",
+    "topic": "Backtracking",
+    "difficulty": "Medium",
+    "url": "https://leetcode.com/problemset/?search=Generate%20Parentheses",
+    "gfg": "https://www.geeksforgeeks.org/?s=Generate%20Parentheses",
+    "source": "Curated high-yield practice"
+  },
+  {
+    "id": 314,
+    "title": "Restore IP Addresses",
+    "topic": "Backtracking",
+    "difficulty": "Medium",
+    "url": "https://leetcode.com/problemset/?search=Restore%20IP%20Addresses",
+    "gfg": "https://www.geeksforgeeks.org/?s=Restore%20IP%20Addresses",
+    "source": "Curated high-yield practice"
+  },
+  {
+    "id": 315,
+    "title": "Rat in a Maze",
+    "topic": "Backtracking",
+    "difficulty": "Easy",
+    "url": "https://leetcode.com/problemset/?search=Rat%20in%20a%20Maze",
+    "gfg": "https://www.geeksforgeeks.org/?s=Rat%20in%20a%20Maze",
+    "source": "Curated high-yield practice"
+  },
+  {
+    "id": 316,
+    "title": "M Coloring Problem",
+    "topic": "Backtracking",
+    "difficulty": "Easy",
+    "url": "https://leetcode.com/problemset/?search=M%20Coloring%20Problem",
+    "gfg": "https://www.geeksforgeeks.org/?s=M%20Coloring%20Problem",
+    "source": "Curated high-yield practice"
+  },
+  {
+    "id": 317,
+    "title": "Expression Add Operators",
+    "topic": "Backtracking",
+    "difficulty": "Medium",
+    "url": "https://leetcode.com/problemset/?search=Expression%20Add%20Operators",
+    "gfg": "https://www.geeksforgeeks.org/?s=Expression%20Add%20Operators",
+    "source": "Curated high-yield practice"
+  },
+  {
+    "id": 318,
+    "title": "Partition to K Equal Sum Subsets",
+    "topic": "Backtracking",
+    "difficulty": "Medium",
+    "url": "https://leetcode.com/problemset/?search=Partition%20to%20K%20Equal%20Sum%20Subsets",
+    "gfg": "https://www.geeksforgeeks.org/?s=Partition%20to%20K%20Equal%20Sum%20Subsets",
+    "source": "Curated high-yield practice"
+  },
+  {
+    "id": 319,
+    "title": "Matchsticks to Square",
+    "topic": "Backtracking",
+    "difficulty": "Medium",
+    "url": "https://leetcode.com/problemset/?search=Matchsticks%20to%20Square",
+    "gfg": "https://www.geeksforgeeks.org/?s=Matchsticks%20to%20Square",
+    "source": "Curated high-yield practice"
+  },
+  {
+    "id": 320,
+    "title": "Unique Paths III",
+    "topic": "Backtracking",
+    "difficulty": "Easy",
+    "url": "https://leetcode.com/problemset/?search=Unique%20Paths%20III",
+    "gfg": "https://www.geeksforgeeks.org/?s=Unique%20Paths%20III",
+    "source": "Curated high-yield practice"
+  },
+  {
+    "id": 321,
+    "title": "Number of Islands",
+    "topic": "Graphs Fundamentals",
+    "difficulty": "Easy",
+    "url": "https://leetcode.com/problemset/?search=Number%20of%20Islands",
+    "gfg": "https://www.geeksforgeeks.org/?s=Number%20of%20Islands",
+    "source": "Curated high-yield practice"
+  },
+  {
+    "id": 322,
+    "title": "Flood Fill",
+    "topic": "Graphs Fundamentals",
+    "difficulty": "Easy",
+    "url": "https://leetcode.com/problemset/?search=Flood%20Fill",
+    "gfg": "https://www.geeksforgeeks.org/?s=Flood%20Fill",
+    "source": "Curated high-yield practice"
+  },
+  {
+    "id": 323,
+    "title": "Rotting Oranges",
+    "topic": "Graphs Fundamentals",
+    "difficulty": "Medium",
+    "url": "https://leetcode.com/problemset/?search=Rotting%20Oranges",
+    "gfg": "https://www.geeksforgeeks.org/?s=Rotting%20Oranges",
+    "source": "Curated high-yield practice"
+  },
+  {
+    "id": 324,
+    "title": "Clone Graph",
+    "topic": "Graphs Fundamentals",
+    "difficulty": "Medium",
+    "url": "https://leetcode.com/problemset/?search=Clone%20Graph",
+    "gfg": "https://www.geeksforgeeks.org/?s=Clone%20Graph",
+    "source": "Curated high-yield practice"
+  },
+  {
+    "id": 325,
+    "title": "Detect cycle in undirected graph BFS",
+    "topic": "Graphs Fundamentals",
+    "difficulty": "Easy",
+    "url": "https://leetcode.com/problemset/?search=Detect%20cycle%20in%20undirected%20graph%20BFS",
+    "gfg": "https://www.geeksforgeeks.org/?s=Detect%20cycle%20in%20undirected%20graph%20BFS",
+    "source": "Curated high-yield practice"
+  },
+  {
+    "id": 326,
+    "title": "Detect cycle in undirected graph DFS",
+    "topic": "Graphs Fundamentals",
+    "difficulty": "Easy",
+    "url": "https://leetcode.com/problemset/?search=Detect%20cycle%20in%20undirected%20graph%20DFS",
+    "gfg": "https://www.geeksforgeeks.org/?s=Detect%20cycle%20in%20undirected%20graph%20DFS",
+    "source": "Curated high-yield practice"
+  },
+  {
+    "id": 327,
+    "title": "Detect cycle in directed graph",
+    "topic": "Graphs Fundamentals",
+    "difficulty": "Medium",
+    "url": "https://leetcode.com/problemset/?search=Detect%20cycle%20in%20directed%20graph",
+    "gfg": "https://www.geeksforgeeks.org/?s=Detect%20cycle%20in%20directed%20graph",
+    "source": "Curated high-yield practice"
+  },
+  {
+    "id": 328,
+    "title": "Course Schedule",
+    "topic": "Graphs Fundamentals",
+    "difficulty": "Medium",
+    "url": "https://leetcode.com/problemset/?search=Course%20Schedule",
+    "gfg": "https://www.geeksforgeeks.org/?s=Course%20Schedule",
+    "source": "Curated high-yield practice"
+  },
+  {
+    "id": 329,
+    "title": "Course Schedule II",
+    "topic": "Graphs Fundamentals",
+    "difficulty": "Hard",
+    "url": "https://leetcode.com/problemset/?search=Course%20Schedule%20II",
+    "gfg": "https://www.geeksforgeeks.org/?s=Course%20Schedule%20II",
+    "source": "Curated high-yield practice"
+  },
+  {
+    "id": 330,
+    "title": "Topological Sort",
+    "topic": "Graphs Fundamentals",
+    "difficulty": "Easy",
+    "url": "https://leetcode.com/problemset/?search=Topological%20Sort",
+    "gfg": "https://www.geeksforgeeks.org/?s=Topological%20Sort",
+    "source": "Curated high-yield practice"
+  },
+  {
+    "id": 331,
+    "title": "All Paths From Source to Target",
+    "topic": "Graphs Fundamentals",
+    "difficulty": "Easy",
+    "url": "https://leetcode.com/problemset/?search=All%20Paths%20From%20Source%20to%20Target",
+    "gfg": "https://www.geeksforgeeks.org/?s=All%20Paths%20From%20Source%20to%20Target",
+    "source": "Curated high-yield practice"
+  },
+  {
+    "id": 332,
+    "title": "Number of Provinces",
+    "topic": "Graphs Fundamentals",
+    "difficulty": "Medium",
+    "url": "https://leetcode.com/problemset/?search=Number%20of%20Provinces",
+    "gfg": "https://www.geeksforgeeks.org/?s=Number%20of%20Provinces",
+    "source": "Curated high-yield practice"
+  },
+  {
+    "id": 333,
+    "title": "Is Graph Bipartite",
+    "topic": "Graphs Fundamentals",
+    "difficulty": "Medium",
+    "url": "https://leetcode.com/problemset/?search=Is%20Graph%20Bipartite",
+    "gfg": "https://www.geeksforgeeks.org/?s=Is%20Graph%20Bipartite",
+    "source": "Curated high-yield practice"
+  },
+  {
+    "id": 334,
+    "title": "Surrounded Regions",
+    "topic": "Graphs Fundamentals",
+    "difficulty": "Medium",
+    "url": "https://leetcode.com/problemset/?search=Surrounded%20Regions",
+    "gfg": "https://www.geeksforgeeks.org/?s=Surrounded%20Regions",
+    "source": "Curated high-yield practice"
+  },
+  {
+    "id": 335,
+    "title": "Pacific Atlantic Water Flow",
+    "topic": "Graphs Fundamentals",
+    "difficulty": "Easy",
+    "url": "https://leetcode.com/problemset/?search=Pacific%20Atlantic%20Water%20Flow",
+    "gfg": "https://www.geeksforgeeks.org/?s=Pacific%20Atlantic%20Water%20Flow",
+    "source": "Curated high-yield practice"
+  },
+  {
+    "id": 336,
+    "title": "Keys and Rooms",
+    "topic": "Graphs Fundamentals",
+    "difficulty": "Easy",
+    "url": "https://leetcode.com/problemset/?search=Keys%20and%20Rooms",
+    "gfg": "https://www.geeksforgeeks.org/?s=Keys%20and%20Rooms",
+    "source": "Curated high-yield practice"
+  },
+  {
+    "id": 337,
+    "title": "Find eventual safe states",
+    "topic": "Graphs Fundamentals",
+    "difficulty": "Medium",
+    "url": "https://leetcode.com/problemset/?search=Find%20eventual%20safe%20states",
+    "gfg": "https://www.geeksforgeeks.org/?s=Find%20eventual%20safe%20states",
+    "source": "Curated high-yield practice"
+  },
+  {
+    "id": 338,
+    "title": "Minimum Height Trees",
+    "topic": "Graphs Fundamentals",
+    "difficulty": "Medium",
+    "url": "https://leetcode.com/problemset/?search=Minimum%20Height%20Trees",
+    "gfg": "https://www.geeksforgeeks.org/?s=Minimum%20Height%20Trees",
+    "source": "Curated high-yield practice"
+  },
+  {
+    "id": 339,
+    "title": "Count connected components",
+    "topic": "Graphs Fundamentals",
+    "difficulty": "Medium",
+    "url": "https://leetcode.com/problemset/?search=Count%20connected%20components",
+    "gfg": "https://www.geeksforgeeks.org/?s=Count%20connected%20components",
+    "source": "Curated high-yield practice"
+  },
+  {
+    "id": 340,
+    "title": "Shortest path in an unweighted graph",
+    "topic": "Graphs Fundamentals",
+    "difficulty": "Easy",
+    "url": "https://leetcode.com/problemset/?search=Shortest%20path%20in%20an%20unweighted%20graph",
+    "gfg": "https://www.geeksforgeeks.org/?s=Shortest%20path%20in%20an%20unweighted%20graph",
+    "source": "Curated high-yield practice"
+  },
+  {
+    "id": 341,
+    "title": "Dijkstra shortest path",
+    "topic": "Advanced Graphs",
+    "difficulty": "Easy",
+    "url": "https://leetcode.com/problemset/?search=Dijkstra%20shortest%20path",
+    "gfg": "https://www.geeksforgeeks.org/?s=Dijkstra%20shortest%20path",
+    "source": "Curated high-yield practice"
+  },
+  {
+    "id": 342,
+    "title": "Bellman-Ford algorithm",
+    "topic": "Advanced Graphs",
+    "difficulty": "Medium",
+    "url": "https://leetcode.com/problemset/?search=Bellman-Ford%20algorithm",
+    "gfg": "https://www.geeksforgeeks.org/?s=Bellman-Ford%20algorithm",
+    "source": "Curated high-yield practice"
+  },
+  {
+    "id": 343,
+    "title": "Floyd-Warshall algorithm",
+    "topic": "Advanced Graphs",
+    "difficulty": "Hard",
+    "url": "https://leetcode.com/problemset/?search=Floyd-Warshall%20algorithm",
+    "gfg": "https://www.geeksforgeeks.org/?s=Floyd-Warshall%20algorithm",
+    "source": "Curated high-yield practice"
+  },
+  {
+    "id": 344,
+    "title": "Prim minimum spanning tree",
+    "topic": "Advanced Graphs",
+    "difficulty": "Medium",
+    "url": "https://leetcode.com/problemset/?search=Prim%20minimum%20spanning%20tree",
+    "gfg": "https://www.geeksforgeeks.org/?s=Prim%20minimum%20spanning%20tree",
+    "source": "Curated high-yield practice"
+  },
+  {
+    "id": 345,
+    "title": "Kruskal minimum spanning tree",
+    "topic": "Advanced Graphs",
+    "difficulty": "Easy",
+    "url": "https://leetcode.com/problemset/?search=Kruskal%20minimum%20spanning%20tree",
+    "gfg": "https://www.geeksforgeeks.org/?s=Kruskal%20minimum%20spanning%20tree",
+    "source": "Curated high-yield practice"
+  },
+  {
+    "id": 346,
+    "title": "Disjoint Set Union implementation",
+    "topic": "Advanced Graphs",
+    "difficulty": "Easy",
+    "url": "https://leetcode.com/problemset/?search=Disjoint%20Set%20Union%20implementation",
+    "gfg": "https://www.geeksforgeeks.org/?s=Disjoint%20Set%20Union%20implementation",
+    "source": "Curated high-yield practice"
+  },
+  {
+    "id": 347,
+    "title": "Accounts Merge",
+    "topic": "Advanced Graphs",
+    "difficulty": "Medium",
+    "url": "https://leetcode.com/problemset/?search=Accounts%20Merge",
+    "gfg": "https://www.geeksforgeeks.org/?s=Accounts%20Merge",
+    "source": "Curated high-yield practice"
+  },
+  {
+    "id": 348,
+    "title": "Number of Operations to Make Network Connected",
+    "topic": "Advanced Graphs",
+    "difficulty": "Medium",
+    "url": "https://leetcode.com/problemset/?search=Number%20of%20Operations%20to%20Make%20Network%20Connected",
+    "gfg": "https://www.geeksforgeeks.org/?s=Number%20of%20Operations%20to%20Make%20Network%20Connected",
+    "source": "Curated high-yield practice"
+  },
+  {
+    "id": 349,
+    "title": "Word Ladder",
+    "topic": "Advanced Graphs",
+    "difficulty": "Medium",
+    "url": "https://leetcode.com/problemset/?search=Word%20Ladder",
+    "gfg": "https://www.geeksforgeeks.org/?s=Word%20Ladder",
+    "source": "Curated high-yield practice"
+  },
+  {
+    "id": 350,
+    "title": "Word Ladder II",
+    "topic": "Advanced Graphs",
+    "difficulty": "Easy",
+    "url": "https://leetcode.com/problemset/?search=Word%20Ladder%20II",
+    "gfg": "https://www.geeksforgeeks.org/?s=Word%20Ladder%20II",
+    "source": "Curated high-yield practice"
+  },
+  {
+    "id": 351,
+    "title": "Alien Dictionary",
+    "topic": "Advanced Graphs",
+    "difficulty": "Easy",
+    "url": "https://leetcode.com/problemset/?search=Alien%20Dictionary",
+    "gfg": "https://www.geeksforgeeks.org/?s=Alien%20Dictionary",
+    "source": "Curated high-yield practice"
+  },
+  {
+    "id": 352,
+    "title": "Cheapest Flights Within K Stops",
+    "topic": "Advanced Graphs",
+    "difficulty": "Medium",
+    "url": "https://leetcode.com/problemset/?search=Cheapest%20Flights%20Within%20K%20Stops",
+    "gfg": "https://www.geeksforgeeks.org/?s=Cheapest%20Flights%20Within%20K%20Stops",
+    "source": "Curated high-yield practice"
+  },
+  {
+    "id": 353,
+    "title": "Network Delay Time",
+    "topic": "Advanced Graphs",
+    "difficulty": "Medium",
+    "url": "https://leetcode.com/problemset/?search=Network%20Delay%20Time",
+    "gfg": "https://www.geeksforgeeks.org/?s=Network%20Delay%20Time",
+    "source": "Curated high-yield practice"
+  },
+  {
+    "id": 354,
+    "title": "Path With Minimum Effort",
+    "topic": "Advanced Graphs",
+    "difficulty": "Medium",
+    "url": "https://leetcode.com/problemset/?search=Path%20With%20Minimum%20Effort",
+    "gfg": "https://www.geeksforgeeks.org/?s=Path%20With%20Minimum%20Effort",
+    "source": "Curated high-yield practice"
+  },
+  {
+    "id": 355,
+    "title": "Swim in Rising Water",
+    "topic": "Advanced Graphs",
+    "difficulty": "Easy",
+    "url": "https://leetcode.com/problemset/?search=Swim%20in%20Rising%20Water",
+    "gfg": "https://www.geeksforgeeks.org/?s=Swim%20in%20Rising%20Water",
+    "source": "Curated high-yield practice"
+  },
+  {
+    "id": 356,
+    "title": "Critical Connections in a Network",
+    "topic": "Advanced Graphs",
+    "difficulty": "Easy",
+    "url": "https://leetcode.com/problemset/?search=Critical%20Connections%20in%20a%20Network",
+    "gfg": "https://www.geeksforgeeks.org/?s=Critical%20Connections%20in%20a%20Network",
+    "source": "Curated high-yield practice"
+  },
+  {
+    "id": 357,
+    "title": "Bridges in a graph",
+    "topic": "Advanced Graphs",
+    "difficulty": "Hard",
+    "url": "https://leetcode.com/problemset/?search=Bridges%20in%20a%20graph",
+    "gfg": "https://www.geeksforgeeks.org/?s=Bridges%20in%20a%20graph",
+    "source": "Curated high-yield practice"
+  },
+  {
+    "id": 358,
+    "title": "Articulation points",
+    "topic": "Advanced Graphs",
+    "difficulty": "Medium",
+    "url": "https://leetcode.com/problemset/?search=Articulation%20points",
+    "gfg": "https://www.geeksforgeeks.org/?s=Articulation%20points",
+    "source": "Curated high-yield practice"
+  },
+  {
+    "id": 359,
+    "title": "Strongly connected components Kosaraju",
+    "topic": "Advanced Graphs",
+    "difficulty": "Medium",
+    "url": "https://leetcode.com/problemset/?search=Strongly%20connected%20components%20Kosaraju",
+    "gfg": "https://www.geeksforgeeks.org/?s=Strongly%20connected%20components%20Kosaraju",
+    "source": "Curated high-yield practice"
+  },
+  {
+    "id": 360,
+    "title": "Minimum Cost to Connect All Points",
+    "topic": "Advanced Graphs",
+    "difficulty": "Easy",
+    "url": "https://leetcode.com/problemset/?search=Minimum%20Cost%20to%20Connect%20All%20Points",
+    "gfg": "https://www.geeksforgeeks.org/?s=Minimum%20Cost%20to%20Connect%20All%20Points",
+    "source": "Curated high-yield practice"
+  },
+  {
+    "id": 361,
+    "title": "Climbing Stairs",
+    "topic": "Dynamic Programming One-Dimensional",
+    "difficulty": "Easy",
+    "url": "https://leetcode.com/problemset/?search=Climbing%20Stairs",
+    "gfg": "https://www.geeksforgeeks.org/?s=Climbing%20Stairs",
+    "source": "Curated high-yield practice"
+  },
+  {
+    "id": 362,
+    "title": "Frog Jump",
+    "topic": "Dynamic Programming One-Dimensional",
+    "difficulty": "Medium",
+    "url": "https://leetcode.com/problemset/?search=Frog%20Jump",
+    "gfg": "https://www.geeksforgeeks.org/?s=Frog%20Jump",
+    "source": "Curated high-yield practice"
+  },
+  {
+    "id": 363,
+    "title": "Frog Jump with K distances",
+    "topic": "Dynamic Programming One-Dimensional",
+    "difficulty": "Medium",
+    "url": "https://leetcode.com/problemset/?search=Frog%20Jump%20with%20K%20distances",
+    "gfg": "https://www.geeksforgeeks.org/?s=Frog%20Jump%20with%20K%20distances",
+    "source": "Curated high-yield practice"
+  },
+  {
+    "id": 364,
+    "title": "House Robber",
+    "topic": "Dynamic Programming One-Dimensional",
+    "difficulty": "Hard",
+    "url": "https://leetcode.com/problemset/?search=House%20Robber",
+    "gfg": "https://www.geeksforgeeks.org/?s=House%20Robber",
+    "source": "Curated high-yield practice"
+  },
+  {
+    "id": 365,
+    "title": "House Robber II",
+    "topic": "Dynamic Programming One-Dimensional",
+    "difficulty": "Easy",
+    "url": "https://leetcode.com/problemset/?search=House%20Robber%20II",
+    "gfg": "https://www.geeksforgeeks.org/?s=House%20Robber%20II",
+    "source": "Curated high-yield practice"
+  },
+  {
+    "id": 366,
+    "title": "Ninja Training",
+    "topic": "Dynamic Programming One-Dimensional",
+    "difficulty": "Easy",
+    "url": "https://leetcode.com/problemset/?search=Ninja%20Training",
+    "gfg": "https://www.geeksforgeeks.org/?s=Ninja%20Training",
+    "source": "Curated high-yield practice"
+  },
+  {
+    "id": 367,
+    "title": "Maximum sum of non-adjacent elements",
+    "topic": "Dynamic Programming One-Dimensional",
+    "difficulty": "Medium",
+    "url": "https://leetcode.com/problemset/?search=Maximum%20sum%20of%20non-adjacent%20elements",
+    "gfg": "https://www.geeksforgeeks.org/?s=Maximum%20sum%20of%20non-adjacent%20elements",
+    "source": "Curated high-yield practice"
+  },
+  {
+    "id": 368,
+    "title": "Decode Ways",
+    "topic": "Dynamic Programming One-Dimensional",
+    "difficulty": "Medium",
+    "url": "https://leetcode.com/problemset/?search=Decode%20Ways",
+    "gfg": "https://www.geeksforgeeks.org/?s=Decode%20Ways",
+    "source": "Curated high-yield practice"
+  },
+  {
+    "id": 369,
+    "title": "Coin Change",
+    "topic": "Dynamic Programming One-Dimensional",
+    "difficulty": "Medium",
+    "url": "https://leetcode.com/problemset/?search=Coin%20Change",
+    "gfg": "https://www.geeksforgeeks.org/?s=Coin%20Change",
+    "source": "Curated high-yield practice"
+  },
+  {
+    "id": 370,
+    "title": "Min Cost Climbing Stairs",
+    "topic": "Dynamic Programming One-Dimensional",
+    "difficulty": "Easy",
+    "url": "https://leetcode.com/problemset/?search=Min%20Cost%20Climbing%20Stairs",
+    "gfg": "https://www.geeksforgeeks.org/?s=Min%20Cost%20Climbing%20Stairs",
+    "source": "Curated high-yield practice"
+  },
+  {
+    "id": 371,
+    "title": "Integer Break",
+    "topic": "Dynamic Programming One-Dimensional",
+    "difficulty": "Easy",
+    "url": "https://leetcode.com/problemset/?search=Integer%20Break",
+    "gfg": "https://www.geeksforgeeks.org/?s=Integer%20Break",
+    "source": "Curated high-yield practice"
+  },
+  {
+    "id": 372,
+    "title": "Perfect Squares",
+    "topic": "Dynamic Programming One-Dimensional",
+    "difficulty": "Medium",
+    "url": "https://leetcode.com/problemset/?search=Perfect%20Squares",
+    "gfg": "https://www.geeksforgeeks.org/?s=Perfect%20Squares",
+    "source": "Curated high-yield practice"
+  },
+  {
+    "id": 373,
+    "title": "Partition Equal Subset Sum",
+    "topic": "Dynamic Programming One-Dimensional",
+    "difficulty": "Medium",
+    "url": "https://leetcode.com/problemset/?search=Partition%20Equal%20Subset%20Sum",
+    "gfg": "https://www.geeksforgeeks.org/?s=Partition%20Equal%20Subset%20Sum",
+    "source": "Curated high-yield practice"
+  },
+  {
+    "id": 374,
+    "title": "Target Sum",
+    "topic": "Dynamic Programming One-Dimensional",
+    "difficulty": "Medium",
+    "url": "https://leetcode.com/problemset/?search=Target%20Sum",
+    "gfg": "https://www.geeksforgeeks.org/?s=Target%20Sum",
+    "source": "Curated high-yield practice"
+  },
+  {
+    "id": 375,
+    "title": "Combination Sum IV",
+    "topic": "Dynamic Programming One-Dimensional",
+    "difficulty": "Easy",
+    "url": "https://leetcode.com/problemset/?search=Combination%20Sum%20IV",
+    "gfg": "https://www.geeksforgeeks.org/?s=Combination%20Sum%20IV",
+    "source": "Curated high-yield practice"
+  },
+  {
+    "id": 376,
+    "title": "Delete and Earn",
+    "topic": "Dynamic Programming One-Dimensional",
+    "difficulty": "Easy",
+    "url": "https://leetcode.com/problemset/?search=Delete%20and%20Earn",
+    "gfg": "https://www.geeksforgeeks.org/?s=Delete%20and%20Earn",
+    "source": "Curated high-yield practice"
+  },
+  {
+    "id": 377,
+    "title": "Word Break",
+    "topic": "Dynamic Programming One-Dimensional",
+    "difficulty": "Medium",
+    "url": "https://leetcode.com/problemset/?search=Word%20Break",
+    "gfg": "https://www.geeksforgeeks.org/?s=Word%20Break",
+    "source": "Curated high-yield practice"
+  },
+  {
+    "id": 378,
+    "title": "Longest Arithmetic Subsequence",
+    "topic": "Dynamic Programming One-Dimensional",
+    "difficulty": "Hard",
+    "url": "https://leetcode.com/problemset/?search=Longest%20Arithmetic%20Subsequence",
+    "gfg": "https://www.geeksforgeeks.org/?s=Longest%20Arithmetic%20Subsequence",
+    "source": "Curated high-yield practice"
+  },
+  {
+    "id": 379,
+    "title": "Count ways to reach N stairs",
+    "topic": "Dynamic Programming One-Dimensional",
+    "difficulty": "Medium",
+    "url": "https://leetcode.com/problemset/?search=Count%20ways%20to%20reach%20N%20stairs",
+    "gfg": "https://www.geeksforgeeks.org/?s=Count%20ways%20to%20reach%20N%20stairs",
+    "source": "Curated high-yield practice"
+  },
+  {
+    "id": 380,
+    "title": "Maximum points from training schedule",
+    "topic": "Dynamic Programming One-Dimensional",
+    "difficulty": "Easy",
+    "url": "https://leetcode.com/problemset/?search=Maximum%20points%20from%20training%20schedule",
+    "gfg": "https://www.geeksforgeeks.org/?s=Maximum%20points%20from%20training%20schedule",
+    "source": "Curated high-yield practice"
+  },
+  {
+    "id": 381,
+    "title": "0/1 Knapsack",
+    "topic": "Dynamic Programming Subsequences and Knapsack",
+    "difficulty": "Easy",
+    "url": "https://leetcode.com/problemset/?search=0/1%20Knapsack",
+    "gfg": "https://www.geeksforgeeks.org/?s=0/1%20Knapsack",
+    "source": "Curated high-yield practice"
+  },
+  {
+    "id": 382,
+    "title": "Unbounded Knapsack",
+    "topic": "Dynamic Programming Subsequences and Knapsack",
+    "difficulty": "Medium",
+    "url": "https://leetcode.com/problemset/?search=Unbounded%20Knapsack",
+    "gfg": "https://www.geeksforgeeks.org/?s=Unbounded%20Knapsack",
+    "source": "Curated high-yield practice"
+  },
+  {
+    "id": 383,
+    "title": "Coin Change II",
+    "topic": "Dynamic Programming Subsequences and Knapsack",
+    "difficulty": "Medium",
+    "url": "https://leetcode.com/problemset/?search=Coin%20Change%20II",
+    "gfg": "https://www.geeksforgeeks.org/?s=Coin%20Change%20II",
+    "source": "Curated high-yield practice"
+  },
+  {
+    "id": 384,
+    "title": "Minimum coins to make amount",
+    "topic": "Dynamic Programming Subsequences and Knapsack",
+    "difficulty": "Medium",
+    "url": "https://leetcode.com/problemset/?search=Minimum%20coins%20to%20make%20amount",
+    "gfg": "https://www.geeksforgeeks.org/?s=Minimum%20coins%20to%20make%20amount",
+    "source": "Curated high-yield practice"
+  },
+  {
+    "id": 385,
+    "title": "Subset Sum Equal To K",
+    "topic": "Dynamic Programming Subsequences and Knapsack",
+    "difficulty": "Easy",
+    "url": "https://leetcode.com/problemset/?search=Subset%20Sum%20Equal%20To%20K",
+    "gfg": "https://www.geeksforgeeks.org/?s=Subset%20Sum%20Equal%20To%20K",
+    "source": "Curated high-yield practice"
+  },
+  {
+    "id": 386,
+    "title": "Count subsets with sum K",
+    "topic": "Dynamic Programming Subsequences and Knapsack",
+    "difficulty": "Easy",
+    "url": "https://leetcode.com/problemset/?search=Count%20subsets%20with%20sum%20K",
+    "gfg": "https://www.geeksforgeeks.org/?s=Count%20subsets%20with%20sum%20K",
+    "source": "Curated high-yield practice"
+  },
+  {
+    "id": 387,
+    "title": "Minimum subset sum difference",
+    "topic": "Dynamic Programming Subsequences and Knapsack",
+    "difficulty": "Medium",
+    "url": "https://leetcode.com/problemset/?search=Minimum%20subset%20sum%20difference",
+    "gfg": "https://www.geeksforgeeks.org/?s=Minimum%20subset%20sum%20difference",
+    "source": "Curated high-yield practice"
+  },
+  {
+    "id": 388,
+    "title": "Partition array into two subsets",
+    "topic": "Dynamic Programming Subsequences and Knapsack",
+    "difficulty": "Medium",
+    "url": "https://leetcode.com/problemset/?search=Partition%20array%20into%20two%20subsets",
+    "gfg": "https://www.geeksforgeeks.org/?s=Partition%20array%20into%20two%20subsets",
+    "source": "Curated high-yield practice"
+  },
+  {
+    "id": 389,
+    "title": "Rod Cutting",
+    "topic": "Dynamic Programming Subsequences and Knapsack",
+    "difficulty": "Medium",
+    "url": "https://leetcode.com/problemset/?search=Rod%20Cutting",
+    "gfg": "https://www.geeksforgeeks.org/?s=Rod%20Cutting",
+    "source": "Curated high-yield practice"
+  },
+  {
+    "id": 390,
+    "title": "Wildcard Matching",
+    "topic": "Dynamic Programming Subsequences and Knapsack",
+    "difficulty": "Easy",
+    "url": "https://leetcode.com/problemset/?search=Wildcard%20Matching",
+    "gfg": "https://www.geeksforgeeks.org/?s=Wildcard%20Matching",
+    "source": "Curated high-yield practice"
+  },
+  {
+    "id": 391,
+    "title": "Distinct Subsequences",
+    "topic": "Dynamic Programming Subsequences and Knapsack",
+    "difficulty": "Easy",
+    "url": "https://leetcode.com/problemset/?search=Distinct%20Subsequences",
+    "gfg": "https://www.geeksforgeeks.org/?s=Distinct%20Subsequences",
+    "source": "Curated high-yield practice"
+  },
+  {
+    "id": 392,
+    "title": "Edit Distance",
+    "topic": "Dynamic Programming Subsequences and Knapsack",
+    "difficulty": "Hard",
+    "url": "https://leetcode.com/problemset/?search=Edit%20Distance",
+    "gfg": "https://www.geeksforgeeks.org/?s=Edit%20Distance",
+    "source": "Curated high-yield practice"
+  },
+  {
+    "id": 393,
+    "title": "Longest Common Subsequence",
+    "topic": "Dynamic Programming Subsequences and Knapsack",
+    "difficulty": "Medium",
+    "url": "https://leetcode.com/problemset/?search=Longest%20Common%20Subsequence",
+    "gfg": "https://www.geeksforgeeks.org/?s=Longest%20Common%20Subsequence",
+    "source": "Curated high-yield practice"
+  },
+  {
+    "id": 394,
+    "title": "Longest Palindromic Subsequence",
+    "topic": "Dynamic Programming Subsequences and Knapsack",
+    "difficulty": "Medium",
+    "url": "https://leetcode.com/problemset/?search=Longest%20Palindromic%20Subsequence",
+    "gfg": "https://www.geeksforgeeks.org/?s=Longest%20Palindromic%20Subsequence",
+    "source": "Curated high-yield practice"
+  },
+  {
+    "id": 395,
+    "title": "Shortest Common Supersequence",
+    "topic": "Dynamic Programming Subsequences and Knapsack",
+    "difficulty": "Easy",
+    "url": "https://leetcode.com/problemset/?search=Shortest%20Common%20Supersequence",
+    "gfg": "https://www.geeksforgeeks.org/?s=Shortest%20Common%20Supersequence",
+    "source": "Curated high-yield practice"
+  },
+  {
+    "id": 396,
+    "title": "Longest String Chain",
+    "topic": "Dynamic Programming Subsequences and Knapsack",
+    "difficulty": "Easy",
+    "url": "https://leetcode.com/problemset/?search=Longest%20String%20Chain",
+    "gfg": "https://www.geeksforgeeks.org/?s=Longest%20String%20Chain",
+    "source": "Curated high-yield practice"
+  },
+  {
+    "id": 397,
+    "title": "Longest Increasing Subsequence",
+    "topic": "Dynamic Programming Subsequences and Knapsack",
+    "difficulty": "Medium",
+    "url": "https://leetcode.com/problemset/?search=Longest%20Increasing%20Subsequence",
+    "gfg": "https://www.geeksforgeeks.org/?s=Longest%20Increasing%20Subsequence",
+    "source": "Curated high-yield practice"
+  },
+  {
+    "id": 398,
+    "title": "Print one LIS",
+    "topic": "Dynamic Programming Subsequences and Knapsack",
+    "difficulty": "Medium",
+    "url": "https://leetcode.com/problemset/?search=Print%20one%20LIS",
+    "gfg": "https://www.geeksforgeeks.org/?s=Print%20one%20LIS",
+    "source": "Curated high-yield practice"
+  },
+  {
+    "id": 399,
+    "title": "Number of LIS",
+    "topic": "Dynamic Programming Subsequences and Knapsack",
+    "difficulty": "Hard",
+    "url": "https://leetcode.com/problemset/?search=Number%20of%20LIS",
+    "gfg": "https://www.geeksforgeeks.org/?s=Number%20of%20LIS",
+    "source": "Curated high-yield practice"
+  },
+  {
+    "id": 400,
+    "title": "Russian Doll Envelopes",
+    "topic": "Dynamic Programming Subsequences and Knapsack",
+    "difficulty": "Easy",
+    "url": "https://leetcode.com/problemset/?search=Russian%20Doll%20Envelopes",
+    "gfg": "https://www.geeksforgeeks.org/?s=Russian%20Doll%20Envelopes",
+    "source": "Curated high-yield practice"
+  },
+  {
+    "id": 401,
+    "title": "Unique Paths",
+    "topic": "Dynamic Programming Grids and Intervals",
+    "difficulty": "Easy",
+    "url": "https://leetcode.com/problemset/?search=Unique%20Paths",
+    "gfg": "https://www.geeksforgeeks.org/?s=Unique%20Paths",
+    "source": "Curated high-yield practice"
+  },
+  {
+    "id": 402,
+    "title": "Unique Paths II",
+    "topic": "Dynamic Programming Grids and Intervals",
+    "difficulty": "Medium",
+    "url": "https://leetcode.com/problemset/?search=Unique%20Paths%20II",
+    "gfg": "https://www.geeksforgeeks.org/?s=Unique%20Paths%20II",
+    "source": "Curated high-yield practice"
+  },
+  {
+    "id": 403,
+    "title": "Minimum Path Sum",
+    "topic": "Dynamic Programming Grids and Intervals",
+    "difficulty": "Medium",
+    "url": "https://leetcode.com/problemset/?search=Minimum%20Path%20Sum",
+    "gfg": "https://www.geeksforgeeks.org/?s=Minimum%20Path%20Sum",
+    "source": "Curated high-yield practice"
+  },
+  {
+    "id": 404,
+    "title": "Triangle minimum path sum",
+    "topic": "Dynamic Programming Grids and Intervals",
+    "difficulty": "Medium",
+    "url": "https://leetcode.com/problemset/?search=Triangle%20minimum%20path%20sum",
+    "gfg": "https://www.geeksforgeeks.org/?s=Triangle%20minimum%20path%20sum",
+    "source": "Curated high-yield practice"
+  },
+  {
+    "id": 405,
+    "title": "Minimum falling path sum",
+    "topic": "Dynamic Programming Grids and Intervals",
+    "difficulty": "Easy",
+    "url": "https://leetcode.com/problemset/?search=Minimum%20falling%20path%20sum",
+    "gfg": "https://www.geeksforgeeks.org/?s=Minimum%20falling%20path%20sum",
+    "source": "Curated high-yield practice"
+  },
+  {
+    "id": 406,
+    "title": "Cherry Pickup II",
+    "topic": "Dynamic Programming Grids and Intervals",
+    "difficulty": "Easy",
+    "url": "https://leetcode.com/problemset/?search=Cherry%20Pickup%20II",
+    "gfg": "https://www.geeksforgeeks.org/?s=Cherry%20Pickup%20II",
+    "source": "Curated high-yield practice"
+  },
+  {
+    "id": 407,
+    "title": "Burst Balloons",
+    "topic": "Dynamic Programming Grids and Intervals",
+    "difficulty": "Medium",
+    "url": "https://leetcode.com/problemset/?search=Burst%20Balloons",
+    "gfg": "https://www.geeksforgeeks.org/?s=Burst%20Balloons",
+    "source": "Curated high-yield practice"
+  },
+  {
+    "id": 408,
+    "title": "Matrix Chain Multiplication",
+    "topic": "Dynamic Programming Grids and Intervals",
+    "difficulty": "Medium",
+    "url": "https://leetcode.com/problemset/?search=Matrix%20Chain%20Multiplication",
+    "gfg": "https://www.geeksforgeeks.org/?s=Matrix%20Chain%20Multiplication",
+    "source": "Curated high-yield practice"
+  },
+  {
+    "id": 409,
+    "title": "Minimum Cost to Cut a Stick",
+    "topic": "Dynamic Programming Grids and Intervals",
+    "difficulty": "Medium",
+    "url": "https://leetcode.com/problemset/?search=Minimum%20Cost%20to%20Cut%20a%20Stick",
+    "gfg": "https://www.geeksforgeeks.org/?s=Minimum%20Cost%20to%20Cut%20a%20Stick",
+    "source": "Curated high-yield practice"
+  },
+  {
+    "id": 410,
+    "title": "Palindrome Partitioning II",
+    "topic": "Dynamic Programming Grids and Intervals",
+    "difficulty": "Easy",
+    "url": "https://leetcode.com/problemset/?search=Palindrome%20Partitioning%20II",
+    "gfg": "https://www.geeksforgeeks.org/?s=Palindrome%20Partitioning%20II",
+    "source": "Curated high-yield practice"
+  },
+  {
+    "id": 411,
+    "title": "Boolean Parenthesization",
+    "topic": "Dynamic Programming Grids and Intervals",
+    "difficulty": "Easy",
+    "url": "https://leetcode.com/problemset/?search=Boolean%20Parenthesization",
+    "gfg": "https://www.geeksforgeeks.org/?s=Boolean%20Parenthesization",
+    "source": "Curated high-yield practice"
+  },
+  {
+    "id": 412,
+    "title": "Count Square Submatrices",
+    "topic": "Dynamic Programming Grids and Intervals",
+    "difficulty": "Medium",
+    "url": "https://leetcode.com/problemset/?search=Count%20Square%20Submatrices",
+    "gfg": "https://www.geeksforgeeks.org/?s=Count%20Square%20Submatrices",
+    "source": "Curated high-yield practice"
+  },
+  {
+    "id": 413,
+    "title": "Maximal Square",
+    "topic": "Dynamic Programming Grids and Intervals",
+    "difficulty": "Hard",
+    "url": "https://leetcode.com/problemset/?search=Maximal%20Square",
+    "gfg": "https://www.geeksforgeeks.org/?s=Maximal%20Square",
+    "source": "Curated high-yield practice"
+  },
+  {
+    "id": 414,
+    "title": "Dungeon Game",
+    "topic": "Dynamic Programming Grids and Intervals",
+    "difficulty": "Medium",
+    "url": "https://leetcode.com/problemset/?search=Dungeon%20Game",
+    "gfg": "https://www.geeksforgeeks.org/?s=Dungeon%20Game",
+    "source": "Curated high-yield practice"
+  },
+  {
+    "id": 415,
+    "title": "Interleaving String",
+    "topic": "Dynamic Programming Grids and Intervals",
+    "difficulty": "Easy",
+    "url": "https://leetcode.com/problemset/?search=Interleaving%20String",
+    "gfg": "https://www.geeksforgeeks.org/?s=Interleaving%20String",
+    "source": "Curated high-yield practice"
+  },
+  {
+    "id": 416,
+    "title": "Regular Expression Matching",
+    "topic": "Dynamic Programming Grids and Intervals",
+    "difficulty": "Easy",
+    "url": "https://leetcode.com/problemset/?search=Regular%20Expression%20Matching",
+    "gfg": "https://www.geeksforgeeks.org/?s=Regular%20Expression%20Matching",
+    "source": "Curated high-yield practice"
+  },
+  {
+    "id": 417,
+    "title": "Scramble String",
+    "topic": "Dynamic Programming Grids and Intervals",
+    "difficulty": "Medium",
+    "url": "https://leetcode.com/problemset/?search=Scramble%20String",
+    "gfg": "https://www.geeksforgeeks.org/?s=Scramble%20String",
+    "source": "Curated high-yield practice"
+  },
+  {
+    "id": 418,
+    "title": "Minimum Score Triangulation",
+    "topic": "Dynamic Programming Grids and Intervals",
+    "difficulty": "Medium",
+    "url": "https://leetcode.com/problemset/?search=Minimum%20Score%20Triangulation",
+    "gfg": "https://www.geeksforgeeks.org/?s=Minimum%20Score%20Triangulation",
+    "source": "Curated high-yield practice"
+  },
+  {
+    "id": 419,
+    "title": "Partition Array for Maximum Sum",
+    "topic": "Dynamic Programming Grids and Intervals",
+    "difficulty": "Medium",
+    "url": "https://leetcode.com/problemset/?search=Partition%20Array%20for%20Maximum%20Sum",
+    "gfg": "https://www.geeksforgeeks.org/?s=Partition%20Array%20for%20Maximum%20Sum",
+    "source": "Curated high-yield practice"
+  },
+  {
+    "id": 420,
+    "title": "Stone Game",
+    "topic": "Dynamic Programming Grids and Intervals",
+    "difficulty": "Easy",
+    "url": "https://leetcode.com/problemset/?search=Stone%20Game",
+    "gfg": "https://www.geeksforgeeks.org/?s=Stone%20Game",
+    "source": "Curated high-yield practice"
+  },
+  {
+    "id": 421,
+    "title": "Check ith bit",
+    "topic": "Bit Manipulation",
+    "difficulty": "Easy",
+    "url": "https://leetcode.com/problemset/?search=Check%20ith%20bit",
+    "gfg": "https://www.geeksforgeeks.org/?s=Check%20ith%20bit",
+    "source": "Curated high-yield practice"
+  },
+  {
+    "id": 422,
+    "title": "Set ith bit",
+    "topic": "Bit Manipulation",
+    "difficulty": "Medium",
+    "url": "https://leetcode.com/problemset/?search=Set%20ith%20bit",
+    "gfg": "https://www.geeksforgeeks.org/?s=Set%20ith%20bit",
+    "source": "Curated high-yield practice"
+  },
+  {
+    "id": 423,
+    "title": "Clear ith bit",
+    "topic": "Bit Manipulation",
+    "difficulty": "Medium",
+    "url": "https://leetcode.com/problemset/?search=Clear%20ith%20bit",
+    "gfg": "https://www.geeksforgeeks.org/?s=Clear%20ith%20bit",
+    "source": "Curated high-yield practice"
+  },
+  {
+    "id": 424,
+    "title": "Toggle ith bit",
+    "topic": "Bit Manipulation",
+    "difficulty": "Medium",
+    "url": "https://leetcode.com/problemset/?search=Toggle%20ith%20bit",
+    "gfg": "https://www.geeksforgeeks.org/?s=Toggle%20ith%20bit",
+    "source": "Curated high-yield practice"
+  },
+  {
+    "id": 425,
+    "title": "Count set bits",
+    "topic": "Bit Manipulation",
+    "difficulty": "Easy",
+    "url": "https://leetcode.com/problemset/?search=Count%20set%20bits",
+    "gfg": "https://www.geeksforgeeks.org/?s=Count%20set%20bits",
+    "source": "Curated high-yield practice"
+  },
+  {
+    "id": 426,
+    "title": "Power of Two",
+    "topic": "Bit Manipulation",
+    "difficulty": "Easy",
+    "url": "https://leetcode.com/problemset/?search=Power%20of%20Two",
+    "gfg": "https://www.geeksforgeeks.org/?s=Power%20of%20Two",
+    "source": "Curated high-yield practice"
+  },
+  {
+    "id": 427,
+    "title": "Single Number",
+    "topic": "Bit Manipulation",
+    "difficulty": "Hard",
+    "url": "https://leetcode.com/problemset/?search=Single%20Number",
+    "gfg": "https://www.geeksforgeeks.org/?s=Single%20Number",
+    "source": "Curated high-yield practice"
+  },
+  {
+    "id": 428,
+    "title": "Single Number II",
+    "topic": "Bit Manipulation",
+    "difficulty": "Medium",
+    "url": "https://leetcode.com/problemset/?search=Single%20Number%20II",
+    "gfg": "https://www.geeksforgeeks.org/?s=Single%20Number%20II",
+    "source": "Curated high-yield practice"
+  },
+  {
+    "id": 429,
+    "title": "Single Number III",
+    "topic": "Bit Manipulation",
+    "difficulty": "Medium",
+    "url": "https://leetcode.com/problemset/?search=Single%20Number%20III",
+    "gfg": "https://www.geeksforgeeks.org/?s=Single%20Number%20III",
+    "source": "Curated high-yield practice"
+  },
+  {
+    "id": 430,
+    "title": "Reverse Bits",
+    "topic": "Bit Manipulation",
+    "difficulty": "Easy",
+    "url": "https://leetcode.com/problemset/?search=Reverse%20Bits",
+    "gfg": "https://www.geeksforgeeks.org/?s=Reverse%20Bits",
+    "source": "Curated high-yield practice"
+  },
+  {
+    "id": 431,
+    "title": "Number of 1 Bits",
+    "topic": "Bit Manipulation",
+    "difficulty": "Easy",
+    "url": "https://leetcode.com/problemset/?search=Number%20of%201%20Bits",
+    "gfg": "https://www.geeksforgeeks.org/?s=Number%20of%201%20Bits",
+    "source": "Curated high-yield practice"
+  },
+  {
+    "id": 432,
+    "title": "Missing Number using XOR",
+    "topic": "Bit Manipulation",
+    "difficulty": "Medium",
+    "url": "https://leetcode.com/problemset/?search=Missing%20Number%20using%20XOR",
+    "gfg": "https://www.geeksforgeeks.org/?s=Missing%20Number%20using%20XOR",
+    "source": "Curated high-yield practice"
+  },
+  {
+    "id": 433,
+    "title": "XOR from 1 to N",
+    "topic": "Bit Manipulation",
+    "difficulty": "Medium",
+    "url": "https://leetcode.com/problemset/?search=XOR%20from%201%20to%20N",
+    "gfg": "https://www.geeksforgeeks.org/?s=XOR%20from%201%20to%20N",
+    "source": "Curated high-yield practice"
+  },
+  {
+    "id": 434,
+    "title": "Find two odd occurring numbers",
+    "topic": "Bit Manipulation",
+    "difficulty": "Hard",
+    "url": "https://leetcode.com/problemset/?search=Find%20two%20odd%20occurring%20numbers",
+    "gfg": "https://www.geeksforgeeks.org/?s=Find%20two%20odd%20occurring%20numbers",
+    "source": "Curated high-yield practice"
+  },
+  {
+    "id": 435,
+    "title": "Subset generation using bitmask",
+    "topic": "Bit Manipulation",
+    "difficulty": "Easy",
+    "url": "https://leetcode.com/problemset/?search=Subset%20generation%20using%20bitmask",
+    "gfg": "https://www.geeksforgeeks.org/?s=Subset%20generation%20using%20bitmask",
+    "source": "Curated high-yield practice"
+  },
+  {
+    "id": 436,
+    "title": "Sum of two integers without plus",
+    "topic": "Bit Manipulation",
+    "difficulty": "Easy",
+    "url": "https://leetcode.com/problemset/?search=Sum%20of%20two%20integers%20without%20plus",
+    "gfg": "https://www.geeksforgeeks.org/?s=Sum%20of%20two%20integers%20without%20plus",
+    "source": "Curated high-yield practice"
+  },
+  {
+    "id": 437,
+    "title": "Bitwise AND of numbers range",
+    "topic": "Bit Manipulation",
+    "difficulty": "Medium",
+    "url": "https://leetcode.com/problemset/?search=Bitwise%20AND%20of%20numbers%20range",
+    "gfg": "https://www.geeksforgeeks.org/?s=Bitwise%20AND%20of%20numbers%20range",
+    "source": "Curated high-yield practice"
+  },
+  {
+    "id": 438,
+    "title": "Maximum XOR of two numbers",
+    "topic": "Bit Manipulation",
+    "difficulty": "Medium",
+    "url": "https://leetcode.com/problemset/?search=Maximum%20XOR%20of%20two%20numbers",
+    "gfg": "https://www.geeksforgeeks.org/?s=Maximum%20XOR%20of%20two%20numbers",
+    "source": "Curated high-yield practice"
+  },
+  {
+    "id": 439,
+    "title": "Count bits from 0 to N",
+    "topic": "Bit Manipulation",
+    "difficulty": "Medium",
+    "url": "https://leetcode.com/problemset/?search=Count%20bits%20from%200%20to%20N",
+    "gfg": "https://www.geeksforgeeks.org/?s=Count%20bits%20from%200%20to%20N",
+    "source": "Curated high-yield practice"
+  },
+  {
+    "id": 440,
+    "title": "Minimum bit flips to convert number",
+    "topic": "Bit Manipulation",
+    "difficulty": "Easy",
+    "url": "https://leetcode.com/problemset/?search=Minimum%20bit%20flips%20to%20convert%20number",
+    "gfg": "https://www.geeksforgeeks.org/?s=Minimum%20bit%20flips%20to%20convert%20number",
+    "source": "Curated high-yield practice"
+  },
+  {
+    "id": 441,
+    "title": "Implement Trie",
+    "topic": "Trie and Advanced Strings",
+    "difficulty": "Easy",
+    "url": "https://leetcode.com/problemset/?search=Implement%20Trie",
+    "gfg": "https://www.geeksforgeeks.org/?s=Implement%20Trie",
+    "source": "Curated high-yield practice"
+  },
+  {
+    "id": 442,
+    "title": "Trie Prefix Search",
+    "topic": "Trie and Advanced Strings",
+    "difficulty": "Medium",
+    "url": "https://leetcode.com/problemset/?search=Trie%20Prefix%20Search",
+    "gfg": "https://www.geeksforgeeks.org/?s=Trie%20Prefix%20Search",
+    "source": "Curated high-yield practice"
+  },
+  {
+    "id": 443,
+    "title": "Word Search II",
+    "topic": "Trie and Advanced Strings",
+    "difficulty": "Medium",
+    "url": "https://leetcode.com/problemset/?search=Word%20Search%20II",
+    "gfg": "https://www.geeksforgeeks.org/?s=Word%20Search%20II",
+    "source": "Curated high-yield practice"
+  },
+  {
+    "id": 444,
+    "title": "Replace Words",
+    "topic": "Trie and Advanced Strings",
+    "difficulty": "Medium",
+    "url": "https://leetcode.com/problemset/?search=Replace%20Words",
+    "gfg": "https://www.geeksforgeeks.org/?s=Replace%20Words",
+    "source": "Curated high-yield practice"
+  },
+  {
+    "id": 445,
+    "title": "Longest Word in Dictionary",
+    "topic": "Trie and Advanced Strings",
+    "difficulty": "Easy",
+    "url": "https://leetcode.com/problemset/?search=Longest%20Word%20in%20Dictionary",
+    "gfg": "https://www.geeksforgeeks.org/?s=Longest%20Word%20in%20Dictionary",
+    "source": "Curated high-yield practice"
+  },
+  {
+    "id": 446,
+    "title": "Design Add and Search Words",
+    "topic": "Trie and Advanced Strings",
+    "difficulty": "Easy",
+    "url": "https://leetcode.com/problemset/?search=Design%20Add%20and%20Search%20Words",
+    "gfg": "https://www.geeksforgeeks.org/?s=Design%20Add%20and%20Search%20Words",
+    "source": "Curated high-yield practice"
+  },
+  {
+    "id": 447,
+    "title": "Maximum XOR using Trie",
+    "topic": "Trie and Advanced Strings",
+    "difficulty": "Medium",
+    "url": "https://leetcode.com/problemset/?search=Maximum%20XOR%20using%20Trie",
+    "gfg": "https://www.geeksforgeeks.org/?s=Maximum%20XOR%20using%20Trie",
+    "source": "Curated high-yield practice"
+  },
+  {
+    "id": 448,
+    "title": "Distinct Substrings",
+    "topic": "Trie and Advanced Strings",
+    "difficulty": "Hard",
+    "url": "https://leetcode.com/problemset/?search=Distinct%20Substrings",
+    "gfg": "https://www.geeksforgeeks.org/?s=Distinct%20Substrings",
+    "source": "Curated high-yield practice"
+  },
+  {
+    "id": 449,
+    "title": "KMP pattern matching",
+    "topic": "Trie and Advanced Strings",
+    "difficulty": "Medium",
+    "url": "https://leetcode.com/problemset/?search=KMP%20pattern%20matching",
+    "gfg": "https://www.geeksforgeeks.org/?s=KMP%20pattern%20matching",
+    "source": "Curated high-yield practice"
+  },
+  {
+    "id": 450,
+    "title": "Rabin-Karp pattern search",
+    "topic": "Trie and Advanced Strings",
+    "difficulty": "Easy",
+    "url": "https://leetcode.com/problemset/?search=Rabin-Karp%20pattern%20search",
+    "gfg": "https://www.geeksforgeeks.org/?s=Rabin-Karp%20pattern%20search",
+    "source": "Curated high-yield practice"
+  },
+  {
+    "id": 451,
+    "title": "Z algorithm",
+    "topic": "Trie and Advanced Strings",
+    "difficulty": "Easy",
+    "url": "https://leetcode.com/problemset/?search=Z%20algorithm",
+    "gfg": "https://www.geeksforgeeks.org/?s=Z%20algorithm",
+    "source": "Curated high-yield practice"
+  },
+  {
+    "id": 452,
+    "title": "Longest Happy Prefix",
+    "topic": "Trie and Advanced Strings",
+    "difficulty": "Medium",
+    "url": "https://leetcode.com/problemset/?search=Longest%20Happy%20Prefix",
+    "gfg": "https://www.geeksforgeeks.org/?s=Longest%20Happy%20Prefix",
+    "source": "Curated high-yield practice"
+  },
+  {
+    "id": 453,
+    "title": "Shortest Palindrome",
+    "topic": "Trie and Advanced Strings",
+    "difficulty": "Medium",
+    "url": "https://leetcode.com/problemset/?search=Shortest%20Palindrome",
+    "gfg": "https://www.geeksforgeeks.org/?s=Shortest%20Palindrome",
+    "source": "Curated high-yield practice"
+  },
+  {
+    "id": 454,
+    "title": "Repeated String Match",
+    "topic": "Trie and Advanced Strings",
+    "difficulty": "Medium",
+    "url": "https://leetcode.com/problemset/?search=Repeated%20String%20Match",
+    "gfg": "https://www.geeksforgeeks.org/?s=Repeated%20String%20Match",
+    "source": "Curated high-yield practice"
+  },
+  {
+    "id": 455,
+    "title": "Find All Occurrences of Pattern",
+    "topic": "Trie and Advanced Strings",
+    "difficulty": "Easy",
+    "url": "https://leetcode.com/problemset/?search=Find%20All%20Occurrences%20of%20Pattern",
+    "gfg": "https://www.geeksforgeeks.org/?s=Find%20All%20Occurrences%20of%20Pattern",
+    "source": "Curated high-yield practice"
+  },
+  {
+    "id": 456,
+    "title": "Aho-Corasick concept practice",
+    "topic": "Trie and Advanced Strings",
+    "difficulty": "Easy",
+    "url": "https://leetcode.com/problemset/?search=Aho-Corasick%20concept%20practice",
+    "gfg": "https://www.geeksforgeeks.org/?s=Aho-Corasick%20concept%20practice",
+    "source": "Curated high-yield practice"
+  },
+  {
+    "id": 457,
+    "title": "Stream of Characters",
+    "topic": "Trie and Advanced Strings",
+    "difficulty": "Medium",
+    "url": "https://leetcode.com/problemset/?search=Stream%20of%20Characters",
+    "gfg": "https://www.geeksforgeeks.org/?s=Stream%20of%20Characters",
+    "source": "Curated high-yield practice"
+  },
+  {
+    "id": 458,
+    "title": "Search Suggestions System",
+    "topic": "Trie and Advanced Strings",
+    "difficulty": "Medium",
+    "url": "https://leetcode.com/problemset/?search=Search%20Suggestions%20System",
+    "gfg": "https://www.geeksforgeeks.org/?s=Search%20Suggestions%20System",
+    "source": "Curated high-yield practice"
+  },
+  {
+    "id": 459,
+    "title": "Concatenated Words",
+    "topic": "Trie and Advanced Strings",
+    "difficulty": "Medium",
+    "url": "https://leetcode.com/problemset/?search=Concatenated%20Words",
+    "gfg": "https://www.geeksforgeeks.org/?s=Concatenated%20Words",
+    "source": "Curated high-yield practice"
+  },
+  {
+    "id": 460,
+    "title": "Word Squares",
+    "topic": "Trie and Advanced Strings",
+    "difficulty": "Easy",
+    "url": "https://leetcode.com/problemset/?search=Word%20Squares",
+    "gfg": "https://www.geeksforgeeks.org/?s=Word%20Squares",
+    "source": "Curated high-yield practice"
+  },
+  {
+    "id": 461,
+    "title": "Sieve of Eratosthenes",
+    "topic": "Math and Number Theory",
+    "difficulty": "Easy",
+    "url": "https://leetcode.com/problemset/?search=Sieve%20of%20Eratosthenes",
+    "gfg": "https://www.geeksforgeeks.org/?s=Sieve%20of%20Eratosthenes",
+    "source": "Curated high-yield practice"
+  },
+  {
+    "id": 462,
+    "title": "Prime factorization",
+    "topic": "Math and Number Theory",
+    "difficulty": "Hard",
+    "url": "https://leetcode.com/problemset/?search=Prime%20factorization",
+    "gfg": "https://www.geeksforgeeks.org/?s=Prime%20factorization",
+    "source": "Curated high-yield practice"
+  },
+  {
+    "id": 463,
+    "title": "Count primes below N",
+    "topic": "Math and Number Theory",
+    "difficulty": "Medium",
+    "url": "https://leetcode.com/problemset/?search=Count%20primes%20below%20N",
+    "gfg": "https://www.geeksforgeeks.org/?s=Count%20primes%20below%20N",
+    "source": "Curated high-yield practice"
+  },
+  {
+    "id": 464,
+    "title": "Modular exponentiation",
+    "topic": "Math and Number Theory",
+    "difficulty": "Medium",
+    "url": "https://leetcode.com/problemset/?search=Modular%20exponentiation",
+    "gfg": "https://www.geeksforgeeks.org/?s=Modular%20exponentiation",
+    "source": "Curated high-yield practice"
+  },
+  {
+    "id": 465,
+    "title": "Modular inverse basics",
+    "topic": "Math and Number Theory",
+    "difficulty": "Easy",
+    "url": "https://leetcode.com/problemset/?search=Modular%20inverse%20basics",
+    "gfg": "https://www.geeksforgeeks.org/?s=Modular%20inverse%20basics",
+    "source": "Curated high-yield practice"
+  },
+  {
+    "id": 466,
+    "title": "Euclidean GCD",
+    "topic": "Math and Number Theory",
+    "difficulty": "Easy",
+    "url": "https://leetcode.com/problemset/?search=Euclidean%20GCD",
+    "gfg": "https://www.geeksforgeeks.org/?s=Euclidean%20GCD",
+    "source": "Curated high-yield practice"
+  },
+  {
+    "id": 467,
+    "title": "Extended Euclidean algorithm",
+    "topic": "Math and Number Theory",
+    "difficulty": "Medium",
+    "url": "https://leetcode.com/problemset/?search=Extended%20Euclidean%20algorithm",
+    "gfg": "https://www.geeksforgeeks.org/?s=Extended%20Euclidean%20algorithm",
+    "source": "Curated high-yield practice"
+  },
+  {
+    "id": 468,
+    "title": "Fast power modulo M",
+    "topic": "Math and Number Theory",
+    "difficulty": "Medium",
+    "url": "https://leetcode.com/problemset/?search=Fast%20power%20modulo%20M",
+    "gfg": "https://www.geeksforgeeks.org/?s=Fast%20power%20modulo%20M",
+    "source": "Curated high-yield practice"
+  },
+  {
+    "id": 469,
+    "title": "Combinations modulo M",
+    "topic": "Math and Number Theory",
+    "difficulty": "Hard",
+    "url": "https://leetcode.com/problemset/?search=Combinations%20modulo%20M",
+    "gfg": "https://www.geeksforgeeks.org/?s=Combinations%20modulo%20M",
+    "source": "Curated high-yield practice"
+  },
+  {
+    "id": 470,
+    "title": "Pascal triangle",
+    "topic": "Math and Number Theory",
+    "difficulty": "Easy",
+    "url": "https://leetcode.com/problemset/?search=Pascal%20triangle",
+    "gfg": "https://www.geeksforgeeks.org/?s=Pascal%20triangle",
+    "source": "Curated high-yield practice"
+  },
+  {
+    "id": 471,
+    "title": "Count trailing zeroes in factorial",
+    "topic": "Math and Number Theory",
+    "difficulty": "Easy",
+    "url": "https://leetcode.com/problemset/?search=Count%20trailing%20zeroes%20in%20factorial",
+    "gfg": "https://www.geeksforgeeks.org/?s=Count%20trailing%20zeroes%20in%20factorial",
+    "source": "Curated high-yield practice"
+  },
+  {
+    "id": 472,
+    "title": "Happy Number",
+    "topic": "Math and Number Theory",
+    "difficulty": "Medium",
+    "url": "https://leetcode.com/problemset/?search=Happy%20Number",
+    "gfg": "https://www.geeksforgeeks.org/?s=Happy%20Number",
+    "source": "Curated high-yield practice"
+  },
+  {
+    "id": 473,
+    "title": "Fraction to recurring decimal",
+    "topic": "Math and Number Theory",
+    "difficulty": "Medium",
+    "url": "https://leetcode.com/problemset/?search=Fraction%20to%20recurring%20decimal",
+    "gfg": "https://www.geeksforgeeks.org/?s=Fraction%20to%20recurring%20decimal",
+    "source": "Curated high-yield practice"
+  },
+  {
+    "id": 474,
+    "title": "Pow(x,n)",
+    "topic": "Math and Number Theory",
+    "difficulty": "Medium",
+    "url": "https://leetcode.com/problemset/?search=Pow%28x%2Cn%29",
+    "gfg": "https://www.geeksforgeeks.org/?s=Pow%28x%2Cn%29",
+    "source": "Curated high-yield practice"
+  },
+  {
+    "id": 475,
+    "title": "Integer break",
+    "topic": "Math and Number Theory",
+    "difficulty": "Easy",
+    "url": "https://leetcode.com/problemset/?search=Integer%20break",
+    "gfg": "https://www.geeksforgeeks.org/?s=Integer%20break",
+    "source": "Curated high-yield practice"
+  },
+  {
+    "id": 476,
+    "title": "Reverse integer with overflow check",
+    "topic": "Math and Number Theory",
+    "difficulty": "Easy",
+    "url": "https://leetcode.com/problemset/?search=Reverse%20integer%20with%20overflow%20check",
+    "gfg": "https://www.geeksforgeeks.org/?s=Reverse%20integer%20with%20overflow%20check",
+    "source": "Curated high-yield practice"
+  },
+  {
+    "id": 477,
+    "title": "Excel column number",
+    "topic": "Math and Number Theory",
+    "difficulty": "Medium",
+    "url": "https://leetcode.com/problemset/?search=Excel%20column%20number",
+    "gfg": "https://www.geeksforgeeks.org/?s=Excel%20column%20number",
+    "source": "Curated high-yield practice"
+  },
+  {
+    "id": 478,
+    "title": "Excel column title",
+    "topic": "Math and Number Theory",
+    "difficulty": "Medium",
+    "url": "https://leetcode.com/problemset/?search=Excel%20column%20title",
+    "gfg": "https://www.geeksforgeeks.org/?s=Excel%20column%20title",
+    "source": "Curated high-yield practice"
+  },
+  {
+    "id": 479,
+    "title": "Number of Digit One",
+    "topic": "Math and Number Theory",
+    "difficulty": "Medium",
+    "url": "https://leetcode.com/problemset/?search=Number%20of%20Digit%20One",
+    "gfg": "https://www.geeksforgeeks.org/?s=Number%20of%20Digit%20One",
+    "source": "Curated high-yield practice"
+  },
+  {
+    "id": 480,
+    "title": "Bulb Switcher",
+    "topic": "Math and Number Theory",
+    "difficulty": "Easy",
+    "url": "https://leetcode.com/problemset/?search=Bulb%20Switcher",
+    "gfg": "https://www.geeksforgeeks.org/?s=Bulb%20Switcher",
+    "source": "Curated high-yield practice"
+  },
+  {
+    "id": 481,
+    "title": "Merge Intervals",
+    "topic": "Intervals and Sweep Line",
+    "difficulty": "Easy",
+    "url": "https://leetcode.com/problemset/?search=Merge%20Intervals",
+    "gfg": "https://www.geeksforgeeks.org/?s=Merge%20Intervals",
+    "source": "Curated high-yield practice"
+  },
+  {
+    "id": 482,
+    "title": "Insert Interval",
+    "topic": "Intervals and Sweep Line",
+    "difficulty": "Medium",
+    "url": "https://leetcode.com/problemset/?search=Insert%20Interval",
+    "gfg": "https://www.geeksforgeeks.org/?s=Insert%20Interval",
+    "source": "Curated high-yield practice"
+  },
+  {
+    "id": 483,
+    "title": "Non-overlapping Intervals",
+    "topic": "Intervals and Sweep Line",
+    "difficulty": "Hard",
+    "url": "https://leetcode.com/problemset/?search=Non-overlapping%20Intervals",
+    "gfg": "https://www.geeksforgeeks.org/?s=Non-overlapping%20Intervals",
+    "source": "Curated high-yield practice"
+  },
+  {
+    "id": 484,
+    "title": "Meeting Rooms",
+    "topic": "Intervals and Sweep Line",
+    "difficulty": "Medium",
+    "url": "https://leetcode.com/problemset/?search=Meeting%20Rooms",
+    "gfg": "https://www.geeksforgeeks.org/?s=Meeting%20Rooms",
+    "source": "Curated high-yield practice"
+  },
+  {
+    "id": 485,
+    "title": "Meeting Rooms II",
+    "topic": "Intervals and Sweep Line",
+    "difficulty": "Easy",
+    "url": "https://leetcode.com/problemset/?search=Meeting%20Rooms%20II",
+    "gfg": "https://www.geeksforgeeks.org/?s=Meeting%20Rooms%20II",
+    "source": "Curated high-yield practice"
+  },
+  {
+    "id": 486,
+    "title": "Minimum Number of Arrows to Burst Balloons",
+    "topic": "Intervals and Sweep Line",
+    "difficulty": "Easy",
+    "url": "https://leetcode.com/problemset/?search=Minimum%20Number%20of%20Arrows%20to%20Burst%20Balloons",
+    "gfg": "https://www.geeksforgeeks.org/?s=Minimum%20Number%20of%20Arrows%20to%20Burst%20Balloons",
+    "source": "Curated high-yield practice"
+  },
+  {
+    "id": 487,
+    "title": "Employee Free Time",
+    "topic": "Intervals and Sweep Line",
+    "difficulty": "Medium",
+    "url": "https://leetcode.com/problemset/?search=Employee%20Free%20Time",
+    "gfg": "https://www.geeksforgeeks.org/?s=Employee%20Free%20Time",
+    "source": "Curated high-yield practice"
+  },
+  {
+    "id": 488,
+    "title": "My Calendar I",
+    "topic": "Intervals and Sweep Line",
+    "difficulty": "Medium",
+    "url": "https://leetcode.com/problemset/?search=My%20Calendar%20I",
+    "gfg": "https://www.geeksforgeeks.org/?s=My%20Calendar%20I",
+    "source": "Curated high-yield practice"
+  },
+  {
+    "id": 489,
+    "title": "My Calendar II",
+    "topic": "Intervals and Sweep Line",
+    "difficulty": "Medium",
+    "url": "https://leetcode.com/problemset/?search=My%20Calendar%20II",
+    "gfg": "https://www.geeksforgeeks.org/?s=My%20Calendar%20II",
+    "source": "Curated high-yield practice"
+  },
+  {
+    "id": 490,
+    "title": "My Calendar III",
+    "topic": "Intervals and Sweep Line",
+    "difficulty": "Easy",
+    "url": "https://leetcode.com/problemset/?search=My%20Calendar%20III",
+    "gfg": "https://www.geeksforgeeks.org/?s=My%20Calendar%20III",
+    "source": "Curated high-yield practice"
+  },
+  {
+    "id": 491,
+    "title": "Car Pooling",
+    "topic": "Intervals and Sweep Line",
+    "difficulty": "Easy",
+    "url": "https://leetcode.com/problemset/?search=Car%20Pooling",
+    "gfg": "https://www.geeksforgeeks.org/?s=Car%20Pooling",
+    "source": "Curated high-yield practice"
+  },
+  {
+    "id": 492,
+    "title": "Corporate Flight Bookings",
+    "topic": "Intervals and Sweep Line",
+    "difficulty": "Medium",
+    "url": "https://leetcode.com/problemset/?search=Corporate%20Flight%20Bookings",
+    "gfg": "https://www.geeksforgeeks.org/?s=Corporate%20Flight%20Bookings",
+    "source": "Curated high-yield practice"
+  },
+  {
+    "id": 493,
+    "title": "Range Addition",
+    "topic": "Intervals and Sweep Line",
+    "difficulty": "Medium",
+    "url": "https://leetcode.com/problemset/?search=Range%20Addition",
+    "gfg": "https://www.geeksforgeeks.org/?s=Range%20Addition",
+    "source": "Curated high-yield practice"
+  },
+  {
+    "id": 494,
+    "title": "Remove Covered Intervals",
+    "topic": "Intervals and Sweep Line",
+    "difficulty": "Medium",
+    "url": "https://leetcode.com/problemset/?search=Remove%20Covered%20Intervals",
+    "gfg": "https://www.geeksforgeeks.org/?s=Remove%20Covered%20Intervals",
+    "source": "Curated high-yield practice"
+  },
+  {
+    "id": 495,
+    "title": "Interval List Intersections",
+    "topic": "Intervals and Sweep Line",
+    "difficulty": "Easy",
+    "url": "https://leetcode.com/problemset/?search=Interval%20List%20Intersections",
+    "gfg": "https://www.geeksforgeeks.org/?s=Interval%20List%20Intersections",
+    "source": "Curated high-yield practice"
+  },
+  {
+    "id": 496,
+    "title": "Minimum Interval to Include Each Query",
+    "topic": "Intervals and Sweep Line",
+    "difficulty": "Easy",
+    "url": "https://leetcode.com/problemset/?search=Minimum%20Interval%20to%20Include%20Each%20Query",
+    "gfg": "https://www.geeksforgeeks.org/?s=Minimum%20Interval%20to%20Include%20Each%20Query",
+    "source": "Curated high-yield practice"
+  },
+  {
+    "id": 497,
+    "title": "Count days without meetings",
+    "topic": "Intervals and Sweep Line",
+    "difficulty": "Hard",
+    "url": "https://leetcode.com/problemset/?search=Count%20days%20without%20meetings",
+    "gfg": "https://www.geeksforgeeks.org/?s=Count%20days%20without%20meetings",
+    "source": "Curated high-yield practice"
+  },
+  {
+    "id": 498,
+    "title": "Maximum population year",
+    "topic": "Intervals and Sweep Line",
+    "difficulty": "Medium",
+    "url": "https://leetcode.com/problemset/?search=Maximum%20population%20year",
+    "gfg": "https://www.geeksforgeeks.org/?s=Maximum%20population%20year",
+    "source": "Curated high-yield practice"
+  },
+  {
+    "id": 499,
+    "title": "Skyline Problem",
+    "topic": "Intervals and Sweep Line",
+    "difficulty": "Medium",
+    "url": "https://leetcode.com/problemset/?search=Skyline%20Problem",
+    "gfg": "https://www.geeksforgeeks.org/?s=Skyline%20Problem",
+    "source": "Curated high-yield practice"
+  },
+  {
+    "id": 500,
+    "title": "Sweep line maximum overlap",
+    "topic": "Intervals and Sweep Line",
+    "difficulty": "Easy",
+    "url": "https://leetcode.com/problemset/?search=Sweep%20line%20maximum%20overlap",
+    "gfg": "https://www.geeksforgeeks.org/?s=Sweep%20line%20maximum%20overlap",
+    "source": "Curated high-yield practice"
+  }
+]

@@ -1,0 +1,6 @@
+{
+  "name":"prepforge-placement-os","private":true,"version":"2.0.0","type":"module",
+  "scripts":{"dev":"concurrently -k -n api,web \"npm run dev:api\" \"npm run dev:web\"","dev:api":"node --watch backend/server.js","dev:web":"vite --host 0.0.0.0","build":"vite build","start":"node backend/server.js"},
+  "dependencies":{"@vitejs/plugin-react":"latest","concurrently":"latest","cors":"latest","dotenv":"latest","express":"latest","lucide-react":"latest","react":"latest","react-dom":"latest","vite":"latest"},
+  "devDependencies":{}
+}
